@@ -1,0 +1,194 @@
+\section[光的吸收与受激辐射]{光的吸收与受激辐射} \label{sec:09.03} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+光被其他物质吸收与辐射的过程，就是光子的产生与湮没的过程.严格处理光的吸收与辐射问题，应该将电磁场作为量子力学体系，考虑它与其他物质（例如一个原子）的相互作用，以及由此而引起的双方的量子跃迁.这种理论属于量子电动力学范畴，超出初等量子力学课程的要求.本节将对问题作单方面的处理.以原子对光的吸收与辐射为物理模型，用量子跃迁理论来处理原子状态的变化问题，而电磁场的状态变化问题（即光子的产生与湮没过程）则不予考虑.亦即将着眼点放在原子上，而将光当作经典电磁波对待，它对原子产生作用，导致原子的状态发生变化.同时必须记得电磁波是量子化的，而且原子的能级跃迁过程符合能量守恒定律，当原子从$\varPsi_{k}$态跃迁到$\varPsi_{f}$态时，将同时吸收$(E_{k}<E_{f})$或放射$(E_{k}>E_{f})$一个光子$(\hbar\omega=|E_{f}-E_{k}|)$.
+
+{\heiti 1. 原子的受激跃迁}
+
+为简明起见，考虑一个单价原子价电子在原子核和内层电子的库仑场（等效成一个中心力场）中运动，如不考虑自旋-轨道耦合作用，其能量算符可以表示成
+\begin{empheq}{equation}\label{eq93.1}
+	H_{0}=-\frac{\hbar^{2}}{2m_{0}}\nabla^{2}+V(r)
+\end{empheq}
+能级记为$E_{nl}$，定态波函数（$H_{0},\boldsymbol{L}^{2},L_{z}$共同本征函数）记为
+\begin{empheq}{equation}\label{eq93.2}
+	\varPsi_{nlm}(r,\theta,\varphi)=R_{nl}(r)Y_{lm}(\theta,\varphi)
+\end{empheq}
+（为了简明，暂不考虑自旋自由度.）
+\noindent 光波的电、磁场$(\mathscr{E},\boldsymbol{B})$对价电子的作用势可以近似表示成
+\eqshort
+\begin{empheq}{equation*}
+	H^{\prime}\approx-\mathscr{E}\cdot\boldsymbol{D}-\boldsymbol{B}\cdot\boldsymbol{\mu}
+\end{empheq}
+其中第一项是电场对电子电矩的作用，第二项是磁场对电子磁矩的作用.在高斯单位制中光波的$\mathscr{E}$与$\boldsymbol{B}$数值相等.价电子电矩与磁矩的量级约为
+\begin{empheq}{align*}
+	D&\sim ea_{0}=\frac{\hbar^{2}}{em_{e}}	\\
+	\mu&\sim \mu_{B}=\frac{e\hbar}{2m_{e}c}
+\end{empheq}\eqnormal
+因此，$H^{\prime}$中电作用势与磁作用势的比值约为
+\begin{empheq}{equation*}
+	\frac{\boldsymbol{B}\cdot\boldsymbol{\mu}}{\mathscr{E}\cdot\boldsymbol{D}}\sim\frac{\mu}{D}\sim\frac{e^{2}}{2\hbar c}<\frac{1}{100}
+\end{empheq}
+通常可以略去磁作用势而取近似
+\begin{empheq}{equation}\label{eq93.3}
+	H^{\prime}\approx-\mathscr{E}\cdot\boldsymbol{D}=e\mathscr{E}\cdot\boldsymbol{r}
+\end{empheq}
+电场$\mathscr{E}$的函数形式视光波的性质而定，例如波矢量为$k$$\bigg($波长$\lambda=\frac{2\pi}{k}\bigg)$的线偏振光，光波电场为
+\begin{empheq}{equation}\label{eq93.4}
+	\mathscr{E}(\boldsymbol{r},t)=\mathscr{E}_{0}\cos(\boldsymbol{k}\cdot\boldsymbol{r}-\omega t)
+\end{empheq}
+能够引起原子能级跃迁的光波主要是可见光或紫外光，其波长入约为原子半径的几千倍，因此在原子范围内
+\begin{empheq}{equation*}
+	\boldsymbol{k}\cdot\boldsymbol{r}\sim\frac{2\pi a_{0}}{\lambda}\ll 1
+\end{empheq}
+可以忽略电场$\mathscr{E}$的空间变化，而取
+\begin{empheq}{equation*}\label{eq93.4'}
+	\mathscr{E}(t)\approx\mathscr{E}_{0}\cos\omega t=\boldsymbol{l}\mathscr{E}_{0}\cos\omega t
+	\tag{$9.3.4^{\prime}$}
+\end{empheq}
+$\boldsymbol{l}$为电场的偏振方向单位矢量.代入\eqref{eq93.3}式，得到
+\begin{empheq}{align}\label{eq93.5}
+	H^{\prime} &=e\mathscr{E}_{0}\boldsymbol{l}\cdot\boldsymbol{r}\cos\omega t	\nonumber\\
+	&=\frac{1}{2}e\mathscr{E}_{0}\boldsymbol{l}\cdot\boldsymbol{r}(e^{i\omega t}+e^{-i\omega t})
+\end{empheq}
+这正是$\S$\ref{sec:09.02}讨论过的单频微扰，相当于\eqref{eq92.1}式中
+\begin{empheq}{equation}\label{eq93.6}
+	\hat{F}=\frac{1}{2}e\mathscr{E}_{0}\boldsymbol{l}\cdot\boldsymbol{r}
+\end{empheq}
+在这光波照射下，价电子由初态$\varPsi_{nlm}\rightarrow$终态$\varPsi_{n^{\prime}l^{\prime}m^{\prime}}$的跃迁速率可以按照\eqref{eq92.9}式计算（和$\S$\ref{sec:09.02}一样，设$E_{n^{\prime}l^{\prime}}>E_{nl}$）
+\eqllong
+\begin{empheq}{equation}\label{eq93.7}
+	w_{nlm\rightarrow n^{\prime}l^{\prime}m^{\prime}}=\frac{\pi}{2}\frac{e^{2}}{\mathscr{E}_{0}^{2}}|(\boldsymbol{l}\cdot\boldsymbol{r})_{n^{\prime}l^{\prime}m^{\prime},nlm}|^{2}\delta(E_{n^{\prime}l^{\prime}}-E_{nl}-\hbar\omega)
+\end{empheq}\eqlong
+其中$\delta$函数表明，只有$E_{n^{\prime}l^{\prime}}-E_{nl}\approx\hbar\omega$（光子能量），跃迁才有可能发生.由\eqref{eq93.4}式表示的光波，单位体积中光能为
+\begin{empheq}{equation*}
+	u=\frac{1}{8\pi}(\mathscr{E}^{2}+\boldsymbol{B}^{2})_{\text{时间平均}}=\frac{1}{4\pi}(\mathscr{E}^{2})_{\text{时间平均}}=\frac{1}{8\pi}\mathscr{E}_{0}^{2}
+\end{empheq}\eqindent{1}
+\eqref{eq93.7}式中$\mathscr{E}$用$u$来表示，得到
+\begin{empheq}{equation*}\label{eq93.7'}
+	w_{nlm\rightarrow n^{\prime}l^{\prime}m^{\prime}}=\frac{4\pi^{2}}{\hbar}ue^{2}|(\boldsymbol{l}\cdot\boldsymbol{r})_{n^{\prime}l^{\prime}m^{\prime},nlm}|^{2}\delta(E_{n^{\prime}l^{\prime}}-E_{nl}-\hbar\omega)	\tag{$9.3.7^{\prime}$}
+\end{empheq}\eqshort
+跃迁速率和光波能量密度$u$成正比，这是受激跃迁的特点.
+
+实际的光波不可能是严格单频的，总是有频率分布的，设
+\begin{empheq}{equation}\label{eq93.8}
+	u=\int_{0}^{\infty}\rho(\omega)d\omega
+\end{empheq}\eqnormal
+$\rho(\omega)d\omega$是单位体积中频率范围$(\omega,\omega+d\omega)$内光波能量.将\eqref{eq93.8}式代入\eqref{eq93.7}式，计及$\delta$函数的积分效果
+\begin{empheq}{equation*}
+	\int_{0}^{\infty}\rho(\omega)\delta(E-\hbar\omega)d(\hbar\omega)=\rho\left(\frac{E}{\hbar}\right)
+\end{empheq}\eqlong
+可得
+\begin{empheq}{equation}\label{eq93.9}
+	w_{nlm\rightarrow n^{\prime}l^{\prime}m^{\prime}}=\frac{4\pi^{2}}{\hbar^{2}}\rho(\omega_{n^{\prime}l^{\prime},nl})e^{2}|(\boldsymbol{l}\cdot\boldsymbol{r})_{n^{\prime}l^{\prime}m^{\prime},nlm}|^{2}
+\end{empheq}
+其中
+\eqshort
+\begin{empheq}{equation*}
+	(\omega_{n^{\prime}l^{\prime},nl})=\frac{E_{n^{\prime}l^{\prime}}-E_{nl}}{\hbar}
+\end{empheq}\eqnormal
+\eqref{eq93.9}式中的矩阵元应该作如下理解：设偏振矢量与$x,y,z$轴的夹角分别为$\alpha,\beta,\gamma$，则
+\eqlong
+\begin{empheq}{align}\label{eq93.10}
+	\boldsymbol{l}\cdot\boldsymbol{r}&=x\cos\alpha+y\cos\beta+z\cos\gamma	\nonumber\\
+	(\boldsymbol{l}\cdot\boldsymbol{r})_{n^{\prime}n}&=x_{n^{\prime}n}\cos\alpha+y_{n^{\prime}n}\cos\beta+z_{n^{\prime}n}\cos\gamma
+\end{empheq}\eqllong
+（$n$代表$nlm$,$n^{\prime}$代表$n^{\prime}l^{\prime}m^{\prime}$，下同.）
+\begin{empheq}{align*}
+	|(\boldsymbol{l}\cdot\boldsymbol{r})_{n^{\prime}n}|^{2} &=(x_{n^{\prime}n})^{*}x_{n^{\prime}n}\cos^{2}\alpha+(y_{n^{\prime}n})^{*}y_{n^{\prime}n}\cos^{2}\beta+\cdots+	\\
+	&[(x_{n^{\prime}n})^{*}y_{n^{\prime}n}+x_{n^{\prime}n}(y_{n^{\prime}n})^{*}]\cos\alpha\cos\beta+\cdots
+\end{empheq}\eqnormal
+如果光波的偏振方向是完全混乱的（例如热辐射场就是这样），则\eqref{eq93.9}式应该对$\boldsymbol{l}$的各种方向平均，这时
+\eqlong
+\begin{empheq}{align*}
+	(\cos^{2}\alpha)_{\text{平均}}&=(\cos^{2}\beta)_{\text{平均}}=(\cos^{2}\gamma)_{\text{平均}}=\frac{1}{3}	\\
+	&(\cos\alpha\cos\beta)_{\text{平均}}=0,\text{等等}
+\end{empheq}
+\begin{empheq}{align}\label{eq93.11}
+	|(\boldsymbol{l}\cdot\boldsymbol{r})_{n^{\prime}n}|_{\text{平均}}^{2} &=\frac{1}{3}(|x_{n^{\prime}n}|^{2}+|y_{n^{\prime}n}|^{2}+|z_{n^{\prime}n}|^{2})	\nonumber\\
+	\text{(定义)}&=\frac{1}{3}|\boldsymbol{r}_{n^{\prime}n}|^{2}
+\end{empheq}
+这样，当光波偏振完全混乱时，跃迁速率公式为
+\begin{empheq}{align}\label{eq93.12}
+	w_{nlm\rightarrow n^{\prime}l^{\prime}m^{\prime}}&=\frac{4\pi^{2}}{3\hbar^{2}}\rho(\omega_{n^{\prime}l^{\prime},nl})e^{2}|\boldsymbol{r}_{n^{\prime}l^{\prime}m^{\prime},nlm}|^{2}	\nonumber\\
+	&=\frac{4\pi^{2}}{3\hbar^{2}}\rho(\omega_{n^{\prime}l^{\prime},nl})|\boldsymbol{D}_{n^{\prime}l^{\prime}m^{\prime},nlm}|^{2}
+\end{empheq}\eqshort
+跃迁速率与电偶极矩$(\boldsymbol{D}=-e\boldsymbol{r})$矩阵元有关，故上式又称受激电偶极跃迁速率.
+
+受激跃迁最本质性的规律是跃迁速率$w$和光能频率分布密度$\rho$成正比\eqref{eq93.9}式及\eqref{eq93.12}式清楚地表明$nlm$态与$n^{\prime}l^{\prime}m^{\prime}$态间的跃迁是入射光中频率为$\omega_{n^{\prime}l^{\prime},nl}$的成分引起的，如入射光中没有这种频率成分，跃迁就不会发生.当跃迁$\varPsi_{nlm}\rightarrow\varPsi_{n^{\prime}l^{\prime}m^{\prime}}$发生时，原子将从光波吸收能量$(E_{n^{\prime}l^{\prime}}-E_{nl})$，即吸收一个能量为$\hbar\omega_{n^{\prime}l^{\prime},nl}$的光子.根据$\S$\ref{sec:09.01}的分析，同样的入射光也能引起反方向的跃迁，即$\varPsi_{n^{\prime}l^{\prime}m^{\prime}}\rightarrow\varPsi_{nlm}$，而且
+\begin{empheq}{equation}\label{eq93.13}
+	w_{n^{\prime}l^{\prime}m^{\prime}\rightarrow nlm}=w_{nlm\rightarrow n^{\prime}l^{\prime}m^{\prime}}
+\end{empheq}
+当跃迁$\varPsi_{n^{\prime}l^{\prime}m^{\prime}}\rightarrow\varPsi_{nlm}$发生时，原子由高能级跳到低能级，同时放出一个频率为$\omega_{n^{\prime}l^{\prime},nl}$的光子.
+
+从光的吸收与辐射角度看问题，原子从$\varPsi_{k}$态向$\varPsi_{f}$态的跃迁速率可以写成
+\begin{empheq}{equation}\label{eq93.14}
+	w_{k\rightarrow f}=B_{kf}\rho(\omega_{fk})
+\end{empheq}
+$B_{kf}$称为吸收系数.$(E_{k}<E_{f})$相反方向$(\varPsi_{f}\rightarrow\varPsi_{k})$的跃迁速率可以写成
+\begin{empheq}{equation*}\label{eq93.14'}
+	w_{f\rightarrow k}=B_{fk}\rho(\omega_{fk})
+	\tag{$9.3.14^{\prime}$}
+\end{empheq}\eqnormal
+$B_{kf}$称为受激辐射系数.由于$w_{k\rightarrow f}=w_{f\rightarrow k}$，所以$B_{kf}=D_{fk}$.在入射光偏振混乱的条件下，由\eqref{eq93.12}式可知
+\begin{empheq}{equation}\label{eq93.15}
+	B_{kf}=B_{fk}=\frac{4\pi^{2}}{3\hbar^{2}}e^{2}|\boldsymbol{r}_{fk}|^{2}
+\end{empheq}
+注意，$B$系数完全由原子初、终态的性质决定，和入射光强度无关.
+
+{\heiti 2. 选择定则}
+
+原子在光波照射下发生受激跃迁，必须矩阵元\eqref{eq93.10}式不等于零才行.与此相应，初、终态量子数及宇称性的变化将受到某些限制，称为选择定则.
+
+根据球谐函数$Y_{lm}$的递推公式［附录\ref{A04}\eqref{eqA4.45}、\eqref{eqA4.46}式］及正交性，易得下列选择定则：
+\eqlong
+\begin{empheq}{align}\label{eq93.16}
+	&z_{n^{\prime}l^{\prime}m^{\prime},nlm}\neq0,\longrightarrow l^{\prime}=l\pm1,m^{\prime}=m	\nonumber\\
+	&(x+iy)_{n^{\prime}l^{\prime}m^{\prime},nlm}\neq0,\longrightarrow l^{\prime}=l\pm1,m^{\prime}=m+1	\nonumber\\
+	&(x-iy)_{n^{\prime}l^{\prime}m^{\prime},nlm}\neq0,\longrightarrow l^{\prime}=l\pm1,m^{\prime}=m-1	\\
+	&\begin{rcases}
+		x_{n^{\prime}l^{\prime}m^{\prime},nlm}\neq0 \nonumber\\
+		y_{n^{\prime}l^{\prime}m^{\prime},nlm}\neq0	\nonumber
+	\end{rcases}\longrightarrow l^{\prime}=l\pm1,m^{\prime}=m\pm1	\nonumber
+\end{empheq}\eqnormal
+$\varPsi_{nlm}$的宇称为$(-1)^{l}$，$\varPsi_{n^{\prime}l^{\prime}m^{\prime}}$的宇称为$(-1)^{l^{\prime}}$，$\boldsymbol{r}$的宇称为负，所以电偶极跃迁的宇称选择定则为$(l^{\prime}-l)=\pm1$，即初、终态宇称相反.
+
+入射光偏振混乱时，为了跃迁$\varPsi_{nlm}\rightarrow\varPsi_{n^{\prime}l^{\prime}m^{\prime}}$成为可能，只需$\boldsymbol{r}$的任何一个分量$(x,y,z)$的矩阵元不为0，所以选择定则是
+\eqlong
+\begin{empheq}{equation}\label{eq93.17}
+	\Delta l=l^{\prime}-l=\pm1,\quad \Delta m=m^{\prime}-m=0,\pm1
+\end{empheq}
+如入射光有特殊偏振性质，选择定则应根据作用势$H^{\prime}$的具体结构来确定.
+
+如考虑电子的自旋自由度，计及自旋-轨道耦合能，价电子状态由量子数$nljm_{j}$表示（见$\S$\ref{sec:07.03}）.但对于受激电偶极跃迁，光波对价电子的作用势仍由\eqref{eq93.5}式表示，所以跃迁速率公式只需将\eqref{eq93.9}或\eqref{eq93.12}式中量子数作相应替换（$nlm\rightarrow nljm_{j}$，等等）就行.可以证明\footnote{参阅：钱伯初，曾谨言$\cdot$量子力学习题精选与剖析$\cdot$上册第2版$\cdot$北京：科学出版社，1999.10.7题}$\boldsymbol{r}_{n^{\prime\cdots,n\cdots}}$的选择定则（即电偶极跃迁选择定则）是
+\begin{empheq}{equation}\label{eq93.18}
+	j^{\prime}-j=0,\pm1,\quad l^{\prime}-l=\pm1,\quad m_{j}^{\prime}-m_{j}=0,\pm1
+\end{empheq}\eqnormal
+径向量子数$(n,n^{\prime})$的变化不受限制，没有选择定则.
+
+\pskip
+\example 用沿正$z$轴方向传播的右旋圆偏振光（频率$\omega$）照射单价原子，造成价电子的受激跃迁，设价电子原来处于$\varPsi_{nlm}$态，求跃迁选择定则.
+
+\solution 右旋偏振光波电场$\mathscr{E}$的旋转方向符合右手螺旋法则，如在原子范围内略去电场的空间变化，$\mathscr{E}(t)$可以表示成
+\begin{empheq}{equation}\label{eq93.19}
+	\mathscr{E}_{x}=\mathscr{E}_{0}\cos\omega t,\quad \mathscr{E}_{y}=\mathscr{E}_{0}\sin\omega t,\quad \mathscr{E}_{z}=0
+\end{empheq}
+光波对价电子的作用势（电偶极近似）为
+\begin{empheq}{align}\label{eq93.20}
+	H^{\prime}&=e\mathscr{E}\cdot\boldsymbol{r}=e\mathscr{E}_{0}(x\cos\omega t+y\sin\omega t)	\nonumber\\
+	&=(x-iy)e\mathscr{E}_{0}e^{i\omega t}+(x+iy)e\mathscr{E}_{0}e^{i\omega t}
+\end{empheq}
+设价电子的能态跃迁为$\varPsi_{nlm}\rightarrow\varPsi_{n^{\prime}l^{\prime}m^{\prime}}$，分两种情形讨论：
+\begin{subequations}
+	(a) $E_{nl}<E_{n^{\prime}l^{\prime}}$，电子跃迁时吸收光子.\eqref{eq93.20}式中$e^{i\omega t}$项对跃迁造成贡献（当$E_{n^{\prime}l^{\prime}}-E_{nl}\approx\hbar\omega$），跃迁矩阵元为$(x+iy)_{n^{\prime}l^{\prime}m^{\prime},nlm}$，由\eqref{eq93.16}式可知选择定则为
+	\begin{empheq}{equation}\label{eq93.21a}
+		l^{\prime}-l=\pm1,\quad m^{\prime}-m=1
+	\end{empheq}
+	
+	(b) $E_{nl}>E_{n^{\prime}l^{\prime}}$，电子跃迁时放射光子.\eqref{eq93.20}式中$e^{i\omega t}$项对跃迁产生贡献，跃迁矩阵元为$(x-iy)_{n^{\prime}l^{\prime}m^{\prime},nlm}$，选择定则为
+	\begin{empheq}{equation}\label{eq93.21b}
+		l^{\prime}-l=\pm1,\quad m^{\prime}-m=-1
+	\end{empheq}
+\end{subequations}
+以上结果可以用角动量守恒定律解释如下.光子自旋为$\hbar$，其$z$分量为$\hbar,0,-\hbar$.本题涉及的右旋偏振光，$S_{z}=\hbar$.如电子吸收一个光子，电子角动量的$z$分量$(L_{z})$将增加$\hbar$，所以$m^{\prime}-m=1$；如电子放射一个光子，$L_{z}$将减少$\hbar$，所以$m^{\prime}-m=-1$.量子数$l$的选择定则$\Delta l=\pm1$也可以用电子-光子角动量耦合的三角形法则结合宇称法则（电偶极矩是奇宇称，所以初、终态宇称要变）而得到解释.
+
+

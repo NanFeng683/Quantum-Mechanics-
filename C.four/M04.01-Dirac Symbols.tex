@@ -1,0 +1,243 @@
+\section[狄拉克符号]{狄拉克符号} \label{sec:04.01} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+量子力学创始人之一狄拉克(P.A.M.Dirac)全面思考了量子力学的理论框架，综合考虑了复数、矢量代数、矩阵等数学领域的运算规则，创造性地发展了关于量子力学基本理论的整套概念与逻辑推理体系，制定了相应的数学符号与运算规则.狄拉克符号概念深刻，简洁方便，被国际物理学界广泛使用．
+
+{\heiti 1.态矢空间}
+
+按照狄拉克的观点，物理体系的每一个微观状态可以用一种抽象的多维矢量空间(Hilbert space)中的矢量来描述，这种矢量称为态矢，全体态矢构成态矢空间.提出这种观点的主要依据之一就是态叠加原理，其表述方式
+\begin{empheq}{equation}\label{eq41.1}
+	\varPsi=C_{1}\varPsi_{1}+C_{2}\varPsi_{2}+\cdots
+\end{empheq}
+与矢量间的线性叠加关系极其相似.
+
+态矢空间包括右矢空间与共轭的左矢空间.右矢(ket)符号为$|\rangle$，左矢(bra)符号为$\langle|$.与$\varPsi$态对应的右矢记成$|\varPsi \rangle$，左矢记成$\langle \varPsi|$.共轭运算用符号$^{*}$表示.规定
+\begin{empheq}{equation}\label{eq41.2}
+	|\varPsi \rangle^{+}=\langle \varPsi|,\quad \varPsi\langle^{+} |=|\varPsi \rangle
+\end{empheq}
+数（实数或复数）$C$可以与右矢或左矢相乘，仍为右矢或左矢.规定这种乘法与次序无关，即规定
+\begin{empheq}{equation}\label{eq41.3}
+	C|\varPsi \rangle=\langle \varPsi|C,\quad C\langle \varPsi|=\langle \varPsi|C
+\end{empheq}
+数$C$的共轭规定成就是复共轭（符号$^{*}$），即
+\begin{empheq}{equation}\label{eq41.4}
+	C=\alpha+i\beta,\quad C^{+}=C^{*}=\alpha-i\beta
+\end{empheq}
+\eqindent{4}
+\begin{empheq}{equation}\label{eq41.5}
+	(C| \varPsi\rangle)^{*}=C^{*}\langle \varPsi|=\langle \varPsi|C^{*},\quad (C\langle \varPsi|)^{*}=C^{*}|\varPsi \rangle=|\varPsi \rangle C^{*}
+\end{empheq}\eqnormal
+这样，与态叠加原理\eqref{eq41.1}式对应的态右矢关系规定成
+\begin{empheq}{equation}\label{eq41.6}
+	|\varPsi \rangle =C_{1}|\varPsi_{1} \rangle +C_{2}|\varPsi_{2} \rangle +\cdots=\sum_{n}C_{n}|\varPsi_{n} \rangle 
+\end{empheq}
+对应的左矢关系则是
+\begin{empheq}{equation*}\label{eq41.6'}
+	\langle \varPsi|=C_{1}^{*}\langle \varPsi_{1}|+C_{2}^{*}\langle \varPsi_{2}|+\cdots=\sum_{n}\langle \varPsi_{n}|C_{n}^{*}	\tag{$4.1.6^{\prime}$}
+\end{empheq}
+左矢与右矢可以按“左矢在左、右矢在右”：即$\langle | | \rangle $的方式相乘，规定其性质是数，称为二态矢的“内积”.共轭运算规则为
+\begin{empheq}{equation}\label{eq41.7}
+	(\langle \varPsi|\phi \rangle )^{+}=\langle \phi|\varPsi \rangle =(\langle \varPsi|\phi \rangle )^{*}
+\end{empheq}
+其中$\langle \varPsi|\phi \rangle $是$\langle \varPsi||\phi \rangle $的简化写法.
+
+如内积$\langle \varPsi|\phi \rangle=0$，称态矢$|\varPsi \rangle $，$|\phi \rangle $相互“正交”.任意态矢$|\varPsi \rangle $与自身的内积$\langle \varPsi|\varPsi \rangle $必为实数，规定其为正数，称为$|\varPsi \rangle $的“模方”，有时也记为$||\varPsi \rangle |^{2}$.注意
+\begin{empheq}{equation}\label{eq41.8}
+	|C|\varPsi \rangle |^{2}=\langle \varPsi|C^{*}C|\varPsi \rangle =C^{*}C\langle \varPsi|\varPsi \rangle 
+\end{empheq}
+如模方$\langle \varPsi|\varPsi \rangle$，称$|\varPsi \rangle $是归一化的.如$|\varPsi \rangle $并未归一化，只要$\langle \varPsi|\varPsi \rangle $有限，容易找到适当系数$C$，使$C|\varPsi \rangle $是归一化的.注意$C|\varPsi \rangle $与$|\varPsi \rangle $描述的是同一种状态.
+
+态矢空间是希尔伯特(Hilbert)空间，原则上存在满足正交归一条件
+\begin{empheq}{equation}\label{eq41.9}
+	\langle \varPsi_{n}|\varPsi_{k} \rangle =\delta_{nk}
+\end{empheq}
+的基矢组$\{|\varPsi_{n} \rangle,n=1,2,\cdots \}$，基矢组具有完备性，任意态矢$|\varPsi \rangle $均可表示成基矢的线性叠加：
+\begin{empheq}{equation*}
+	|\varPsi \rangle =\sum_{n}C_{n}|\varPsi_{n} \rangle 
+\end{empheq}
+为了简化符号，基矢$|\varPsi_{n} \rangle $记成$|n \rangle $，上式写成
+\begin{empheq}{equation}\label{eq41.10}
+	|\varPsi \rangle =\sum_{n}C_{n}|n \rangle
+\end{empheq}
+基矢的正交归一条件\eqref{eq41.9}式即
+\eqindent{12}
+\begin{empheq}{equation*}\label{eq41.9'}
+	\langle n|k \rangle =\delta_{nk}	\tag{$4.1.9^{\prime}$}
+\end{empheq}\eqnormal
+利用\eqref{eq41.9'}式，容易求出\eqref{eq41.10}式中各$C_{n}$为
+\begin{empheq}{equation}\label{eq41.11}
+	C_{n}=\langle n|\varPsi \rangle,\quad C_{n}^{+}=\langle \varPsi|n \rangle 
+\end{empheq}
+$|\varPsi \rangle $的模方为
+\begin{empheq}{equation}\label{eq41.12}
+	\langle \varPsi|\varPsi \rangle =\sum_{n}C_{n}^{*}C_{n}>0
+\end{empheq}
+考虑另一个态矢
+\begin{empheq}{equation}\label{eq41.13}
+	|\phi \rangle =\sum_{n}b_{n}|n \rangle ,\quad b_{n}=\langle n|\phi \rangle 
+\end{empheq}
+则$|\varPsi \rangle $，$|\phi \rangle $的内积为
+\eqindent{6}
+\begin{empheq}{equation*}
+	\langle \varPsi|\phi \rangle =\sum_{n}C_{n}^{*}b_{n},\quad \langle \phi|\varPsi \rangle =\sum_{n}b_{n}^{*}C_{n}=(\langle \varPsi|\phi \rangle )^{*}
+\end{empheq}\eqnormal
+
+{\heiti 2.线性算符}
+
+以$\hat{A},\hat{B},\hat{F},\hat{G}$等表示线性算符，规定它们可以作用于右矢及左矢，结果仍为右矢及左矢.允许的作用方式为
+\eqindent{12}
+\begin{empheq}{equation*}
+	\hat{A}| \rangle \rightarrow | \rangle ,\quad \langle |\hat{B}\rightarrow \langle |
+\end{empheq}\eqnormal
+诸如$\hat{A}\langle |$，$| \rangle \hat{A}$等方式则是不允许的，没有意义.当态矢由\eqref{eq41.6}、\eqref{eq41.6'}表示时，线性算符$\hat{A}$的作用规则是
+\begin{empheq}{equation}\label{eq41.14}
+	\hat{A}\bigg(\sum_{n}C_{n}|\varPsi_{n} \rangle \bigg)=\sum_{n}C_{n}\hat{A}|\varPsi_{n} \rangle 
+\end{empheq}
+\begin{empheq}{equation*}\label{eq41.14'}
+	\bigg(\sum_{n}\langle \varPsi_{n}|C_{n}^{*} \bigg)\hat{A}=\sum_{n}C_{n}\langle \varPsi_{n}|\hat{A}	\tag{$4.1.14^{\prime}$}
+\end{empheq}
+原则上，定义一个线性算符$\hat{A}$，需要规定$\hat{A}$对全部基矢的作用结果，即规定$\hat{A}|n \rangle $，$\langle n|\hat{A}$，$n=1,2,\cdots$.等价地，相当于规定全部$\langle k|\hat{A}|n \rangle $.习惯上常用符号
+\eqindent{12}
+\begin{empheq}{equation}\label{eq41.15}
+	\langle k|\hat{A}|n \rangle\equiv A_{kn}
+\end{empheq}\eqnormal
+注意其性质是“数”.上式常称为算符$\hat{A}$的“矩阵元”，这名称的来由参看\eqref{eq41.17}式以下的说明以及$\S$\ref{sec:04.02}.
+
+算符$\hat{A}$的共轭算符记为$\hat{A}^{*}$，按下式定义：
+\eqindent{7}
+\begin{empheq}{equation}\label{eq41.16}
+	(\hat{A}|\varPsi \rangle )^{*}=\langle \varPsi|\hat{A}^{+},\quad (\langle \varPsi|\hat{A})^{+}=\hat{A}^{+}|\varPsi \rangle 
+\end{empheq}
+$|\varPsi \rangle $为任意态矢.将上式用于基矢，就有
+\begin{empheq}{equation}\label{eq41.17}
+	(A_{kn})^{*}=(\langle k|\hat{A}|n \rangle )^{+}=\langle n|\hat{A}^{+}|k \rangle =A_{nk}^{+}
+\end{empheq}\eqnormal
+也可以将\eqref{eq41.17}式作为$\hat{A}^{+}$的定义.如将各$\hat{A}_{kn}$按行列次序排成矩阵（$k$代表行，$n$代表列），各$\hat{A}_{nk}^{+}$也排成矩阵，二者刚好互为共轭矩阵.
+
+如果对于各基矢$|n \rangle $，$|k \rangle $，均有$A_{kn}^{*}$，则必有$\hat{A}=\hat{A}^{+}$.反之亦然.具有这种性质的算符，称为厄密(Hermite) 算符.
+
+如态矢$|\varPsi \rangle $与线性算符$\hat{F}$满足关系（本征方程）
+\begin{empheq}{equation}\label{eq41.18}
+	\hat{F}|\varPsi \rangle =\lambda|\varPsi \rangle ,\quad \lambda\text{为数}
+\end{empheq}
+则称$|\varPsi \rangle $为$\hat{F}$的本征矢，$\lambda$为$\hat{F}$的本征值.上式的共轭方程是
+\begin{empheq}{equation*}\label{eq41.18'}
+	\langle \varPsi|\hat{F}^{+}=\lambda^{*}\langle \varPsi|
+\end{empheq}
+如果$\hat{F}\neq\hat{F}^{+}$，本征值一般为复数.可以证明，如$\hat{F}$是厄密算符$(\hat{F}=\hat{F}^{+})$，则本征值必为实数.以定理的形式证明如下.
+
+\theo 厄密算符的本征值必为实数．
+
+\prove 设$\hat{F}\neq\hat{F}^{+}$，以$\langle \varPsi|$乘本征方程\eqref{eq41.18}，就有
+\begin{empheq}{equation*}
+	\langle \varPsi|\hat{F}|\varPsi \rangle =\lambda\langle \varPsi|\varPsi \rangle 
+\end{empheq}
+上式两端均取共轭，由于$\hat{F}\neq\hat{F}^{+}$，就有
+\begin{empheq}{equation*}
+	(\langle \varPsi|\hat{F}|\varPsi \rangle )^{+}=\langle \varPsi|\hat{F}|\varPsi \rangle =\lambda^{*}\langle \varPsi|\varPsi \rangle 
+\end{empheq}
+二式左端相同，右端由于$\langle \varPsi|\varPsi \rangle\neq 0$，故有$\lambda=\lambda^{*}$，$\lambda$为实数.
+
+关于厄密算符，还有本征矢的正交定理，如下.
+
+\theo 如$|\varPsi_{1} \rangle$，$|\varPsi_{2} \rangle$是厄密算符$\hat{F}$的两个本征矢，相应于不同的本征值，则$|\varPsi_{1} \rangle$，$|\varPsi_{2} \rangle$正交.
+
+\prove $|\varPsi_{1} \rangle$，$|\varPsi_{2} \rangle$分别满足本征方程
+\begin{empheq}{equation}\label{eq41.19}
+	\hat{F}|\varPsi_{1} \rangle =\lambda_{1}|\varPsi_{1} \rangle ,\quad \hat{F}|\varPsi_{2} \rangle =\lambda_{2}|\varPsi_{2} \rangle 
+\end{empheq}
+它们的共轭方程是（注意$\hat{F}=\hat{F}^{+}$，$\lambda_{1},\lambda_{2}$是实数）
+\begin{empheq}{equation*}\label{eq41.19'}
+	\langle \varPsi_{1}|\hat{F}=\lambda_{1}\langle \varPsi_{1}|,\quad \langle \varPsi_{2}|\hat{F}=\lambda_{2}\langle \varPsi_{2}|	\tag{$4.1.19^{\prime}$}
+\end{empheq}
+以$\langle \varPsi_{2}|$乘\eqref{eq41.19}第一式，得到
+\eqindent{12}
+\begin{empheq}{equation*}
+	\langle \varPsi_{2}|\hat{F}|\varPsi_{1} \rangle =\lambda_{1}\langle \varPsi_{2}|\varPsi_{1} \rangle 
+\end{empheq}
+\eqref{eq41.19'}式乘$|\varPsi_{1} \rangle $，则得
+\begin{empheq}{equation*}
+	\langle \varPsi_{2}|\hat{F}|\varPsi_{1} \rangle =\lambda_{2}\langle \varPsi_{2}|\varPsi_{1} \rangle 
+\end{empheq}\eqnormal
+二式左端相同，右端由于$\lambda_{1}\neq\lambda_{2}$，必然有$\langle \varPsi_{2}|\varPsi_{1} \rangle=0$.
+
+两个线性算符$\hat{A},\hat{B}$之和记为$(\hat{A}+\hat{B})$，对态矢的作用规则为
+\begin{empheq}{equation}\label{eq41.20}
+	(\hat{A}+\hat{B})|\varPsi \rangle = \hat{A}|\varPsi \rangle +\hat{B}|\varPsi \rangle 
+\end{empheq}
+显然$(\hat{A}+\hat{B})=(\hat{B}+\hat{A})$.$\hat{A},\hat{B}$之积记为$(\hat{A}\hat{B})$或$\hat{B}\hat{A}$，对态矢的作用规则为
+\eqindent{6}
+\begin{empheq}{equation}\label{eq41.21}
+	(\hat{A}\hat{B})|\varPsi \rangle =\hat{A}(\hat{B}|\varPsi \rangle ),\quad \langle \varPsi|(\hat{A}\hat{B})=(\langle \varPsi|\hat{A}) \hat{B}
+\end{empheq}
+一般说，$\hat{A}\hat{B}\neq\hat{B}\hat{A}$.如果$\hat{A}\hat{B}=\hat{B}\hat{A}$，称$\hat{A},\hat{B}$对易.由\eqref{eq41.20}、\eqref{eq41.21}式，再利用\eqref{eq41.16}式，容易证明
+\begin{empheq}{equation}\label{eq41.22}
+	(\hat{A}+\hat{B})^{+}=\hat{A}^{+}+\hat{B}^{+},\quad (\hat{A}\hat{B})^{+}=\hat{B}^{+}\hat{A}^{+}
+\end{empheq}\eqnormal
+这样，如$\hat{A},\hat{B}$均为厄密算符，则$(\hat{A}+\hat{B})$也是厄密算符.如$\hat{A},\hat{B}$为互相对易的厄密算符，则$(\hat{A}\hat{B})$也是厄密算符.
+
+前面讲过，构造式$\langle | \rangle $即$\langle || \rangle $的性质是“数”.那么构造$|\rangle \langle| $式的性质又是什么？易见任何左矢$\langle \varPsi|$从左与它相乘，结果仍为左矢；它与右矢$|\varPsi \rangle $相乘（$|\varPsi \rangle $在右），结果仍为右矢.所以$|\rangle \langle|$的性质是线性算符.例如，将\eqref{eq41.11}式代入\eqref{eq41.10}式，可得
+\begin{empheq}{equation*}
+	|\varPsi \rangle =\sum_{n}|n \rangle C_{n}=\sum_{n}|n \rangle\langle n|\varPsi \rangle  
+\end{empheq}
+因为$|\varPsi \rangle $可以是任何态矢，故知
+\eqindent{12}
+\begin{empheq}{equation}\label{eq41.23}
+	\boxed{\sum_{n}|n \rangle\langle n|=1}
+\end{empheq}\eqnormal
+称为恒等变换算符.在涉及表象变换的计算中，\eqref{eq41.23}式极其有用.读者应该熟记此式，在需要用它的场合能及时想到.
+
+\example 给定一个归一化的态矢$|\phi \rangle$，并定义“投影算符”
+\begin{empheq}{equation}\label{eq41.24}
+	\hat{P}_{\phi}=|\phi \rangle\langle \phi|
+\end{empheq}
+求$\hat{P}_{\phi}$的本征值、本征矢.研究$\hat{P}_{\phi}$作用于任意态矢$|\varPsi \rangle $将得到什么结果.
+
+\solution 显然$\hat{P}_{\phi}$是厄密算符，其本征值应该是实数.另外，
+\begin{empheq}{equation*}
+	\hat{P}_{\phi}^{2}=|\phi \rangle\langle \phi||\phi \rangle\langle \phi|=|\phi \rangle\langle \phi|=\hat{P}_{\phi}
+\end{empheq}
+即
+\begin{empheq}{equation}\label{eq41.25}
+	\hat{P}_{\phi}^{2}-\hat{P}_{\phi}=\hat{P}_{\phi}(\hat{P}_{\phi}-1)=0
+\end{empheq}
+设$\hat{P}_{\phi}$的本征值为$\lambda$，本征矢为$|\varPsi_{\lambda} \rangle $，满足本征方程
+\begin{empheq}{equation}\label{eq41.26}
+	\hat{P}_{\phi}|\varPsi_{\lambda} \rangle =\lambda|\varPsi_{\lambda} \rangle 
+\end{empheq}
+将\eqref{eq41.25}式作用于$|\varPsi_{\lambda} \rangle $，得到
+\begin{empheq}{equation}\label{eq41.27}
+	\lambda(\lambda-1)=0,\quad \lambda=1,0
+\end{empheq}
+将$\lambda=1$代入\eqref{eq41.26}式，得到
+\begin{empheq}{equation*}
+	\hat{P}_{\phi}|\varPsi_{1} \rangle=|\phi \rangle\langle \phi|\varPsi_{1} \rangle=|\varPsi \rangle 
+\end{empheq}
+可见$|\varPsi_{1} \rangle=C|\phi \rangle $，系数$C$并无实质性意义，可取为1，亦即相应于本征值$\lambda=1$的$\hat{P}_{\phi}$本征矢就是$|\phi \rangle $.
+
+将$\lambda=0$代入\eqref{eq41.26}式，得到
+\begin{empheq}{equation*}
+	\hat{P}_{\phi}|\varPsi_{0} \rangle=|\phi \rangle\langle \phi|\varPsi_{0} \rangle=0,\quad \langle \phi|\varPsi_{0} \rangle=0
+\end{empheq}
+可知一切与$|\phi \rangle $正交的态矢$|\varPsi_{0} \rangle $都是$\hat{P}_{\phi}$的本征矢，相应本征值$\lambda=0$.
+
+$\hat{P}_{\phi}$作用于任意态矢$|\varPsi \rangle $，结果为
+\eqindent{6}
+\begin{empheq}{equation}\label{eq41.28}
+	\hat{P}_{\phi}|\varPsi \rangle=|\phi \rangle\langle \phi|\varPsi \rangle=C_{\phi}|\phi \rangle,\quad C_{\phi}=\langle \phi|\varPsi \rangle 
+\end{empheq}\eqnormal
+可见，$\hat{P}_{\phi}$的作用是将$|\varPsi \rangle $转变成$C_{\phi}|\phi \rangle $，换言之，将态矢$|\varPsi \rangle $向$|\phi \rangle $“方向”投影.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

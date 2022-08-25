@@ -1,0 +1,262 @@
+\section[状态和力学量随时间的变化]{状态和力学量随时间的变化} \label{sec:03.09} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+{\heiti 1. 波函数随时间的变化}
+
+波函数$\varPsi$随时间的变化取决于薛定谔方程
+\begin{empheq}{equation}\label{eq39.1}
+	i\hbar\frac{\partial}{\partial t}\varPsi(\boldsymbol{r},t)=\hat{H}\varPsi(\boldsymbol{r},t)
+\end{empheq}
+$\hat{H}$为哈密顿算符.如$\hat{H}$与时间$t$无关，$\hat{H}$就是总能量算符.在以下的讨论中，均设$\hat{H}$与$t$无关.设$\hat{H}$的本征函数，本征值为$|\varPsi_{n}(\boldsymbol{r},E_{n})|$，满足本征方程
+\begin{empheq}{equation}\label{eq39.2}
+	\hat{H}\varPsi_{n}=E_{n}\varPsi_{n},\quad n=1,2,\cdots
+\end{empheq}
+\eqref{eq39.1}式是时间$t$的一阶微分方程，只需给定初始时刻$(t_{0}=0)$的波函数$\varPsi(\boldsymbol{r},0)$，就可以解出所有时刻的波函数$\varPsi(\boldsymbol{r},t)$.具体说来，先将$\varPsi(\boldsymbol{r},0)$表示成各$\varPsi_{n}(\boldsymbol{r})$的线性叠加，
+\begin{empheq}{equation}\label{eq39.3}
+	\varPsi(\boldsymbol{r},0)=\sum_{n}C_{n}\varPsi_{n}(\boldsymbol{r})
+\end{empheq}
+其中
+\begin{empheq}{equation}\label{eq39.4}
+	C_{n}=\int\varPsi_{n}^{*}(\boldsymbol{r})\varPsi(\boldsymbol{r},0)d\tau
+\end{empheq}
+以\eqref{eq39.3}式作为初始条件，容易求出\eqref{eq39.1}式的解为[参看\eqref{eq21.21}式]
+\begin{empheq}{equation}\label{eq39.5}
+	\varPsi(\boldsymbol{r},0)=\sum_{n}C_{n}e^{E_{n}t/(i\hbar)}\varPsi_{n}(\boldsymbol{r})
+\end{empheq}
+利用本征方程\eqref{eq39.2}以及\eqref{eq39.3}式，可将\eqref{eq39.5}式化成
+\begin{empheq}{align}\label{eq39.6}
+	\varPsi(\boldsymbol{r},t) &=\sum_{n}C_{n}e^{\hat{H}t/(i\hbar)}\varPsi_{n}(\boldsymbol{r})	\nonumber\\
+	&=e^{\hat{H}t/(i\hbar)}\varPsi(\boldsymbol{r},0)=\hat{U}(t)\varPsi(\boldsymbol{r},0)
+\end{empheq}
+其中
+\begin{empheq}{equation}\label{eq39.7}
+	\hat{U}(t)=e^{\hat{H}t/(i\hbar)}\equiv\sum_{\nu=0}^{\infty}\frac{1}{\nu!}\bigg(\frac{\hat{H}t}{i\hbar}\bigg)^{\nu}
+\end{empheq}
+称为演化算符.\eqref{eq39.6}式表明，演化算符$\hat{U}(t)$作用于初始时刻的波函数，就得到$t$时刻的波函数.注意$\hat{U}(0)=1$.$\hat{U}(t)$不是厄密算符，其共轭为
+\begin{empheq}{equation}\label{eq39.8}
+	\hat{U}^{*}(t)=e^{-\hat{H}t/(i\hbar)}
+\end{empheq}
+因此
+\begin{empheq}{equation}\label{eq39.9}
+	\hat{U}^{*}(t)\hat{U}(t)=\hat{U}(t)\hat{U}^{*}(t)=1
+\end{empheq}
+亦即$\hat{U}(t)$是一种么正变换.注意$\hat{U}(t)$和$\hat{U}^{*}(t)$均与$\hat{H}$对易，其变化率为
+\begin{empheq}{equation}\label{eq39.10}
+	\begin{aligned}
+		\frac{\partial\hat{U}(t)}{\partial t}=\frac{1}{i\hbar}\hat{H}\hat{U}(t)=\frac{1}{i\hbar}\hat{U}(t)\hat{H}	\\
+		\frac{\partial^{*}\hat{U}(t)}{\partial t}=\frac{1}{i\hbar}\hat{H}\hat{U}^{*}(t)=\frac{1}{i\hbar}\hat{U}^{*}(t)\hat{H}
+	\end{aligned}
+\end{empheq}
+
+{\heiti 2. 力学量平均值随时间的变化}
+
+量子力学中力学量的变化率不能仿照经典力学的方式来定义，在经典力学中，处于某种运动状态的质点，任何力学量$F(t)$在任何时刻$t$均有明确的数值，而且随$t$作连续变化，所以可以定义$F$的时间变化率为
+\begin{empheq}{equation*}
+	\frac{dF(t)}{dt}=\lim_{\Delta\rightarrow 0}\frac{F(t+\Delta t)-F(t)}{\Delta t}
+\end{empheq}
+量子力学则不同.我们来讨论在任意运动态$\varPsi(\boldsymbol{r},t)$下某个力学量$A(\boldsymbol{r,p})$的取值问题.首先，一般来说，在任意时刻$t$，力学量$A$的取值不是唯一的，可以取多种本征值（各有某种几率）.其次，即使在某个特定时刻$t_{0}$，$\varPsi(\boldsymbol{r},t_{0})$刚好是$\hat{A}$的本征态，因而这时$A$取单一的本征值，但在随后的时刻，由于波函数按照薛定谔方程随时间变化，$\varPsi(\boldsymbol{r},t_{0}+\Delta t)$一般就不再是$\hat{A}$的本征态，因此在时刻$t_{0}+\Delta t$，$A$将取多种本征值这样，当然就谈不上力学量$A$的取值随时间作连续变化.所以经典力学量的变化率定义在量子力学中完全不适用.
+
+在量子力学中，力学量$A(\boldsymbol{r,p})$在运动态$\varPsi(\boldsymbol{r},t)$下的平均值为
+\begin{empheq}{equation}\label{eq39.11}
+	\bar{A}(t)=\int\varPsi^{*}(\boldsymbol{r},t)\hat{A}\varPsi(\boldsymbol{r},t)d\tau
+\end{empheq}
+由于$\varPsi$随$t$作连续变化，所以$\bar{A}$亦随$t$作连续变化.力学量$A$的变化率算符$\frac{d\hat{A}}{dt}$按照下述方式定义：$\frac{d\hat{A}}{dt}$在运动态$\varPsi(\boldsymbol{r},t)$下的平均值等于$\\bar{A}(t)$的变化率，亦即
+\eqindent{1}
+\begin{empheq}{equation}\label{eq39.12}
+	\frac{\overline{dA}}{dt}\equiv\int\varPsi^{*}(\boldsymbol{r},t)\frac{d\hat{A}}{dt}\varPsi(\boldsymbol{r},t)d\tau=\frac{d}{dt}\int\varPsi^{*}(\boldsymbol{r},t)\hat{A}\varPsi(\boldsymbol{r},t)d\tau=\frac{d}{dt}\overline{A}(t)
+\end{empheq}\eqnormal
+利用演化算符$\hat{U}(t)$，\eqref{eq39.11}式可以化成
+\eqindent{6}
+\begin{empheq}{align}\label{eq39.13}
+	\overline{A}(t) &=\int\{\hat{U}(t)\varPsi(\boldsymbol{r},0)\}^{*}\hat{A}\hat{U}(t)\varPsi(\boldsymbol{r},0)d\tau\nonumber	\\
+	&=\int\varPsi^{*}(\boldsymbol{r},0)\hat{U}^{+}(t)\hat{A}\hat{U}(t)\varPsi(\boldsymbol{r},0)d\tau
+\end{empheq}\eqnormal
+利用\eqref{eq39.10}式，不难求出
+\eqindent{4}
+\begin{empheq}{align}\label{eq39.14}
+	\frac{d\overline{A}(t)}{dt}
+	&=\int\varPsi^{*}(\boldsymbol{r},0)
+	\biggl\{\frac{\partial}{\partial t}\hat{U}^{*}(t)\hat{A}\hat{U}(t)\biggr\}
+	\varPsi(\boldsymbol{r},0)d\tau	\nonumber\\
+	&=\frac{1}{i\hbar}\int\varPsi^{*}(\boldsymbol{r},0)\hat{U}^{+}(t)(\hat{A}\hat{H}-\hat{H}\hat{A})\hat{U}(t)\varPsi(\boldsymbol{r},0)d\tau	\nonumber\\
+	&=\frac{1}{i\hbar}\int\{\hat{U}(t)\varPsi(\boldsymbol{r},0)\}^{*}(\hat{A}\hat{H}-\hat{H}\hat{A})\hat{U}(t)\varPsi(\boldsymbol{r},0)d\tau	\nonumber\\
+	&=\frac{1}{i\hbar}\int\varPsi^{*}(\boldsymbol{r},t)(\hat{A}\hat{H}-\hat{H}\hat{A})\hat{U}(t)\varPsi(\boldsymbol{r},t)d\tau	\nonumber\\
+	&=\frac{1}{i\hbar}\overline{(AH-HA)}=\frac{1}{i\hbar}\overline{[\hat{A},\hat{H}]}
+\end{empheq}\eqnormal
+亦即
+\begin{empheq}{equation}\label{eq39.15}
+	\boxed{\frac{d\hat{A}}{dt}=\frac{1}{i\hbar}[\hat{A},\hat{H}]}
+\end{empheq}
+在\eqref{eq39.14}式的推导过程中，并没有用到$\hat{A}$是厄密算符$(\hat{A}^{*}=\hat{A})$这个条件.所以，对于非厄密算符$(\hat{A}^{*}\neq\hat{A})$，仍可将\eqref{eq39.11}式作为其平均值的定义，\eqref{eq39.12}式作为其变化率算符的定义，结果仍得到\eqref{eq39.14}、\eqref{eq39.15}式.
+
+如果$\hat{A},\hat{H}$对易，即$[\hat{A},\hat{H}]$，则$\frac{d\hat{A}}{dt}=0,\frac{d\bar{A}}{dt}=0$，力学量$A$称为守恒量.当$\hat{H}$不显含$t$时，$H$就是守恒量，即能量守恒.
+
+\eqref{eq39.15}式也称力学量算符的运动方程.下面就
+\begin{empheq}{equation}\label{eq39.16}
+	\hat{H}=\frac{\hat{\boldsymbol{p}}^{2}}{2m}+V(\boldsymbol{r})
+\end{empheq}
+的情形，具体求出基本力学量算符的运动方程.先求位置$r$的运动方程，
+\begin{empheq}{equation}\label{eq39.17}
+	\frac{d\hat{x}}{dt}=\frac{1}{i\hbar}[\hat{x},\hat{H}]=\frac{1}{i\hbar 2m}[\hat{x},\hat{\boldsymbol{p}^{2}}]=\frac{\hat{p_{x}}}{m}
+\end{empheq}
+类似地，求得
+\begin{empheq}{equation*}\label{eq39.17'}
+	\frac{d\hat{y}}{dt}=\frac{\hat{p_{y}}}{m},\quad\frac{d\hat{z}}{dt}=\frac{\hat{p_{z}}}{m}	\tag{$3.9.17^{\prime}$}
+\end{empheq}
+写成矢量形式，就是
+\begin{empheq}{equation*}\label{eq39.17''}
+	\frac{d\hat{\boldsymbol{r}}}{dt}=\frac{\hat{\boldsymbol{r}}}{m}	\tag{$3.9.17^{\prime\prime}$}
+\end{empheq}
+这公式相当于经典力学中速度的定义，再看动量，
+\begin{empheq}{equation}\label{eq39.18}
+	\frac{d\hat{p_{x}}}{dt}=\frac{1}{i\hbar}[\hat{p_{x}},\hat{H}]=\frac{1}{i\hbar}[\hat{p_{x}},V]=-\frac{\partial V}{\partial x}
+\end{empheq}
+类似地，求得
+\begin{empheq}{equation*}\label{eq39.18'}
+	\frac{d\hat{p_{y}}}{dt}=-\frac{\partial V}{\partial y},\quad\frac{d\hat{p_{z}}}{dt}=-\frac{\partial V}{\partial z}	\tag{$3.9.18^{\prime}$}
+\end{empheq}
+写成矢量形式，就是
+\begin{empheq}{equation*}\label{eq39.18''}
+	\frac{d\hat{\boldsymbol{p}}}{dt}=0=-\nabla V=\boldsymbol{F}	\tag{$3.9.18^{\prime\prime}$}
+\end{empheq}
+这公式相当于经典力学中的牛顿第二定律.如果粒子作自由运动，$V$等于恒量，即得$\frac{d\hat{\boldsymbol{p}}}{dt}=0$，动量为守恒量.
+
+再看角动量$\boldsymbol{L=r\times p}$的运动方程，由于$\hat{\boldsymbol{L}}$与$\hat{\boldsymbol{p}^{2}}$对易，所以
+\eqindent{6}
+\begin{empheq}{align}\label{eq39.19}
+	\frac{dL_{x}}{dt}&=\frac{1}{i\hbar}[\hat{L_{x}},\hat{H}]=\frac{1}{i\hbar}[y\hat{p_{z}}-z\hat{p_{y}},V(\boldsymbol{r})]	\nonumber\\
+	&=-\bigg(y\frac{\partial V}{\partial z}-z\frac{\partial V}{\partial y}\bigg)=-(\boldsymbol{r}\times\nabla V)
+\end{empheq}\eqnormal
+$y$分量和$z$分量也有类似公式.写成矢量形式，就是
+\begin{empheq}{equation*}\label{eq39.19'}
+	\frac{d\hat{\boldsymbol{L}}}{dt}=-\boldsymbol{r}\times\nabla V=\boldsymbol{r}\times\boldsymbol{F}	\tag{$3.9.19^{\prime}$}
+\end{empheq}
+经典力学中也有相应的公式.当粒子作自由运动$(\boldsymbol{F}=0)$，或在中心力场$V(r)$中运动时，$\boldsymbol{r}$和$\boldsymbol{F}$平行，$\boldsymbol{r}\times\boldsymbol{F}=0$，这时$\frac{d\hat{\boldsymbol{L}}}{dt}=0$，$\boldsymbol{L}$的各个分量均为守恒量.
+
+通过以上的计算，我们看到经典力学中的主要守恒定律在量子力学中仍然成立，（只是通过算符的形式表现出来.）这并不奇怪，因为守恒定律是物质运动规律统一性的具体表现，正因为存在着微观的（量子力学的）守恒定律，才导致相应的宏观（经典力学的）守恒定律.
+
+{\heiti 3. 海森堡运动方程}
+
+平均值公式\eqref{eq39.13}可以写成
+\begin{empheq}{equation}\label{eq39.20}
+	\overline{A}(t)=\int\varPsi^{*}(\boldsymbol{r},0)\hat{A}(t)\varPsi(\boldsymbol{r},0)d\tau
+\end{empheq}
+其中
+\begin{empheq}{equation}\label{eq39.21}
+	\boxed{\hat{A}(t)=\hat{U}^{*}\hat{A}\hat{U}(t)=e^{-\hat{H}t/(i\hbar)}\hat{A}e^{\hat{H}t/(i\hbar)}}
+\end{empheq}
+称为力学量算符$\hat{A}$的海森堡图像.按照海森堡的观点，当$\hat{H}$不随时间改变，物理体系的量子力学状态是不随时间变化的，而力学量算符则要随时间变化，变化规律就是\eqref{eq39.21}式.对量子力学规律的这种描述方式称为海森堡图像.\eqref{eq39.20}式就是海森堡图像中力学量的平均值公式.在此以前的内容则属于薛定谔图像.两种图像显然是等价的.
+
+在海森堡图像中，算符的时间变化率可以按经典方式定义，比较自然.\eqref{eq39.21}式对$t$求导，并利用\eqref{eq39.10}式，得到
+\eqindent{6}
+\begin{empheq}{align}\label{eq39.22}
+	\frac{d}{dt}\hat{A}(t) &=\frac{d\hat{U}^{+}}{dt}\hat{A}\hat{U}+\hat{U}^{+}A\frac{d\hat{U}}{dt}	\nonumber\\
+	&=\frac{1}{i\hbar}(\hat{U}^{+}\hat{A}\hat{U}\hat{H}-\hat{H}\hat{U}^{+}\hat{A}\hat{U})	\nonumber\\
+	&=\frac{1}{i\hbar}\{\hat{A}(t)\hat{H}-\hat{H}\hat{A}(t)\}
+\end{empheq}\eqnormal
+由于
+\begin{empheq}{equation}\label{eq39.23}
+	\hat{H}(t)=\hat{U}^{+}(t)\hat{H}\hat{U}(t)=\hat{U}^{+}\hat{U}\hat{H}=\hat{H}
+\end{empheq}
+与$t$无关，\eqref{eq39.22}式亦即
+\begin{empheq}{equation}\label{eq39.24}
+	\boxed{\frac{d}{dt}\hat{A}(t)=\frac{1}{i\hbar}[\hat{A}(t),\hat{H}(t)]}
+\end{empheq}
+称为力学量算符的海森堡运动方程.注意\eqref{eq39.24}式与\eqref{eq39.15}式结构相似，$\hat{A}$换成$\hat{A}(t)$而已.\eqref{eq39.22}或\eqref{eq39.24}式也可以写成
+\begin{empheq}{equation}\label{eq39.24'}
+	\frac{d}{dt}\hat{A}(t)=\frac{1}{i\hbar}\hat{U}^{+}(t)[\hat{A},\hat{H}]\hat{U}(t)	\tag{$3.9.24^{\prime}$}
+\end{empheq}
+由\eqref{eq39.21}或\eqref{eq39.24'}式易见，如$\hat{A},\hat{U}$对易，则$\hat{A},\hat{U}(t)$也对易，因此$\hat{A}(t)=\hat{A}$，不随时间变化，$\frac{d\hat{A}(t)}{dt}=0$， 亦即$\hat{A}(t)$为守恒量.
+
+由于\eqref{eq39.24}式与\eqref{eq39.15}式结构相似，在(2)节中得到的基本力学量的运动方程\eqref{eq39.17}至\eqref{eq39.19'}式在海森堡图像中仍然成立，只需将$\hat{A}$换成$\hat{A}(t)$.因此\eqref{eq39.15}式有时也称海森堡运动方程.
+
+{\heiti 4. 关于守恒量和定态}
+
+如果初始波函数$\varPsi(\boldsymbol{r},0)$是$\hat{H}$的本征函数，即$\varPsi(\boldsymbol{r},0)=\varPsi_{n}(\boldsymbol{r})$，则$\varPsi(\boldsymbol{r},t)$为定态波函数，
+\begin{empheq}{equation}\label{eq39.25}
+	\varPsi(\boldsymbol{r},t)=\varPsi_{n}(\boldsymbol{r})e^{E_{n}t/i\hbar}
+\end{empheq}
+在定态下，任何力学量$A(\boldsymbol{r,p})$的平均值均不随时间改变.
+\begin{empheq}{align}\label{eq39.26}
+	\overline{A}(t)
+	&=\int\varPsi^{*}(\boldsymbol{r},t)\hat{A}\varPsi(\boldsymbol{r},t)d\tau	\nonumber\\
+	&=\int\varPsi_{n}^{*}(\boldsymbol{r})e^{-E_{n}t/i\hbar}\hat{A}\varPsi_{n}(\boldsymbol{r})e^{E_{n}t/i\hbar}d\tau	\nonumber\\
+	&=\int\varPsi_{n}^{*}(\boldsymbol{r})\hat{A}\varPsi_{n}(\boldsymbol{r})d\tau=\bar{A}(t=0)
+\end{empheq}
+不仅如此，如将$\varPsi_{n}(r)$展开成$\hat{A}$的本征函数$\{\Phi_{l}\}$的线性叠加：
+\begin{empheq}{equation}\label{eq39.27}
+	\varPsi_{n}(\boldsymbol{r})=\sum_{l}C_{l}\Phi_{l}(\boldsymbol{r})
+\end{empheq}
+其中$\Phi_{l}$满足本征方程：
+\begin{empheq}{equation*}
+	\hat{A}\Phi_{l}=a_{l}\Phi_{l}
+\end{empheq}
+$a_{l}$为$\hat{A}$的本征值.将\eqref{eq39.27}式代入\eqref{eq39.24}式，得到
+\begin{empheq}{equation}\label{eq39.28}
+	\varPsi(\boldsymbol{r},t)=\sum_{l}C_{l}e^{E_{n}t/i\hbar}\Phi_{l}(\boldsymbol{r})
+\end{empheq}
+按照波函数的普遍概率诠释，在$\varPsi(\boldsymbol{r},t)$态下，力学量$A$取本征值$a_{l}$的概率是
+\begin{empheq}{equation*}
+	|C_{l}e^{E_{n}t/i\hbar}|^{2}=|C_{l}|^{2}
+\end{empheq}
+与时间无关.这就是说，在定态下，任何不显含$t$的力学量取各个本征值的概率不随时间改变.因此，定态是能量具有确定值的稳定状态.“稳定”的意思是各种物理性质均不随时间改变.
+
+如果是在非定态下，波函数由\eqref{eq39.5}式表示.这时守恒量和非守恒量的性质就有根本的区别.对于非守恒量$\hat{A}$，由于$\bar{A}$随$t$变化，显然$A$取各个本征值的概率也将随$t$变化.守恒量的情况就不同了.设$F(\boldsymbol{r,p})$为守恒量，即$\hat{F},\hat{H}$对易，它们必然存在一个共同本征函数系$\{\varPsi_{ni}\}$，构成完备函数系.$\varPsi_{ni}$满足本征方程：
+\begin{empheq}{equation}\label{eq39.29}
+	\hat{H}\varPsi_{ni}=E_{n}\varPsi_{ni},\quad \hat{F}\varPsi_{ni}=f_{i}\varPsi_{ni}
+\end{empheq}
+初始波函数$\varPsi(\boldsymbol{r},0)$可以展开成各$\varPsi_{ni}$的线性叠加：
+\begin{empheq}{equation}\label{eq39.30}
+	\varPsi(\boldsymbol{r},0)=\sum_{n,i}C_{ni}\varPsi_{ni}(\boldsymbol{r})
+\end{empheq}
+因此
+\begin{empheq}{align}\label{eq39.31}
+	\varPsi(\boldsymbol{r},t) &=e^{\hat{H}t/i\hbar}\varPsi(\boldsymbol{r},0)	\nonumber\\
+	&=\sum_{n,i}C_{ni}e^{E_{n}t/i\hbar}\varPsi_{ni}(\boldsymbol{r})
+\end{empheq}
+按照波函数的概率解释，在$\varPsi(\boldsymbol{r},t)$态下，在$t$时刻，$(H,F)$取本征值$(E_{n},f_{i})$的概
+率为
+\begin{empheq}{equation*}
+	|C_{ni}e^{E_{n}t/i\hbar}|^{2}=|C_{ni}|^{2}
+\end{empheq}
+这个概率与$t$无关.这就是说，在任何运动态（包括定态和非定态）下，守恒量取各个本征值的概率不随时间改变.当然，平均值也不变.
+
+如果初始状态刚好是守恒量$F$的本征态，相应于本征值$F=f_{i}$，则\eqref{eq39.30}和\eqref{eq39.31}式中下标$t$只有单一的取值，（$n$仍可能有多种取值，这要看$\varPsi(\boldsymbol{r},0)$是否$\hat{H}$的本征函数而定.）因此在任何时刻$t$，$\varPsi(\boldsymbol{r},t)$仍是$\hat{F}$的本征态，本征值不变.正因如此，标志守恒量本征值的量子数称为好量子数.
+
+在能级存在简并的情况下，必然存在独立于$\hat{H}$的其他守恒量.这种情况下，通常总是选取一组互相对易的包括$\hat{H}$在内的守恒量作为力学量完全集，即以它们的共同本征函数作为\eqref{eq39.5}式中的$\varPsi_{n}$或\eqref{eq39.31}式中的$\varPsi_{ni}$，用它们的线性叠加表示薛定谔方程\eqref{eq39.1}通解.由此可见，研究一个物理体系的性质，首要的课题就是找出主要的守恒量，确定守恒量完全集并求出它们的共同本征函数.
+
+\example 设$\hat{A},\hat{B}$均为力学量算符，证明
+\begin{empheq}{equation}\label{eq39.32}
+	\frac{d}{dt}(\hat{A}\hat{B})=\hat{A}\frac{d\hat{B}}{dt}+\frac{d\hat{A}}{dt}\hat{B}
+\end{empheq}
+并就$\hat{H}=\hat{T}+V$的情形，求$\frac{d}{dt}\hat{x}^{2}$.
+
+\solution 按照\eqref{eq39.15}式， 应有
+\eqindent{6}
+\begin{empheq}{align*}
+	\frac{d}{dt}(\hat{A}\hat{B})&=\frac{1}{i\hbar}[\hat{A}\hat{B},\hat{H}]=\frac{1}{i\hbar}\{\hat{A}[\hat{B},\hat{H}]+[\hat{A},\hat{H}]\hat{B}\}	\\
+	&=\hat{A}\frac{d\hat{B}}{dt}+\frac{d\hat{A}}{dt}\hat{B}
+\end{empheq}\eqnormal
+此即\eqref{eq39.32}式.如$\hat{A}=\hat{B}$，上式成为
+\begin{empheq}{equation}\label{eq39.33}
+	\frac{d}{dt}\hat{A}^{2}=\hat{A}\frac{d\hat{A}}{dt}+\frac{d\hat{A}}{dt}\hat{A}
+\end{empheq}
+注意$\hat{A}$和$\frac{d\hat{A}}{dt}$可能不对易.
+
+如果$\hat{H}=\hat{T}+V$，这时
+\begin{empheq}{equation*}
+	\frac{d\hat{x}}{dt}=\frac{1}{i\hbar}[\hat{x},\hat{H}]=\frac{\hat{p_{x}}}{m}
+	\tag{$3.9.17$}
+\end{empheq}
+则由\eqref{eq39.33}式得到
+\begin{empheq}{equation}\label{eq39.34}
+	\frac{d}{dt}\hat{x}^{2}=\frac{1}{m}(\hat{x}\hat{p_{x}}+\hat{p_{x}}\hat{x})
+\end{empheq}
+
+
+
+
+
+
+
+

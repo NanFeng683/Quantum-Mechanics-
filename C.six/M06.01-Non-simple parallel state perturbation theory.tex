@@ -1,0 +1,153 @@
+\section[非简并态微扰论]{非简并态微扰论} \label{sec:06.01} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+研究一个物理体系，基本问题之一是求解能量本征方程
+\begin{empheq}{equation}\label{eq61.1}
+	\hat{H}\varPsi=E\varPsi
+\end{empheq}
+求出束缚态波函数和能级.如精确求解有困难，在下述前提下可以用微扰论方法求近似解.前提是：能量算符$\hat{H}$可以分解成大、小两项，
+\begin{empheq}{equation}\label{eq61.2}
+	\hat{H}=\hat{H}_{0}+\hat{H}^{\prime}
+\end{empheq}
+$\hat{H}_{0}$和$\hat{H}^{\prime}$均为厄密算符，按量级说$H^{\prime}\leqslant H_{0}$，而且$\hat{H}_{0}^{\prime}$的本征函数和本征值是已知的，或可以求出的.$H_{0}$称为零级能量（算符），$H^{\prime}$称为微扰.
+
+$\hat{H}_{0}^{\prime}$的正交归一化本征函数记为$\varPsi_{k}^{(0)}$，$k=1,2,\cdots,n,\cdots$是编号数，与$\varPsi_{k}^{(0)}$相应的本征值记为$E_{k}^{(0)}$.$\varPsi_{k}^{(0)}$满足本征方程
+\begin{empheq}{equation}\label{eq61.3}
+	\hat{H}_{0}\varPsi_{k}^{(0)}=E_{k}^{(0)}\varPsi_{k}^{(0)}
+\end{empheq}
+及正交归一条件
+\begin{empheq}{equation}\label{eq61.4}
+	\langle \varPsi_{n}^{(0)}|\varPsi_{k}^{(0)} \rangle =\int\varPsi_{n}^{(0)*}\varPsi_{k}^{(0)}d\tau=\delta_{nk}
+\end{empheq}
+如果有几个本征函数相应于同一个能级$E_{k}^{(0)}$，这个能级称为简并能级，相应的那些本征态称为简并态.如果某个能级$E_{n}^{(0)}$只有一个相应的本征函数$\varPsi_{n}^{(0)}$，则称为非简并能级和非简并态.$\hat{H}_{0}$的全部本征态中，可能有一些是非简并态，其余则是简并态.例如氢原子（不考虑电子的自旋），基态$\varPsi_{100}$是非简并的，其他能量本征态$\varPsi_{nlm}(n\geqslant2)$都是简并态.在以下的叙述中，假定着重讨论的那个能级$(E_{n})$是非简并的.
+
+回到\eqref{eq61.1}式的求解.由于$\hat{H}$中存在微扰$\hat{H}^{\prime}$，原来的（$H_{0}$的）能级$E_{n}^{(0)}$将变成$E_{n}$，本征函数$\varPsi_{n}^{(0)}$将变成$\varPsi_{n}$，并满足\eqref{eq61.1}式，即
+\begin{empheq}{equation*}\label{eq61.1'}
+	(\hat{H}_{0}+\hat{H}^{\prime})\varPsi_{n}=E_{n}\varPsi_{n}
+	\tag{$6.1.1^{\prime}$}
+\end{empheq}
+由于$H^{\prime}\leqslant H_{0}$，且与$E_{n}^{(0)}$将只有微小的差别，也与$\varPsi_{n}^{(0)}$也只有微小差别.为了求出$E_{n},\varPsi_{n}$，可设
+\begin{empheq}{align}
+	E_{n} &=E_{n}^{(0)}+E^{(1)}+E^{(2)}+\cdots	\label{eq61.5}\\
+	\varPsi_{n} &=\varPsi_{n}^{(0)}+\varPsi^{(1)}+\varPsi^{(2)}	\label{eq61.6}
+\end{empheq}
+各项分别表示零级近似，一级修正，二级修正，等等，并规定各项的量级逐项相差$\frac{H^{\prime}}{H_{0}}$倍.关于\eqref{eq61.6}式，作如下规定.由于$\hat{H}_{0}$的全体本征函数$\{\varPsi_{k}^{(0)}\}$构成完备系，$\varPsi_{n}$可以展开成各$\varPsi_{k}^{(0)}$的线性叠加，
+\begin{empheq}{equation*}
+	\varPsi_{n}=\sum_{k}C_{k}\varPsi_{k}^{(0)}
+\end{empheq}
+暂不要求$\varPsi_{n}$是归一化的，则上式中总有一个系数（只要不为0）可以任意选择.为了方便，取$C_{n}=1$，则$\varPsi_{n}$的展开式为
+\begin{empheq}{equation}\label{eq61.7}
+	\varPsi_{n}=\varPsi_{n}^{(0)}+\sum_{k}^{\prime}C_{k}\varPsi_{k}^{(0)}
+\end{empheq}
+其中$\sum_{k}^{\prime}$表示对$k$求和，但$k\neq n$.这样做相当于规定\eqref{eq61.6}式中各个修正项中不含$\varPsi_{n}^{(0)}$项，因此这些修正项均与零级近似项正交，即
+\begin{empheq}{equation}\label{eq61.8}
+	\langle \varPsi_{n}^{(0)}|\varPsi^{(s)} \rangle =\int\varPsi_{n}^{(0)*}\varPsi^{(s)}d\tau=0,\quad s=1,2,\cdots
+\end{empheq}
+这个条件可以简化计算.将\eqref{eq61.5}，\eqref{eq61.6}式代入\eqref{eq61.1'}式，并将各项按量级分开，可得：
+
+\begin{subequations}\label{eq61.9}
+	\eqindent{7}
+	\begin{align}
+	\shortintertext{零级项}
+		(\hat{H}_{0}&-E_{n}^{(0)})\varPsi_{n}^{(0)}=0	\label{eq61.9a}\\
+	\shortintertext{一级项}
+		(\hat{H}_{0}-E_{n}^{(0)})&\varPsi^{(1)}=(E^{(1)}-\hat{H}^{\prime})\varPsi_{n}^{(0)}	\label{eq61.9b}\\
+	\shortintertext{二级项}
+		(\hat{H}_{0}-E_{n}^{(0)})\varPsi^{(2)}&=(E^{(1)}-\hat{H}^{\prime})\varPsi^{(1)}+E^{(2)}\varPsi_{n}^{(0)}	\label{eq61.9c}
+	\end{align}\eqnormal
+\end{subequations}
+等等.\eqref{eq61.9a}式即\eqref{eq61.3}式$k=n$的情形.以$\varPsi_{n}^{(0)*}$左乘\eqref{eq61.9b}式，并对全空间积分，左端贡献为0，因此得到
+\begin{empheq}{equation}\label{eq61.10}
+	E^{(1)}=\int\varPsi_{n}^{(0)*}\hat{H}^{\prime}\varPsi_{n}^{(0)}d\tau=\langle \varPsi_{n}^{(0)}|\hat{H}^{\prime}|\varPsi_{n}^{(0)} \rangle \equiv H_{nn}^{\prime}
+\end{empheq}
+这就是能级$E_{n}$的一级修正项公式，$H_{nn}^{\prime}$的意义是微扰$H^{\prime}$在零级近似波函数$\varPsi_{n}^{(0)}$中的平均值对\eqref{eq61.9c}式作同样的处理，并注意到正交条件\eqref{eq61.8}，可得
+\begin{empheq}{equation}\label{eq61.11}
+	E^{(2)}=\int\varPsi_{n}^{(0)*}\hat{H}^{\prime}\varPsi_{n}^{(1)}d\tau=\langle \varPsi_{n}^{(0)}|\hat{H}^{\prime}|\varPsi_{n}^{(1)} \rangle
+\end{empheq}
+但这还不是$E^{(2)}$的明显表示式，因为$\varPsi^{(1)}$尚未求出，设
+\begin{empheq}{equation}\label{eq61.12}
+	\varPsi^{(1)}=\sum_{k}^{\prime}C_{k}^{(1)}\varPsi_{k}^{(0)}
+\end{empheq}
+代入\eqref{eq61.9b}式，再用$\varPsi_{k}^{(0)*}$左乘全式，对全空间积分，并利用正交归一条件，可得
+\begin{empheq}{equation}\label{eq61.13}
+	C_{k}^{(1)}=\frac{H_{kn}^{\prime}}{E_{n}^{(0)}-E_{k}^{(0)}}
+\end{empheq}
+其中
+\begin{empheq}{equation}\label{eq61.14}
+	H_{kn}^{\prime}\equiv\int\varPsi_{k}^{(0)}\hat{H}^{\prime}\varPsi_{n}^{(0)}d\tau=\langle \varPsi_{k}^{(0)}|\hat{H}^{\prime}|\varPsi_{n}^{(0)} \rangle 
+\end{empheq}
+将\eqref{eq61.13}式代入\eqref{eq61.12}式，即得$\varPsi^{(1)}$的表示式
+\begin{empheq}{equation}\label{eq61.15}
+	\varPsi^{(1)}=\sum_{k}^{\prime}\frac{H_{kn}}{E_{n}^{(0)}-E_{k}^{(0)}}\varPsi_{k}^{(0)}
+\end{empheq}
+再代入\eqref{eq61.11}式， 即得
+\begin{empheq}{equation}\label{eq61.16}
+	E^{(2)}=\sum_{k}^{\prime}\frac{H_{nk}^{\prime}H_{kn}^{\prime}}{E_{n}^{(0)}-E_{k}^{(0)}}=\sum_{k}^{\prime}\frac{|H_{kn}^{\prime}|^{2}}{E_{n}^{(0)}-E_{k}^{(0)}}
+\end{empheq}
+用微扰论处理问题，通常的要求是，能级和波函数均应计算到第一个不等于零的修正项为止.对于波函数，由\eqref{eq61.15}式表示的一级修正总是不等于零的，一般不必再计算二级修正.对于能级，由于对称性等原因，$E^{(1)}$常常等于零，这时必须计算二级修正$E^{(2)}$.综合\eqref{eq61.5}，\eqref{eq61.6}，\eqref{eq61.10}，\eqref{eq61.15}，\eqref{eq61.16}式，可得准确到一级修正项的能量本征函数和准确到二级修正项的能级公式为
+\eqlong
+\begin{empheq}[box=\widefbox]{align}
+	\varPsi_{n}&\approx\varPsi_{n}^{(0)}+\sum_{k}^{\prime}\frac{H_{kn}^{\prime}}{E_{n}^{(0)}-E_{k}^{(0)}}\varPsi_{k}^{(0)}		\label{eq61.17}	\\
+	E_{n}&\approx E_{n}^{(0)}+H_{nn}^{\prime}+\sum_{k}^{\prime}\frac{|H_{kn}^{\prime}|^{2}}{E_{n}^{(0)}-E_{k}^{(0)}}		\label{eq61.18}
+\end{empheq}\eqnormal
+
+
+微扰论公式成立的条件为$|\varPsi^{(1)}|\leqslant|\varPsi_{n}^{(0)}|$，即
+\begin{empheq}{equation}\label{eq61.19}
+	|H_{kn}^{\prime}|\leqslant|E_{n}^{(0)}-E_{k}^{(0)}|,\quad k=1,2,\cdots
+\end{empheq}
+因此在能级密集的区域，微扰论的适用性稍差.
+
+\example 一维谐振子，能量算符为
+\begin{empheq}{equation*}
+	H_{0}=-\frac{\hbar^{2}}{2m}\frac{d^{2}}{dx^{2}}+\frac{1}{2}m\omega^{2}x^{2}
+\end{empheq}
+设这谐振子受到微扰作用（另一种弹性力），
+\begin{empheq}{equation*}
+	H^{\prime}=\frac{\lambda}{2}m\omega^{2}x^{2},\quad |\lambda|\leqslant 1
+\end{empheq}
+试用微扰论公式计算能级的变化，并与精确解比较.
+
+\solution $H_{0}$的本征函数记为$\varPsi_{n}^{(0)}$，这就是$\S$\ref{sec:02.05}讨论过的谐振子本征态.在表象中，（以$\varPsi_{n}^{(0)}$作为基矢）$x$的矩阵元只有下列类型不等于零：
+\begin{empheq}{equation*}
+	x_{n+1,n}=x_{n,n+1}=\bigg(\frac{n+1}{2}\frac{\hbar}{m\omega}\bigg)^{\frac{1}{2}}
+\end{empheq}
+因此，对于微扰$H^{\prime}$，它的矩阵元中不等于零的类型有
+\begin{empheq}{align*}
+	H_{nn}^{\prime} &=\frac{\lambda}{2}m\omega^{2}(x^{2})_{nn}=\frac{\lambda}{2}m\omega^{2}\sum_{k}x_{nk}x_{kn}	\\
+	&=\frac{\lambda}{2}m\omega^{2}(|x_{n,n+1}|^{2}+|x_{n,n-1}|^{2})	\\
+	&=\frac{1}{2}\bigg(n+\frac{1}{2}\bigg)\lambda\hbar\omega=\frac{\lambda}{2}E_{n}^{(0)}
+	\\
+	H_{n,n+2}^{\prime}&=H_{n+2,n}^{\prime}=\frac{\lambda}{2}m\omega^{2}x_{n,n+1}x_{n+1,n+2}	\\
+	&=\frac{1}{4}\sqrt{(n+1)(n+2)}\lambda\hbar\omega
+\end{empheq}
+其中$E_{n}^{(0)}=\bigg(n+\frac{1}{2}\bigg)\hbar\omega$加是微扰前的能级.按照微扰论公式\eqref{eq61.10}，\eqref{eq61.16}能级的一级修正和二级修正分别为
+\begin{empheq}{align*}
+	E_{n}^{1}&=H_{nn}^{\prime}=\frac{1}{2}\bigg(n+\frac{1}{2}\bigg)\lambda\hbar\omega	\\
+	E_{n}^{(2)}&=\sum_{k}^{\prime}\frac{|H_{kn}^{\prime}|^{2}}{E_{n}^{(0)}-E_{k}^{(0)}}=\frac{1}{2\hbar\omega}(|H_{n-2,n}^{\prime}|^{2}-|H_{n+2,n}^{\prime}|^{2})	\\
+	&=-\frac{1}{8}\bigg(n+\frac{1}{2}\bigg)\lambda^{2}\hbar\omega
+\end{empheq}
+
+本题显然可以精确求解，因为微扰后总能量算符为
+\begin{empheq}{align*}
+	H&=H_{0}+H^{\prime}=-\frac{\hbar^{2}}{2m}\frac{d^{2}}{dx^{2}}+\frac{1}{2}(1+\lambda)m\omega^{2}x^{2}	\\
+	&=-\frac{\hbar^{2}}{2m}\frac{d^{2}}{dx^{2}}+\frac{1}{2}m\omega^{\prime2}x^{2},\quad \omega^{\prime}=\omega\sqrt{1+\lambda}
+\end{empheq}
+仍是谐振子问题.能级为
+\begin{empheq}{equation*}
+	E_{n}=\bigg(n+\frac{1}{2}\bigg)\hbar\omega^{\prime}=\bigg(n+\frac{1}{2}\bigg)\sqrt{1+\lambda}\hbar\omega
+\end{empheq}
+如将$\sqrt{1+\lambda}$展开成$\lambda$的幕级数，
+\begin{empheq}{equation*}
+	\sqrt{1+\lambda}=1+\frac{\lambda}{2}-\frac{\lambda^{2}}{8}+\cdots
+\end{empheq}
+则
+\begin{empheq}{equation*}
+	E_{n}=\bigg(n+\frac{1}{2}\bigg)\hbar\omega+\frac{\lambda}{2}\bigg(n+\frac{1}{2}\bigg)\hbar\omega-\frac{\lambda^{2}}{8}\bigg(n+\frac{1}{2}\bigg)\hbar\omega
+\end{empheq}
+准确到$\lambda^{2}$项，刚好和上述微扰论结果符合.
+
+
+
+
+

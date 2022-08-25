@@ -1,0 +1,258 @@
+\section[角动量]{角动量} \label{sec:04.07} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+粒子的轨道角动量算符
+\eqshort
+\begin{empheq}{equation}\label{eq47.1}
+	\hat{\boldsymbol{L}}=\hat{\boldsymbol{r}}\times\hat{\boldsymbol{p}}
+\end{empheq}
+满足对易式
+\begin{empheq}{equation}\label{eq47.2}
+	\hat{\boldsymbol{L}}\times\hat{\boldsymbol{L}}=i\hbar\hat{\boldsymbol{L}}
+\end{empheq}\eqnormal
+即
+\eqindent{3}
+\begin{empheq}{equation*}\label{eq47.2'}
+	[\hat{L}_{\alpha},\hat{L}_{\beta}]=i\hbar\hat{L}_{\gamma},(\alpha,\beta,\gamma)=(x,y,z),(y,z,x),(z,x,y)	\tag{$4.7.2^{\prime}$}
+\end{empheq}\eqnormal
+以及
+\begin{empheq}{equation}\label{eq47.3}
+	[\hat{L}_{\alpha},\hat{\boldsymbol{L}}^{2}]=0,\quad \alpha=x,y,z
+\end{empheq}
+一般地，如果线性厄密算符$\hat{J}_{x},\hat{J}_{y},\hat{J}_{z}$，满足对易式
+\eqindent{3}
+\begin{empheq}{equation}\label{eq47.4}
+	[\hat{J}_{\alpha},\hat{J}_{\beta}]=i\hbar\hat{J}_{\gamma},(\alpha,\beta,\gamma)=(x,y,z),(y,z,x),(z,x,y)
+\end{empheq}\eqnormal
+则称$\hat{\boldsymbol{J}}=(\hat{J}_{x},\hat{J}_{y},\hat{J}_{z})$为角动量算符或准角动量算符.定义
+\begin{empheq}{equation}\label{eq47.5}
+	\hat{\boldsymbol{J}}^{2}=\hat{J}_{x}^{2}+\hat{J}_{y}^{2}+\hat{J}_{z}^{2}=\hat{\boldsymbol{J}}\cdot\hat{\boldsymbol{J}}
+\end{empheq}
+利用\eqref{eq47.4}式，易证
+\begin{empheq}{equation}\label{eq47.6}
+	[\hat{J}_{\alpha},\hat{\boldsymbol{J}}^{2}]=0,\quad \alpha=x,y,z
+\end{empheq}
+
+以$\varPsi_{\beta m}$表示$\hat{\boldsymbol{J}}^{2}$.$\hat{J}_{z}$的共同本征态，归一化的态矢量写成$|\beta,m \rangle $，满足本征方程
+\begin{empheq}{align}%7,8	\label{eq47.}
+	\hat{\boldsymbol{J}}^{2}|\beta m\rangle &=\beta\hbar^{2}|\beta m\rangle	\\
+	\hat{J}_{z}|\beta m\rangle &=m\hbar^{2}|\beta m\rangle
+\end{empheq}
+$\beta\hbar^{2}$为$\hat{\boldsymbol{J}}^{2}$的本征值，$m\hbar$为$\hat{J}_{z}$的本征值，它们也就是$|\beta m\rangle$态下$\hat{\boldsymbol{J}}^{2}$和$\hat{J}_{z}$的平均值.由于$\hat{\boldsymbol{J}}^{2}$包含三个平方项，而厄密算符平方平均值总是大于或等于0，所以
+\eqshort
+\begin{empheq}{equation}\label{eq47.9}
+	\beta \leqslant m^{2}
+\end{empheq}\eqnormal
+下面设法求本征值$\beta\hbar^{2}$及$m\hbar$.令
+\begin{empheq}{equation}\label{eq47.10}
+	\begin{aligned}
+		\hat{J}_{+}&=\hat{J}_{x}+i\hat{J}_{y}	\\
+		\hat{J}_{-}&=\hat{J}_{x}-i\hat{J}_{y}=(\hat{J}_{+})^{+}
+	\end{aligned}
+\end{empheq}
+利用\eqref{eq47.4}至\eqref{eq47.6}式，易证
+\begin{empheq}{equation}\label{eq47.11}
+	[\hat{J}_{+},\hat{\boldsymbol{J}}^{2}]=0,\quad [\hat{J}_{-},\hat{\boldsymbol{J}}^{2}]=0
+\end{empheq}
+\begin{empheq}{equation}\label{eq47.12}
+	[\hat{J}_{z},\hat{J}_{+}]=\hbar\hat{J}_{+},\quad [\hat{J}_{z},\hat{J}_{-}]=-\hbar\hat{J}_{-}
+\end{empheq}
+\begin{subequations}\label{eq47.13}
+	\begin{align}
+		\hat{J}_{+}\hat{J}_{-}&=\hat{\boldsymbol{J}}^{2}-\hat{J}_{z}^{2}+\hbar\hat{J}_{z}	\label{eq47.13a}	\\
+		\hat{J}_{-}\hat{J}_{+}&=\hat{\boldsymbol{J}}^{2}-\hat{J}_{z}^{2}-\hbar\hat{J}_{z}	\label{eq47.13b}
+	\end{align}
+\end{subequations}
+将\eqref{eq47.11}第一式和\eqref{eq47.12}第一式作用于$|\beta m\rangle $，得到
+\eqindent{6}
+\begin{empheq}{align*}
+	\hat{\boldsymbol{J}}^{2}\hat{J}_{+}|\beta m\rangle =\hat{J}_{+}\hat{\boldsymbol{J}}^{2}|\beta m\rangle &=\beta\hbar^{2}\hat{J}_{+}|\beta m\rangle \\
+	\hat{J}_{z}\hat{J}_{+}|\beta m\rangle =\hat{J}_{+}(\hat{J}_{z}+\hbar)|\beta m\rangle &=(m+1)\hbar\hat{J}_{+}|\beta m\rangle 
+\end{empheq}\eqnormal
+这表明，如$\hat{J}_{+}|\beta m\rangle\neq 0$，它就是$\hat{\boldsymbol{J}}^{2},\hat{J}_{z}$的共同本征态矢，本征值为$\beta\hbar^{2}$和$(m+1)\hbar$，因此$\hat{J}_{+}|\beta m\rangle$和$|\beta,m+1\rangle$只相差一个常系数，即
+\begin{empheq}{equation}\label{eq47.14}
+	\hat{J}_{+}|\beta m\rangle =\hbar a_{\beta m}|\beta,m+1 \rangle 
+\end{empheq}
+类似地，将\eqref{eq47.11}、\eqref{eq47.12}第二式作用于1 pm〉，可以发现
+\begin{empheq}{equation}\label{eq47.15}
+	\hat{J}_{-}|\beta m\rangle =\hbar b_{\beta m}|\beta,m-1 \rangle
+\end{empheq}
+$a_{\beta m}$和$b_{\beta m}$为待定系数.\eqref{eq47.14}和\eqref{eq47.15}式表明，给定$\hat{\boldsymbol{J}}^{2}$的本征值$\beta\hbar^{2}$后，如$m\hbar$是$\hat{J}_{z}$的一个本征值，则$(m\pm 1)\hbar$也是$\hat{J}_{z}$的本征值（除非$\hat{J}_{\pm}|\beta m\rangle=0$）将算符$\hat{J}_{\pm}$作用于$|\beta m\rangle$，就得到$|\beta,m+1 \rangle $.
+
+上述推理过程可以重复进行，（将$\hat{J}_{\pm}$再作用于$|\beta,m\pm 1\rangle,\cdots$）从而得出如下结论：给定$\beta$后，如$m\hbar$是$\hat{J}_{z}$的本征值，则$(m\pm1)\hbar,(m\pm2)\hbar,\cdots$也都是$\hat{J}_{z}$的本征值.但是，由于\eqref{eq47.9}式的限制，$m$必有上限$\overline{m}$和下限\underline{m}，使
+\begin{empheq}{equation}\label{eq47.16}
+	\hat{J}_{+}|\beta\overline{m} \rangle =0,\quad \hat{J}_{-}|\beta\underline{m} \rangle =0
+\end{empheq}
+将\eqref{eq47.13b}式作用于$|\beta\overline{m}\rangle $，可得
+\eqlong
+\begin{empheq}{equation*}
+	(\hat{\boldsymbol{J}}^{2}-\hat{J}_{z}^{2}-\hbar\hat{J}_{z})|\beta\overline{m}\rangle =(\beta-\overline{m}^{2}-\overline{m})\hbar^{2}|\beta\overline{m} \rangle =0
+\end{empheq}\eqnormal
+因此
+\begin{subequations}
+	\eqshort
+	\begin{equation}\label{eq47.17a}
+		\beta=\overline{m}(\overline{m}+1)
+	\end{equation}\eqnormal
+类似地，将\eqref{eq47.13a}式作用于$|\beta\underline{m} \rangle $，可得
+	\begin{equation}\label{eq47.17b}
+		\beta=\underline{m}(\underline{m}-1)=-\underline{m}(-\underline{m}+1)
+	\end{equation}
+\end{subequations}
+由此可知$\underline{m}=-\overline{m}$.令
+\eqshort
+\begin{empheq}{equation}\label{eq47.18}
+	j=\overline{m}=-\underline{m}
+\end{empheq}\eqnormal
+则
+\begin{empheq}{equation}\label{eq47.19}
+	\beta=j(j+1),\quad \hat{\boldsymbol{J}}^{2}j(j+1)\hbar^{2}
+\end{empheq}
+\begin{empheq}{equation*}
+	m=j,j-1,\cdots,(-j)
+\end{empheq}
+\begin{empheq}{equation}\label{eq47.20}
+	J_{z}=m\hbar
+\end{empheq}
+由于$\overline{m}-\underline{m}=2j$必须是正整数或0，所以$j$的可能取值是
+\eqshort
+\begin{empheq}{equation}\label{eq47.21}
+	j=0,\frac{1}{2},1,\frac{3}{2},2,\cdots
+\end{empheq}\eqnormal
+
+以上是由对易式\eqref{eq47.4}推论出来的关于j2 和J， 本征值的结论.对于一种具体角动量，量子数$j$的具体取值还与该角动量的具体性质有关.例如电子的自旋角动量，j =—2 ．又如粒子的轨道角动量（$\S$\ref{sec:03.01}例题），由于
+\begin{empheq}{equation}\label{eq47.22}
+	L_{z}=m\hbar,m=0,\pm1,\pm2,\cdots
+\end{empheq}
+所以$j$必须是0或正整数，记成（$j$改为$l$，这是轨道角动量的惯用符号）
+\begin{empheq}{equation}\label{eq47.23}
+	\hat{\boldsymbol{L}}^{2}=l(l+1)\hbar^{2},\quad l=0,1,2,\cdots
+\end{empheq}
+下面将$|\beta m\rangle $改记为$|jm\rangle $，\eqref{eq47.14}、\eqref{eq47.15}式改写为
+\begin{empheq}{align*}	%14',15'
+	\hat{J}_{+}|jm \rangle &=\hbar a_{jm}|j,m+1 \rangle 	\tag{$4.7.14^{\prime}$}	\label{eq47.14'}\\
+	\hat{J}_{-}|jm \rangle &=\hbar b_{jm}|j,m-1 \rangle	\tag{$4.7.15^{\prime}$}	\label{eq47.15'}
+\end{empheq}
+\eqref{eq47.14'}式的共枙式为
+\begin{empheq}{equation*}
+	\langle jm|\hat{J}_{-}=\hbar a_{jm}^{*}\langle j,m+1|
+\end{empheq}
+与\eqref{eq47.14'}式相乘，得到
+\begin{align*}
+	\hbar^{2}|a_{jm}|^{2}	&=\langle jm|\hat{J}_{-}\hat{J}_{+}|jm \rangle 	\\
+\shortintertext{利用\eqref{eq47.13b}式}	
+	&=\langle jm|\hat{\boldsymbol{J}}^{2}-\hat{J}_{z}-\hbar\hat{J}_{z}|jm \rangle	\\
+	&=[j(j+1)-m(m+1)]\hbar^{2}
+\end{align*}
+选择各$|jm \rangle $的相因子，使$a_{jm}$为非负实数，则
+\eqindent{4}
+\begin{empheq}{equation}\label{eq47.24}
+	a_{jm}=\sqrt{j(j+1)-m(m+1)}=\sqrt{(j+m+1)(j-m)}
+\end{empheq}
+类似地，可以求出
+\begin{empheq}{equation}\label{eq47.25}
+	b_{jm}=\sqrt{j(j+1)-m(m-1)}=\sqrt{(j-m+1)(j+m)}
+\end{empheq}\eqnormal
+代入\eqref{eq47.14'}、\eqref{eq47.15'}式，即得
+\eqindent{6}
+\begin{empheq}{equation}\label{eq47.26}
+	\boxed{
+	\begin{aligned}
+		\hat{J}_{+}|jm\rangle &=\hbar\sqrt{(j+m+1)(j-m)}|j,m+1 \rangle	\\
+		\hat{J}_{-}|jm\rangle &=\hbar\sqrt{(j-m+1)(j+m)}|j,m-1 \rangle
+	\end{aligned}
+	}
+\end{empheq}\eqnormal
+由于$\hat{J}_{+}$、$\hat{J}_{-}$作用于$|jm\rangle$的结果，分别使量子数$m$升1和降1，所以通常称$\hat{J}_{+}$,$\hat{J}_{-}$为升、降算符.注意
+\begin{empheq}{equation}\label{eq47.27}
+	\hat{J}|jj\rangle =0,\quad \hat{J}_{-}|j,-j \rangle =0
+\end{empheq}
+这与\eqref{eq47.16}式是一致的．
+
+$\hat{J}_{x}$和$\hat{J}_{y}$可以表示成
+\begin{empheq}{equation}\label{eq47.28}
+	\hat{J}_{x}=\frac{1}{2}(\hat{J}_{+}+\hat{J}_{-}),\quad \hat{J}_{y}=\frac{i}{2}(\hat{J}_{-}-\hat{J}_{+})
+\end{empheq}
+利用\eqref{eq47.26}式及正交归一条件
+\begin{empheq}{equation}\label{eq47.29}
+	\langle j^{\prime}m^{\prime}|jm \rangle =\delta_{j^{\prime}j}\delta_{m^{\prime}m}
+\end{empheq}
+容易求出
+\eqindent{4}
+\begin{empheq}{equation}\label{eq47.30}
+\begin{aligned}
+	\langle j^{\prime}m^{\prime}|\hat{J}_{x}|jm \rangle			&=\frac{\hbar}{2}\bigg[\sqrt{(j+m+1)(j-m)}\delta_{m^{\prime},m+1} \\
+	&+\sqrt{(j-m+1)(j+m)}\delta_{m^{\prime},m-1}\bigg]\delta_{j^{\prime}j}		\\
+	\langle j^{\prime}m^{\prime}|\hat{J}_{y}|jm \rangle	
+	&=\frac{i\hbar}{2}\bigg[-\sqrt{(j+m+1)(j-m)}\delta_{m^{\prime},m+1} \\
+	&+\sqrt{(j-m+1)(j+m)}\delta_{m^{\prime},m-1}\bigg]\delta_{j^{\prime}j}	
+\end{aligned}
+\end{empheq}\eqnormal
+这就是$(\hat{\boldsymbol{J}}^{2},\hat{J}_{z})$表象中$\hat{J}_{x}$和$\hat{J}_{y}$的矩阵表示.注意$\hat{J}_{x}$的矩阵元总是0和正实数，$\hat{J}_{y}$的矩阵元总是0和纯虚数，$\hat{J}_{z}$和$\hat{\boldsymbol{J}}^{2}$的矩阵元显然是
+\begin{empheq}{align}\label{eq47.31} %32
+	\langle j^{\prime}m^{\prime}&|\hat{J}_{z}|jm \rangle =m\hbar\delta_{j^{\prime}j}\delta_{m^{\prime}m}	\\
+	\langle j^{\prime}m^{\prime}|\hat{\boldsymbol{J}}^{2}&|jm \rangle =j(j+1)\hbar^{2}\delta_{j^{\prime}j}\delta_{m^{\prime}m}	
+\end{empheq}
+二者的矩阵表示都是对角化的.
+
+\example 设算符$\hat{F}$和角动量$\hat{\boldsymbol{J}}^{2}$的各个分量均对易，试证明：
+
+(a) 在$\hat{\boldsymbol{J}}^{2},\hat{J}_{z}$共同本征态$|jm\rangle$下，$\hat{F}$的平均值与量子数$m$无关.
+
+(b) 给定$j$后，在$\{|jm\rangle,m=j,j-1,\cdots,-j\}$子态矢空间中，$\hat{F}$可以表示成常数矩阵.
+
+\solution (a) 根据题意，$\hat{F}$与$\hat{J}_{+},\hat{J}_{-},\hat{J}_{z}$均对易.按照\eqref{eq47.14'}式及其共轭式，有关系
+\begin{empheq}{equation*}\label{eq47.14''}
+	\begin{aligned}
+		|j,m+1 \rangle &=\frac{\hat{J}_{+}|jm \rangle }{\hbar a_{jm}}	\\
+		\langle j,m+1|&=\frac{\langle jm|\hat{J}_{-}}{\hbar a_{jm}}
+	\end{aligned}
+	\tag{$4.7.14^{\prime\prime}$}
+\end{empheq}
+而由\eqref{eq47.14'}、\eqref{eq47.15'}、\eqref{eq47.24}、\eqref{eq47.25}式，则得
+\eqindent{6}
+\begin{empheq}{align}\label{eq47.33}
+	\hat{J}_{-}\hat{J}_{+}|jm \rangle &=\hbar a_{jm}\hat{J}_{-}|j,m+1 \rangle =\hbar^{2}a_{jm}b_{j,m+1}|jm \rangle 	\nonumber\\
+	&=\hbar^{2}(a_{jm})^{2}|jm \rangle 
+\end{empheq}\eqnormal
+在$|j,m+1 \rangle $态下计算$\hat{F}$的平均值，并利用\eqref{eq47.14''}，\eqref{eq47.33}式，可得
+\eqindent{4}
+\begin{empheq}{align}\label{eq47.34}
+	\langle j,m+1|\hat{F}|j,m+1 \rangle &=\frac{\langle jm|\hat{J}_{-}\hat{F}\hat{J}_{+}|jm\rangle}{\hbar^{2}(a_{jm})^{2}}	\nonumber\\
+	&=\frac{\langle jm|\hat{F}\hat{J}_{-}\hat{J}_{+}|jm \rangle }{\hbar^{2}(a_{jm})^{2}}=\langle jm|\hat{F}|jm \rangle 
+\end{empheq}\eqnormal
+右端为$|jm \rangle $态下$\hat{F}$的平均值.依此类推，对于属于同一个$j$的$m,m^{\prime}$，总有
+\begin{empheq}{equation}\label{eq47.35}
+	\langle jm^{\prime}|\hat{F}|jm^{\prime} \rangle =\langle jm|\hat{F}|jm \rangle 
+\end{empheq}
+即$\langle F \rangle $与$m$无关.
+
+(b) 利用$\hat{F}$和$\hat{J}_{z}$的对易性，可得
+\eqindent{6}
+\begin{empheq}{align*}
+	m^{\prime}\langle jm^{\prime}|\hat{F}|jm \rangle =&\langle jm^{\prime}|\hat{J}_{z}\hat{F}|jm \rangle	\\
+	&=\langle jm^{\prime}|\hat{F}\hat{J}_{z}|jm \rangle=m\langle jm^{\prime}|\hat{F}|jm \rangle
+\end{empheq}\eqnormal
+因此，如$m^{\prime}\neq m$，则$\langle jm^{\prime}|\hat{F}|jm\rangle =0$，亦即在$\{|jm \rangle ,m=jm\cdots,-j\}$子态矢空间中，$\hat{F}$表示为对角矩阵.再利用\eqref{eq47.35}式，可知$\hat{F}$表示为常数矩阵：
+\eqindent{6}
+\begin{empheq}{equation}\label{eq47.36}
+	\langle jm^{\prime}|\hat{F}|jm \rangle=\langle jm|\hat{F}|jm \rangle\delta_{mm^{\prime}}=f(j)\delta_{mm^{\prime}}
+\end{empheq}\eqnormal
+其中
+\eqindent{2}
+\begin{empheq}{equation}\label{eq47.37}
+	f(j)=\langle jj|\hat{F}|jj \rangle =\langle j,j-1|\hat{F}|j,j-1 \rangle =\cdots=\langle jm|\hat{F}|jm \rangle =\cdots
+\end{empheq}\eqnormal
+亦即$\hat{F}$的矩阵表示为
+\eqindent{12}
+\begin{empheq}{equation*}\label{eq47.36'}
+	F=f(j)I	\tag{$4.7.36^{\prime}$}
+\end{empheq}\eqnormal
+$I$为单位矩阵.
+
+
+
+
+
+
+

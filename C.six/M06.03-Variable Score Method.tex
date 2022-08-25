@@ -1,0 +1,147 @@
+\section[变分法]{变分法} \label{sec:06.03} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+考虑任一物理体系的束缚态，以$\hat{H}$表示体系的总能量算符（$\hat{H}$与时间无关）.任取一个归一化的波函数$\varPsi$（与时间无关），计算$\hat{H}$的平均值，并记为$E$，即
+\begin{empheq}{align}
+	&\int\varPsi^{*}\varPsi d\tau=\langle \varPsi|\varPsi \rangle =1		\label{eq63.1}\\
+	E&=\int\varPsi^{*}\hat{H}\varPsi d\tau=\langle \varPsi|\hat{H}|\varPsi \rangle	\label{eq63.2}
+\end{empheq}
+然后令波函数作任意微小变化（变分）
+\begin{empheq}{equation}\label{eq63.3}
+	\varPsi\rightarrow\phi=\varPsi+\delta \varPsi
+\end{empheq}
+对于函数$\phi$重新计算$\hat{H}$的平均值，记为$E+\delta E$
+\begin{empheq}{equation}\label{eq63.4}
+	E+\delta E=\frac{\int\phi^{*}\hat{H}\phi d\tau}{\int\phi^{*}\phi d\tau}
+\end{empheq}
+（注意，$\phi$可能不再是归一化的）将\eqref{eq63.3}式代入\eqref{eq63.4}式，略去二级小量（$\delta\varPsi$的二次项），得到如下结果：
+\eqlong
+\begin{empheq}{align*}
+	\int\phi^{*}\phi d\tau &=1+\bigg(\int\varPsi\delta\varPsi^{*}d\tau+c.c \bigg)	\\
+	\int\phi^{*}\hat{H}\phi d\tau&=\int(\varPsi^{*}+\delta\varPsi^{*})\hat{H}(\varPsi+\delta\varPsi)d\tau	\\
+	&=E+\int\delta\varPsi^{*}\hat{H}\varPsi d\tau+\int\varPsi^{*}\hat{H}\delta\varPsi d\tau	\\
+	&=E+\bigg(\int\delta\varPsi^{*}\hat{H}\varPsi d\tau+c.c \bigg)	\\
+	&=E+\delta E+E\bigg(\int\varPsi\delta\varPsi^{*}d\tau+c.c\bigg)
+\end{empheq}
+即
+\begin{empheq}{equation}\label{eq63.5}
+	\delta E=\int\delta\varPsi^{*}\hat{H}\varPsi d\tau+c.c.-E\bigg(\int\delta\varPsi^{*}\varPsi d\tau+c.c \bigg)
+\end{empheq}\eqnormal
+考虑到$\delta\varPsi$的任意性，由\eqref{eq63.5}式容易看出以下结论：
+
+(i) 如果$\varPsi$满足方程$\hat{H}\varPsi=E\varPsi$，则$\delta E=0$.
+
+(ii) 如果对任意$\delta\varPsi$要求$\delta E=0$，则$\varPsi$必须满足
+\eqshort
+\begin{empheq}{equation}\label{eq63.6}
+	\hat{H}\varPsi=E\varPsi
+\end{empheq}\eqnormal
+总之，“$\hat{H}$的平均值取变分极值$(\delta E=0)$”与“$\varPsi$为$\hat{H}$的本征函数”是等价的，这称为变分原理.
+
+这个变分原理曾被薛定谔用来建立波动力学.本节向读者介绍一种寻找束缚态波函数与能级的近似方法，俗称变分法，它的理论基础就是上述变分原理.
+
+设体系的总能量算符$\hat{H}$已经给定，但能量本征方程无法精确求解.设能级（按照由低到高的次序）为$E_{0},E_{1},E_{2},\cdots$相应的束缚态波函数（归一化的）为$\varPsi_{0}$，$\varPsi_{1}$，$\varPsi_{2}$，$\cdots$.任取一个归一化的波函数$\varPsi$，按照态叠加原理，$\varPsi$在原则上可以表示成能量本征函数的线性叠加：
+\begin{empheq}{equation}\label{eq63.7}
+	\varPsi=\sum_{n}C_{n}\varPsi_{n},\quad \sum_{n}C_{n}^{*}C_{n}=1
+\end{empheq}
+则在$\varPsi$态中$\hat{H}$的平均值（记为$E$）为
+\begin{empheq}{equation}\label{eq63.8}
+	E=\int\varPsi^{*}\hat{H}\varPsi d\tau=\sum_{n}C_{n}^{*}C_{n}E_{n}
+\end{empheq}
+由于$E_{n}\geqslant E_{0}$，显然$E\geqslant E_{0}$，$E_{0}$为基态能级.以上分析提示我们可以这样来寻找基态$\varPsi_{0}$，$E_{0}$.选取一种估计接近于基态的函数（归一化的）形式$\varPsi(\lambda,x)$，$x$代表坐标变量，$\lambda$为待定参数（一个或多个）.对$\varPsi(\lambda,x)$计算$\hat{H}$的平均值，记为$E(\lambda)$，即
+\begin{empheq}{equation}\label{eq63.9}
+	E(\lambda)=\int\varPsi^{*}(\lambda,x)\hat{H}\varPsi(\lambda,x)d\tau
+\end{empheq}
+在不改变$\varPsi$的函数形式的条件下，根据变分极值条件
+\begin{empheq}{equation}\label{eq63.10}
+	\delta E=0,\quad \text{即}\frac{\partial E(\lambda)}{\partial\lambda}=0
+\end{empheq}
+求出$\lambda$的最佳值$\lambda_{0}$，相应的$\varPsi(\lambda_{0},x)$及$E(\lambda_{0}$即可作为基态波函数$\varPsi_{0}$及基态能级$E_{0}$的近似.如所得结果不够满意，可以另选一种$\varPsi$的函数形式，重复上述计算.在选择试探波函数$\varPsi(\lambda,x)$的函数形式时，当然应充分考虑基态的各方面性质，并可将其他近似方法（例如微扰论）求得的结果作为参考.一般说来，用这种参数变分法通常总能求得较好的结果，当然，计算工作量有时较大，需要电子计算机的帮助.
+
+同样的方法也可用来寻找激发态$\varPsi_{n}$，$E_{n}$的近似，条件是所有能量小于$E_{n}$的能量本征态（$\varPsi_{0}$，$\varPsi_{1}$，$\cdots$，$\varPsi_{n-1}$）均已求出，这时$\varPsi_{n}$的试探函数$\varPsi(\lambda,x)$应选取成与这些波函数正交，以保证在展开式\eqref{eq63.7}中没有这些状态的成分，则
+\eqindent{7}
+\begin{empheq}{align*}
+	\varPsi&(\lambda,x)=C_{n}\varPsi_{n}+C_{n+1}\varPsi_{n+1}+\cdots	\\
+	E(\lambda)&=C_{n}^{*}C_{n}E_{n}+C_{n+1}^{*}C_{n+1}E_{n+1}+\cdots\geqslant E_{n}
+\end{empheq}\eqnormal
+再用变分极值条件\eqref{eq63.10}式求出$\lambda$的最佳值$\lambda_{0}$，即可得到$\varPsi_{n}$，$E_{n}$的近似结果.
+
+\example 粒子（质量$m$）在无限深势阱$(-a<x<a)$中运动.试用多项式近似结合变分法求基态能级的近似值，并与精确解比较.
+
+\solution 精确解见$\S$\ref{sec:02.04}，基态为（用本节的符号）
+\begin{empheq}{equation}\label{eq63.11}
+	\varPsi_{0}(x)=\sqrt{\frac{1}{a}}\cos\frac{\pi x}{2a},\quad E_{0}=\frac{\pi^{2}\hbar^{2}}{8ma^{2}}
+\end{empheq}
+$\varPsi_{0}$为偶宇称，并满足边界条件$\varPsi(a)=\varPsi(-a)=0$.
+
+如用多项式作为$\varPsi_{0}$的近似表示，考虑到此为偶宇称，应取
+\begin{empheq}{equation}\label{eq63.12}
+	\varPsi=C_{0}+C_{2}\bigg(\frac{x}{a}\bigg)^{2}+C_{4}\bigg(\frac{x}{a}\bigg)^{4}+\cdots
+\end{empheq}
+如只取前两项，为了满足边界条件，必须取$C_{2}=-C_{0}$，而$C_{0}$可由归一化条件
+\eqshort
+\begin{empheq}{equation*}
+	\int_{-a}^{a}\varPsi^{*}\varPsi dx=1
+\end{empheq}
+定出，结果为
+\begin{empheq}{equation}\label{eq63.13}
+	\varPsi=\sqrt{\frac{15}{16a}}\bigg(1-\frac{x^{2}}{a^{2}}\bigg)
+\end{empheq}\eqnormal
+这样已经不再有安插变分参数的余地.由\eqref{eq63.13}式求得能量平均值为
+\eqlong
+\begin{empheq}{equation}\label{eq63.14}
+	E=\int_{-a}^{a}\varPsi^{*}\bigg(-\frac{\hbar^{2}}{2m}\frac{d^{2}}{dx^{2}}\bigg)\varPsi dx=\frac{5}{4}\frac{\hbar^{2}}{ma^{2}}
+\end{empheq}\eqnormal
+这和$E_{0}$的精确值已经相当接近，事实上
+\begin{empheq}{equation*}
+	E/E_{0}=10/\pi^{2}\approx\num{1.0132}
+\end{empheq}
+
+如取\eqref{eq63.12}式中前三项作为基态试探波函数，为了满足边界条件，应取$C_{4}=-(C_{0}+C_{2})$.如以$C_{0}$作为归一化系数，则试探波函数可以表示成
+\eqlong
+\begin{empheq}{equation}\label{eq63.15}
+	\varPsi(\lambda,x)=C_{0}\bigg[1+\lambda\bigg(\frac{x}{a}\bigg)^{2}-(1+\lambda)\bigg(\frac{x}{a}\bigg)^{4}\bigg]
+\end{empheq}\eqnormal
+由归一化条件求出
+\begin{empheq}{equation}\label{eq63.16}
+	\frac{16}{315}(\lambda^{2}+8\lambda+28)aC_{0}^{2}=1
+\end{empheq}
+而能量平均值为
+\eqlong
+\begin{empheq}{align}\label{eq63.17}
+	E(\lambda)&=-\frac{\hbar^{2}}{2m}\int_{-a}^{a}\varPsi(\lambda,x)\frac{d^{2}}{dx^{2}}\varPsi(\lambda,x)dx	\nonumber\\
+	&=\frac{3}{4}\frac{11\lambda^{2}+36\lambda+60}{\lambda^{2}+8\lambda+28}\frac{\hbar^{2}}{ma^{2}}
+\end{empheq}\eqnormal
+根据变分极值条件\eqref{eq63.10}式，求得$\lambda$的最佳值为
+\begin{empheq}{equation*}
+	\lambda_{0}=-\num{1.22075},\quad \lambda_{0}^{\prime}=-\num{8.31775}
+\end{empheq}
+代入\eqref{eq63.17}式，得到
+\eqlong
+\begin{empheq}{equation}\label{eq63.18}
+	E(\lambda_{0})=\num{1.23372}\frac{\hbar^{2}}{ma^{2}},\quad E(\lambda_{0}^{\prime})=\num{12.7663}\frac{\hbar^{2}}{ma^{2}}
+\end{empheq}\eqnormal
+$E(\lambda_{0})$和基态能级的精确值非常接近，事实上
+\begin{empheq}{equation*}
+	E_{0}=\frac{\pi^{2}}{8}\frac{\hbar^{2}}{ma^{2}}\approx \num{1.23370}\frac{\hbar^{2}}{ma^{2}}
+\end{empheq}
+\pskip
+$E(\lambda_{0}^{\prime})$则接近于第三个能级$\frac{9\pi^{2}\hbar^{2}}{8ma^{2}}$.
+
+将$\lambda_{0}=-\num{1.22075}$代入\eqref{eq63.15}式，所得波函数$\varPsi(\lambda_{0},x)$的波形非常接近于真正的基态$\varPsi_{0}$，计算表明
+\begin{empheq}{equation*}
+	\int_{-a}^{a}\varPsi_{0}\varPsi(\lambda_{0},x)dx=1-\alpha,\quad \alpha<10^{-5}
+\end{empheq}
+亦即$\varPsi(\lambda_{0},x)$中基态为主要成分，各种激发态成分之和仅为
+\begin{empheq}{equation*}
+	1-(1-\alpha)^{2}=2\alpha-\alpha^{2}\sim 10^{-5}.
+\end{empheq}
+
+
+
+
+
+
+
+
+

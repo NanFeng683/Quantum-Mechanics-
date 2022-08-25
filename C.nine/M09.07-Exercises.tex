@@ -1,0 +1,46 @@
+\begin{exercises}
+	
+\exercise 设$t<0$时体系处于基态$\varPsi_{1}$，$t>0$时受到逐渐增强再逐渐消退的外来微扰$H^{\prime}(x,t)$作用，
+\begin{empheq}{equation*}
+	H^{\prime}(x,t)=\frac{F(x)}{[\tau^{2}+(t-t_{0})^{2}]},\quad \frac{t_{0}}{\tau}\gg1
+\end{empheq}
+
+设$t_{0}$很大，满足$\dfrac{(E_{2}-E_{1})t_{0}}{\hbar}\gg2\pi$.求微扰消退后$(t\rightarrow\infty)$体系处于各激发态$[\varPsi_{n}(x)]$的概率.
+	
+\exercise 某体系（能量算符$H_{0}$）只有两个能级（非简并的），$E_{2}-E_{1}=\hbar\omega>0$，设$t<0$时处于基态$\varPsi_{1}$.$t>0$时受到外来作用，能量算符变成$H=H_{0}+H^{\prime}$，设$H^{\prime}$不含$t$，矩阵元为
+\begin{empheq}{align*}
+	\langle\varPsi_{1}|H^{\prime}|\varPsi_{1}\rangle&=\langle\varPsi_{2}|H^{\prime}|\varPsi_{2}\rangle=0,	\\
+	\langle\varPsi_{1}|H^{\prime}|\varPsi_{2}\rangle&=\langle\varPsi_{2}|H^{\prime}|\varPsi_{1}\rangle=\hbar\nu
+\end{empheq}
+
+试严格求解薛定谔方程，求$\varPsi(t)$.如在任意$t>0$时刻测量$H_{0}$之值，测得$H_{0}=E_{2}$的概率等于什么？
+
+［提示：先求出$H$的本征函数$\varPsi_{\alpha},\varPsi_{\beta}$，本征值$E_{\alpha},E_{\beta}$，再将$\varPsi(t)$表示成也$\varPsi_{\alpha},\varPsi_{\beta}$的叠加，求出$\varPsi(t)$后，再表示成$\varPsi_{1},\varPsi_{2}$的叠加.］
+
+\exercise 上题中，设$H^{\prime}$是微扰，即设$\nu\ll\omega$，求$t>0$时刻测得$H_{0}=E_{2}$的概率，与微扰论结果［\eqref{eq91.12}式］比较.
+
+\exercise $t=0$时电子的自旋取值为$S_{z}=\dfrac{\hbar}{2}$，$t>0$时受到沿正$x$轴方向的磁场$(\boldsymbol{B})$作用，作用势为
+\begin{empheq}{equation*}
+	H^{\prime}=\frac{e B}{m_{e}c}S_{z}=\hbar\omega\sigma_{x},\quad \omega=\frac{e B}{2m_{e}c}
+\end{empheq}
+
+视$H^{\prime}$为微扰，用\eqref{eq91.12}式计算$t>0$时测得$S_{z}=-\dfrac{\hbar}{2}$的概率.微扰论计算公式成立的条件是什么？（本题是在简并态之间的跃迁问题，请与7-20题结果对照.）
+
+\exercise 电荷为$e$（或$-e$）质量为$m$的一维谐振子，(a) 写出电偶极跃迁选择定则.(b) 求自发跃迁速率公式（初态$\varPsi_{n}$）.
+	
+\exercise 电荷为$e$（或$-e$）质量为$m$的三维各向同性谐振子，［用直角坐标系，以$\varPsi_{n1}(x)\varPsi_{n2}(x)\varPsi_{n3}(x)$作为能量本征函数.］(a) 求电偶极跃迁选择定则，(b) 求自发跃迁速率公式.（设初态量子数$n_{1}=n_{2}=n_{3}=n$，考虑向一切可能的终态跃迁速率之和.）(c) 取$n_{1}=n_{2}=n_{3}=1$，如谐振子是电子，$\hbar\omega=1\si{eV}$，求初态平均寿命.如谐振子是质子，$\hbar\omega=1\si{MeV}$，求初态平均寿命.
+	
+\exercise 处于无限深平底势阱中的带电粒子，求其电偶极跃迁选择定则.
+	
+\exercise 考虑自旋轨道耦合，原子中价电子（最外层电子）定态波函数取$(H,\boldsymbol{L}^{2},\boldsymbol{J}^{2},J_{z})$共同本征函数，量子数$(nljm_{j})$.对于价电子的自发跃迁（电偶极跃迁），证明选择定则是
+\begin{empheq}{equation*}
+	\Delta l=\pm1,\quad \Delta j=0,\pm1,\quad \Delta m_{j}=0,\pm1
+\end{empheq}
+
+［提示：利用公式$\boldsymbol{\sigma}(\boldsymbol{\sigma}\cdot\boldsymbol{r})+(\boldsymbol{\sigma}\cdot\boldsymbol{r})\boldsymbol{\sigma}=2r$，以及7-15题证明的公式.注意$\boldsymbol{r},\boldsymbol{\sigma}\cdot\boldsymbol{r}$及$Y_{lm}$的宇称性.要着重证明$\Delta j=\pm2$的跃迁是禁止的.］
+
+\exercise 大量氢原子均处于基态，而且电子自旋均沿正$z$轴方向极化，即电子处于$(n,l,m,m_{s})=\left(1,0,0,\dfrac{1}{2}\right)$状态，亦即$(n,l,j,m_{j})=\left(1,0,\dfrac{1}{2},\dfrac{1}{2}\right)$状态.今用电场沿$\pm z$轴方向偏振的线偏振光照射这些原子，造成1s$\rightarrow$2p能级跃迁，忽略2p$_{1/2}$态与2p$_{3/2}$态的能量差.［取相同的径向波函数$R_{21}(r)$］试利用上题证明的选择定则确定终态$(n=2)$量子数$ljm_{j}$的可能取值，并计算终态为2p$_{1/2}$和2p$_{3/2}$的分支比（原子数之比）.
+	
+\exercise 以磁场$\boldsymbol{B}(t)$作用于原子，引起价电子状态的跃迁，求量子数$(lmm_{s})$及$(ljm_{j})$的选择定则.
+	
+\end{exercises}

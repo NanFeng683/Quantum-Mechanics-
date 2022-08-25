@@ -1,0 +1,113 @@
+\starthis\section[坐标表象]{坐标表象} \label{sec:04.03} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+以一维运动为例，粒子的位置（坐标）算符记为$\hat{x}$，其本征值记为$x,x^{\prime},x^{\prime\prime}$，相应本征矢记为$|x \rangle ,|x^{\prime} \rangle $，满足本征方程：
+\begin{empheq}{equation}\label{eq43.1}
+	\hat{x}|x \rangle =x|x \rangle ,\quad \hat{x}|x^{\prime} \rangle =x^{\prime}|x^{\prime} \rangle 
+\end{empheq}
+由于本征值$x$可以连续变化，本征矢的正交归一与完备性条件规定成
+\begin{empheq}{equation}\label{eq43.2}
+	\langle x|x^{\prime} \rangle =\delta(x-x^{\prime})
+\end{empheq}
+\begin{empheq}{equation}\label{eq43.3}
+	\int_{-\infty}^{\infty}dx|x \rangle\langle x|=\int_{-\infty}^{\infty}|x \rangle dx\langle x|=1
+\end{empheq}
+将\eqref{eq43.3}式作用于任何$|x^{\prime} \rangle $，容易验证结果仍得$|x^{\prime} \rangle $，可见\eqref{eq43.2}、\eqref{eq43.3}式的规定是合理而且自洽的.这两个公式是$\S$\ref{sec:04.02}中\eqref{eq42.3}、\eqref{eq42.3}式对连续谱的推广.注意\eqref{eq43.2}式就是本征矢$|x^{\prime} \rangle $在$x$表象中的波函数$\varPsi_{x^{\prime}}(x)$.
+
+任意态矢量$|\varPsi \rangle $可以展开成$|x \rangle $的线性叠加：
+\begin{empheq}{equation}\label{eq43.4}
+	|\varPsi \rangle =\int dx|x \rangle\langle x|\varPsi \rangle  =\int dx |x \rangle \varPsi(x)
+\end{empheq}
+其中$\varPsi(x)=\langle x|\varPsi \rangle $就是$|\varPsi \rangle $在无表象中的波函数.上式以及以下各式中，$\int\cdots dx$表示全空间积分，即$\int_{-\infty}^{\infty}\cdots dx$.如果$|\varPsi \rangle $已经归一化，$\langle \varPsi|\varPsi \rangle$，利用恒等变换\eqref{eq43.3}式，可得
+\begin{empheq}{align*}
+	\langle\varPsi|\varPsi\rangle &=\langle \varPsi|\int|x \rangle dx\langle x|\varPsi \rangle	\\
+	&=\int\langle \varPsi|x \rangle dx\langle x|\varPsi \rangle 	\\
+	&=\int dx\varPsi^{*}(x)\varPsi(x)=1
+\end{empheq}
+其中
+\eqindent{4}
+\begin{empheq}{equation*}
+	\varPsi^{*}(x)\varPsi(x)dx=|\varPsi \rangle \text{态下$\hat{x}$本征值在$(x,x+dx)$间的概率}
+\end{empheq}\eqnormal
+这正是波函数$\varPsi(x)$的统计诠释.
+
+以下讨论动量算符$\hat{\boldsymbol{p}}$（即$\hat{p}_{x}$）对于基矢$\langle x|$的作用规则.$\hat{\boldsymbol{p}}$的本征矢记为$|p \rangle $，$p$为本征值.本征方程为
+\begin{empheq}{equation}\label{eq43.5}
+	\hat{p}|p \rangle =p|p \rangle 
+\end{empheq}
+动量本征矢$|p \rangle $在$x$表象中的波函数为
+\begin{empheq}{equation}\label{eq43.6}
+	\langle x|p \rangle=\varPsi_{p}(x)=(2\pi\hbar)^{-\frac{1}{2}}e^{ipx/\hbar}
+\end{empheq}
+以$\langle x|$左乘\eqref{eq43.5}式，得到
+\begin{empheq}{align}\label{eq43.7}
+	\langle x|\hat{p}|p \rangle &=p\langle x|p \rangle =p\varPsi_{p}(x)	\nonumber\\
+	&=-i\hbar\frac{\partial}{\partial x}\varPsi_{p}(x)=-i\hbar\frac{\partial}{\partial x}\langle x|p \rangle 
+\end{empheq}
+上式对于任何$|p \rangle $成立， 因此
+\begin{empheq}{equation}\label{eq43.8}
+	\langle x|\hat{p}\cdots=-i\hbar\frac{\partial}{\partial x}\langle x|\cdots
+\end{empheq}
+这就是动量算符$\hat{p}(\hat{p}_{x})$对$\langle x|$的一个有效作用规则，如能恰当运用，常能简化计算.注意算符$\frac{\partial}{\partial x}$只能对$x$表象中的波函数作用.
+
+对于由$x$，$p$构成的力学量$F(x,p)$及其算符$\hat{F}=\hat{F}(\hat{x},\hat{p})$，在任意归一化的$|\varPsi \rangle $态下，$F$的平均值公式为
+\begin{empheq}{equation*}
+	\bar{F}=\langle \varPsi|\hat{F}|\varPsi \rangle 
+\end{empheq}
+利用恒等变换\eqref{eq43.3}式， 就可以变化成
+\eqindent{4}
+\begin{empheq}{align}\label{eq43.9}
+	\bar{F}&=\int dx\langle \varPsi|x \rangle \langle x|\hat{F}|\varPsi \rangle	\nonumber\\
+	&=\int dx\langle \varPsi|x \rangle \hat{F}(x,-\hbar\frac{\partial}{\partial x})\langle x|\varPsi \rangle \quad\text{再利用\eqref{eq43.8}式子}	\nonumber\\
+	&=\int dx\varPsi^{*}(x) \hat{F}(x,-\hbar\frac{\partial}{\partial x})\varPsi(x)
+\end{empheq}\eqnormal
+这就是通过波函数$\varPsi(x)$表示的平均值公式，其中$\hat{F}$只对右方的$\varPsi(x)$作用，$\hat{F}$中$\hat{p}(\hat{p}_{x})\rightarrow-i\hbar\frac{\partial}{\partial x}$
+
+又如$\hat{F}$的矩阵元公式
+\begin{empheq}{equation}\label{eq43.10}
+	F_{kn}=\langle k|\hat{F}|n \rangle =\langle \varPsi_{k}|\varPsi_{n} \rangle 
+\end{empheq}
+可以变化成
+\eqindent{6}
+\begin{empheq}{align}\label{eq43.11}
+	F_{kn}&=\int dx\langle \varPsi_{k}|x \rangle\langle x|\hat{F}|\varPsi_{n} \rangle \nonumber\\
+	&=\int dx\langle \varPsi_{k}|x \rangle \hat{F}(x,-\hbar\frac{\partial}{\partial x})\langle x|\varPsi_{n} \rangle \nonumber\\
+	&=\int dx\varPsi_{k}^{*}(x)\hat{F}(x,-\hbar\frac{\partial}{\partial x})\varPsi_{n}(x)
+\end{empheq}\eqnormal
+其中$\hat{F}$只对$\varPsi_{n}(x)$作用.
+
+粒子在一维势场$V(x)$中运动时，哈密顿算符为
+\begin{empheq}{equation*}
+	\hat{H}=\frac{\hat{p}^{2}}{2m}+\hat{V}(x)
+\end{empheq}
+薛定谔方程为
+\eqindent{6}
+\begin{empheq}{equation}\label{eq43.12}
+	i\hbar\frac{partial}{\partial t}|\varPsi(t) \rangle =\hat{H}|\varPsi(t) \rangle =\bigg(\frac{\hat{p}^{2}}{2m}+\hat{V}\bigg)|\varPsi(t) \rangle 
+\end{empheq}\eqnormal
+以$\langle x|$左乘上式（取内积），并令
+\begin{empheq}{equation}\label{eq43.13}
+	\varPsi(x,t)\equiv \langle x|\varPsi(t) \rangle 
+\end{empheq}
+得到
+\eqindent{4}
+\begin{empheq}{align}\label{eq43.14}
+	i\hbar\langle x|\frac{\partial}{\partial t}|\varPsi(t) \rangle 
+	&=i\hbar\frac{\partial}{\partial t}\varPsi(x,t)	\nonumber\\
+	&=\frac{1}{2m}\langle x|\hat{p}^{2}|\varPsi(t) \rangle +\langle x|\hat{V}(x)|\varPsi(t) \rangle 
+\end{empheq}\eqnormal
+其中
+\eqindent{6}
+\begin{empheq}{align*}
+	\langle x|\hat{p}^{2}|\varPsi(t) \rangle &=\bigg(-i\hbar\frac{\partial}{\partial x}\bigg)^{2}\langle x|\varPsi(t) \rangle =-\hbar^{2}\frac{\partial^{2}}{\partial x^{2}}\varPsi(x,t)	\\
+	\hat{V}(x)|x \rangle &=V(x)|x \rangle,\quad \langle x|\hat{V}(x) \rangle =V(x)\langle x|\\
+	\langle x|\hat{V}|\varPsi(t) \rangle &=V(x)\langle x|\varPsi(t) \rangle =V(x)\varPsi(x,t)
+\end{empheq}
+代入\eqref{eq43.14}式，即得
+\begin{empheq}{equation}\label{eq43.15}
+	i\hbar\frac{\partial}{\partial t}\varPsi(x,t)=\bigg[-\frac{\hbar^{2}}{2m}\frac{\partial^{2}}{\partial x^{2}}+V(x)\bigg]\varPsi(x,t)
+\end{empheq}
+这就是薛定谔方程\eqref{eq43.12}在$x$表象中的表示式.从形式上看，相当于\eqref{eq43.12}式中作下列替换：
+\begin{empheq}{equation}\label{eq43.16}
+	|\varPsi(t) \rangle \rightarrow\varPsi(x,t),\quad \hat{V}\rightarrow V(x),\quad \hat{p}\rightarrow -i\hbar\frac{\partial}{\partial x}
+\end{empheq}\eqnormal

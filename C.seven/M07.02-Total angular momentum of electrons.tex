@@ -1,0 +1,238 @@
+\section[电子的总角动量]{电子的总角动量} \label{sec:07.02} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+电子的总角动量$\boldsymbol{J}$为轨道角动量$\boldsymbol{L}=\boldsymbol{r}\times\boldsymbol{p}$与自旋角动量$\boldsymbol{S}$之和，
+\begin{empheq}{equation}\label{eq72.1}
+	\boldsymbol{J}=\boldsymbol{L}+\boldsymbol{S}
+\end{empheq}
+即
+\begin{empheq}{equation*}\label{eq72.1'}
+	J_{\alpha}=L_{\alpha}+S_{\alpha},\quad \alpha=x,y,z
+\end{empheq}
+$\boldsymbol{L}$与$\boldsymbol{S}$属于不同自由度，相应的算符互相对易，即
+\begin{empheq}{equation}\label{eq72.2}
+	[L_{\alpha},S_{\beta}]=0,\quad \alpha,\beta=x,y,z
+\end{empheq}
+因此
+\begin{empheq}{align}\label{eq72.3}
+	[J_{x},J_{y}]&=[L_{x},L_{y}]+[S_{x},S_{y}]	\nonumber\\
+	&=i\hbar(L_{z}+S_{z})=i\hbar J_{z}
+\end{empheq}
+等等总之，$\boldsymbol{J}$仍满足$\S$\ref{sec:04.07}所述角动量的对易式
+\begin{empheq}{equation}\label{eq72.4}
+	\boldsymbol{J}\times\boldsymbol{J}=i\hbar\boldsymbol{J}
+\end{empheq}
+由于$\boldsymbol{L},\boldsymbol{S}$互相对易，$\boldsymbol{J}^{2}$可以写成
+\eqlong
+\begin{empheq}{align}\label{eq72.5}
+	\boldsymbol{J}^{2}&=\boldsymbol{J}\cdot\boldsymbol{J}=(\boldsymbol{L}+\boldsymbol{S})\cdot(\boldsymbol{L}+\boldsymbol{S})	\nonumber\\
+	&=\boldsymbol{L}^{2}+\boldsymbol{S}^{2}+2\boldsymbol{S}\cdot\boldsymbol{L}=\boldsymbol{L}^{2}+\boldsymbol{S}^{2}+\hbar\boldsymbol{\sigma}\cdot\boldsymbol{L}
+\end{empheq}\eqnormal
+其中
+\begin{empheq}{equation}\label{eq72.6}
+	\boldsymbol{\sigma}\cdot\boldsymbol{L}=\sigma_{x}L_{x}+\sigma_{y}L_{y}+\sigma_{z}L_{z}
+\end{empheq}
+这是一个重要算符.它和$\boldsymbol{\sigma}$各分量的对易式可以利用\eqref{eq71.27}式而直接写出（令$\boldsymbol{A}=\boldsymbol{L}$），
+\begin{empheq}{equation}\label{eq72.7}
+	[\boldsymbol{\sigma},\boldsymbol{\sigma}\cdot\boldsymbol{L}]=2i\boldsymbol{L}\times\boldsymbol{\sigma}=-2i\boldsymbol{\sigma}\times\boldsymbol{L}
+\end{empheq}
+$\boldsymbol{\sigma}\cdot\boldsymbol{L}$与$\boldsymbol{L}$各分量的对易式可以利用$\boldsymbol{L}\times\boldsymbol{L}=i\hbar\boldsymbol{L}$导出，例如
+\eqlong
+\begin{empheq}{align*}
+	[L_{x},\boldsymbol{\sigma}\cdot\boldsymbol{L}]&=\sigma_{y}[L_{x},L_{y}]+\sigma_{z}[L_{x},L_{y}]	\\
+	&=i\hbar(\sigma_{y}L_{z}-\sigma_{z}L_{y})=i\hbar(\boldsymbol{\sigma}\times\boldsymbol{L})_{x}
+\end{empheq}\eqnormal
+亦即
+\begin{empheq}{equation}\label{eq72.8}
+	[\boldsymbol{L},\boldsymbol{\sigma}\cdot\boldsymbol{L}]=i\hbar\boldsymbol{\sigma}\times\boldsymbol{L}
+\end{empheq}
+综合\eqref{eq72.7}、\eqref{eq72.8}式，易得
+\begin{empheq}{equation}\label{eq72.9}
+	[\boldsymbol{J},\boldsymbol{\sigma}\cdot\boldsymbol{L}]=0
+\end{empheq}
+$\boldsymbol{J}$的各分量显然与$\boldsymbol{L}^{2}$对易，也与$\boldsymbol{S}^{2}$对易$\bigg(\boldsymbol{S}^{2}=\frac{3\hbar^{2}}{4}$为常数$\bigg)$.这样，$\boldsymbol{L}^{2},\boldsymbol{J}^{2},J_{z}$（或$J_{x},J_{y}$）三者互相对易，存在共同本征函数.按照常规，本征值和本征函数可以由本征方程同步解出.在这里我们将充分考虑电子自旋的特殊性，先求出本征值，然后再求本征函数.
+
+$\boldsymbol{L}^{2}$的本征值已在$\S$\ref{sec:04.07}求出，为
+\begin{empheq}{equation}\label{eq72.10}
+	\boldsymbol{L}^{2}=l(l+1)\hbar^{2},\quad l=0,1,2,\cdots
+\end{empheq}
+为了求出$\boldsymbol{J}^{2}$的本征值，只须求$\boldsymbol{\sigma}\cdot\boldsymbol{L}$的本征值［参看\eqref{eq72.5}式］.为此，利用\eqref{eq71.31}式.\eqref{eq72.5}式告诉我们，$\boldsymbol{J}^{2},\boldsymbol{L}^{2}$的共同本征态也是$\boldsymbol{\sigma}\cdot\boldsymbol{L}$的本征态.将\eqref{eq71.31}式作用于这个共同本征态，式中各算符就转化成本征值.因此$\boldsymbol{\sigma}\cdot\boldsymbol{L}$的本征值满足方程
+\begin{empheq}{equation}\label{eq72.11}
+	(\boldsymbol{\sigma}\cdot\boldsymbol{L})^{2}+\hbar\boldsymbol{\sigma}\cdot\boldsymbol{L}-l(l+1)\hbar^{2}=0
+\end{empheq}
+亦即
+\begin{empheq}{equation*}
+	(\boldsymbol{\sigma}\cdot\boldsymbol{L}-l\hbar)[\boldsymbol{\sigma}\cdot\boldsymbol{L}+(l+1)\hbar]=0
+\end{empheq}
+解为
+\begin{empheq}{equation}\label{eq72.12}
+	\boxed{\begin{aligned}
+			\boldsymbol{\sigma}\cdot\boldsymbol{L}&\text{（本征值）}=l\hbar,	\\
+			-&(l+1)\hbar
+	\end{aligned}}
+\end{empheq}
+［当$l=0$，算符$\boldsymbol{L}$对$\boldsymbol{L}^{2}$本征函数$(Y_{00})$的作用效果为0，$\boldsymbol{\sigma}\cdot\boldsymbol{L}$的本征值为0，而不能取\eqref{eq72.12}式中第二个值.］将\eqref{eq72.12}式代入\eqref{eq72.5}式，并取$\boldsymbol{L}^{2}=l(l+1)\hbar^{2}$，$\boldsymbol{S}^{2}=\frac{3\hbar^{2}}{4}$，就得到$\boldsymbol{J}^{2}$的本征值.结果是
+\eqlong
+\begin{empheq}{equation}\label{eq72.13}
+	\boxed{\begin{aligned}
+		&\boldsymbol{J}^{2}\text{（本征值）}=j(j+1)\hbar^{2}	\\
+		\boldsymbol{\sigma}\cdot\boldsymbol{L}=l\hbar&,\quad j=l+\frac{1}{2}\quad(l=0,1,2,\cdots)	\\
+		\boldsymbol{\sigma}\cdot\boldsymbol{L}=-(l+&1)\hbar,j=l-\frac{1}{2}\quad(l=1,2,3,\cdots)
+	\end{aligned}}
+\end{empheq}\eqnormal
+按照角动量普遍理论（$\S$\ref{sec:04.07}），对于每一种$\boldsymbol{J}^{2}$本征值，$\boldsymbol{J}_{z}$本征值（记为$m\hbar$）有$(2j+1)$种：
+\begin{empheq}{equation}\label{eq72.14}
+	m_{j}=j,j-1,\cdots,(-j)
+\end{empheq}
+注意，$j$和$m_{j}$都是整半数（整数加$\frac{1}{2}$）.许多书中都采用符号$m_{j}=m+\frac{1}{2}$，$m$为整数.［这里$m$仅是量子数$m_{j}$的一种表示符号，与$L_{z}$的本征值没有关系.事实上，$\boldsymbol{L}^{2},\boldsymbol{J}^{2},J_{z}$的共同本征态中，绝大部分都不是$L_{z}$的本征态，$L_{z}$没有明确的（单一的）取值.］
+
+下面讨论$\boldsymbol{L}^{2},\boldsymbol{J}^{2},J_{z}$的共同本征函数.顾及自旋自由度，电子波函数的一般形式可以写成
+\eqlong
+\begin{empheq}{equation}\label{eq72.15}
+	\varPsi(\boldsymbol{r},S_{z},t)=\varPsi_{1}(\boldsymbol{r},t)\chi_{1/2}(S_{z})+\varPsi_{2}(\boldsymbol{r},t)\chi_{-1/2}(S_{z})
+\end{empheq}
+其中$\varPsi_{1}$表示$S_{z}=\frac{\hbar}{2}$时$\varPsi$的函数值，$\varPsi_{2}$表示$S_{z}=-\frac{\hbar}{2}$时$\varPsi$的函数值.如采用$(x,y,z,S_{z})$表象，上式可以表示成
+\begin{empheq}{equation*}\label{eq72.15'}
+	\varPsi(\boldsymbol{r},S_{z},t)=\varPsi_{1}(\boldsymbol{r},t)\begin{bmatrix}
+		1 \\ 0
+	\end{bmatrix}+\varPsi_{2}(\boldsymbol{r},t)\begin{bmatrix}
+		1 \\ 0
+	\end{bmatrix}=\begin{bmatrix}
+		\varPsi_{1}(\boldsymbol{r},t)	\\	\varPsi_{2}(\boldsymbol{r},t)
+	\end{bmatrix}	\tag{$7.2.15^{\prime}$}
+\end{empheq}
+归一化条件为
+\begin{empheq}{equation}\label{eq72.16}
+	\iiint_{-\infty}^{\infty}\varPsi^{*}\varPsi dxdydz=\int(\varPsi_{1}^{*}\varPsi_{2}+\varPsi_{2}^{*}\varPsi_{1})d\tau=1
+\end{empheq}\eqnormal
+其中$\int\cdots d\tau$即$\iiint_{-\infty}^{\infty}dxdydz$（全空间积分）.如$(x,y,z)$空间采用球坐标$(r,\theta,\varphi)$，则$\varPsi_{1},\varPsi_{2}$均为$(r,\theta,\varphi)$及时间$t$的函数.因角动量算符$\boldsymbol{L},\boldsymbol{J}$与径向距离$r$无关，研究$\boldsymbol{L}^{2},\boldsymbol{J}^{2},J_{z}$共同本征函数时，可暂不考虑$\varPsi$与$r$的关系，而将本征函数表示成
+\eqlong
+\begin{empheq}{align}\label{eq72.17}
+	\varPsi(\theta,\varphi,S_{z})&=\varPsi_{1}(\theta,\varphi)\chi_{1/2}(S_{z})+\varPsi_{2}(\theta,\varphi)\chi_{-1/2}(S_{z})	\nonumber\\
+	&=\begin{bmatrix}
+		\varPsi_{1}(\theta,\varphi) \\ \varPsi_{2}(\theta,\varphi)
+	\end{bmatrix}
+\end{empheq}\eqnormal
+归一化条件\eqref{eq72.16}式中$\int\cdots d\tau$也相应改成$\int\cdots d\Omega,d\Omega=\sin\theta d\theta d\varphi$.
+
+作为$\boldsymbol{L}^{2}$的本征函数［本征值$(l(l+1)$］，\eqref{eq72.17}式中也与也显然应该是$l$值相同的球谐函数.试令
+\begin{empheq}{equation*}
+	\varPsi=C_{1}Y_{lm_{1}}(\theta\varphi)\chi_{1/2}+C_{2}Y_{lm2}\chi_{-1/2}
+\end{empheq}
+作为$J_{z}$的本征函数，$\varPsi$应该满足本征方程
+\begin{empheq}{equation*}
+	J_{z}\varPsi=(L_{z}+S_{z})\varPsi=m_{j}\hbar\varPsi=\bigg(m+\frac{1}{2}\bigg)\hbar\varPsi
+\end{empheq}
+容易看出，为此只须$m_{1}=m,m_{2}=m+1$，因此
+\begin{empheq}{equation}\label{eq72.18}
+	\varPsi=C_{1}Y_{lm}\chi_{1/2}+C_{2}Y_{lm+1}\chi_{-1/2}
+\end{empheq}
+现在只须确定系数$C_{1},C_{2}$.$\varPsi$作为$\boldsymbol{J}^{2}$的本征函数，应该满足$\boldsymbol{\sigma}\cdot\boldsymbol{L}$的本征方程，$\boldsymbol{\sigma}\cdot\boldsymbol{L}$的本征值见\eqref{eq72.12}式.$\boldsymbol{\sigma}\cdot\boldsymbol{L}$由\eqref{eq72.6}式表示，作用于$\varPsi$时，利用附录\ref{A04}\eqref{eqA4.43}式及\eqref{eq71.17}式，有下列结果
+\eqllong
+\begin{empheq}{align*}
+	\sigma_{z}L_{z}Y_{lm}&\chi_{1/2}=m\hbar Y_{lm}\chi_{1/2}	\\
+	\sigma_{z}L_{z}Y_{lm+1}\chi_{-1/2}&=-(m+1)\hbar Y_{lm+1}\chi_{-1/2}	\\
+	(\sigma_{x}L_{x}+\sigma_{y}L_{y})Y_{lm}\chi_{1/2}&=(L_{x}+iL_{y})Y_{lm}\chi_{-1/2}	\\
+	&=\sqrt{(l+m+1)(l-m)}\hbar Y_{lm+1}\chi_{-1/2}	\\
+	(\sigma_{x}L_{x}+\sigma_{y}L_{y})Y_{lm+1}\chi_{-1/2}&=(L_{x}-iL_{y})Y_{lm+1}\chi_{1/2}	\\
+	&=\sqrt{(l+m+1)(l-m)}\hbar Y_{lm}\chi_{1/2}
+\end{empheq}
+总之，$\sigma_{z}L_{z}$对\eqref{eq72.18}式中二项作用的结果，各得一个本征值；而$(\sigma_{x}L_{x}+\sigma_{y}L_{y})$作用于\eqref{eq72.18}式，使其中二项互相转化.
+
+将\eqref{eq72.18}式代入$\boldsymbol{\sigma}\cdot\boldsymbol{L}$的本征方程，对两种本征值分别作出计算，就可以求出$\frac{C_{1}}{C_{2}}$，再利用归一化条件，就可定出$C_{1},C_{2}$.结果如下：
+
+(i) $\boldsymbol{\sigma}\cdot\boldsymbol{L}=l\hbar,\bigg(j=l+\frac{1}{2}\bigg)$
+\begin{empheq}{equation*}
+	\frac{C_{1}}{C_{2}}=\bigg(\frac{l+m+1}{l-m}\bigg)^{1/2},\quad C_{1}=\bigg(\frac{l+m+1}{2l+1}\bigg)^{1/2},\quad C_{2}=\bigg(\frac{l-m}{2l+1}\bigg)^{1/2}
+\end{empheq}
+
+(ii) $\boldsymbol{\sigma}\cdot\boldsymbol{L}=-(l+1)\hbar,\bigg(j=l-\frac{1}{2}\bigg)$
+\begin{empheq}{equation*}
+	\frac{C_{1}}{C_{2}}=-\bigg(\frac{l-m}{l+m+1}\bigg)^{1/2},\quad C_{1}=-\bigg(\frac{l-m}{2l+1}\bigg)^{1/2},\quad C_{2}=\bigg(\frac{l+m+1}{2l+1}\bigg)^{1/2}
+\end{empheq}\eqnormal
+这样得到的$(\boldsymbol{L}^{2},\boldsymbol{J}^{2},J_{z})$共同本征函数，通常记为$\varPsi_{ljm_{j}}$，它们是
+
+(i) $j=l+\frac{1}{2},\quad m_{j}=m+\frac{1}{2}$
+\eqindent{3}
+\begin{empheq}{align}\label{eq72.19}
+	&\varPsi_{ljm_{j}}=\bigg(\frac{l+m+1}{2l+1}\bigg)^{1/2}Y_{lm}\chi_{1/2}+\bigg(\frac{l-m}{2l+1}\bigg)^{1/2}Y_{lm+1}\chi_{-1/2}	\nonumber\\
+	=&\frac{1}{\sqrt{2l+1}}\begin{bmatrix}
+		\sqrt{l+m+1}Y_{lm}	\\	\sqrt{l-m}Y_{lm+1}
+	\end{bmatrix}
+\end{empheq}
+
+(ii) $j=l-\frac{1}{2},\quad m_{j}=m+\frac{1}{2}$
+\begin{empheq}{align}\label{eq72.20}
+	&\varPsi_{ljm_{j}}=-\bigg(\frac{l-m}{2l+1}\bigg)^{1/2}Y_{lm}\chi_{1/2}+\bigg(\frac{l+m+1}{2l+1}\bigg)^{1/2}Y_{lm+1}\chi_{-1/2}	\nonumber\\
+	=&\frac{1}{\sqrt{2l+1}}\begin{bmatrix}
+		-\sqrt{l-m}Y_{lm}	\\	\sqrt{l+m+1}Y_{lm+1}
+	\end{bmatrix}
+\end{empheq}\eqnormal
+二者物理性质的主要区别是，前者$\boldsymbol{S}\cdot\boldsymbol{L}\geqslant 0$，后者$\boldsymbol{S}\cdot\boldsymbol{L}<0$，因此习惯上称前者为$\boldsymbol{S},\boldsymbol{L}$“平行”态，后者为$\boldsymbol{S},\boldsymbol{L}$“反平行”态.\eqref{eq72.20}式中两项的系数$(C_{1},C_{2})$正负号相反，通常规定$C_{1}$取负值，这是为了和角动量耦合理论中的相因子规定取得一致.
+
+\example 对于$\varPsi_{ljm_{j}}$态，计算$\boldsymbol{\sigma}$各分量的平均值.
+
+\solution 对于任何由$\boldsymbol{S},\boldsymbol{L}$构成的算符，平均值公式是
+
+\begin{empheq}{equation}\label{eq72.21}
+	\langle \boldsymbol{F} \rangle=\int\varPsi^{+}\hat{F}\varPsi d\Omega 
+\end{empheq}
+当$\sigma_{x},\sigma_{y}$作用于$\varPsi_{ljm_{j}}$时，总是将$\chi_{1/2}$变成$\chi_{-1/2}$，$\chi_{-1/2}$变成$\chi_{1/2}$，例如$\sigma_{x}$作用于\eqref{eq72.18}式，得到
+\begin{empheq}{align*}
+	\sigma_{x}\varPsi_{ljm_{j}}&=C_{1}Y_{lm}\sigma_{x}\chi_{1/2}+C_{2}Y_{lm+1}\sigma_{x}\chi_{-1/2}	\\
+	&=C_{1}Y_{lm}\chi_{-1/2}+C_{2}Y_{lm+1}\chi_{1/2}
+\end{empheq}
+这里的每一项均与\eqref{eq72.18}式中每一项正交.$\sigma_{y}$也是这样.因此
+\begin{empheq}{equation}\label{eq72.22}
+	\langle \sigma_{x}\rangle=\langle\sigma_{y}\rangle=0
+\end{empheq}
+对于$\sigma_{z}$，结果就不同了，由于$\chi_{1/2}$及$\chi_{-1/2}$是$\sigma_{z}$的本征函数，我们可得
+\begin{empheq}{equation*}
+	\sigma_{z}\varPsi_{ljm_{j}}=C_{1}Y_{lm}\chi_{1/2}-C_{2}Y_{lm+1}\chi_{-1/2}=\begin{bmatrix}
+		C_{1}Y_{lm} \\ -C_{2}Y_{lm+1}
+	\end{bmatrix}
+\end{empheq}
+因此
+\begin{empheq}{align*}
+	\langle\sigma_{z}\rangle&=\int\varPsi_{ljm_{j}}^{+}\sigma_{z}\varPsi_{ljm_{j}}d\Omega	\\
+	&=\int[C_{1}^{*}Y_{lm}^{*}\quad C_{2}^{*}Y_{lm+1}^{*}]\begin{bmatrix}
+		C_{1}Y_{lm}	\\	-C_{2}Y_{lm+1}
+	\end{bmatrix}d\Omega	\\
+	&=\int(C_{1}^{*}C_{1}Y_{lm}^{*}Y_{lm}-C_{2}^{*}C_{2}Y_{lm+1}^{*}Y_{lm+1})d\Omega	\\
+	&=C_{1}^{*}C_{1}-C_{2}^{*}C_{2}
+\end{empheq}
+对于$j=l+\frac{1}{2}$的情形，结果是
+\begin{empheq}{equation}\label{eq72.23}
+	\langle\sigma_{z}\rangle=\frac{2m+1}{2l+1}=\frac{m_{j}}{j}
+\end{empheq}
+对于$j=l-\frac{1}{2}$的情形，结果是
+\begin{empheq}{equation}\label{eq72.24}
+	\langle\sigma_{z}\rangle=-\frac{2m+1}{2l+1}=\frac{m_{j}}{j+1}
+\end{empheq}
+
+本题也可以避开$\varPsi_{ljm_{j}}$的具体构造式，而利用$\boldsymbol{\sigma},\boldsymbol{L}$的算符公式以及$\boldsymbol{\sigma}\cdot\boldsymbol{L}$的本征值公式，计算出结果.考虑到这种算符方法有推广价值，介绍如下.由\eqref{eq71.26}式，取$\boldsymbol{A}=\boldsymbol{L}$，
+\begin{empheq}{equation}\label{eq72.25}
+	\boldsymbol{\sigma}(\boldsymbol{\sigma}\cdot\boldsymbol{L})+(\boldsymbol{\sigma}\cdot\boldsymbol{L})\sigma=2\boldsymbol{L}
+\end{empheq}
+在$\varPsi_{ljm_{j}}$态下求上式平均值，其中$\boldsymbol{\sigma}\cdot\boldsymbol{L}$变成本征值，因此得到
+\begin{empheq}{equation}\label{eq72.26}
+	\langle\boldsymbol{\sigma}\rangle(\boldsymbol{\sigma}\cdot\boldsymbol{L}\text{本征值})=\langle\boldsymbol{L}\rangle 
+\end{empheq}
+由于$\boldsymbol{J}=\boldsymbol{L}+\frac{\hbar}{2}\boldsymbol{\sigma}$，上式亦即
+\begin{empheq}{equation}\label{eq72.27}
+	\langle\boldsymbol{\sigma}\rangle \bigg[\frac{\hbar}{2}+(\boldsymbol{\sigma}\cdot\boldsymbol{L}\text{本征值})\bigg]=\langle\boldsymbol{J}\rangle 
+\end{empheq}
+在$J_{z}$的本征态下，$\langle J_{x}\rangle=\langle J_{y}\rangle=0$，所以$\langle\sigma_{x}\rangle=\langle\sigma_{y}\rangle=0$.而
+\eqindent{2}
+\begin{empheq}{equation}\label{eq72.28}
+	\frac{\hbar}{2}+(\boldsymbol{\sigma}\cdot\boldsymbol{L}\text{本征值})=
+	\begin{dcases}
+		\bigg(l+\frac{1}{2}\bigg)\hbar	\\
+		-\bigg(l+\frac{1}{2}\bigg)\hbar
+	\end{dcases}=
+	\begin{dcases}
+		\quad j\hbar,\quad\qquad	j=l+\frac{1}{2}	\\
+		-(j+1)\hbar,\quad j=l-\frac{1}{2}
+	\end{dcases}
+\end{empheq}\eqnormal
+代入\eqref{eq72.27}式，即得\eqref{eq72.23}式、\eqref{eq72.24}式.

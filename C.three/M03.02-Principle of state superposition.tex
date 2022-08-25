@@ -1,0 +1,40 @@
+\section[态叠加原理]{态叠加原理} \label{sec:03.02} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+不同波动状态之间，常有一定联系.例如光栅衍射，衍射光束可以用分光镜分解成各种单色平面光.因此，有理由认为，即使是在分解前，该光束也是由各种单色平面光波叠加而成，表现在波函数上，就是
+\setlength{\mathindent}{6em}
+\begin{empheq}{equation}\label{eq32.1}
+	\varPsi(\boldsymbol{r},t)=\sum_{n}C_{n}\varPsi_{n}(\boldsymbol{r},t)=\sum_{n}C_{n}e^{i\boldsymbol{k}_{n}\cdot\boldsymbol{r}-\omega_{n}t}
+\end{empheq}\eqnormal
+这里$\varPsi$表示$\boldsymbol{k}=\boldsymbol{k}_{n}$，$\omega=\omega_{n}$的单色平面光波波函数.
+
+波函数之间的这种线件叠加关系，在量子力学中具有根本意义.作为一项基本假设，量子力学认为：
+
+(1) 物理体系的任何一种状态（波函数$\varPsi$）总可以认为是由某些其他状态（波函数$\varPsi_{1},\varPsi_{2},\cdots$）线性叠加而成，即
+\begin{empheq}{equation}\label{eq32.2}
+	\varPsi=C_{1}\varPsi_{1}+C_{2}\varPsi_{2}+\cdots
+\end{empheq}
+$C_{1},C_{2},\cdots$为常数（可以是复数）.
+
+(2) 如果$\varPsi_{1},\varPsi_{2},\cdots$是可以实现的状态（波函数），则它们的任何线性叠加式\eqref{eq32.2}总是表示一种可以实现的状态（波函数）.
+
+(3) 当物理体系处于叠加态\eqref{eq32.2}式，可以认为该体系部分地处于$\varPsi_{1}$态，部分地处于$\varPsi_{2}$态，等等.
+
+以上各点，常被称为“态叠加原理”.
+
+从实际应用来说，最重要的一种情况是，$\varPsi_{1},\varPsi_{2},\cdots$是某个力学量算符$\hat{A}$的本征函数，这时叠加式\eqref{eq32.2}具有特别重要的物理意义，将在$\S$\ref{sec:03.04}阐述.
+
+注意以上所说的叠加都是指\eqref{eq32.2}式那样的线性叠加.至于波函数之间的非线性关系，例如：
+\begin{empheq}{equation*}
+	\varPsi=\varPsi_{1}+|\varPsi_{2}|+(\varPsi_{3})^{2}+\sqrt{\varPsi_{4}}+\cdots
+\end{empheq}
+即使这种关系在数学上确实存在，也不认为它有任何物理意义.
+
+在整个量子力学理论中，态叠加原理起着统制全局的作用，为了和它协调，量子力学的基本方程——薛定谔方程就是一个线性方程，表示力学量的算符都是线性算符，等等.量子力学理论为什么要以态叠加原理作为基础，采取线性结构，并没有什么先验的理由，但是半个多世纪以来量子力学在各方面获得的巨大成功表明这样做是正确的.也有人进行着建立非线性量子力学的工作，但还远远没有获得成功.
+
+必须指出，量子力学中态叠加的含义和经典物理中波的叠加含义是不同的.例如一个态自身和自身叠加：
+\setlength{\mathindent}{11em}
+\begin{empheq}{equation*}
+	\varPsi_{1}+\varPsi_{1}=2\varPsi_{1}=\varPsi
+\end{empheq}\eqnormal
+根据波函数的统计诠释，必须认为$\varPsi=2\varPsi_{1}$也$\varPsi_{1}$也代表同一种状态.而对于经典波动，$2\varPsi_{1}$的振幅为$\varPsi_{1}$的2倍，二者具有不同的物理性质，例如前者的能量是后者的4倍，因此代表两种不同的波动状态.

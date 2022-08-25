@@ -1,0 +1,159 @@
+\section[不确定度关系]{不确定度关系} \label{sec:03.08} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+考虑两个力学量$A,B$及其算符$\hat{A},\hat{B}$，任意给定一个归一化的波函数$\varPsi$.如$\varPsi$是$\hat{A}$或$\hat{B}$的本征函数，则力学量$A$或$B$将取单一的本征值，这种情况不予讨论.如$\varPsi$不是$\hat{A}$或$\hat{B}$的本征函数，则$A$和$B$的取值均将具有某种分布，定义分布宽度（涨落）$\Delta A$，$\Delta B$，
+\begin{empheq}{equation}\label{eq38.1}
+	\begin{aligned}
+		(\Delta A)^{2}&=\overline{(\hat{A}-\bar{A})^{2}}=\overline{A^{2}}-\bar{A}^{2}	\\
+		(\Delta B)^{2}&=\overline{(\hat{B}-\bar{B})^{2}}=\overline{B^{2}}-\bar{B}^{2}
+	\end{aligned}
+\end{empheq}
+试问，对于各种不同的波函数$\varPsi$，$\Delta A\cdot\Delta B$的下限是什么？如果$\hat{A},\hat{B}$对易，可取$\varPsi$尽量接近$\hat{A},\hat{B}$的共同本征函数，使$\Delta A,\Delta B$都很小，所以$\Delta A\cdot\Delta B$的下限为0.如$\hat{A},\hat{B}$不对易，令
+\begin{empheq}{equation}\label{eq38.2}
+	[\hat{A},\hat{B}]\equiv\hat{A}\hat{B}-\hat{B}\hat{A}=i\hat{C}
+\end{empheq}
+$\hat{C}$必为厄密算符，它在$\varPsi$态下的平均值
+\begin{empheq}{equation}\label{eq38.3}
+	\bar{C}=-i\int\varPsi^{*}(\hat{A}\hat{B}-\hat{B}\hat{A})\varPsi d\tau
+\end{empheq}
+必为实数,可以证明
+\begin{empheq}{equation}\label{eq38.4}
+	\boxed{\Delta A\cdot\Delta B\geqslant\frac{1}{2}|\bar{C}|}
+\end{empheq}
+称为不确定度关系（曾称为测不准关系）.\eqref{eq38.4}式的证明如下.
+
+对于任意线性算符$\hat{F}$及其共轭$\hat{F}^{*}$，$\hat{F}^{*}\hat{F}$的平均值为
+\eqindent{6}
+\begin{empheq}{align}\label{eq38.5}
+	\overline{\hat{F}^{*}\hat{F}}&=\int\varPsi^{*}\hat{F}^{*}\hat{F}\varPsi d\tau	\nonumber\\
+	&=\int(\hat{F}\varPsi)(\hat{F}\varPsi)^{*}d\tau=\int|\hat{F}\varPsi|^{2}d\tau\geqslant 0
+\end{empheq}\eqnormal
+令
+\begin{empheq}{equation}\label{eq38.6}
+	\hat{F}=\hat{A}+i\xi\hat{B}
+\end{empheq}
+$\xi$为实参数（注意，如$A,B$量纲相同，$\xi$是无量纲参数；如$A,B$量纲不同，则$\xi$有量纲.）
+\eqindent{6}
+\begin{empheq}{align}\label{eq38.7}
+	\hat{F}^{*}\hat{F}&=(\hat{A}-i\xi\hat{B})(\hat{A}+i\xi\hat{B})	\nonumber\\
+		&=\hat{A}^{2}+\xi^{2}\hat{B}^{2}+i\xi[\hat{A},\hat{B}]=\hat{A}^{2}+\xi^{2}\hat{B}^{2}-\xi\hat{C}
+\end{empheq}\eqnormal
+代入\eqref{eq38.5}式， 即得
+\begin{empheq}{equation}\label{eq38.8}
+	\overline{A^{2}}+\xi^{2}\overline{B^{2}}-\xi\overline{C}\geqslant 0
+\end{empheq}
+等号成立的条件为
+\begin{empheq}{equation}\label{eq38.9}
+	\hat{F}\varPsi=(\hat{A}+i\xi\hat{B})\varPsi=0
+\end{empheq}
+\eqref{eq38.8}式对任何$\xi$值（实数），任何归一化波函数$\varPsi$，均可成立.但如$\varPsi$是$\hat{A}$或$\hat{B}$的本征函数，这时$\bar{C}=0$，\eqref{eq38.8}式没有实际价值.
+
+\eqref{eq38.8}式中取$\xi=\pm 1$（如$\bar{C}>0$，取$\xi=1$；如$\bar{C}<0$，取$\xi=-1$）得到
+\begin{empheq}{equation}\label{eq38.10}
+	\overline{A^{2}}+\overline{B^{2}}\geqslant|\bar{C}|
+\end{empheq}
+\eqref{eq38.8}式中取$\xi=\bar{C}/(2\overline{B^{2}})$或$\xi=\pm\sqrt{\overline{A^{2}}/\overline{B^{2}}}$（$\bar{C}>0$，取正号；$\bar{C}<0$，取负号），得到
+\begin{empheq}{equation}\label{eq38.11}
+	\overline{A^{2}}\overline{B^{2}}\geqslant\frac{1}{4}\bar{C}^{2}
+\end{empheq}
+这实际上是\eqref{eq38.8}式成立的充要条件.\eqref{eq38.11}式其实已经包含了\eqref{eq38.10}式.
+
+\eqref{eq38.8}至\eqref{eq38.11}式适用于任何厄密算符$\hat{A},\hat{B}$.如将$\hat{A}$换成$(\hat{A}-\bar{A})$，$\hat{B}$换成$(\hat{B}-\bar{B})$，则
+\begin{empheq}{align*}
+	[\hat{A}-\bar{A},\hat{B}-\bar{B}]=[\hat{A},\hat{B}]=i\hat{C}	\\
+	\overline{(\hat{A}-\bar{A})^{2}}=(\Delta A)^{2},\quad\overline{(\hat{B}-\bar{B})^{2}}=(\Delta B)^{2} 
+\end{empheq}
+\eqref{eq38.10}式换成
+\begin{empheq}{equation}\label{eq38.12}
+	(\Delta A)^{2}+(\Delta B)^{2}\geqslant|\bar{C}|=|\overline{AB-BA}|
+\end{empheq}
+注意，\eqref{eq38.10}式和\eqref{eq38.12}式仅适用于$A,B$量纲相同的情形.\eqref{eq38.11}式换成
+\begin{empheq}{equation*}
+	\Delta A\cdot\Delta B\geqslant\frac{1}{2}|\bar{C}|=\frac{1}{2}|\overline{AB-BA}|
+\end{empheq}
+这就是不确定度关系\eqref{eq38.4}式成立，\eqref{eq38.12}式必然成立．
+
+狭义的不确定度关系是指$A=x,B=p_{x}$的情形，这时
+\begin{empheq}{equation*}
+	[x,p_{x}]=i\hbar
+	\tag{$3.8.4$}
+\end{empheq}
+相当于$\hat{C}=\hbar$，这时\eqref{eq38.11}式和\eqref{eq38.4}式变成
+\begin{empheq}{equation}\label{eq38.13}
+	\overline{x^{2}}\overline{p_{x}^{2}}\geqslant\frac{\hbar^{2}}{4}
+\end{empheq}
+\begin{empheq}{equation}\label{eq38.14}
+	\boxed{\Delta x\cdot\Delta p_{x}\geqslant\frac{\hbar}{2}}
+\end{empheq}
+历史上， 不确定关系是海森堡（W. Heisenberg）首先提出来的.海森堡分析了若干典型实验后指出，微观粒子的位置和动量不可能同时予以精确测定，而只能确定到（在量级的意义上）
+\begin{empheq}{equation*}
+	\Delta x\cdot\Delta p\gtrsim h
+\end{empheq}
+的程度.\eqref{eq38.14}式则是严格的定量结果.注意，\eqref{eq38.14}式只规定了$\Delta x\cdot\Delta p_{x}$的下限，并未规定出上限.对许多典型定态问题的计算结果表明，对于多数问题的基态，$\Delta x\Delta p_{x}$接近于$\hbar$；而对于高激发态，$\Delta x\Delta p_{x}$的值可以很大.例如，一维谐振子的基态$\varPsi_{0}$，$\Delta x\Delta p_{x}=\frac{\hbar}{2}$，刚好是\eqref{eq38.14}式的下限；对于$\varPsi_{n}$态，$\Delta x\Delta p_{x}=\bigg(n+\frac{1}{2}\bigg)\hbar$.
+
+不确定度关系集中反映了量子力学规律的特点，规定了经典力学轨道概念的适用限度.例如，经典力学认为质点有绝对静止状态，位置完全确定($\Delta x=0$)，动量为0.而按照不确定度关系\eqref{eq38.14}，这种经典静止状态是不可能的.实验事实正是这样，粒子的位置越确定（$\Delta x$小），动量的涨落$\Delta p$就越大，动能的数值也越大（参看下面的例题）.又如经典力学认为质点均有运动轨道，在任何时刻质点均有明确的位置和动量，$\Delta x=0,\Delta p_{x}=0$.而不确定关系\eqref{eq38.14}告诉我们， 在任何时刻粒子的$\Delta x$与$\Delta p_{x}$之积不小于$\frac{\hbar}{2}$，这就根本否定了轨道运动的概念.但是，在\eqref{eq38.14}式的限制下，如果$\Delta x$和$\Delta p_{x}$实际上都很小，可以忽略不计，则轨道概念仍可近似成立.例如电子在宏观尺度上运动，$x$的量级如取为厘米，如果$\Delta x\sim 10^{-4}\si{cm}$，这是不易观测到的，按照\eqref{eq38.14}式，$\Delta p_{x}$的下限为
+\begin{empheq}{equation*}
+	\Delta p_{x}\sim\frac{\hbar}{\Delta x}\sim 10^{-28}\si{kg\cdot m\cdot s^{-1}}
+\end{empheq}
+如果电子的动能等于1\si{eV}，则动量等于
+\begin{empheq}{equation*}
+	p=\sqrt{2m_{e}E}\sim \num{5.4}\times 10^{-25}\si{kg\cdot m\cdot s^{-1}}
+\end{empheq}
+和$p$相比，$\Delta p_{x}$也是微不足道的，因此轨道概念可以近似成立，电子的宏观运动可以用经典力学来处理.电子在原子范围内运动，情况就完全不同了，这时电子的位置（从原子核处算起）的量级约为
+\begin{empheq}{equation*}
+	x\sim a_{0}\sim\num{0.53}\times 10^{-10}\si{m}\text{（玻尔半径）}
+\end{empheq}
+电子的动能盐级约为10\si{eV}，因此
+\begin{empheq}{equation*}
+	p\sim \sqrt{2m_{e}\times10\si{eV}}\sim 1.7\times10^{-24}\si{kg\cdot m\cdot s^{-1}}	
+\end{empheq}
+\begin{empheq}{equation*}
+	x\cdot p\sim 8.5\times 10^{-35} \si{J\cdot s}\sim\hbar	
+\end{empheq}
+由于\eqref{eq38.14}式的限制，已经不可能同时使$\Delta x\ll x,\Delta p\ll p$，亦即经典轨道的概念不再适用.
+
+\example 用不确定度关系估算原子核中核子（质子，中子）动能的量级，并解释电子不可能是原子核的结构单元.
+
+\solution 中等大小的原子核，半径$R$约为5\si{fm}左右.核子在核内的分布基本上是均匀的，就一个核子来说，
+\begin{empheq}{equation*}
+	\overline{r^{2}}\approx\frac{1}{\tau}\int_{\tau}r^{2}d\tau=\frac{4\pi}{4\pi R^{3}/3}\int_{0}^{R}r^{4}dr=\frac{3}{5}R^{2}	
+\end{empheq}
+\begin{empheq}{equation*}
+	\overline{x^{2}}\approx\frac{1}{3}\overline{r^{2}}\approx\frac{1}{5}R^{2}	
+\end{empheq}
+对于全体核子的总平均，可取
+\begin{empheq}{equation*}
+	\overline{p_{x}^{2}}\sim\frac{\hbar^{2}}{x^{2}}\sim\frac{5\hbar^{2}}{R^{2}}	
+\end{empheq}
+\begin{empheq}{equation*}
+	\overline{p^{2}}\sim3\overline{p_{x}^{2}}\sim\frac{15\hbar^{2}}{R^{2}}	
+\end{empheq}
+核子平均动能约为
+\begin{empheq}{equation*}
+	\frac{\overline{p^{2}}}{2m_{p}}\sim\frac{15\hbar^{2}}{2m_{p}R^{2}}=\frac{15\hbar^{2}c^{2}}{2m_{p}c^{2}R^{2}}\sim 12\si{MeV}	
+\end{empheq}
+核子动能的实验值约为$10\sim 20$\si{MeV}.
+
+如果设想原子核的结构单元中也有电子，则电子的动量估计值仍如上述，$p^{2}\sim\frac{15\hbar^{2}}{R^{2}}$，如用公式$\frac{p^{2}}{2m_{e}}$计算动能，则
+\begin{empheq}{equation*}
+	\frac{p^{2}}{2m_{e}}\sim\frac{m_{p}}{m_{e}}\times 12 \si{MeV}\sim 2.2\times 10^{4} \si{MeV}
+\end{empheq}
+远大于$m_{e}c^{2}$.这种情况下应该用相对论公式，
+\begin{empheq}{equation*}
+	E\sim pc \sim\sqrt{15}\frac{\hbar c}{R}\sim 150\si{MeV}
+\end{empheq}
+欲将动能这么大的电子束缚在原子核中，需要量级相同的负的势能．但是能够吸引电子的只有质子-电子间的库仑吸引力，其势能约为
+\begin{empheq}{equation*}
+	V\sim -\frac{Ze^{2}}{R}\quad \text{（Z:核内质子总数）}
+\end{empheq}
+如取$Z\sim40$，则$V\sim-12\si{MeV}$，数值远小于动能估计值150\si{MeV}.由此可见，电子不可能是原子核的结构单元.
+
+事实上，原子核发生$\beta^{-}$衰变时，临时产生出来的电子，其动能最多只有几个\si{MeV}，其德布罗意波长
+\begin{empheq}{equation*}
+	\lambda=\frac{h}{p}\sim\frac{hc}{E}\sim\frac{1.24\times 10^{3}\si{MeV}\cdot\si{fm}}{E}
+\end{empheq}
+$\lambda$远大于核半径，所以$\beta^{-}$电子不可能在核内久留，几乎立刻逸出核外.
+
+
+
+

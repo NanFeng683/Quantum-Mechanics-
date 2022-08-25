@@ -1,0 +1,106 @@
+\section[全同粒子体系]{全同粒子体系} \label{sec:10.02} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+全同粒子是指内禀属性（质量，电荷，自旋等性质）完全相同的粒子，它们可以是基本粒子（如电子），也可以是复合粒子（如$\alpha$粒子）.全同粒子的存在是公认的实验事实，也是被自然科学界普遍接受的一种信念.以电子的电荷为例，已经进行过的大量实验测量表明，所有电子的电荷都取同样的数值（但应记得实验测量有精确度的限制，而且各次精密测量结果在最后几位有效数字上稍有不同），因此，物理学家都相信，未被测量过的电子的电荷必定也取同样的数值，因为他们确信所有的电子都是全同的.
+
+考虑某种全同粒子体系，粒子数$N$.设体系处于某种状态$\Psi$.状态的各项性质可以由外界“观测者”（例如其他粒子）通过和该体系的相互作用而一一查明.现在设想该体系中的两个粒子$i$与$j$交换它们的运动状况（犹如一场演出中两个演员交换他们的角色），对于外界观测者来说，由于实行交换的粒子是全同的，这种交换显然不会影响任何观测结果，这意味着体系的性质没有任何改变.因此，应该认为也只能认为，两个全同粒子实行交换后，体系仍然处于同样的状态.这个观点以及下面叙述的体系波函数$\Psi$具有的交换对称性或反对称性，通常被称作“全同性原理”.
+
+以$\Psi(q_{1},q_{2},\cdots,q_{N},t)$表示体系的波函数，其中$q_{i}$表示粒子$i$的全部独立变量（通常指$\boldsymbol{r}_{i},S_{iz}$）.以$\hat{P}_{ij}$表示交换粒子$i$和$j$，即
+\begin{empheq}{equation}\label{eqx2.1}
+	\hat{P}_{ij}\Psi(\cdots q_{i}\cdots q_{j}\cdots)=\Psi(\cdots q_{i}\cdots q_{j}\cdots)
+\end{empheq}\eqshort
+按照全同性原理，$\Psi$与$\hat{P}_{ij}\Psi$描述相同的体系状态，因此二者最多相差一个常系数，即
+\begin{empheq}{equation*}
+	\hat{P}_{ij}\Psi=\lambda\Psi
+\end{empheq}
+用$\hat{P}_{ij}$对上式再作用一次，
+\begin{empheq}{equation*}
+	\hat{P}_{ij}^{2}\Psi=\lambda\hat{P}_{ij}\Psi=\lambda^{2}\Psi
+\end{empheq}
+一对粒子连续交换两次，显然应该还原，所以$\lambda^{2}=1,\lambda=\pm1$.亦即全同粒子体系波函数的交换性质必属下列情形之一：
+\begin{empheq}{align*}
+	&\hat{P}_{ij}\Psi=\Psi	\qquad&\text{（对称）}	\\
+	&\hat{P}_{ij}\Psi=-\Psi	\quad &\text{（反对称）}
+\end{empheq}
+体系的总能量算符当然是交换对称的，因此
+\begin{empheq}{equation*}
+	\hat{P}_{ij}(\hat{H}\Psi)=\hat{H}\hat{P}_{ij}\Psi
+\end{empheq}
+亦即$[\hat{P}_{ij},\hat{H}]=0$，$P_{ij}$是守恒量，这意味着体系波函数的交换性质不会随时间改变.
+
+迄今为止已进行的一切实验都表明全同粒子体系波函数的交换性质与粒子的自旋有确定的关系.单粒子自旋为$\hbar$整数倍$[\boldsymbol{S}^{2}=S(S+1)\hbar^{2},S=0,1,2,\cdots]$的全同粒子体系，波函数总是交换对称的，这种粒子遵守玻色统计法则，称为玻色子.光子$(S=1)$，$\pi$介子$(S=0)$，$\alpha$粒子$(S=0)$等都是玻色子.单粒子自旋为$\hbar$整半数倍$\left(S=\frac{1}{2},\frac{3}{2},\cdots\right)$的全同粒子体系，波函数总是交换反对称的，这种粒子遵守费密统计法则，称为费密子.电子，质子，中子等$\left(S=\frac{1}{2}\right)$都是费密子.
+
+全同费密子体系有一项重要性质，即每一种单粒子状态只能容纳一个粒子.这是泡利分析了大量原子物理实验事实后提出来的，称为泡利不相容原理（1925年，量子力学诞生前夕）.下面给出泡利原理的证明.为简明起见，先考虑由两个全同费密子组成的体系，所得结论很容易推广到多粒子体系.
+
+设二粒子（全同费密子）体系总能量算符可以近似表示成单粒子能量算符之和，
+\begin{empheq}{equation}\label{eqx2.2}
+	H=H_{0}(q_{1})+H_{0}(q_{2})
+\end{empheq}
+$H_{0}(q_{1})$包含粒子1的动能，外场作用势能，以及两粒子相互作用势的某种等效表示.$H_{0}(q_{2})$也是这样.以$E_{n},\varPsi_{n}(q)$表示单粒子能量算符$H_{0}(q)$的本征值和正交归一化本征函数（$n$表示确定单粒子状态所需全部量子数），
+\begin{empheq}{equation}\label{eqx2.3}
+	H_{0}(q)\varPsi_{n}(q)=E_{n}\varPsi_{n}(q)
+\end{empheq}\eqnormal
+总能量算符$H$的本征函数显然可以表示成两个单粒子能量本征函数的积，例如：
+\begin{empheq}{equation}\label{eqx2.4}
+	\varPsi_{n_{1}}(q_{1})\varPsi_{n_{2}}(q_{2}),\quad \varPsi_{n_{1}}(q_{2})\varPsi_{n_{2}}(q_{1})
+\end{empheq}\eqllong
+均相应于本征值$H=E=E_{n_{1}}+E_{n_{2}}$.当$n_{1}\neq n_{2}$，上式中每一项都不具有交换对称性，因此不能作为体系的波函数.费密子体系的波函数必须是交换反对称的，因此与能级$E=(E_{n_{1}}+E_{n_{2}})$相应的波函数必须由\eqref{eqx2.4}式中两个简并项叠加而成，
+\begin{empheq}{equation}\label{eqx2.5}
+	\Psi_{n_{1}n_{2}}^{A}(q_{1},q_{2})=\sqrt{\frac{1}{2}}[\varPsi_{n_{1}}(q_{1})\varPsi_{n_{2}}(q_{2})-\varPsi_{n_{1}}(q_{2})\varPsi_{n_{2}}(q_{1})]
+\end{empheq}\eqnormal
+$\Psi$右上角的字母$A$表示交换性质是反对称.显然，为了$\Psi$不恒等于零，必须$n_{1}\neq n_{2}$，亦即两个单粒子状态必须不相同，这就是泡利不相容原理.注意，在\eqref{eqx2.5}式中，每一个粒子并不固定在某个单粒子态中，而是既可以在$\varPsi_{n_{1}}$态中出现，也可以在$\varPsi_{n_{2}}$态中出现，但是两个粒子不能出现在同一个单粒子态中．
+
+\eqref{eqx2.5}式可以写成行列式的形式：
+\begin{empheq}{equation*}\label{eqx2.5'}
+	\Psi_{n_{1}n_{2}}^{A}(q_{1},q_{2})=\frac{1}{\sqrt{2}}\begin{vmatrix}
+		\varPsi_{n_{1}}(q_{1})	&	\varPsi_{n_{1}}(q_{2})	\\
+		\varPsi_{n_{2}}(q_{1})	&	\varPsi_{n_{2}}(q_{2})	
+	\end{vmatrix}
+	\tag{$10.2.5^{\prime}$}
+\end{empheq}
+推广到$N$个全同费密子体系，如果总能量算符可以近似表示成单粒子能量算符之和，
+\begin{empheq}{equation}\label{eqx2.6}
+	H=H_{0}(q_{1})+H_{0}(q_{2})+\cdots+H_{0}(q_{N})
+\end{empheq}\eqllong
+则当单粒子状态为$\varPsi_{n_{1}},\varPsi_{n_{2}},\cdots,\varPsi_{n_{N}}$时，具有交换反对称性的体系波函数为
+\begin{empheq}{equation}\label{eqx2.7}
+	\Psi_{n_{1}\cdots n_{N}}^{A}(q_{1}\cdots q_{N})=
+	\sqrt{\frac{1}{N!}}\begin{vmatrix}
+		\varPsi_{n_{1}}(q_{1})	& \cdots &	\varPsi_{n_{1}}(q_{N})	\\
+		\vdots	&	&	\vdots	\\
+		\varPsi_{n_{N}}(q_{1})	& \cdots &	\varPsi_{n_{N}}(q_{N})	
+	\end{vmatrix}
+\end{empheq}\eqlllong
+上式包含基本项$\varPsi_{n_{1}}(q_{1})\varPsi_{n_{2}}(q_{2})\cdots\varPsi_{n_{N}}(q_{N}))$及各交换项，总项数$N!$.如在\eqref{eqx2.7}式中交换$q_{i}$与$q_{j}$，相当于行列式的$i$列与$j$列交换，$\Psi$改变符号，因此\eqref{eqx2.7}式确是交换反对称的.如果有两个单粒子态相同，例如$n_{1}=n_{2}$，则行列式的第一行与第二行相同，$\Psi=0$，这表明这样的体系状态不存在.以上就是泡利不相容原理的证明.
+
+全同玻色子体系的波函数必须是交换对称的.以二粒子体系为例，如单粒子状态为$\varPsi_{n_{1}},\varPsi_{n_{2}}$，则体系波函数应该取\eqref{eqx2.4}式中两个简并项的对称组合，即
+\begin{empheq}{equation}\label{eqx2.8}
+	\Psi_{n_{1}n_{2}}^{S}(q_{1},q_{2})=\frac{1}{\sqrt{2}}[\varPsi_{n_{1}}(q_{1})\varPsi_{n_{2}}(q_{2})+\varPsi_{n_{1}}(q_{2})\varPsi_{n_{2}}(q_{1})],n_{1}\neq n_{2}
+\end{empheq}\eqnormal
+当$n_{1}=n_{2}$，显然$\Psi$并不变成零，而成为（归一化重新考虑）
+\begin{empheq}{equation}\label{eqx2.9}
+	\Psi_{n_{1}n_{2}}^{S}(q_{1},q_{2})=\varPsi_{n_{1}}(q_{1})\varPsi_{n_{1}}(q_{2})
+\end{empheq}
+由此可见，玻色子体系不受泡利原理的约束，各粒子可以处于相同的单粒子态，也可以处于不同的单粒子态.而且，由于自发跃迁，玻色子有向基态凝聚的倾向，这是产生低温超导现象的基本原因.
+\pskip
+
+\example 质量为$m$，自旋为0的二全同粒子体系，粒子间作用力为中心力，$V_{12}=V(r)$，$(r=|\boldsymbol{r}_{1}-\boldsymbol{r}_{2}|)$在质心坐标系中体系的总角动量算符可以表示成（参看$\S$\ref{sec:10.01}）
+\begin{empheq}{equation}\label{eqx2.10}
+	\boldsymbol{L}=\boldsymbol{r}_{1}\times\boldsymbol{p}_{1}+\boldsymbol{r}_{2}\times\boldsymbol{p}_{2}\Rightarrow\boldsymbol{r}\times\boldsymbol{p}
+\end{empheq}
+$\boldsymbol{r},\boldsymbol{p}$为相对坐标和相对动量，$\boldsymbol{p}=-i\hbar\nabla$.求$\boldsymbol{L}^{2}$的可能取值.
+
+\solution 因为粒子自旋为0，所以是玻色子.在质心坐标系中体系波函数可以表示成相对坐标的函数，$\Psi(\boldsymbol{r}_{1},\boldsymbol{r}_{2})=\varPsi(\boldsymbol{r})$.作为定态波函数，$\varPsi(\boldsymbol{r})$满足本征方程［\eqref{eqx1.16}式］
+\begin{empheq}{equation}\label{eqx2.11}
+	H\varPsi=[-\frac{\hbar^{2}}{2\mu}\nabla^{2}+V(r)]\varPsi=E\varPsi
+\end{empheq}
+上式的分离变量特解（$H,\boldsymbol{L}^{2},L_{z}$共同本征函数）可以写成
+\begin{empheq}{equation}\label{eqx2.12}
+	\varPsi(\boldsymbol{r})=R(r)Y_{lm}(\theta,\varphi)
+\end{empheq}
+$(r,\theta,\varphi)$是$\boldsymbol{r}=\boldsymbol{r}_{1}-\boldsymbol{r}_{2}$的球坐标表示.$\varPsi(\boldsymbol{r})$的宇称为$(-1)^{l}$.
+
+全同玻色子体系的波函数应该是交换对称的.而交换粒子1，2相当于波函数中$\boldsymbol{r}_{1},\boldsymbol{r}_{2}$地位互换，即$\boldsymbol{r}\rightarrow-\boldsymbol{r}$.这样一来，$\Psi$的交换对称性等同于$\varPsi(\boldsymbol{r})$的宇称性.结论是，$\varPsi(\boldsymbol{r})$必须是偶宇称，即$l$取偶数.所以$\boldsymbol{L}^{2}$的可能取值为
+\begin{empheq}{equation}\label{eqx2.13}
+	\boldsymbol{L}^{2}=l(l+1)\hbar^{2},\quad l=0,2,4,6,\cdots
+\end{empheq}

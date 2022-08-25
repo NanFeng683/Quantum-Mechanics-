@@ -1,0 +1,170 @@
+\starthis\section[动量表象]{动量表象} \label{sec:04.04} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+考虑质量为$m$的粒子在势场$V(x)$作用下的一维运动，哈密顿算符为
+\eqindent{12}
+\begin{empheq}{equation}\label{eq44.1}
+	\hat{H}=\frac{\hat{p}^{2}}{2m}+\hat{V}(x)
+\end{empheq}\eqnormal
+薛定谔方程为
+\eqindent{6}
+\begin{empheq}{equation}\label{eq44.2}
+	i\hbar\frac{\partial}{\partial t}|\varPsi(t) \rangle =\hat{H}|\varPsi(t) \rangle=\bigg(\frac{\hat{p}^{2}}{2m}+\hat{V}\bigg)|\varPsi(t) \rangle 
+\end{empheq}\eqnormal
+采取动量表象，即以$\hat{p}$的本征态矢$|p^{\prime} \rangle $作为基矢.基矢满足本征方程
+\begin{empheq}{equation}\label{eq44.3}
+	\hat{p}|p^{\prime} \rangle =p^{\prime}|p^{\prime} \rangle ,\quad -\infty<p^{\prime}<\infty
+\end{empheq}
+以及正交归一化条件和完备性条件：
+\begin{empheq}{equation}\label{eq44.4}
+	\langle p|p^{\prime} \rangle =\delta(p-p^{\prime})
+\end{empheq}
+\begin{empheq}{equation}\label{eq44.5}
+	\int_{-\infty}^{\infty}|p^{\prime} \rangle dp^{\prime}\langle p^{\prime}|=1
+\end{empheq}
+将$|\varPsi(t) \rangle $展开成基矢的线性叠加，
+\begin{empheq}{align}\label{eq44.6}
+	|\varPsi(t) \rangle &=\int|p^{\prime} \rangle dp^{\prime}\langle p^{\prime}|\varPsi(t) \rangle	\nonumber\\
+	&=\int|p^{\prime} \rangle  \phi(p^{\prime},t)dp^{\prime}
+\end{empheq}
+其中
+\begin{empheq}{equation}\label{eq44.7}
+	\phi(p^{\prime},t)=\langle p^{\prime}|\varPsi(t) \rangle 
+\end{empheq}
+就是动量表象中的波函数.将展开式\eqref{eq44.6}代入\eqref{eq44.2}式，并以$\langle p|$左乘\eqref{eq44.2}式，得到
+\eqindent{6}
+\begin{empheq}{align*}
+	i\hbar\langle p|\frac{\partial}{\partial t}|\varPsi(t) \rangle &=i\hbar\frac{\partial}{\partial t}\phi(p,t)	\\
+	&=\int\langle p|\bigg(\frac{\hat{p}^{2}}{2m}+\hat{V}\bigg)|p^{\prime} \rangle\phi(p^{\prime},t)dp^{\prime}	\\
+	&=\int\bigg[\frac{p^{2}}{2m}\delta(p-p^{\prime})+\langle p|\hat{V}|p^{\prime} \rangle \bigg]\phi(p^{\prime},t)dp^{\prime}	\\
+	&=\frac{p^{2}}{2m}\phi(p,t)+\int V_{pp^{\prime}}\phi(p^{\prime},t)dp^{\prime}
+\end{empheq}
+这样，已经求得$p$表象中的薛定谔方程：
+\begin{empheq}{equation}\label{eq44.8}
+	\boxed{i\hbar\frac{\partial}{\partial t}\phi(p,t)=\frac{p^{2}}{2m}\phi(p,t)+\int V_{pp^{\prime}}\phi(p^{\prime},t)dp^{\prime}}
+\end{empheq}\eqnormal
+其中$V_{pp^{\prime}}$为$V(x)$的$p$表象矩阵元，即
+\begin{empheq}{align}\label{eq44.9}
+	V_{pp^{\prime}} &=\langle p|\hat{V}|p^{\prime} \rangle=\int\varPsi_{p}^{*}V(x)\varPsi_{p^{\prime}}(x)dx	\nonumber\\
+	&=\frac{1}{2\pi\hbar}\int_{-\infty}^{\infty}V(x)e^{i(p^{\prime}-p)x/\hbar}dx
+\end{empheq}
+如果$V(x)$可以方便地表示成$x$的正幕级数
+\begin{empheq}{equation}\label{eq44.10}
+	V(x)=\sum_{n=0}^{\infty}a_{n}x^{n}
+\end{empheq}
+由于
+\begin{empheq}{equation*}
+	x^{n}e^{i(p^{\prime}-p)x/\hbar}=\bigg(i\hbar\frac{\partial}{\partial p}\bigg)^{n}e^{i(p^{\prime}-p)x/\hbar}
+\end{empheq}
+\eqref{eq44.9}式可以化简成
+\begin{empheq}{align}\label{eq44.11}
+	V_{pp^{\prime}}&=\frac{1}{2\pi\hbar}\sum_{n}a_{n}\bigg(i\hbar\frac{\partial}{\partial p}\bigg)^{n}\int_{-\infty}^{\infty}e^{i(p^{\prime}-p)x/\hbar}dx	\nonumber\\
+	&=\sum_{n}a_{n}\bigg(i\hbar\frac{\partial}{\partial p}\bigg)^{n}\delta(p-p^{\prime})	\nonumber\\
+	&=V(\hat{x})\delta(p-p^{\prime})
+\end{empheq}
+其中
+\begin{empheq}{equation}\label{eq44.12}
+	\hat{x}=i\hbar\frac{\partial}{\partial p}
+\end{empheq}
+将\eqref{eq44.11}式代入\eqref{eq44.9}式，即得
+\begin{empheq}{equation}\label{eq44.13}
+	i\hbar\frac{\partial}{\partial t}\phi(p,t)=\bigg[\frac{p^{2}}{2m}+V\bigg(i\hbar\frac{\partial}{\partial p}\bigg)\bigg]\phi(p,t)
+\end{empheq}
+
+坐标表象中的波函数$\varPsi(x,t)$与动量表象中的波函数$\phi(p,t)$的关系，可以简单导出如下.以$\langle x|$左乘\eqref{eq44.6}式，并将\eqref{eq44.6}式中$p^{\prime}$改成$p$，得到
+\begin{empheq}{equation*}
+	\langle x|\varPsi(t) \rangle =\int\langle x|p \rangle \phi(p,t)dp
+\end{empheq}
+亦即
+\begin{empheq}{align}\label{eq44.14}
+	\varPsi(x,t)&=\int\varPsi_{p}(x)\phi(p,t)dp	\nonumber\\
+	&=\frac{1}{\sqrt{2\pi\hbar}}\int_{-\infty}^{\infty}\varPsi(x,t)e^{ipx/\hbar}dp
+\end{empheq}
+这正是$\varPsi(x,t)$的傅里叶积分表示式.其逆变换为
+\begin{empheq}{equation}\label{eq44.15}
+	\phi(p,t)=\frac{1}{\sqrt{2\pi\hbar}}\int_{-\infty}^{\infty}\varPsi(x,t)e^{ipx/\hbar}dx
+\end{empheq}
+这里的结果与$\S$\ref{sec:03.05}是一致的，只是所用符号不同.
+
+{\heiti 定态}
+
+对于定态，态矢量和波函数随时间的变化均由$e^{-iEt/\hbar}$表示，
+\begin{empheq}{align}
+	|\varPsi(t) \rangle |\varPsi(t=0) \rangle e^{-iEt/\hbar}	\label{eq44.16}\\
+	\phi(p,t)=\phi(p)e^{-iEt/\hbar}	\label{eq44.17}
+\end{empheq}
+其中
+\eqindent{6}
+\begin{empheq}{equation}\label{eq44.18}
+	\phi(p)=\langle p|\varPsi(t=0) \rangle =\frac{1}{\sqrt{2\pi\hbar}}\int_{-\infty}^{\infty}\varPsi(x,0)e^{ipx/\hbar}dx
+\end{empheq}\eqnormal
+这种情况下，由\eqref{eq44.8}式可得
+\begin{empheq}{equation}\label{eq44.19}
+	\boxed{\frac{p^{2}}{2m}\phi(p)+\int V_{pp^{\prime}}\phi(p^{\prime})dp^{\prime}=E\phi(p)}
+\end{empheq}
+这是动量表象中的定态薛定谔方程，亦即能量本征方程.
+
+\example 在动量表象中求解$\delta$势阱
+\begin{empheq}{equation}\label{eq44.20}
+	V(x)=-\gamma\delta(x),\quad \gamma>0
+\end{empheq}
+的束缚态能级和能量本征函数.
+
+\solution 按照\eqref{eq44.9}式，首先算出
+\begin{empheq}{align*}
+	V_{pp^{\prime}} &=-\frac{\gamma}{2\pi\hbar}\int_{-\infty}^{\infty}\delta(x)e^{i(p^{\prime}-p)x/\hbar}dx\\
+	&=-\frac{\gamma}{2\pi\hbar}
+\end{empheq}
+代入\eqref{eq44.19}式，得到
+\eqindent{6}
+\begin{empheq}{align}\label{eq44.21}
+	\bigg(\frac{p^{2}}{2m}-E\bigg)\phi(p) &=-\int V_{pp^{\prime}}\phi(p^{\prime})dp^{\prime}	\nonumber\\
+	&=\frac{\gamma}{2\pi\hbar}\int_{-\infty}^{\infty}\phi(p^{\prime})dp^{\prime}=C\text{与$p$无关}
+\end{empheq}\eqnormal
+所以
+\begin{empheq}{equation}\label{eq44.22}
+	\phi(p)=\frac{2mC}{p^{2}-2mE}=\frac{A}{p^{2}-2mE}
+\end{empheq}
+这就是$p$表象中的能量本征函数，$A$为归一化常数.将\eqref{eq44.22}式代入\eqref{eq44.21}式，得到
+\begin{empheq}{equation}\label{eq44.23}
+	\int_{-\infty}^{\infty}\frac{dp}{p^{2}-2mE}=\frac{\pi\hbar}{m\gamma}
+\end{empheq}
+这就是能级方程.束缚态$E<0$，令
+\begin{empheq}{equation}\label{eq44.24}
+	\beta=\frac{\sqrt{-2mE}}{\hbar}
+\end{empheq}
+代入\eqref{eq44.23}式，容易算出
+\begin{empheq}{equation*}
+	\frac{\pi\hbar}{m\gamma}=\int_{-\infty}^{\infty}\frac{dp}{p^{2}+\hbar^{2}\beta^{2}}=\frac{\pi}{\hbar\beta}
+\end{empheq}
+因此
+\begin{empheq}{equation}\label{eq44.25}
+	\beta=\frac{m\gamma}{\hbar^{2}},\quad E=-\frac{m\gamma^{2}}{2\hbar^{2}}
+\end{empheq}
+至此已经求得束缚态能级.波函数由\eqref{eq44.22}式表示，即
+\begin{empheq}{equation*}\label{eq44.22'}
+	\phi(p)=\frac{A}{p^{2}+\hbar^{2}\beta^{2}}	\tag{$4.4.22^{\prime}$}
+\end{empheq}
+根据归一化条件，求得
+\eqindent{6}
+\begin{empheq}{equation*}
+	1=\int_{-\infty}^{\infty}|\phi(p)|^{2}dp=A^{2}\int_{-\infty}^{\infty}\frac{dp}{(p^{2}+\hbar^{2}\beta^{2})^{2}}=\frac{\pi A^{2}}{2(\hbar\beta)^{3}}
+\end{empheq}\eqnormal
+所以
+\begin{empheq}{equation}\label{eq44.26}
+	A=\bigg(\frac{2}{\pi}\bigg)(\hbar\beta)^{\frac{3}{2}}=\bigg(\frac{2}{\pi}\bigg)\bigg(\frac{m\gamma}{\hbar}\bigg)^{\frac{3}{2}}
+\end{empheq}
+将\eqref{eq44.22'}式代入\eqref{eq44.14}式，可得$x$表象中的波函数
+\begin{empheq}{align*}
+	\varPsi(x)&=\frac{1}{\sqrt{2\pi\hbar}}\int_{-\infty}^{\infty}\phi(p)e^{-ipx/\hbar}dp	\\
+	&=\frac{A}{\sqrt{2\pi\hbar}}\int_{-\infty}^{\infty}\frac{dp}{p^{2}+\hbar^{2}\beta^{2}}e^{ipx/\hbar}
+\end{empheq}
+用复平面上围道积分法可以算出
+\begin{empheq}{equation}\label{eq44.27}
+	\int_{-\infty}^{\infty}\frac{dp}{p^{2}+\hbar^{2}k^{2}}e^{ipx/\hbar}=\frac{\pi}{\hbar\beta}e^{-\beta|x|}
+\end{empheq}
+因此
+\begin{empheq}{equation}\label{eq44.28}
+	\varPsi(x)=\sqrt{\beta}e^{-\beta|x|}
+\end{empheq}
+能级公式\eqref{eq44.25}和波函数\eqref{eq44.25}式与$\S$\ref{sec:02.04}(3.)的结果完全一致.

@@ -1,0 +1,135 @@
+\section[二粒子体系]{二粒子体系} \label{sec:10.01} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+考虑两个粒子组成的体系，设粒子质量为$m_{1},m_{2}$，坐标为$\boldsymbol{r}_{1}(x_{1},y_{1},z_{1})$，$\boldsymbol{r}_{2}(x_{2},y_{2},z_{2})$.为了简明，暂不考虑自旋自由度，并设两粒子间的相互作用势是相对距离的函数，即
+\begin{empheq}{equation}\label{eqx1.1}
+	V_{12}=V(r),\quad r=|\boldsymbol{r}_{1}-\boldsymbol{r}_{2}|
+\end{empheq}
+在没有外场作用的情况下，这二粒子体系的总能量算符为
+\begin{empheq}{align}\label{eqx1.2}
+	H &=\frac{\boldsymbol{p}_{1}^{2}}{2m_{1}}+\frac{\boldsymbol{p}_{2}^{2}}{2m_{2}}+V(r)	\nonumber\\
+	&=-\frac{\hbar^{2}}{2m_{1}}\nabla_{1}^{2}-\frac{\hbar^{2}}{2m_{2}}\nabla_{2}^{2}+V(r)
+\end{empheq}
+其中$\boldsymbol{p}_{1},\boldsymbol{p}_{2}$是粒子1，2的动量算符，
+\begin{empheq}{equation}\label{eqx1.3}
+	\begin{aligned}
+		\boldsymbol{p}_{1}&=-i\hbar\nabla_{1},\quad p_{1x}=-i\hbar\frac{\partial}{\partial x_{1}}	\\
+		\boldsymbol{p}_{2}&=-i\hbar\nabla_{2},\quad p_{2x}=-i\hbar\frac{\partial}{\partial x_{2}}
+	\end{aligned}
+\end{empheq}\eqshort
+体系的状态由波函数$\Psi(\boldsymbol{r}_{1},\boldsymbol{r}_{2},t)$描述，$\Psi$满足薛定谔方程
+\begin{empheq}{equation}\label{eqx1.4}
+	i\hbar\frac{\partial}{\partial t}\Psi=H\Psi
+\end{empheq}\eqnormal
+
+引入质心坐标$\boldsymbol{R}(X,Y,Z)$，相对坐标$\boldsymbol{r}(x,y,z)$和折合质量$\mu$，它们的定义与
+经典力学定义相同，即
+\begin{empheq}{align}
+	\frac{1}{\mu} &=\frac{1}{m_{1}}+\frac{1}{m_{2}},\quad \mu=\frac{m_{1}m_{2}}{m_{1}+m_{2}}		\label{eqx1.5}\\ 
+	\boldsymbol{R}&=\frac{m_{1}\boldsymbol{r}_{1}+m_{2}\boldsymbol{r}_{2}}{m_{1}m_{2}}=\mu\left(\frac{\boldsymbol{r}_{1}}{m_{1}}+\frac{\boldsymbol{r}_{2}}{m_{2}}\right)	\label{eqx1.6}\\
+	\boldsymbol{r} &=\boldsymbol{r}_{1}-\boldsymbol{r}_{2}\quad \text{即}x=x_{1}-x_{2},\cdots		\label{eqx1.7}
+\end{empheq}\eqlong
+容易证明下列微分关系：
+\begin{empheq}{align}\label{eqx1.8}
+	\frac{\partial}{\partial x_{1}} &=\frac{\partial X}{\partial x_{1}}+\frac{\partial}{\partial X}+\frac{\partial x}{\partial x_{1}}\frac{\partial}{\partial x}=\frac{\mu}{m_{2}}\frac{\partial}{\partial X}+\frac{\partial}{\partial x}	\nonumber\\
+	\frac{\partial}{\partial x_{2}} &=\frac{\partial X}{\partial x_{2}}+\frac{\partial}{\partial X}+\frac{\partial x}{\partial x_{2}}\frac{\partial}{\partial x}=\frac{\mu}{m_{1}}\frac{\partial}{\partial X}+\frac{\partial}{\partial x}
+\end{empheq}\eqnormal
+因此总动量算符可以表示成
+\begin{empheq}{align}\label{eqx1.9}
+	P_{x}&=p_{1x}+p_{2x}	\nonumber\\
+	&=-i\hbar\left(\frac{\partial}{\partial x_{1}}+\frac{\partial}{\partial x_{2}}\right)=-i\hbar\frac{\partial}{\partial X}
+\end{empheq}
+\begin{empheq}{align*}\label{eqx1.9'}
+	\boldsymbol{P}&=\boldsymbol{p}_{1}+\boldsymbol{p}_{2}	\\
+	&=-i\hbar(\nabla_{1}+\nabla_{2})=-i\hbar\nabla_{n}	\tag{$10.1.9^{\prime}$}
+\end{empheq}
+定义相对动量算符
+\begin{empheq}{equation}\label{eqx1.10}
+	\boldsymbol{p}=-i\hbar\nabla,\quad \text{即}p_{x}=-i\hbar\frac{\partial}{\partial x},\cdots
+\end{empheq}
+利用\eqref{eqx1.8}式，易得
+\begin{empheq}{equation}\label{eqx1.11}
+	\boldsymbol{p}=\frac{\mu}{m_{1}}\boldsymbol{p}_{1}-\frac{\mu}{m_{2}}\boldsymbol{p}_{2}
+\end{empheq}
+［经典力学中也有类似关系相对动量的经典力学定义是
+\begin{empheq}{equation*}
+	\boldsymbol{p}=\mu\frac{d\boldsymbol{r}}{dt}=\mu\frac{d\boldsymbol{r}_{1}}{dt}-\mu\frac{d\boldsymbol{r}_{2}}{dt}
+\end{empheq}
+由于
+\begin{empheq}{equation*}
+	\boldsymbol{p}_{1}=m_{1}\frac{d\boldsymbol{r}_{1}}{dt},\quad \boldsymbol{p}_{2}=m_{2}\frac{d\boldsymbol{r}_{2}}{dt}
+\end{empheq}
+显然仍有\eqref{eqx1.11}式的关系.］
+
+注意，$\boldsymbol{p}_{1},\boldsymbol{p}_{2},\boldsymbol{P},\boldsymbol{p}$是互相对易的算符.利用\eqref{eqx1.9'}及\eqref{eqx1.11}式，体系的总动能算符可以表示成
+\begin{empheq}{equation}\label{eqx1.12}
+	\boxed{	\frac{\boldsymbol{p}_{1}^{2}}{2m_{1}}+\frac{\boldsymbol{p}_{2}^{2}}{2m_{2}}=\frac{\boldsymbol{P}^{2}}{2(m_{1}m_{2})}+\frac{\boldsymbol{p}^{2}}{2\mu}	}
+\end{empheq}
+经典力学中也有这样的关系.体系的总能量算符可以表示成
+\begin{empheq}{align}\label{eqx1.13}
+	H &=\frac{\boldsymbol{P}^{2}}{2(m_{1}m_{2})}+\frac{\boldsymbol{p}^{2}}{2\mu}+V(r)	\nonumber\\
+	&=-\frac{\hbar^{2}}{2(m_{1}+m_{2})}\nabla_{R}^{2}-\frac{\hbar^{2}}{2\mu}\nabla^{2}+V(r)
+\end{empheq}
+第一项是质心动能算符，后两项是相对运动的动能和势能算符，其中势能$V(r)$只与相对坐标有关.薛定谔方程\eqref{eqx1.4}式的分离变量特解（定态）显然可以表示成
+\begin{empheq}{equation}\label{eqx1.14}
+	\Psi=\phi(\boldsymbol{R})\varPsi(\boldsymbol{r})e^{-iEt/\hbar}
+\end{empheq}
+其中$\phi(\boldsymbol{R})$和$\varPsi(\boldsymbol{r})$分别描述质心运动和相对运动，并满足本征方程
+\begin{empheq}{align}
+	&-\frac{\hbar^{2}}{2(m_{1}+m_{2})}\nabla_{R}^{2}\phi(\boldsymbol{R})=E_{c}\phi(\boldsymbol{R})		\label{eqx1.15}\\
+	&-\frac{\hbar^{2}}{2\mu}\nabla^{2}\varPsi(\boldsymbol{r})+V(r)\varPsi(\boldsymbol{r})=(E-E_{c})\varPsi(\boldsymbol{r})		\label{eqx1.16}
+\end{empheq}
+\eqref{eqx1.15}式表明质心运动等效于一个质量为$(m_{1}+m_{2})$的粒子的自由运动，动能$E_{c}\geqslant0$，\eqref{eqx1.15}式的平面波解为
+\begin{empheq}{equation}\label{eqx1.17}
+	\phi(\boldsymbol{R})=e^{i\boldsymbol{k}\cdot\boldsymbol{R}},\quad E_{c}=\frac{\hbar^{2}k^{2}}{2(m_{1}+m_{2})}
+\end{empheq}
+这也是总动量$\boldsymbol{P}$的本征函数，本征值$\boldsymbol{P}=\hbar\boldsymbol{k}$.
+
+\eqref{eqx1.16}式表明相对运动等价于质量为$\mu$的粒子在势场$V(r)$中的运动，相应的能盘为$(E-E_{c})$，$E$是体系的总能量.对于氢原子（参看$\S$\ref{sec:05.04}），$m_{1}=m_{e},m_{2}=m_{p}$，由于$\frac{m_{p}}{m_{e}}\approx\num{1836}$，所以
+\begin{empheq}{equation*}
+	\mu=\frac{m_{e}m_{p}}{m_{e}+m_{p}}\approx\frac{1836}{1837}m_{e}
+\end{empheq}
+总之，如$m_{2}\gg m_{1}$，则$\mu$接近并稍小于$m_{1}$.
+
+二粒子体系的总轨道角动量算符为
+\begin{empheq}{equation}\label{eqx1.18}
+	\boldsymbol{L}_{\text{总}}=\boldsymbol{L}_{1}+\boldsymbol{L}_{2}=\boldsymbol{r}_{1}\times\boldsymbol{p}_{1}+\boldsymbol{r}_{2}\times\boldsymbol{p}_{2}
+\end{empheq}
+如根据\eqref{eqx1.6}式与\eqref{eqx1.7}式用质心坐标$\boldsymbol{R}$和相对坐标$\boldsymbol{r}$表示$\boldsymbol{r}_{1}$与$\boldsymbol{r}_{2}$，根据\eqref{eqx1.9'}式与\eqref{eqx1.11}式用质心动量（总动量）$\boldsymbol{P}$和相对动量$\boldsymbol{p}$表示$\boldsymbol{p}_{1}$与$\boldsymbol{p}_{2}$，容易得到
+\begin{empheq}{equation}\label{eqx1.19}
+	\boldsymbol{L}_{\text{总}}=\boldsymbol{R}\times\boldsymbol{P}+\boldsymbol{r}\times\boldsymbol{p}=\boldsymbol{L}_{c}+\boldsymbol{L}
+\end{empheq}
+其中
+\begin{empheq}{equation}\label{eqx1.20}
+	\boldsymbol{L}_{c}=\boldsymbol{R}\times\boldsymbol{P},\quad \boldsymbol{L}=\boldsymbol{r}\times\boldsymbol{p}
+\end{empheq}
+$\boldsymbol{L}_{c}$称为质心角动量，$\boldsymbol{L}$称为相对角动量.\eqref{eqx1.18}至\eqref{eqx1.20}式在经典力学中也是成立的.
+
+在经典力学中，采用“质心坐标系”意味着以质心作为坐标系原点，因此$\boldsymbol{R}=0,\boldsymbol{P}=0,\boldsymbol{L}_{c}=0$.
+
+在量子力学中，$\boldsymbol{R}$和$\boldsymbol{P}$是不对易的，在任何状态下$\boldsymbol{R}$和$\boldsymbol{P}$不能同时取确定值.采用“质心坐标系”意指总动量$\boldsymbol{P}$的本征值为0，即$\boldsymbol{P}\Psi=0$，这相当于\eqref{eqx1.17}式中$\boldsymbol{k}=0$，而$\Psi=\varPsi(\boldsymbol{r},t)$，与$\boldsymbol{R}$无关.这时$\boldsymbol{R}\times\boldsymbol{P}\Psi=0$，即质心角动量$\boldsymbol{L}_{c}$的取值也为0.在这种意义上可以认为$\boldsymbol{L}_{\text{总}}=\boldsymbol{L}$.
+
+\pskip
+\example 按照力学量算符的海森堡运动方程［\eqref{eq39.15}式］
+\eqshort
+\begin{empheq}{equation*}
+	\frac{d\hat{A}}{dt}=\frac{1}{i\hbar}[\hat{A},\hat{H}]
+\end{empheq}\eqlong
+求二粒子体系$\boldsymbol{R},\boldsymbol{r},\boldsymbol{P},\boldsymbol{p},\boldsymbol{L}_{c},\boldsymbol{L}$等力学量算符的时间变化规律.
+
+\solution 总能量算符$H$的表达式\eqref{eqx1.2}和\eqref{eqx1.13}，显然用\eqref{eqx1.13}式方便.由于$V(r)$与$\boldsymbol{R}$无关，$\boldsymbol{p}$与$\boldsymbol{R}$对易，所以
+\begin{empheq}{align}
+	\frac{d\boldsymbol{R}}{dt} &=\frac{1}{2i\hbar(m_{1}+m_{2})}[\boldsymbol{R},\boldsymbol{P}^{2}]=\frac{\boldsymbol{P}}{m_{1}+m_{2}}			\label{eqx1.21}\\
+	\frac{d\boldsymbol{P}}{dt} &=\frac{1}{i\hbar}[\boldsymbol{P},V(r)]=0	\label{eqx1.22}\\
+	\frac{d\boldsymbol{L}_{c}}{dt} &=\frac{d\boldsymbol{R}}{dt}\times\boldsymbol{P}+\boldsymbol{R}\times\frac{d\boldsymbol{P}}{dt}=\frac{1}{m_{1}+m_{2}}\boldsymbol{P}\times\boldsymbol{P}		\label{eqx1.23}\\
+	\frac{d\boldsymbol{r}}{dt} &=\frac{1}{2i\hbar\mu}[\boldsymbol{r},\boldsymbol{p}^{2}]=\frac{\boldsymbol{p}}{\mu}	\label{eqx1.24}\\
+	\frac{d\boldsymbol{p}}{dt} &=\frac{1}{i\hbar}[\boldsymbol{p},V(r)]=-\nabla V(r)	\label{eqx1.25}\\
+	\frac{d\boldsymbol{L}}{dt} &=\frac{d\boldsymbol{r}}{dt}\times\boldsymbol{p}+\boldsymbol{r}\times\frac{d\boldsymbol{p}}{dt}	\nonumber\\
+	&=\frac{1}{\mu}\boldsymbol{p}\times\boldsymbol{p}-\boldsymbol{r}\times\nabla V=-\boldsymbol{r}\times\frac{\boldsymbol{r}}{r}\frac{dV}{dr}=0		\label{eqx1.26}
+\end{empheq}\eqnormal
+\eqref{eqx1.21}、\eqref{eqx1.24}式相当于经典力学中质心动量和相对动量的定义.\eqref{eqx1.22}、\eqref{eqx1.23}、\eqref{eqx1.26}式表明$\boldsymbol{P},\boldsymbol{L}_{c},\boldsymbol{L}$是守恒量，经典力学中也有同样的守恒定理.
+
+
+
+
+

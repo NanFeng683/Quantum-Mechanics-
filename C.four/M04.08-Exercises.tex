@@ -1,0 +1,98 @@
+\begin{exercises}
+
+\exercise 设力学量算符（厄密算符）$A,B$满足关系
+\begin{empheq}{equation*}
+	A^{2}=B^{2}=1,\quad AB+BA=0
+\end{empheq}
+
+(a) 求$A,B$的本征值.[提示：利用3-19题证明的结论.]
+
+(b) 在$A$表象中，求$A,B$的矩阵表示.
+
+(c) 在$A$表象中，求$B$的特征矢量.
+
+(d) 写出由$A$表象到$B$表象的变换矩阵$S$.
+
+(e) 利用么正变换公式，将矩阵$A,B$由$A$表象变到$B$表象.
+
+\exercise 二阶矩阵$A,B$满足关系
+\begin{empheq}{equation*}
+	A^{2}=0,\quad AA^{+}+A^{+}A=1,\quad A^{+}A=B
+\end{empheq}
+试证明$B^{2}=B$，并在$B$表象中求出矩阵$A,B$.
+
+\exercise 满足条件$U^{+}U=UU^{+}=1$，$\det U=1$的$n$阶矩阵$U$称为$SU_{n}$矩阵.试求$SU_{n}$的一般表示式.
+
+\exercise 设$|\varPsi\rangle$，$|\phi\rangle$是代表不同状态的态矢量（未归一化），证明施瓦茨(Schwarz)不等式
+\begin{empheq}{equation*}
+	|\langle \varPsi|\phi \rangle |^{2} < \langle \varPsi|\varPsi \rangle \langle \phi|\phi \rangle 
+\end{empheq}
+
+[提示： 作$|x \rangle=|\phi \rangle+\lambda|\varPsi \rangle $，必有$\langle x|x \rangle >0$，再找一个特殊的$\lambda$值.]
+
+\exercise 利用上题证明的施瓦茨不等式证明不确定度关系式．
+
+[提示：取$|\phi \rangle=\langle \hat{A}+i\xi\hat{B} \rangle|\varPsi\rangle  $]
+
+\exercise 设$|\varPsi_{n} \rangle$，$|\varPsi_{k} \rangle $是厄密算符$F$的本征态矢量，相应于不同本征值.设算符$G$与$F$对易.
+\prove $\langle \varPsi_{k}|G|\varPsi_{n} \rangle =0$
+
+\exercise 设$|n\rangle$是厄密算符$H$的本征态矢量，$A$是另一个算符.
+	\prove $\langle n|[A,H]|n\rangle=0$.又，如$|n^{\prime}\rangle$，$|n\rangle$是简并态（相应于$H$的同一个本征值），证明$\langle n|[A,H]|n^{\prime}\rangle=0$.
+
+\exercise 写出动量表象中一维谐振子的定态薛定谔方程，与无表象中的方程$(\S\ref{sec:02.05})$比较，从而写出基态与第一激发态波函数（动量表象）.
+
+\exercise 粒子在均匀力场$(F)$中作一维运动，$V(x)=-Fx$.写出并求解动量表象中的定态薛定谔方程.
+
+\exercise 质量为$\mu$的粒子在势场$V(x)$作用下作一维运动，设能级是分立的.算符$F(x)$是$x$的解析函数.证明能量表象中求和规则
+\begin{empheq}{equation*}
+	\sum_{n}(E_{n}-E_{k})|F_{nk}|^{2}=\frac{\hbar^{2}}{2\mu}\langle k|\bigg|\frac{dF}{dtx}\bigg|^{2}|k \rangle 
+\end{empheq}
+
+\exercise 同上题，设$\lambda$为实数，证明求和规则
+
+\exercise 设$F(\boldsymbol{r},\boldsymbol{p})$为力学量算符（厄密算符），证明能量表象中求和规则
+
+\exercise 同4-10题，设$V(x)$与质量$\mu$无关证明求和规则.
+
+\exercise 一维谐振子，对于能量本征态$|n\rangle$，利用升、降算符$(a^{+},a)$计算动能平均值、势能平均值，以及$\Delta x,\Delta p$.
+
+\exercise 对于谐振子相干态$|\alpha\rangle$，计算$\overline{n},\Delta n\overline{E},\overline{x},\Delta x,\overline{p},\Delta p$.特别注意$\alpha$是实数时的结果.
+
+\exercise 某体系的能量算符（已经无量纲化）为
+\begin{empheq}{equation*}
+	H=\frac{5}{3}a^{+}a+\frac{2}{3}(a^{2}+a^{+2})
+\end{empheq}
+其中$a=\frac{q+ip}{\sqrt{2}}$，$a^{+}=\frac{q-ip}{\sqrt{2}}$，$q,p$满足对易式$[q,p]=i$.试求体系的能谱及基态波函数（q表象）.
+
+\exercise 考虑谐振子升降算符$a^{+},a$的线性变换
+\begin{empheq}{equation*}
+	b=\lambda a+\nu a^{+},\quad b^{+}=\lambda a^{+}+\nu a
+\end{empheq}
+$\lambda$，$\nu$为实数，并满足关系$\lambda^{2}-\nu^{2}=1$.证明：对于算符$b$的任何一个本征态$|\beta\rangle$，（满足本征方程$b|\beta\rangle=\beta|\beta\rangle$）有$\Delta x\cdot \Delta p=\frac{\hbar}{2}$
+
+[提示：证明$[b,b^{+}]=1,a=\lambda b-\nu b^{+},a^{+}=\lambda b^{+}-\nu b$，再将$x,p$用$b,b^{+}$表示.]
+
+\exercise 对于角动量算符$\boldsymbol{J}$和常矢量$\boldsymbol{n}$，证明
+\begin{empheq}{equation*}
+	[\boldsymbol{J},\boldsymbol{n}\cdot\boldsymbol{J}]=i\hbar\boldsymbol{n}\times\boldsymbol{J}
+\end{empheq}
+
+\exercise 对于角动量算符$\boldsymbol{J}$，参数$\lambda$，证明公式（取$\hbar=1$）
+\begin{empheq}{align*}
+	J_{z}^{n}J_{\pm}=J_{\pm}(J_{z}\pm &1)^{n},\quad n=1,2,3,\cdots	\\
+	e^{i\lambda J_{z}}J_{x}e^{-\lambda J_{z}} &=J_{x}\cos\lambda-J_{y}\sin\lambda	\\
+	e^{i\lambda J_{z}}J_{y}e^{-\lambda J_{z}} &=J_{x}\cos\lambda+J_{y}\sin\lambda
+\end{empheq}
+
+\exercise 证明：在$\hat{\boldsymbol{L}}^{2}$，$L_{z}$共同本征态$|jm \rangle $下，$\overline{J_{x}}=0,\overline{J_{y}}=0$.再进一步证明$J_{x}$和$J_{y}$的奇幕次式（$J_{x}^{2},J_{x}^{2}J_{y}$等等）平均值也等于0.
+
+\exercise 对于$|jm \rangle $态，计算$\overline{J_{x}}^{2},\overline{J_{y}}^{2},\Delta J_{x},\Delta J_{y}$，并与$J_{x}$，$J_{y}$之间的不确定度关系作比较.
+
+\exercise 设$\boldsymbol{n}$方向与$z$轴成$\theta$角，对于$|jm\rangle$态计算$\overline{J_{n}}$.
+
+\exercise 以$|lm\rangle$表示$\hat{\boldsymbol{L}}^{2}$，$L_{z}$共同本征态，限定$l=1$，取基矢为$|11 \rangle $，$|10\rangle$，$1-1$，在这态矢量子空间建立$\hat{\boldsymbol{L}}^{2}-\hat{L}_{z}$表象.求$L_{x},L_{y}$ 的矩阵（3阶）表示以及本征值和本征矢量（取$\hbar=1$）.
+
+\exercise 在坐标表象中，$\hat{\boldsymbol{L}}^{2}$，$L_{z}$，共同本征函数记为$Y_{bm}(\theta,\varphi)$，即$|lm\rangle $态的波函数.试根据公式$(L_{x}-iL_{y})Y_{l,-l}=0$，求$Y_{l,-l}$的具体函数形式.
+
+\end{exercises}

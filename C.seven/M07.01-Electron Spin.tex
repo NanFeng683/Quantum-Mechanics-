@@ -1,0 +1,317 @@
+\section[电子自旋]{电子自旋} \label{sec:07.01} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+{\heiti 1. 自旋的基本性质}
+
+自旋角动量和自旋磁矩是基本粒子的一种内禀属性，已经为许多直接与间接的实验所证实.1925年，基于碱金属光谱的双线结构和反常塞曼效应等实验事实，乌伦贝克与高德斯密特提出了电子具有自转的假设，“自旋” 这名词即由此而来.
+
+现在，关于电子自旋已经确定下列实验事实：
+
+(i) 自旋角动量在任何方向的投影只能取量子化数值$\pm\frac{\hbar}{2}$.
+
+(ii) $\frac{\text{自旋磁矩}}{\text{自旋角动量}}=\frac{-e}{m_{e}c}$$\bigg[$作为对比，电子的轨道磁矩与轨道角动量的比值为$\frac{-e}{2m_{e}c}$	.$\bigg]$
+
+将电子自旋简单地理解成自转是不妥当的，理由如下.如将电子当作半径为$\boldsymbol{r}$的小球，如电子由于自转而造成数值达$\frac{\hbar}{2}$的角动量，则其表面转速将达$v\sim\frac{\hbar}{rm_{e}}$，由于$r<10^{-3}\si{fm}$，
+\eqllong
+\begin{empheq}{equation*}
+	v\sim\frac{\hbar}{rm_{e}}=\frac{\hbar c^{2}}{rm_{e}c^{2}}>c\times\frac{200\si{MeV}\cdots\si{fm}}{10^{-3}\si{fm}\times0.5\si{MeV}}\approx c\times 4\times 10^{5}
+\end{empheq}\eqnormal
+$v$远超过光速，这是违反狭义相对论的.另外，中子无电荷，但仍具有自旋磁矩，这就更难给予形象化的解释了.
+
+现在比较公认的看法是，“自旋”是基本粒子的固有内禀属性（正如质量和电荷是内禀属性），其来源尚不清楚，但性质（量纲）类似于轨道角动量与轨道磁矩，并可以互相耦合.在研究电子的运动状态时，应该将自旋作为一种内禀（独立于空间“轨道”运动）自由度.
+
+质子和中子也都有自旋.它们的自旋角动量在任何方向的投影，与电子一样，只取量子化数值$\pm\frac{\hbar}{2}$.自旋磁矩（投影）的数值也是量子化的，但和电子相比，质子与中子的自旋磁矩显得有些“反常”.如前所述，电子自旋磁矩（投影）取值为$\mp\mu_{B}$，$\mu_{B}$为玻尔磁子，即
+\eqshort
+\begin{empheq}{equation*}
+	\mu_{B}=\frac{e\hbar}{2m_{e}c}
+\end{empheq}\eqnormal
+测量核子磁矩，通常以核磁子$\mu_{N}\frac{e\hbar}{2m_{p}c}$为标准，质子和中子的自旋磁矩（投影）分别为
+\begin{empheq}{equation*}
+	\mu_{p}=\pm\num{2.793}\mu_{N},\quad \mu_{n}=\mp\num{1.913}\mu_{N}
+\end{empheq}
+
+{\heiti 2. 自旋算符与自旋波函数}
+
+以$\boldsymbol{S}$表示电子自旋角动量算符，假设其分量$S_{x},S_{y},S_{z}$都是厄密的（$S_{x}^{+}=S_{x}$，等等），而且满足与轨道角动量一样的对易式，即
+\begin{empheq}{equation}\label{eq71.1}
+	S_{x}S_{y}-S_{y}S_{x}=i\hbar S_{z},\text{等等}
+\end{empheq}
+亦即
+\eqshort
+\begin{empheq}{equation*}\label{eq71.1'}
+	S\times S=i\hbar S	\tag{$7.1.1^{\prime}$}
+\end{empheq}\eqnormal
+这样假设的理由是，$\S$\ref{sec:04.07}曾从这种对易式出发，导出角动量（平方及投影）的本征值，其中$j=\frac{1}{2}$的情况刚好和电子自旋相符合.
+
+根据实验测量，$S$在任何方向的投影的取值只能是$\pm\frac{\hbar}{2}$，因此成立下列算符关系：
+\begin{empheq}{align}	%2,3
+	&S_{x}^{2}=S_{y}^{2}=S_{z}^{2}=\frac{\hbar^{2}}{4}		\label{eq71.2}\\
+	S^{2}&=S_{x}^{2}+S_{y}^{2}+S_{z}^{2}=\frac{3\hbar^{2}}{4}		\label{eq71.3}
+\end{empheq}
+\eqref{eq71.1}至\eqref{eq71.3}式包括了电子自旋角动量的全部性质，其中\eqref{eq71.1}式是任何角动量的共性，\eqref{eq71.2}、\eqref{eq71.3}式则是电子自旋特有的.
+
+为了简化运算，引入无量纲的“泡利自旋算符”$\boldsymbol{\sigma}$，
+\eqshort
+\begin{empheq}{equation}\label{eq71.4}
+	S=\frac{\hbar}{2}\boldsymbol{\sigma}
+\end{empheq}\eqnormal
+则\eqref{eq71.1}式变成
+\begin{empheq}{equation}\label{eq71.5}
+	\sigma_{x}\sigma_{y}-\sigma_{y}\sigma_{x}=2i\sigma_{z},\text{等等}
+\end{empheq}
+亦即
+\eqshort
+\begin{empheq}{equation*}\label{eq71.5'}
+	\boldsymbol{\sigma}\times\boldsymbol{\sigma}=2i\boldsymbol{\sigma}		\tag{$7.1.5^{\prime}$}
+\end{empheq}\eqnormal
+\eqref{eq71.2}式变成
+\begin{empheq}{equation}\label{eq71.6}
+	\sigma_{x}^{2}=\sigma_{y}^{2}=\sigma_{z}^{2}=1
+\end{empheq}
+\eqref{eq71.3}式变成
+\begin{empheq}{equation}\label{eq71.7}
+	\boldsymbol{\sigma}^{2}=\sigma_{x}^{2}+\sigma_{y}^{2}+\sigma_{z}^{2}=3
+\end{empheq}
+以$\sigma_{x}$分别从右和从左乘\eqref{eq71.5}式，再利用\eqref{eq71.6}式，易得
+\eqindent{12}
+\begin{empheq}{equation}\label{eq71.8}
+	\sigma_{z}\sigma_{x}=-\sigma_{x}\sigma_{z}
+\end{empheq}
+类似地可证
+\begin{empheq}{equation*}\label{eq71.8'}
+	\begin{aligned}
+		\sigma_{x}\sigma_{y}=-\sigma_{y}\sigma_{x}	\\
+		\sigma_{y}\sigma_{z}=-\sigma_{z}\sigma_{y}
+	\end{aligned}	\tag{$7.1.8^{\prime}$}
+\end{empheq}
+以\eqref{eq71.8'}代入\eqref{eq71.5}式，即得
+\begin{empheq}{equation}\label{eq71.9}
+	\sigma_{x}\sigma_{y}=i\sigma_{z},\text{等等}
+\end{empheq}\eqnormal
+\eqref{eq71.6}、\eqref{eq71.8}、\eqref{eq71.9}式可以统一成一个公式
+\begin{empheq}{equation}\label{eq71.10}
+	\boxed{\sigma_{\alpha}\sigma_{\beta}=\delta_{\alpha\beta}+i\sum_{\gamma}\varepsilon_{\alpha\beta\gamma}\sigma_{\gamma}}
+\end{empheq}
+其中$\alpha,\beta,\gamma$各自代表$(x,y,z)$三个分量中任何一个，$\varepsilon_{\alpha\beta\gamma}$为Levi-Civita符号，定义为
+\eqlong
+\begin{empheq}{equation*}
+	{\varepsilon_{\alpha\beta\gamma}=}
+	\begin{dcases}
+		0,\qquad	\alpha\beta\gamma\text{有相同者}	\\
+		1,\qquad	(\alpha\beta\gamma)=(x,y,z),(y,z,x),(z,x,y)	\\
+		-1,\quad	(\alpha\beta\gamma)=(x,z,y),(y,x,z),(z,y,x)
+	\end{dcases}
+\end{empheq}
+[按惯例，\eqref{eq71.10}式中求和号$\sum_{\gamma}$常常略去不写.]\eqref{eq71.10}式概括了泡利自旋算符$\sigma$的全部代数性质.但此式初学者不易掌握，不如记住\eqref{eq71.6}至\eqref{eq71.9}式.
+
+由于$S_{x},S_{y},S_{z}$互不对易，没有共同本征态，电子的自旋状态一般只能采用下述表述方式.任取$\boldsymbol{S}$的一个分量$S_{z}$，以它的本征态作为基本自旋函数，任何自旋态则表示成这些本征态的线性叠加.$S_{z}$取本征值$\frac{\hbar}{2}$时，本征态记为$\chi_{1/2}$或$\alpha$，本征值$(-\frac{\hbar}{2})$的本征态记为$\chi_{-1/2}$或$\beta$，即
+\begin{empheq}{equation}\label{eq71.11}
+	\begin{aligned}
+		S_{z}\chi_{1/2}	&=\frac{\hbar}{2}\chi_{1/2}
+		S_{z}\chi_{-1/2}&=-\frac{\hbar}{2}\chi_{-1/2}
+	\end{aligned}
+\end{empheq}\eqnormal
+如以$\chi_{1/2},\chi_{-1/2}$作为自旋态矢空间的基矢，建立“$S_{z}$表象”，则这两个本征态表示成
+\begin{empheq}{equation}\label{eq71.12}
+	\chi_{1/2}=\begin{bmatrix}
+		1 \\ 0
+	\end{bmatrix},\quad \chi_{-1/2}=\begin{bmatrix}
+		0 \\ 1
+\end{bmatrix}
+\end{empheq}
+电子的任何自旋态$\chi$可以表示成
+\begin{empheq}{equation}\label{eq71.13}
+	\chi=C_{1}\chi_{1/2}+C_{2}\chi_{-1/2}=\begin{bmatrix}
+		C_{1} \\ C_{2}
+	\end{bmatrix}
+\end{empheq}
+这也就是以$S_{z}$作为自旋变量时自旋波函数的表示形式，所以\eqref{eq71.13}式左端也可写成$\chi(S_{z})$，$C_{1}$和$C_{2}$就是当$S_{z}$等于$\pm\frac{\hbar}{2}$时波函数$\chi$的值，$C_{1}$和$C_{2}$的概率含义则是
+\begin{empheq}{align*}
+	|C_{1}|^{2} &=\text{$\chi$态下$S_{z}$取值$\frac{\hbar}{2}$的概率}	\\
+	|C_{2}|^{2} &=\text{$\chi$态下$S_{z}$取值$\bigg(-\frac{\hbar}{2}\bigg)$的概率}
+\end{empheq}
+当然，自旋波函数应该满足归一化条件
+\eqlong
+\begin{empheq}{equation}\label{eq71.14}
+	\chi^{+}\chi=[C_{1}^{*}\quad C_{2}^{*}]\begin{bmatrix}
+		C_{1} \\ C_{2}
+	\end{bmatrix}=C_{1}^{*}C_{1}+C_{2}^{*}C_{2}=1
+\end{empheq}\eqnormal
+
+在$S_{z}$表象中，$\boldsymbol{S}$及$\boldsymbol{\sigma}$各分量应该表示成二阶厄密矩阵，其中$S_{z},\sigma_{z}$为对角矩阵，对角元等于本征值.因此可以直接写出
+\begin{empheq}{equation}\label{eq71.15}
+	S_{z}=\begin{bmatrix}
+		\frac{\hbar}{2} & 0		\\
+		0 & -\frac{\hbar}{2}	\\
+	\end{bmatrix},\quad \sigma_{z}=\begin{bmatrix}
+		1 & 0	\\
+		0 & -1	\\
+\end{bmatrix}
+\end{empheq}
+下面来确定$\sigma_{x}$和$\sigma_{y}$的矩阵表示.设
+\begin{empheq}{equation*}
+	\sigma_{x}=\begin{bmatrix}
+		a & b	\\
+		b^{*} & c	\\
+	\end{bmatrix}\quad \text{（$a,c$为实数，因为$\sigma_{x}=\sigma_{x}^{*}$）}
+\end{empheq}
+由\eqref{eq71.8}式，易得$a=c=0$，而由\eqref{eq71.6}式，又可得$b^{*}b=1$.至此已经没有公式可以利用了.作为一种简明的选择，取$b=1$，则
+\eqshort
+\begin{empheq}{equation*}
+	\sigma_{x}=\begin{bmatrix}
+		0 & 1 \\
+		1 & 0 \\
+	\end{bmatrix}
+\end{empheq}\eqnormal
+再利用\eqref{eq71.9}式$(\sigma_{z}\sigma_{x}=i\sigma_{y})$，即可定出$\sigma_{y}$.总的结果是
+\eqllong
+\begin{empheq}[box=\widefbox]{equation}\label{eq71.16}
+	\sigma_{x}=\begin{bmatrix}
+		0 & 1 \\
+		1 & 0 \\
+	\end{bmatrix},\sigma_{y}=\begin{bmatrix}
+	0 & -i \\
+	i & 0 \\
+\end{bmatrix},\sigma_{z}=\begin{bmatrix}
+1 & 0 \\
+0 & -1 \\
+\end{bmatrix}
+\end{empheq}\eqnormal
+这就是著名的泡利矩阵.容易验证，这三个矩阵满足\eqref{eq71.6}至\eqref{eq71.9}全部关系式.泡利矩阵对于$\chi_{1/2}$及$\chi_{-1/2}$的作用结果是
+\eqlong
+\begin{empheq}{equation}\label{eq71.17}
+	\begin{aligned}
+		&\sigma_{x}\chi_{1/2}=\chi_{-1/2},\quad  &\sigma_{x}\chi_{-1/2}=\chi_{1/2}	\\
+		&\sigma_{y}\chi_{1/2}=i\chi_{-1/2},\quad &\sigma_{y}\chi_{-1/2}=-i\chi_{1/2}	\\
+		&\sigma_{z}\chi_{1/2}=\chi_{1/2},\quad   &\sigma_{x}\chi_{-1/2}=-\chi_{1/2}
+	\end{aligned}
+\end{empheq}
+因此
+\begin{empheq}{equation}\label{eq71.18}
+	\begin{aligned}
+		&(\sigma_{x}+i\sigma_{y})\chi_{1/2}=0,\quad &(\sigma_{x}+i\sigma_{y})\chi_{-1/2}=2\chi_{1/2}	\\		
+		&(\sigma_{x}-i\sigma_{y})\chi_{-1/2}=0,\quad &(\sigma_{x}-i\sigma_{y})\chi_{1/2}=2\chi_{-1/2}	
+	\end{aligned}
+\end{empheq}
+如将$\boldsymbol{\sigma}$换成$\boldsymbol{S}$，\eqref{eq71.18}式就是
+\begin{empheq}{equation}\label{eq71.19}
+	\begin{aligned}
+		&(S_{x}+iS_{y})\chi_{1/2}=0,\quad &(S_{x}+iS_{y})\chi_{-1/2}=\hbar\chi_{1/2}	\\		
+		&(S_{x}-iS_{y})\chi_{-1/2}=0,\quad &(S_{x}-iS_{y})\chi_{1/2}=\hbar\chi_{-1/2}	
+	\end{aligned}
+\end{empheq}\eqnormal
+这结果与角动量普遍理论一致.[参看\eqref{eq47.26}式，相当于该式中$j=1/2$.上述关于$\sigma_{x}$的简明选择，主要目的就是保证\eqref{eq71.19}式成立.]
+
+
+{\heiti 3. 几个重要公式}
+
+关于泡利自旋算符$\boldsymbol{\sigma}$，有许多有用的公式，这里略举一二.
+
+考虑与$\boldsymbol{\sigma}$可对易的矢量算符$\boldsymbol{A},\boldsymbol{B}$，（这包括$\boldsymbol{A},\boldsymbol{B}$是常数的情形，以及$\boldsymbol{A},\boldsymbol{B}$是和自旋自由度无关的算符的情形，后者如$\boldsymbol{r},\boldsymbol{p},\boldsymbol{L}=\boldsymbol{r}\times\boldsymbol{p}$等.这里对$\boldsymbol{A},\boldsymbol{B}$相互是否可对易没有要求.）定义$x,y,z$方向单位矢量$\boldsymbol{e}_{x},\boldsymbol{e}_{y},\boldsymbol{e}_{z}$，矢量（算符）间的标积，矢积等可以表示成
+\eqlong
+\begin{empheq}{align}
+	\boldsymbol{A}\cdot\boldsymbol{B}&=\sum_{\alpha}A_{\alpha}B_{\alpha}=A_{x}B_{x}+A_{y}B_{y}+A_{z}B_{z}	\label{eq71.20}\\
+	\boldsymbol{A}\times\boldsymbol{B}&=\sum_{\alpha\beta\gamma}\varepsilon_{\alpha\beta\gamma}e_{\alpha}A_{\beta}B_{\gamma}	\nonumber\\
+	&=\boldsymbol{e}_{x}(A_{y}B_{z}-A_{z}B_{y})+\boldsymbol{e}_{y}(A_{z}B_{x}-A_{x}B_{z})	\nonumber\\
+	&\quad+\boldsymbol{e}_{z}(A_{x}B_{y}-A_{y}B_{x})	\\
+	(\boldsymbol{A}\times\boldsymbol{B})&\cdot\boldsymbol{C}=\boldsymbol{A}(\boldsymbol{B}\times\boldsymbol{C})=\sum_{\alpha\beta\gamma}\varepsilon_{\alpha\beta\gamma}A_{\alpha}B_{\beta}C_{\gamma}
+\end{empheq}\eqnormal
+（$\alpha,\beta$等各表示$(x,y,z)$分量中的一个.）利用这些公式及\eqref{eq71.10}式，可得
+
+\eqindent{0}
+\begin{empheq}{align*}
+	(\boldsymbol{\sigma}\cdot\boldsymbol{A})(\boldsymbol{\sigma}\cdot\boldsymbol{B})&=
+	\sum_{\alpha\beta}\sigma_{\alpha}\sigma_{\beta}A_{\alpha}B_{\beta}	\\
+	&=\sum_{\alpha\beta}\bigg(\delta_{\alpha\beta}+i\sum_{\gamma}\varepsilon_{\alpha\beta\gamma}\sigma_{\gamma}\bigg)A_{\alpha}B_{\beta}=\sum_{\alpha}A_{\alpha}B_{\alpha}+i\sum_{\alpha\beta\gamma}\varepsilon_{\alpha\beta\gamma}A_{\alpha}B_{\beta}\sigma_{\gamma}
+\end{empheq}\eqnormal
+其中第一项即$\boldsymbol{A}\cdot\boldsymbol{B}$，第二项即$i\boldsymbol{\sigma}(\boldsymbol{A}\times\boldsymbol{B})=i(\boldsymbol{\sigma}\times\boldsymbol{A})\cdot\boldsymbol{B}$，因此
+\begin{empheq}{equation}\label{eq71.23}
+	(\boldsymbol{\sigma}\cdot\boldsymbol{A})(\boldsymbol{\sigma}\cdot\boldsymbol{B})=\boldsymbol{A}\cdot\boldsymbol{B}+i\boldsymbol{\sigma}\cdot(\boldsymbol{A}\times\boldsymbol{B})
+\end{empheq}
+上式中最后一项也可写成$i(\boldsymbol{\sigma}\times\boldsymbol{A})\cdot\boldsymbol{B}$.上式对任何$\boldsymbol{B}$成立，因此必有
+\begin{empheq}{equation}\label{eq71.24}
+	(\boldsymbol{\sigma}\cdot\boldsymbol{A})\boldsymbol{\sigma}=\boldsymbol{A}+i\boldsymbol{\sigma}\times\boldsymbol{A}
+\end{empheq}
+类似地可证
+\begin{empheq}{equation}\label{eq71.25}
+	\boldsymbol{\sigma}(\boldsymbol{\sigma}\cdot\boldsymbol{A})=\boldsymbol{A}-i\boldsymbol{\sigma}\times\boldsymbol{A}=\boldsymbol{A}+i\boldsymbol{A}\times\boldsymbol{\sigma}
+\end{empheq}
+两式相加、减，即得
+\begin{empheq}{align}
+	&\boldsymbol{\sigma}(\boldsymbol{\sigma}\cdot\boldsymbol{A})+(\boldsymbol{\sigma}\cdot\boldsymbol{A})\boldsymbol{\sigma}=2\boldsymbol{A}		\label{eq71.26}\\
+	\boldsymbol{\sigma}(&\boldsymbol{\sigma}\cdot\boldsymbol{A})-(\boldsymbol{\sigma}\cdot\boldsymbol{A})\boldsymbol{\sigma}=2i\boldsymbol{A}\times\boldsymbol{\sigma}		\label{eq71.27}
+\end{empheq}
+注意，由于$\boldsymbol{A}$与$\boldsymbol{\sigma}$可对易，$A_{\alpha}\sigma_{\beta}=\sigma_{\beta}A_{\alpha}$，因此
+\begin{empheq}{equation*}
+	\boldsymbol{A}\cdot\boldsymbol{\sigma}=\boldsymbol{\sigma}\cdot\boldsymbol{A},\quad \boldsymbol{A}\times\boldsymbol{\sigma}=-\boldsymbol{\sigma}\times\boldsymbol{A} 
+\end{empheq}
+以上各式应用极广，\eqref{eq71.23}式尤其重要，读者应牢记.\eqref{eq71.23}式的几种特例也经常用到，如
+\begin{empheq}{align}
+	(\boldsymbol{\sigma}\cdot\boldsymbol{n})^{2}=&1,
+	\quad \boldsymbol{n}\text{为单位常矢量}		\label{eq71.28}\\
+	(\boldsymbol{\sigma}\cdot\boldsymbol{r})^{2}=r^{2}&,
+	\quad \boldsymbol{r}\text{为电子的位置矢量}		\label{eq71.29}\\
+	(\boldsymbol{\sigma}\cdot\boldsymbol{p})^{2}=\boldsymbol{p}^{2}&,
+	\quad \boldsymbol{p}\text{为电子的动量算符}		\label{eq71.30}
+\end{empheq}
+\begin{empheq}{align}\label{eq71.31}
+	(\boldsymbol{\sigma}\cdot\boldsymbol{L})^{2}&=\boldsymbol{L}^{2}+i\boldsymbol{\sigma}\cdot(\boldsymbol{L}\times\boldsymbol{L})	\nonumber\\
+	&=\boldsymbol{L}^{2}-\hbar\boldsymbol{\sigma}\cdot\boldsymbol{L}
+\end{empheq}
+这里$\boldsymbol{L}=\boldsymbol{r}\times\boldsymbol{p}$是轨道角动量算符.\eqref{eq71.28}式中$\boldsymbol{\sigma}\cdot\boldsymbol{n}$常记为$\sigma_{n}$，即$\boldsymbol{\sigma}$在$\boldsymbol{n}$方向的投影.$\sigma_{n}^{2}=1$意味着$\sigma_{n}$的本征值只能是$\pm1$，这正是本节开头指出的基本实验事实.
+
+\example 电子的任何一个自旋态，在$S_{z}$表象中波函数总可以表示成
+\begin{empheq}{equation}\label{eq71.32}
+	\chi=\begin{bmatrix}
+		C_{1} \\ C_{2}
+	\end{bmatrix}=\begin{bmatrix}
+		\cos\delta e^{i\varphi_{1}} \\ \sin\delta e^{i\varphi_{2}}
+\end{bmatrix},\quad 0\leqslant\delta\leqslant\frac{\pi}{2}
+\end{empheq}
+（$\chi$已经归一化）试计算平均值$\langle\boldsymbol{\sigma}\rangle$，并证明这是一个单位矢量，记为$\boldsymbol{n}$，即定义
+\begin{empheq}{equation}\label{eq71.33}
+	\langle\sigma_{x}\rangle=n_{x},\quad \langle\sigma_{y}\rangle=n_{y},\quad \langle\sigma_{z}\rangle=n_{z}
+\end{empheq}
+再进一步证明$\chi$是$\sigma_{n}=\boldsymbol{n}\cdot\boldsymbol{\sigma}$的本征态，本征值等于1.
+
+\solution 先计算$\boldsymbol{\sigma}$的平均值，以$\langle\sigma_{x}\rangle$为例，
+\eqlong
+\begin{empheq}{align*}
+	\langle\sigma_{x}\rangle&=\chi^{+}\sigma_{x}\chi=[C_{1}^{*}\quad C_{2}^{(*)}]\begin{bmatrix}
+		0 & 1 \\
+		1 & 0 \\
+	\end{bmatrix}\begin{bmatrix}
+		C_{1} \\ C_{2}	
+\end{bmatrix}	\\
+	&=C_{1}^{*}C_{2}+C_{2}^{(*)}C_{1}=\sin2\delta\cos(\varphi_{2}-\varphi_{1})=n_{x}
+\end{empheq}
+类似地可得
+\begin{empheq}{align*}
+	\langle\sigma_{y}\rangle=&iC_{2}^{*}C_{1}-iC_{1}^{*}C_{2}=\sin2\delta\sin(\varphi_{2}-\varphi_{1})=n_{y}	\\
+	\langle&\sigma_{z}\rangle C_{1}^{*}C_{1}-C_{2}^{*}C_{2}=\cos2\delta=n_{z}
+\end{empheq}\eqnormal
+令$\theta=2\delta(0\leqslant\theta\leqslant\pi)$，$\varphi=\varphi_{2}-\varphi_{1}$，就有
+\begin{empheq}{equation}\label{eq71.34}
+	\begin{aligned}
+		\langle\sigma_{x}\rangle &=n_{x}=\sin\theta\cos\varphi	\\
+		\langle\sigma_{y}\rangle &=n_{y}=\sin\theta\sin\varphi	\\
+		\langle\sigma_{z}\rangle &=n_{z}=\cos\theta
+	\end{aligned}
+\end{empheq}
+显然有
+\begin{empheq}{equation*}
+	\boldsymbol{n}^{2}=n_{x}^{2}+n_{y}^{2}+n_{z}^{2}=1
+\end{empheq}
+即$\boldsymbol{n}$是单位矢量，其指向为球坐标中的$(\theta,\varphi)$方向，由于
+\begin{empheq}{equation*}
+	\sigma_{n}=n_{x}\sigma_{x}+n_{y}\sigma_{y}+n_{z}\sigma_{z}
+\end{empheq}
+因此$\sigma_{n}$的平均值等于
+\begin{empheq}{align}\label{eq71.35}
+	\langle\sigma_{n}\rangle &=n_{x}\langle\sigma_{x}\rangle+n_{y}\langle\sigma_{y}\rangle+n_{z}\langle\sigma_{z}\rangle	\nonumber\\
+	&=n_{x}^{2}+n_{y}^{2}+n_{z}^{2}=1
+\end{empheq}
+由于$\sigma_{n}$的本征值只能取$\pm1$，而自旋态$\chi$总能表示成$\sigma_{n}$的本征态的线性叠加，由此可知$\chi$态必为$\sigma_{n}=1$的本征态.
+
+由\eqref{eq71.34}式定义的$\boldsymbol{n}$标志了自旋$S$的指向，称为自旋态$\chi$的极化矢量.
+

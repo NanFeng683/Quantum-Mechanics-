@@ -1,0 +1,293 @@
+\section[海尔曼定理和位力定理]{海尔曼定理和位力定理} \label{sec:03.11} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+关于物理体系的能量本征态（束缚态），有许多定理，其中最重要、应用最广的大概就是海尔曼(H.Hellmann)定理和位力(Virial) 定理了.海尔曼定理发表于20世纪30年代后期，最初是用来讨论量子化学问题的，因此在量子力学教科书中较少提到它.其实这个定理应用极广.
+\newpage
+{\heiti 1. 海尔曼定理}
+
+设某个体系的束缚态能级和归一化能量本征函数为$E_{n}$，$\varPsi_{n}$（$n$代表全体量子数或本征态编号数），满足能量本征方程
+\begin{empheq}{equation}\label{eq311.1}
+	\hat{H}\varPsi_{n}-E_{n}\varPsi_{n}=0
+\end{empheq}
+设$\lambda$为$\hat{H}$中含有的任何一个参数（如粒子质量$m$，普朗克常数$\hbar$，等等），显然$E_{n}$，$\varPsi_{n}$均与$\lambda$有关.\eqref{eq311.1}式对$\lambda$求导，得到
+\begin{empheq}{equation*}
+	\bigg(\frac{\partial\hat{H}}{\partial\lambda}-\frac{\partial E_{n}}{\partial \lambda}\bigg)\varPsi_{n}+(\hat{H}-E_{n})\frac{\partial\varPsi_{n}}{\partial\lambda}=0
+\end{empheq}
+左乘$\varPsi^{*}$，对全空间积分，得到
+\eqindent{6}
+\begin{empheq}{align}\label{eq311.2}
+	\int\varPsi^{*}(\hat{H}-E_{n})\frac{\partial\varPsi_{n}}{\partial\lambda}d\tau
+	&=\int\varPsi_{n}^{*}\bigg(\frac{\partial E_{n}}{\partial\lambda}-\frac{\partial\hat{H}}{\partial\lambda}\bigg)\varPsi_{n}d\tau	\nonumber\\
+	&=\frac{\partial E_{n}}{\partial \lambda}-\bigg\langle\frac{\partial\hat{H}}{\partial\lambda}\bigg\rangle_{n}
+\end{empheq}
+其中$\langle\rangle_{n}$表示$\varPsi_{n}$态下的平均值.由于$\hat{H}=\hat{H}^{+}$，上式左端与$\hat{H}$有关的积分即
+\begin{empheq}{align*}
+	\int\varPsi^{*}\hat{H}\frac{\partial\varPsi_{n}}{\partial\lambda}d\tau
+	&=\int\frac{\partial\varPsi_{n}}{\partial\lambda}(\hat{H}\varPsi_{n})^{*}d\tau	\\
+	&=E_{n}\int\frac{\partial\varPsi_{n}}{\partial\lambda}\varPsi_{n}^{*}d\tau
+\end{empheq}\eqnormal
+因此\eqref{eq311.2}式左端等于0，于是得到
+\begin{empheq}{equation}\label{eq311.3}
+	\boxed{\frac{\partial E_{n}}{\partial\lambda}=\bigg\langle\frac{\partial\hat{H}}{\partial\lambda}\bigg\rangle_{n}\equiv\int\varPsi_{n}^{*}\frac{\partial\hat{H}}{\partial\lambda}\varPsi_{n}d\tau}
+\end{empheq}
+\eqref{eq311.3}式称为海尔曼定理或海尔曼公式.
+
+适当地选择参数$\lambda$，$\frac{\partial\hat{H}}{\partial\lambda}$常常可以表示某些重要的力学量算符，所以利用海尔曼定理常可求出某些重要力学量的平均值，或求出能级.海尔曼定理也常用作理论分析的工具，例如用它来证明其他定理，下面先证明一个定理.
+
+\theorem 粒子在势场$V_{1}(x)$中运动时，束缚态能级为$E_{n}(1)$；在势场$V_{2}(x)$中运动时，束缚态能级为$E_{n}(2)$.其中$n=1,2,3,\cdots$为能级编号.设对于任何$x$值，均有$V_{1}(x)\leqslant V_{2}(x)$，则
+\begin{empheq}{equation*}
+	E_{n}(1)\leqslant E_{n}(2)
+\end{empheq}
+
+\prove 考虑另一个介乎$V_{1},V_{2}$之间的势场
+\eqindent{5}
+\begin{empheq}{equation}\label{eq311.4}
+	V(\lambda,x)=(2-\lambda)V_{1}(x)+(\lambda-1)V_{2}(x),\quad 1\leqslant \lambda\leqslant 2
+\end{empheq}\eqnormal
+当$\lambda=1,2,$上式即$V_{1}(x),V_{2}(x)$.粒子在势场$V(\lambda,x)$中运动时，总能量算符为
+\begin{empheq}{equation}\label{eq311.5}
+	\hat{H}(\lambda,x)=-\frac{\hbar^{2}}{2m}\frac{d^{2}}{dx^{2}}+V(\lambda,x)
+\end{empheq}
+相应的束缚态能级记为$E_{n}(\lambda)$，$n=1,2,3,\cdots$.\eqref{eq311.1}式对$\lambda$求导，得到
+\begin{empheq}{equation*}
+	\frac{\partial\hat{H}}{\partial\lambda}=\frac{\partial V(\lambda,x)}{\partial\lambda}=V_{2}(x)-V_{1}(x)\geqslant 0
+\end{empheq}
+由海尔曼定理，即得
+\begin{empheq}{equation*}
+	\frac{\partial}{\partial\lambda}E_{n}(\lambda)=\langle V_{2}-V_{1} \rangle_{n}\geqslant 0
+\end{empheq}
+这表明$\lambda$增加时$E_{n}(\lambda)$只增不减，所以$E_{n}(1)\geqslant E_{n}(2)$.
+
+这个定理常用来对不同势场所造成的能级作定性比较分析.
+
+\exa 已知一维谐振子的总能量算符和能级为
+\begin{empheq}{equation}\label{eq311.6}
+	\hat{H}=\hat{T}+V=-\frac{h^{2}}{2m}\frac{d^{2}}{dx^{2}}+\frac{1}{2}m\omega^{2}x^{2}
+\end{empheq}
+\begin{empheq}{equation}\label{eq311.7}
+	E_{n}=\bigg(n+\frac{1}{2}\bigg)\hbar\omega,\quad n=0,1,2,\cdots
+\end{empheq}
+
+试用海尔曼定理证明，在能量本征态$\varPsi_{n}$下，
+\begin{empheq}{equation}\label{eq311.8}
+	\bar{T}=\bar{V}=\frac{1}{2}E_{n}
+\end{empheq}
+
+\prove 总能量算符$\hat{H}$中含有三个参数$\hbar$，$m$，$\omega$，其中任何一个均可取作海尔曼定理\eqref{eq311.3}式中的$\lambda$.如取$\lambda=\hbar$，
+\begin{empheq}{equation*}
+	\frac{\partial\hat{H}}{\partial\lambda}=-\frac{\hbar}{m}\frac{d^{2}}{dx^{2}}=\frac{2}{\hbar}\hat{T}
+\end{empheq}
+按照\eqref{eq311.3}式，就有
+\begin{empheq}{equation*}
+	\frac{\hbar}{\hbar}\langle T \rangle_{n}=\frac{\partial E_{n}}{\partial\hbar}=\bigg(n+\frac{1}{2}\bigg)\omega=\frac{E_{n}}{\hbar}
+\end{empheq}
+所以
+\begin{empheq}{equation*}\label{eq311.8'}
+	\langle T \rangle_{n}=\frac{1}{2}E_{n}	\tag{$3.11.8^{\prime}$}
+\end{empheq}
+由于
+\begin{empheq}{equation*}
+	E_{n}=\langle T+V \rangle_{n}
+\end{empheq}
+所以
+\begin{empheq}{equation*}\label{eq311.8''}
+	\langle V \rangle_{n}=E_{n}-\langle T \rangle_{n}=\frac{1}{2}E_{n}	\tag{$3.11.8^{\prime\prime}$}
+\end{empheq}
+如取$\lambda=m$或$\omega$，同样可以证明\eqref{eq311.8}式，读者试自完成之.
+
+\exa 质量$m$，电荷$q$的粒子，受到弹性力$(-kx)$和均匀电场$\mathscr{E}$（指向正$x$轴方向）的共同作用，势能可以表示成
+\begin{empheq}{equation}\label{eq311.9}
+	V(x)=\frac{1}{2}kx^{2}-q\mathscr{E}x
+\end{empheq}
+
+求束缚能级.
+
+\solution 总能量算符为
+\begin{empheq}{equation}\label{eq311.10}
+	\hat{H}=\hat{T}+V=-\frac{\hbar^{2}}{2m}\frac{d^{2}}{dx^{2}}+\frac{1}{2}kx^{2}-q\mathscr{E}x
+\end{empheq}
+视电场强度$\mathscr{E}$为参数，设能级为$E_{n}(\mathscr{E})$.当$\mathscr{E}=0$，\eqref{eq311.10}式即谐振子能量算符，其本征值为
+\begin{empheq}{equation}\label{eq311.11}
+	E_{n}(0)=\bigg(n+\frac{1}{2}\bigg)\hbar\omega,\quad\omega=\sqrt{\frac{k}{m}}
+\end{empheq}
+\eqref{eq311.10}式对$\mathscr{E}$求导，得到$\frac{\partial\hat{H}}{\partial\mathscr{E}}=-qx$，再利用海尔曼定理，即得
+\begin{empheq}{equation}\label{eq311.12}
+	\frac{\partial}{\partial\mathscr{E}}E_{n}(\mathscr{E})=-q\langle x \rangle_{n}
+\end{empheq}
+另一方面，
+\begin{empheq}{align}\label{eq311.13}
+	[\hat{p}_{x},\hat{H}]&=\frac{k}{2}[\hat{p}_{x},x^{2}]-q\mathscr{E}[\hat{p}_{x},x]	\nonumber\\
+	&=-i\hbar(kx-q\mathscr{E})
+\end{empheq}
+上式在$\varPsi_{n}$态下求平均，由于
+\begin{empheq}{equation*}
+	[p_{x},H]=\int\varPsi_{n}^{*}(\hat{p}_{x}\hat{H}-\hat{H\hat{p}_{x}})\varPsi_{n}dx=0
+\end{empheq}
+（请读者自己证明）故得
+\begin{empheq}{equation}\label{eq311.14}
+	\langle x \rangle_{n}=\frac{q\mathscr{E}}{k}=\frac{q\mathscr{E}}{m\omega^{2}}
+\end{empheq}
+代入\eqref{eq311.12}式，得到
+\begin{empheq}{equation*}\label{eq311.12'}
+	\frac{\partial}{\partial\mathscr{E}}E_{n}(\mathscr{E})=-\frac{q^{2}\mathscr{E}}{k}	\tag{$3.11.12^{\prime}$}
+\end{empheq}
+积分，即得
+\eqindent{5}
+\begin{empheq}{gather}\label{eq311.15}
+	E_{n}(\mathscr{E})=E_{n}(0)-\frac{q^{2}\mathscr{E}^{2}}{2k}=\bigg(n+\frac{1}{2}\bigg)\hbar\omega-\frac{q^{2}\mathscr{E}^{2}}{2m\omega^{2}}	\\ 
+	\qquad \qquad \qquad n=0,1,2,\cdots	\nonumber
+\end{empheq}\eqnormal
+这就是所求束缚能级.请将本例和$\S$\ref{sec:02.05}的例题对照比较.
+\newpage
+{\heiti 2. 位力定理}
+
+在经典力学中，质量为$m$的质点在势场$V(r)$中运动时，运动方程为
+\begin{empheq}{equation}\label{eq311.16}
+	\boldsymbol{p}=m\frac{d\boldsymbol{r}}{dt},\quad\frac{d\boldsymbol{p}}{dt}=\boldsymbol{F}=-\nabla V
+\end{empheq}
+因此
+\eqindent{6}
+\begin{empheq}{equation}\label{eq311.17}
+	\frac{d}{dt}(\boldsymbol{r}\cdot\boldsymbol{p})=\frac{d\boldsymbol{r}}{dt}\cdot\boldsymbol{p}+\boldsymbol{r}\cdot\frac{d\boldsymbol{p}}{dt}=\frac{\boldsymbol{p}^{2}}{m}-\boldsymbol{r}\cdot\nabla V
+\end{empheq}
+如果粒子被局限在有限范图内运动（例如沿闭合轨道作周期运动），$\boldsymbol{r}\cdot\boldsymbol{p}$必取有限值，取\eqref{eq311.17}式的长时间平均（对于周期运动，取周期平均值），左端的平均必然等于0，故得
+\begin{empheq}{equation}\label{eq311.18}
+	\bigg(\frac{\boldsymbol{p}^{2}}{2m}\bigg)_{\text{平均}}=\frac{1}{2}(\boldsymbol{r}\cdot\nabla)_{\text{平均}}=-\frac{1}{2}(\boldsymbol{r}\cdot\boldsymbol{F})_{\text{平均}}
+\end{empheq}
+这就是经典力学中的位力定理.由于动能总是正的，所以$\boldsymbol{r}\cdot\boldsymbol{F}$的平均值应该是负的，亦即$\boldsymbol{F}$的性质是以吸引力为主.只有这样才能将粒子限制在有限区域内运动.
+
+在量子力学中，当粒子在势场$V(\boldsymbol{r})$ 中运动时，总能量算符为
+\begin{empheq}{equation}\label{eq311.19}
+	\hat{H}=\hat{T}+\hat{V}=-\frac{\hbar^{2}}{2m}\nabla^{2}+V(\boldsymbol{r})
+\end{empheq}
+利用\eqref{eq39.17'}，\eqref{eq39.18'}，\eqref{eq39.32}式，可以证明算符公式
+\begin{empheq}{equation}\label{eq311.20}
+	\frac{d}{dt}(\hat{\boldsymbol{r}}\cdot\hat{\boldsymbol{p}})\equiv\frac{1}{i\hbar}[\hat{\boldsymbol{r}}\cdot\hat{\boldsymbol{p}},\hat{H}]=\frac{\hat{\boldsymbol{p}}^{2}}{m}-\boldsymbol{r}\cdot\nabla V
+\end{empheq}
+上式对任何一个能量本征态（束缚态）$\varPsi_{n}$取平均值，由于
+\begin{empheq}{equation*}
+	\langle[\hat{\boldsymbol{r}}\cdot\hat{\boldsymbol{p}},\hat{H}]\rangle_{n}
+	\equiv\int\varPsi_{n}^{*}(\hat{\boldsymbol{r}}\cdot\hat{\boldsymbol{p}}\hat{H}-\hat{H}\hat{\boldsymbol{r}}\cdot\hat{\boldsymbol{p}})\varPsi_{n}d\tau=0
+\end{empheq}\eqnormal
+故得
+\begin{empheq}{equation}\label{eq311.21}
+	\boxed{\langle \frac{\boldsymbol{p}^{2}}{2m} \rangle_{n}=\frac{1}{2}\langle \boldsymbol{r}\cdot\nabla V \rangle_{n}}
+\end{empheq}
+这就是量子力学中的位力定理，它是经典位力定理的推广.注意\eqref{eq311.18}式的平均是对时间的平均，\eqref{eq311.21}式则是对束缚定态平均.
+
+也可以利用海尔曼定理并结合坐标的尺度变换来证明位力定理，如下.\eqref{eq311.19}式对$\hbar$求导，得到
+\begin{empheq}{equation}\label{eq311.22}
+	\frac{\partial\hat{H}}{\partial\hbar}=-\frac{\hbar}{m}\nabla^{2}=\frac{2}{\hbar}\frac{\hat{\boldsymbol{p}^{2}}}{2m}
+\end{empheq}
+再利用海尔曼定理，即得
+\begin{empheq}{equation}\label{eq311.23}
+	\langle\frac{\hat{\boldsymbol{p}^{2}}}{2m}\rangle_{n}=\frac{\hbar}{2}\frac{\partial E_{n}}{\partial\hbar}
+\end{empheq}
+另一方面，如作坐标的尺度变换，令
+\begin{empheq}{equation}\label{eq311.24}
+	\boldsymbol{R}=\frac{\boldsymbol{r}}{\hbar}=(X,Y,Z)
+\end{empheq}
+则
+\eqindent{6}
+\begin{empheq}{align*}\label{eq311.19'}
+	\hat{H}&=-\frac{1}{2m}\nabla_{R}^{2}+V(\hbar\boldsymbol{R})	\\
+	&=-\frac{1}{2m}\bigg(\frac{\partial^{2}}{\partial X^{2}}+\frac{\partial^{2}}{\partial Y^{2}}+\frac{\partial^{2}}{\partial Z^{2}}\bigg)+V(\hbar\boldsymbol{R})
+	\tag{$3.11.19^{\prime}$}
+\end{empheq}\eqnormal
+这时
+\begin{empheq}{equation}\label{eq311.25}
+	\frac{\partial\hat{H}}{\partial\hbar}=\frac{\partial V}{\partial\hbar}=\frac{\partial\boldsymbol{r}}{\partial\hbar}\cdot\nabla V=\frac{\boldsymbol{r}}{\hbar}\cdot\nabla V(\boldsymbol{r})
+\end{empheq}
+坐标变换对能级当然没有影响，因此，再利用海尔曼定理，得到
+\begin{empheq}{equation}\label{eq311.26}
+	\langle \boldsymbol{r}\cdot\nabla V(\boldsymbol{r}) \rangle_{n}=\hbar\frac{\partial E_{n}}{\partial\hbar}
+\end{empheq}
+比较\eqref{eq311.23}、\eqref{eq311.26}式，即得
+\begin{empheq}{equation}\label{eq311.27}
+	\langle \frac{\boldsymbol{p}^{2}}{2m} \rangle_{n}=\frac{1}{2}\langle \boldsymbol{r}\cdot\nabla V(\boldsymbol{r}) \rangle_{n}=\frac{\hbar}{2}\frac{\partial E_{n}}{\partial\hbar}
+\end{empheq}
+其中第一个等式就是位力定理.
+
+位力定理可以推广到多粒子体系.以$x_{\alpha}$（$\alpha=1,2,\cdots,3N$，$N$为粒子数）表示各粒子的位置，体系的总动能算符可以表示成
+\begin{empheq}{equation}\label{eq311.28}
+	\hat{T}=\sum_{\alpha}\frac{1}{2m}\hat{p}_{\alpha}=-\hbar^{2}\sum_{\alpha}\frac{1}{2m_{\alpha}}\bigg(\frac{\partial}{\partial x_{\alpha}}\bigg)^{2}
+\end{empheq}
+体系的总势能（包括外场作用势和粒子间相互作用势）表示成
+\begin{empheq}{equation}\label{eq311.29}
+	V=V(x_{1},x_{2},\cdots,x_{\alpha},\cdots,x_{3N})
+\end{empheq}
+体系的总能量算符为
+\begin{empheq}{equation}\label{eq311.30}
+	\hat{H}=\hat{T}+V
+\end{empheq}
+仿照上述步骤，仍有
+\begin{empheq}{equation}\label{eq311.31}
+	\frac{\partial\hat{H}}{\partial\hbar}=\frac{2}{\hbar}\hat{T}=-2\hbar\sum_{\alpha}\frac{1}{2m}\bigg(\frac{\partial}{\partial x_{\alpha}}\bigg)^{2}
+\end{empheq}
+作尺度变换
+\eqindent{12}
+\begin{empheq}{equation}\label{eq311.32}
+	X_{\alpha}=\frac{x_{\alpha}}{\hbar}
+\end{empheq}\eqnormal
+后，则有
+\eqindent{4}
+\begin{empheq}{equation}\label{eq311.33}
+	\frac{\partial\hat{H}}{\partial\hbar}=\frac{\partial V}{\partial\hbar}=\sum_{\alpha}\frac{\partial x_{\alpha}}{\partial\hbar}\frac{\partial V}{\partial x_{\alpha}}=\frac{1}{\hbar}\sum_{\alpha}x_{\alpha}\frac{\partial V}{\partial x_{\alpha}}
+\end{empheq}
+利用海尔曼定理，得到
+\begin{empheq}{equation}\label{eq311.34}
+	\langle T \rangle_{n}=\sum_{\alpha}\frac{1}{2m_{\alpha}}\langle p_{\alpha}^{2}\rangle_{n}=\frac{1}{2}\sum_{\alpha}\bigg\langle x_{\alpha}\frac{\partial V}{\partial x_{\alpha}}\bigg\rangle_{n}=\frac{\hbar}{2}\frac{\partial E_{n}}{\partial\hbar}
+\end{empheq}\eqnormal
+这就是多粒子体系的位力定理.
+
+如果势能$V$是全体$x_{\alpha}$的$\nu$次齐次函数，即
+\begin{empheq}{equation}\label{eq311.35}
+	V(\lambda x_{1},\lambda x_{2},\cdots)=\lambda^{\nu}V(x_{1},x_{2},\cdots)
+\end{empheq}
+上式对$\lambda$求导，再取$\lambda=1$，得到
+\eqindent{12}
+\begin{empheq}{equation}\label{eq311.36}
+	\sum_{\alpha}x_{\alpha}\frac{\partial V}{\partial x_{\alpha}}=\nu V
+\end{empheq}
+对于单粒子体系，就是
+\begin{empheq}{equation*}\label{eq311.36'}
+	\boldsymbol{r}\cdot\nabla V=\nu V	\tag{$3.11.36^{\prime}$}
+\end{empheq}\eqnormal
+将\eqref{eq311.36}式代入\eqref{eq311.34}式[\eqref{eq311.36'}式代入\eqref{eq311.27}式]，得到
+\begin{empheq}{equation}\label{eq311.37}
+	\boxed{\langle T \rangle_{n}=\frac{\nu}{2}\langle V \rangle_{n}=\frac{\hbar}{2}\frac{\partial E_{n}}{\partial\hbar}}
+\end{empheq}
+例如谐振子，$V\propto x^{2}$（或$r^{2}$），相当于$\nu=2$，故有
+\begin{empheq}{equation}\label{eq311.38}
+	\langle T \rangle_{n}=\langle V \rangle_{n}=\frac{E_{n}}{2}\quad (E_{n}\propto\hbar)
+\end{empheq}
+又如受反平方吸引力作用的粒子，$V\propto\frac{1}{r}$，相当于$\nu=-1$，所以
+\begin{empheq}{equation}\label{eq311.39}
+	\langle T \rangle_{n}=-\frac{1}{2}\langle V \rangle_{n}=-E_{n}\quad (E_{n}\propto\hbar^{-2})
+\end{empheq}
+多电子原子或分子，粒子间作用势为库仑势，相当于$\nu=-1$的情形，所以体系总动能和总势能的束缚定态平均值仍保持\eqref{eq311.39}式的关系.
+
+\exa 粒子在下列势场中运动，
+
+\begin{empheq}{equation}\label{eq311.40}
+	V(x)=\lim_{\nu\rightarrow\infty}V_{0}\bigg(\frac{x}{a}\bigg)^{2\nu},a,V_{0}>0
+\end{empheq}
+
+讨论势场的性质，并求$T,V$的定态平均值与能级的关系.
+
+\solution 显然当$|x|>a$，$V=\infty$；当$|x|<a$，$V=O$.所以\eqref{eq311.40}式代表宽$2a$的无限深势阱.$V(x)$是$x$的$2\nu(\nu\rightarrow\infty)$次函数，按照\eqref{eq311.37}式，
+\begin{empheq}{equation}\label{eq311.41}
+	\langle V \rangle_{n}=\frac{1}{\nu}\langle T \rangle_{n}=0,\quad(\nu\rightarrow\infty)
+\end{empheq}
+因此
+\begin{empheq}{equation}\label{eq311.42}
+	\langle T \rangle_{n}=E_{n}-\langle V \rangle_{n}=E_{n}
+\end{empheq}
+请将本题结果和$\S$\ref{sec:02.04}(1.)的结果联系起来理解．
+
+
+
+
+
+
+

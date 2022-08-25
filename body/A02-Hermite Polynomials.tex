@@ -1,0 +1,92 @@
+\clearpage
+\chapter{厄密多项式}	\label{A02}
+
+令$\xi,\eta$为独立的复变数，考虑下列在整个复平面解析的二元函数
+\eqshort
+\begin{empheq}{equation}\label{eqA2.1}
+	W(\xi,\eta)=e^{2\xi\eta-\eta^{2}}
+\end{empheq}
+将它展开成$\eta$的幕级数，表示成
+\begin{empheq}{equation}\label{eqA2.2}
+	W(\xi,\eta)=\sum_{n=0}^{\infty}H_{n}(\xi)\frac{\eta^{n}}{n!}
+\end{empheq}
+则 
+\begin{empheq}{equation*}
+	H_{n}(\xi)=\frac{\partial^{n}W}{\partial\eta^{n}}\bigg|_{\eta=0}
+\end{empheq}\eqlong
+由于
+\begin{empheq}{align*}
+	W&=e^{2\xi\eta-\eta^{2}}=e^{\eta^{2}-t^{2}},\quad t=\xi-\eta	\\
+	\frac{\partial^{n}W}{\partial\eta^{n}}=&(-1)^{n}\frac{\partial^{n}W}{\partial t^{n}}=(-1)^{n}e^{\xi^{2}}\left(\frac{d}{dt}\right)^{n}e^{-t^{2}}	\\
+	&\left(\frac{d}{dt}\right)^{n}e^{-t^{2}}|_{\eta=0}=\left(\frac{d}{d\xi}\right)^{n}e^{-\xi^{2}}
+\end{empheq}\eqnormal
+所以
+\begin{empheq}{equation}\label{eqA2.3}
+	H_{n}(\xi)=(-1)^{n}e^{\xi^{2}}\left(\frac{d}{d\xi}\right)^{n}e^{-\xi^{2}}
+\end{empheq}
+显然$H_{n}(\xi)$是$n$次多项式，称为厄密(Hermite)多项式.上式就是它的微分表达式.$W(\xi,\eta)$称为$H_{n}(\xi)$的生成函数或母函数.
+
+\eqref{eqA2.2}式对$\xi$求导，得到
+\begin{empheq}{align*}
+	\sum_{n}H_{n}^{\prime}(\xi)\frac{\eta^{n}}{n!}&=2\eta W(\xi,\eta)	\\
+	&=\sum_{n}2H_{n}(\xi)\frac{\eta^{n+1}}{n!}
+\end{empheq}\eqshort
+比较上式两端$\eta^{n}$系数，即得
+\begin{empheq}{equation}\label{eqA2.4}
+	H_{n}^{\prime}(\xi)=2nH_{n-1}(\xi)
+\end{empheq}\eqnormal
+\eqref{eqA2.2}式对$\eta$求导，经过类似的步骤，得到
+\begin{empheq}{equation}\label{eqA2.5}
+	2\xi H_{n}(\xi)=H_{n+1}(\xi)+2nH_{n-1}(\xi)
+\end{empheq}
+以上二式是厄密多项式的基本递推关系.由\eqref{eqA2.4}、\eqref{eqA2.5}式消去$H_{n-1}$，再对$\xi$求导，再利用\eqref{eqA2.4}式消去$H_{n+1}^{\prime}$，就得$H_{n}$满足的微分方程
+\begin{empheq}{equation}\label{eqA2.6}
+	H_{n}^{\prime\prime}(\xi)-2\xi H_{n}^{\prime}(\xi)+2nH_{n}(\xi)=0
+\end{empheq}
+称为厄密方程.\eqref{eqA2.3}式是这个方程的唯一多项式解.
+
+将\eqref{eqA2.2}式中$\eta$换成另一个变数$s$，
+\begin{empheq}{equation*}
+	e^{2\xi s-s^{2}}=\sum_{m=0}^{\infty}H_{m}(\xi)\frac{s^{m}}{m!}
+\end{empheq}
+与\eqref{eqA2.2}式相乘，得到
+\begin{empheq}{align*}
+	&\sum_{n}\sum_{m}H_{n}(\xi)H_{m}(\xi)\frac{\eta^{n}s^{m}}{n!m!}	\\
+	=&\exp(2\xi\eta+2\xi s-\eta^{2}-s^{2})	\\
+	=&\exp[\eta^{2}+2\eta s-(\xi-\eta-s)^{2}]
+\end{empheq}
+以$e^{-\xi^{2}}$乘上式两端，并积分$\int_{-\infty}^{\infty}\cdots d\xi$，得到
+\begin{empheq}{align*}
+	&\sum_{n}\sum_{m}\frac{\eta^{n}s^{m}}{n!m!}\int_{-\infty}^{\infty}e^{-\xi^{2}}H_{n}(\xi)H_{m}(\xi)d\xi	\\
+=& e^{2\eta s}\int_{-\infty}^{\infty}e^{-(\xi-\eta-s)^{2}}d\xi	\\
+=& e^{2\eta s}\int_{-\infty}^{\infty}e^{-x^{2}}dx=\sqrt{\pi}e^{2\eta s}	\\
+=& \sqrt{\pi}\sum_{n=0}^{\infty}2^{n}\frac{(\eta s)^{n}}{n!}
+\end{empheq}
+比较上式两端，即得厄密多项式的正交归一化公式
+\begin{empheq}{equation}\label{eqA2.7}
+	\int_{-\infty}^{\infty}e^{-\xi^{2}}H_{n}(\xi)H_{m}(\xi)d\xi=2^{n}n!\sqrt{\pi}\delta_{nm}
+\end{empheq}
+其中$e^{-\xi^{2}}$为权函数.换言之，下列函数系$\{\phi_{n}(\xi)\}$是$-\infty<\xi<\infty$区域的正交归一化完备函数系：
+\begin{empheq}{equation}\label{eqA2.8}
+	\phi_{n}(\xi)=(2^{n}n!\sqrt{\pi})^{-\frac{1}{2}}e^{-\xi^{2}/2}H_{n}(\xi)
+\end{empheq}
+由\eqref{eqA2.3}式可知，$H_{n}(\xi)$及$\phi_{n}(\xi)$的宇称为$(-1)^{n}$，即
+\begin{empheq}{align}
+	H_{n}(-\xi)=(-1)^{n}H_{n}(\xi)		\label{eqA2.9}\\
+	\phi_{n}(-\xi)=(-1)^{n}\phi_{n}(\xi)		\label{eqA2.10}
+\end{empheq}\eqlong
+前几种厄密多项式是
+\begin{empheq}{equation}\label{eqA2.11}
+	\begin{aligned}
+		H_{0}&(\xi)=1,\quad H_{1}(\xi)=2\xi	\\
+		H_{2}(\xi)=&4\xi^{2}-2,\quad H_{3}(\xi)=8\xi^{3}-12\xi	\\
+		H_{4}&(\xi)=16\xi^{4}-48\xi^{2}+12
+	\end{aligned}
+\end{empheq}\eqnormal
+注意，$H_{n}(\xi)$中最高次项是$(2\xi)^{n}$，这一点可从\eqref{eqA2.3}式直接看出.
+
+$H_{n}(\xi)$还有另一种微分表达式，即
+\begin{empheq}{equation}\label{eqA2.12}
+	H_{n}(\xi)=e^{\eta^{2}/2}\left(\xi-\frac{d}{d\xi}\right)^{n}e^{-\xi^{2}/2}
+\end{empheq}
+用数学归纳法容易证明\eqref{eqA2.12}式与\eqref{eqA2.3}式是等价的，读者可自行证明之.

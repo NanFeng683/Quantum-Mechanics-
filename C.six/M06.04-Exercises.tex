@@ -1,0 +1,109 @@
+\begin{exercises}
+	
+\exercise 某物理体系只有两个能级.$H_{0}$在表象中$H$的矩阵表示为
+\begin{empheq}{equation*}
+	H=H_{0}+H^{\prime}=\begin{bmatrix}
+		E_{1}^{(0)}+a & b \\
+		b E_{2}^{(0)}+a	\\
+	\end{bmatrix}
+\end{empheq}
+$a,b$为实数，并且远小于$(E_{2}^{(0)}-E_{1}^{(0)})$.试求能级的精确值.再按照微扰论公式写出能级（二级近似）.比较两种结果.
+
+\exercise 粒子在势阱
+\begin{empheq}{equation*}
+	{V(x)=}
+	\begin{dcases}
+		V_{0}x/a,\quad 0<x<a	\\
+		\infty,\qquad x\leqslant0,x\geqslant a
+	\end{dcases}
+\end{empheq}
+中运动，$V_{0}\leqslant\dfrac{\hbar^{2}}{m^{2}a}$，试用微扰论计算其能谱（一级近似）.
+
+[提示：利用无限深平底势阱（2-5题）的结果.]
+
+\exercise 粒子在无限深势阱$(-a<x<a)$中运动.如受到微扰$H^{\prime}=\gamma\delta(x)$作用，求各能级产生的变化（一级修正）.微扰论成立的条件是什么？
+
+\exercise 三维自由转子的能量算符为$H_{0}=\dfrac{\boldsymbol{L}^{2}}{2\boldsymbol{I}}$，$\boldsymbol{I}$为转动惯量.试确定其能级及简并度.设此转子受到微扰$H^{\prime}=\lambda\cos\theta$作用，求基态能级的变化（二级近似）.
+
+\exercise 一维谐振子，受到微扰$H^{\prime}=\dfrac{\lambda p}{m}$作用，试按照微扰论公式求能谱（准确到$\lambda^{2}$），与精确值（3-30题）比较.
+
+\exercise 三维各向同性谐振子，受到微扰
+\begin{empheq}{equation*}
+	H^{\prime}=\lambda xyz+\bigg(\frac{\lambda^{2}}{\hbar\omega}\bigg)x^{2}y^{2}z^{2}
+\end{empheq}
+作用，求基态能级，准确到$\lambda^{2}$.
+
+[提示：采用直角坐标系，$\varPsi_{n_{1}n_{2}n_{3}}=\varPsi_{n1}(x)+\varPsi_{n2}(y)+\varPsi_{n3}(z)$].
+
+\exercise 在类氢离子（核电荷$Ze$）的能谱计算中，通常视原子核为点电荷.这样求出的能级记成$E_{n}^{(0)}$.实际上原子核更接近于电荷均匀分布的小球，核半径$R=r_{0}Z^{1/3},r_{0}=\num{1.635}\times10^{-13}\si{cm}$.试求这种核电荷分布效应对于离子中电子基态能级的影响（一级微扰修正）.
+
+$\bigg[$提示：电子所受库仑作用势为
+\begin{empheq}{equation*}
+	{V(r)}
+	\begin{dcases}
+		-\frac{Z\e^{2}}{R}\bigg(\frac{3}{2}-\frac{r^{2}}{2R^{2}}\bigg),\quad r<R	\\
+		-\frac{Z\e^{2}}{r},\qquad\quad \qquad\quad  r>R
+	\end{dcases}
+\end{empheq}
+以$H^{\prime}=V(r)-\bigg(-\dfrac{Z\e^{2}}{r}\bigg)$作为微扰.注意$R\ll\dfrac{a_{0}}{Z}$.
+$\bigg]$
+\exercise 在静电场中，如点电荷获得的静电势能是$V(\boldsymbol{r})$，则将点电荷换成电荷均匀分布的小球（半径$r_{0}$）时，静电势能是
+\begin{empheq}{equation*}
+	U(\boldsymbol{r})=V(\boldsymbol{r})+\frac{1}{6}r_{0}^{2}\nabla^{2}V(\boldsymbol{r})+\cdots
+\end{empheq}
+其中$\boldsymbol{r}$为球心位置对于氢原子，（原子核即质子，视为点电荷）视电子为点电核时，库仑势能为$V(\boldsymbol{r})=-\dfrac{\ell^{2}}{r}$.如视电子为电荷均匀分布的小球，$r_{0}=\dfrac{\e^{2}}{m_{e}C^{2}}$（经典电子半径），库仑势能改为上述$U(\boldsymbol{r})$，求1s和2p能级的一级微扰修正.[相当于兰姆移位(Lamb shift)]
+
+［提示：$H^{\prime}=V-V,\nabla^{2}\dfrac{1}{r}=-4\pi\delta(\boldsymbol{r})$］
+
+\exercise 有一个在磁场中的三维转子，能量算符为
+\begin{empheq}{equation*}
+	H=k\boldsymbol{L}^{2}+\omega L_{z}+\lambda L_{x},\quad k,\omega\gg\lambda
+\end{empheq}
+
+(a) 视$\lambda$项为微扰，求能级的零级近似、一级修正、二级修正.
+
+(b) 求能级的精确值，并与微扰论结果比较.
+
+[提示：找一个方向$\boldsymbol{n}$，使$\omega L_{z}+\lambda L_{x}=\omega^{\prime}L_{n}$，而$\boldsymbol{L}^{2},L_{n}$有共同本征态，$L_{n}$本征值为$m\hbar$.]
+
+\exercise (a) 粒子在二维无限深方势阱$(0<x<a,0<y<a$中运动，写出能级与能量本征函数.
+
+(b) 加上微扰$H^{\prime}=\lambda xy$，求最低两个能级的一级微扰修正.
+
+\exercise 苯分子的“自由电子模型”认为电子是在一个环形势场中运动，并受到具有$\ce{C_{6}}$对称性的微扰作用.即
+
+(a) 不计及微扰作用时，可以认为电子是在半径为$R$的环上自由运动.写出能量本征值与本征函数，作为零级近似.（参看2-6题）
+
+(b) 微扰可以表示成$H^{\prime}=V(\varphi)=-V_{0}\cos 6\varphi$，试研究它对各能级的影响（一级修正），特别要找出发生分裂的能级.
+
+\exercise 对于类氢离子的第二个能级，讨论其在微扰$H^{\prime}=xyf(r)$作用下的分裂情况（一级效应）.$f(r)$有良好的积分收敛性，无其他特殊性质.
+
+\exercise 某体系的能量算符$H_{0}$只有两个本征值$E_{1}^{(0)}$，$E_{2}^{(0)}$，前者二重简并，后者不简并.受微扰$H^{\prime}$作用后，能量算符的矩阵表示（$H_{0}$表象）为
+\begin{empheq}{equation*}
+	H=H_{0}+H^{\prime}=\begin{bmatrix}
+		E_{1}^{(0)} & 0 & a	\\
+		0 & E_{1}^{(0)} & b	\\
+		a & b & E_{2}^{(0)}	\\
+	\end{bmatrix}
+\end{empheq}
+试用微扰论求能级（二级近似）.再用矩阵方法求能级的精确公式，然后作近似展开$(a,b\ll E_{2}^{(0)}\sim E_{1}^{(0)})$，与微扰论结果比较.
+
+\exercise (a) 如粒子（质量$\mu$）的波函数（未归一化）为
+\begin{empheq}{equation*}
+	\varPsi(\lambda,r)=e^{-\lambda r}\quad\text{或}\quad e^{-\lambda^{2}r^{2}/2}
+\end{empheq}
+求动能平均值.
+
+(b) 以这两种函数分别作为三维各向同性谐振子的基态试探函数（$\lambda$为变分参数），求基态能级近似值.
+
+\exercise 粒子（质量$\mu$）在势场$V(x)=kx^{4}(k>0)$中运动，用变分法求基态能级近似值.试探波函数（未归一化）取为
+
+(a) $\varPsi(\lambda,x)=e^{-\lambda|x|}$
+
+(b) $\varPsi(\lambda,x)=e^{-\lambda^{2}r^{2}/2}$.解释(a)项结果较差的原因.
+
+\exercise 粒子在无限深势阱$(-a<x<a)$中运动，试用多项式近似及变分法求第一激发能级的近似值，与精确值比较.
+
+$\bigg[$提示：波函数为奇宇称，取$\varPsi=N\biggl\{\dfrac{x}{a}+\lambda\bigg(\dfrac{x}{a}\bigg)^{3}-(1+\lambda)\bigg(\dfrac{x}{a}\bigg)^{5}\biggr\}.$	$\bigg]$
+
+\end{exercises}

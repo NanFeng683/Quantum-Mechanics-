@@ -1,0 +1,248 @@
+\section[波函数的普遍物理诠释]{波函数的普遍物理诠释} \label{sec:03.04} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+在$\S$\ref{sec:03.01}已经讲过，力学量算符的本征值就是力学量的实际可能值，实验测量只能测得本征值.由于厄密算符的本征值一定是实数（$\S$\ref{sec:03.03}定理1），而且已知的有经典对应的力学量算符都是厄密算符，所以在量子力学中一般地假设：代表力学量（可观测量）的算符必须是厄密算符.
+
+设有厄密算符$\hat{A}$，代表力学量$A$，设其本征方程
+\eqindent{12}
+\begin{empheq}{equation}\label{eq34.1}
+	\hat{A}\varPsi=a\varPsi
+\end{empheq}\eqnormal
+的解为
+\begin{empheq}{equation}\label{eq34.2}
+	\begin{dcases}
+		\varPsi=\varPsi_{1},\varPsi_{2},\cdots,\varPsi_{n},\cdots	\\
+		a=a_{1},a_{2},\cdots,a_{n},\cdots
+	\end{dcases}
+\end{empheq}
+（为了讨论方便，假定本征值谱是分立的连续谱的情形以后再讨论.）如果粒子刚好处于某个本征态，例如$\varPsi=\varPsi_{1}$，则力学量$A$的取值就是相应的本征值.$a_{1}$如果$\varPsi=\varPsi_{2}$，则$A$的取值为$a_{2}$，依此类推.如果粒子所处的状态（波函数为$\varPsi$）不是算符$\hat{A}$的本征态，而是若干种本征态的线性叠加，
+\begin{empheq}{equation}\label{eq34.3}
+	\boxed{\varPsi=C_{1}\varPsi_{1}+C_{2}\varPsi_{2}+\cdots=\sum_{n}C_{n}\varPsi_{n}}
+\end{empheq}
+试问力学量$A$的取值是什么？按照态叠加原理，可以认为粒子是部分地处于$\varPsi_{1}$态，部分地处于$\varPsi_{2}$态$\cdots\cdots$由于力学量的取值只能是本征值，所以必须认为$A$的取值可以是$a_{1}$，也可以是$a_{2}$$\cdots\cdots$总之，只要\eqref{eq34.3}式中存在某个$\varPsi_{n}$项，则相应的$a_{n}$就是$A$的一种取值.
+
+当然，如果要求任何状态的波函数$\varPsi$均能表示成叠加式\eqref{eq34.3}，则本征函数$\varPsi_{1},\varPsi_{2},\cdots,\varPsi_{n},\cdots$必须是完备函数系.满足这个条件的算符所代表的力学量称为可观测量.从前面已经解过的各个本征值问题来看，所得到的本征函数确实都是完备函数系，任意波函数可以表示成它们的线性叠加.但是，一般地必须假设：代表可观测量的力学量算符必须是厄密算符，而且其本征函数系是完备函数系.
+
+在$\S$\ref{sec:03.03}中已经证明，厄密算符的本征函数互相正交.现在我们规定这些本征函数都乘以适当的系数而归一化.正交归一化条件可以表示成
+\begin{empheq}{equation}\label{eq34.4}
+	\int_{\text{全}}\varPsi_{n}^{*}\varPsi_{m}d\tau=\delta_{nm}
+\end{empheq}
+在\eqref{eq34.2}式和\eqref{eq34.4}式中，下标$1,2,\cdots,n,\cdots,m,\cdots$可以理解成本征函数的编号.如果有简并化，相应的本征值可以重复出现.
+
+考虑到正交归一条件\eqref{eq34.4}，\eqref{eq34.3}式中系数
+\begin{empheq}{equation}\label{eq34.5}
+	C_{n}=\int_{\text{全}}\varPsi_{n}^{*}\varPsi d\tau
+\end{empheq}
+另外，容易得到（以下各式中的积分均为全空间积分）
+\eqindent{5}
+\begin{equation}\label{eq34.6}
+	\begin{aligned}
+		\int\varPsi^{*}\varPsi d\tau
+		&=\int\sum_{n}C_{n}^{*}\varPsi_{n}\sum_{m}C_{m}\varPsi_{m}d\tau	\\
+		&=\sum_{nm}C_{n}^{*}C_{m}\delta_{nm}=\sum_{n}C_{n}^{*}C_{n}	
+	\end{aligned}
+\end{equation}\eqnormal
+如果$\varPsi$是归一化的，\eqref{eq34.6}式即
+\begin{empheq}{equation}\label{eq34.7}
+	\int\varPsi^{*}\varPsi d\tau=\sum_{n}|C_{n}|^{2}=1
+\end{empheq}
+如果$\varPsi$没有归一化，或不能归一化，则
+\begin{empheq}{equation*}\label{eq34.7'}
+	\sum_{n}\frac{|C_{n}|^{2}}{\int\varPsi^{*}\varPsi d\tau}=1
+	\tag{$3.4.7^{\prime}$}
+\end{empheq}
+当波函数$\varPsi$已经归一化而且表示成\eqref{eq34.3}式时，$|C_{n}|^{2}$显然就是$\varPsi$态中$\varPsi_{n}$态所占的相对强度，亦即$\varPsi$态部分地处于$\varPsi_{n}$态的相对概率，因此在\eqref{eq34.7}式条件下，$|C_{n}|^{2}$的物理意义是
+\eqindent{6}
+\begin{empheq}{equation}\label{eq34.8}
+	\boxed{|C_{n}|^{2}=\text{在$\varPsi$ 态下力学量$A$ 的取值为 $a_{n}$的概率}}
+\end{empheq}\eqnormal
+如$\varPsi$并未归一化，相应的概率应改为
+\begin{empheq}{equation}\label{eq34.9}
+	\frac{|C_{n}|^{2}}{\sum_{n}|C_{n}|^{2}},\quad\text{即}\frac{|C_{n}|^{2}}{\int\varPsi^{*}\varPsi d\tau}
+\end{empheq}
+对\eqref{eq34.3}式中$C_{n}$的这种诠释就是对波函数的普遍物理诠释，$\S$\ref{sec:02.02}讲过的波函数的统计诠释实际上也已经包含在这个普遍诠释之中.（参看本节末的叙述.）
+
+{\heiti 平均值公式}
+
+给定了归一化波函数$\varPsi$，并按照\eqref{eq34.5}式求得各$C_{n}$后，关于力学量$A$的其他统计计算可以按照常规的方法进行，例如：
+\eqindent{3}
+\begin{align}
+	&\text{平均值}\qquad \bar{A}=<A>=\sum_{n}a_{n}|C_{n}|^{2}
+	\\ \label{eq34.10}
+	&\text{平方平均值}\qquad \bar{A^{2}}=<A^{2}>=\sum_{n}a_{n}^{2}|C_{n}|^{2}
+	\\ \label{eq34.11}
+	&\text{均方偏差}\qquad <(\hat{A}-\bar{A})^{2}>=\bar{A^{2}}-\bar{A}^{2}
+	\\ 
+	&\text{分布宽度（涨落）}\qquad \Delta A=\sqrt{<(\hat{A}-\bar{A})^{2}>}=\sqrt{\bar{A^{2}}-\bar{A}^{2}}
+	\label{eq34.13}
+\end{align}\eqnormal
+利用这些公式进行计算，需要先求出算符$\hat{A}$的全部本征值和本征函数，并按\eqref{eq34.5}式求出各$C_{n}$，在许多问题中，这样做即使可能，也过于繁复.下面给出一个较为简捷的平均值公式.
+
+由\eqref{eq34.5}式，取复共轭，得到
+\begin{empheq}{equation*}
+	C_{n}^{*}=\int\varPsi^{*}\varPsi_{n}d\tau
+\end{empheq}
+代入\eqref{eq34.10}式，得到
+\eqindent{6}
+\begin{empheq}{align*}
+	\bar{A} &=\sum_{n}a_{n}C_{n}C_{n}^{*}=\sum_{n}C_{n}a_{n}\int\varPsi^{*}\varPsi_{n}d\tau	\\
+			&=\int d\tau \varPsi^{*}\sum_{n}C_{n}a_{n}=\int d\tau \varPsi^{*}\sum_{n}C_{n}\hat{A}\varPsi_{n}	\\
+			&=\int d\tau \varPsi^{*}\hat{A}\sum_{n}C_{n}\varPsi_{n}=\int d\tau \varPsi^{*}\hat{A}\varPsi
+\end{empheq}\eqnormal
+这就是著名的“平均值公式”，重新写出如下：
+\begin{empheq}{equation}\label{eq34.14}
+	\boxed{\bar{A}=<A>=\int\varPsi^{*}\hat{A}\varPsi d\tau}
+\end{empheq}
+（其中积分为全空间积分）根据这个公式，只要给定了归一化波函数$\varPsi$及力学量算符$\hat{A}$，就可以直接算出平均值$\bar{A}$.类似的步骤可以证明
+\begin{empheq}{equation}\label{eq34.15}
+	\bar{A^{2}}=\int\varPsi^{*}\hat{A}^{2}\varPsi d\tau
+\end{empheq}
+当$\hat{A}$是力学量算符，$\hat{A}^{*}=\hat{A}$，上式可以化成
+\begin{empheq}{equation*}\label{eq34.15'}
+	\bar{A^{2}}=\int|\hat{A}\varPsi|^{2}d\tau \geqslant 0
+	\tag{$3.4.15^{\prime}$}
+\end{empheq}
+
+以上\eqref{eq34.10}一\eqref{eq34.15}式均以$\varPsi$归一化为前提，如$\varPsi$并未归一化，则各式均应除以$\sum_{n}|C_{n}|^{2}$或$\int\varPsi^{*}\varPsi d\tau$，例如\eqref{eq34.10}式和\eqref{eq34.14}式应改成
+\begin{empheq}{equation*}
+	\bar{A}=\frac{\sum_{n}a_{n}|C_{n}|^{2}}{\sum_{n}|C_{n}|^{2}}	\tag{$3.4.10^{\prime}$}
+\end{empheq}
+\begin{empheq}{equation*}
+	=\frac{\int\varPsi^{*}\hat{A}\varPsi d\tau}{\int\varPsi^{*}\varPsi d\tau}	
+	\tag{$3.4.14^{\prime}$}
+\end{empheq}
+
+\newpage
+{\heiti 连续谱}
+
+如果力学量算符$\hat{A}$的本征值谱是连续的，以$a$表示本征值，也表示本征函数，本征方程为
+\begin{empheq}{equation}\label{eq34.16}
+	\hat{A}\varPsi_{n}=a\varPsi_{n}
+\end{empheq}
+任何归一化的波函数$\varPsi$应该可以表示成$\hat{A}$的本征函数的线性叠加，由于本征值$a$可以连续变化，$\varPsi$的展开式应该是
+\begin{empheq}{equation}\label{eq34.17}
+	\varPsi(\boldsymbol{r})=\int C(a)\varPsi_{n}(\boldsymbol{r})da
+\end{empheq}
+积分遍及$a$的取值范围.系数$C(a)$应该具有概率振幅的意义，仿照分立谱情形下对$C_{n}$的解释，现在应该规定
+\begin{empheq}{equation*}
+	|C(a)|^{2}da=\text{在$\varPsi$态下$A$的取值在$(a,a+da)$范围内的概率.}
+\end{empheq}
+总概率应该等于1，因此要求下式成立：
+\begin{empheq}{equation}\label{eq34.18}
+	\int\varPsi^{*}\varPsi d\tau=\int C(a)^{*}C(a)da=1
+\end{empheq}
+而由\eqref{eq34.17}式，
+\begin{empheq}{align*}
+	\int\varPsi^{*}\varPsi d\tau
+	&=\int d\tau\int daC(a)^{*}\varPsi_{a}^{a}\int da^{\prime}C(a^{\prime})\varPsi_{a^{\prime}}	\\
+	&=\iint dada^{\prime}C(a)^{*}C(a^{\prime})\int\varPsi_{a}^{*}\varPsi_{a^{\prime}}d\tau
+\end{empheq}
+对于任意$\varPsi$，上式必须和\eqref{eq34.18}式一致，为此必须
+\begin{empheq}{equation}\label{eq34.19}
+	\int\varPsi_{a}^{*}\varPsi_{a^{\prime}}d\tau=\delta(a-a^{\prime})
+\end{empheq}
+这就是连续谱本征函数的正交归一化条件.注意，
+\begin{empheq}{equation*}
+	\text{当$a^{\prime}\rightarrow a$，}\int\varPsi_{a}^{*}\varPsi_{a^{\prime}}d\tau\rightarrow\infty
+\end{empheq}
+这表明连续谱的本征函数不是平方可积的，它们一般代表游离态.用$\varPsi_{a^{\prime}}$乘\eqref{eq34.17}式，对全空间积分，并注意到正交归一化条件\eqref{eq34.19}，可得
+\begin{empheq}{align*}
+	\int\varPsi_{a^{\prime}}\varPsi d\tau
+	&=\int daC(a)\int\varPsi_{a^{\prime}}d\tau	\\
+	&=\int daC(a)\delta(a^{\prime}-a)=C(a^{\prime})
+\end{empheq}
+亦即
+\begin{empheq}{equation}\label{eq34.20}
+	C(a)=\int\varPsi_{a}^{*}\varPsi d\tau
+\end{empheq}
+此式相当于分立谱的\eqref{eq34.5}式.将上式写成
+\begin{empheq}{equation*}
+	C(a)=\int\varPsi_{a}^{*}(\boldsymbol{r}^{\prime})\varPsi(\boldsymbol{r}^{\prime})d\tau^{\prime}
+\end{empheq}
+代入\eqref{eq34.17}式，得到
+\begin{empheq}{equation*}
+	\varPsi(\boldsymbol{r})=\iint d\tau^{\prime}da\varPsi_{n}(\boldsymbol{r})\varPsi_{a}^{*}(\boldsymbol{r^{\prime}})\varPsi(\boldsymbol{r^{\prime}})
+\end{empheq}
+此式应对任何$\varPsi$成立，由于
+\begin{empheq}{equation*}
+	\varPsi(\boldsymbol{r})=d\tau^{\prime}\varPsi(\boldsymbol{r^{\prime}})\delta(\boldsymbol{r}-\boldsymbol{r^{\prime}})
+\end{empheq}
+所以
+\begin{empheq}{equation}\label{eq34.21}
+	\int\varPsi_{a}(\boldsymbol{r})\varPsi_{a}^{*}(\boldsymbol{r^{\prime}})da=\delta(\boldsymbol{r}-\boldsymbol{r^{\prime}})
+\end{empheq}
+这是本征函数的完备性表示式.分立谱也可证明类似结果：
+\begin{empheq}{equation}\label{eq34.22}
+	\sum_{n}\varPsi_{n}(\boldsymbol{r})\varPsi_{n}^{*}(\boldsymbol{r^{\prime}})=\delta(\boldsymbol{r}-\boldsymbol{r^{\prime}})
+\end{empheq}
+读者试自证明之.
+
+在连续谱情况下，平均值公式为
+\begin{empheq}{equation}\label{eq34.23}
+	\bar{A}=\int aC(a)^{*}C(a)da
+\end{empheq}
+利用\eqref{eq34.20}，\eqref{eq34.16}，\eqref{eq34.17}式，可将上式化成
+\begin{empheq}{align*}
+	\bar{A}
+	&=\iint a\varPsi_{a}\varPsi^{*}C(a)d\tau da	\\
+	&=\int d\tau\varPsi^{*}\int C(a)\hat{A}\varPsi_{a}da	\\
+	&=\int d\tau\varPsi^{*}\hat{A}\int C(a)\varPsi_{a}da	\\
+	&=\int d\tau\varPsi^{*}\hat{A}\varPsi
+\end{empheq}
+这正是\eqref{eq34.14}式.也就是说，\eqref{eq34.14}式既适用于分立谱，也适用于连续谱.因此，即使力学量算符$\hat{A}$的本征值谱尚未求出，只要给定归一化波函数$\varPsi$，就可以利用\eqref{eq34.14}式计算$A$的平均值.
+
+作为连续谱本征函数的例子，我们来讨论粒子作一维运动时位置算符$x$的本征函数.以$x^{\prime},x^{\prime\prime}$等表示$x$的本征值，相应的本征函数记为$\varPsi_{x^{\prime}}(x)$，$\varPsi_{x^{\prime\prime}}(x)$，等等，本征方程为
+\begin{empheq}{equation}\label{eq34.24}
+	x\varPsi_{x^{\prime}}(x)=x^{\prime}\varPsi_{x^{\prime}}(x)
+\end{empheq}
+即
+\begin{empheq}{equation*}
+	(x=x^{\prime})\varPsi_{x^{\prime}}(x)=0
+\end{empheq}
+解为
+\begin{empheq}{equation}\label{eq34.25}
+	\varPsi_{x^{\prime}}(x)=\delta(x-x^{\prime}),\quad -\infty<x^{\prime}<\infty
+\end{empheq}
+本征值$x^{\prime}$可以取任意实数值，属于连续谱.本征函数\eqref{eq34.25}式显然满足正交归一化条件\eqref{eq34.19}以及完备性条件\eqref{eq34.21}，即
+\eqindent{4}
+\begin{empheq}{align*}
+	\int_{-\infty}^{\infty}\varPsi_{x^{\prime}}^{*}(x)\varPsi_{x^{\prime\prime}}(x)dx
+	&=\int_{-\infty}^{\infty}\delta(x-x^{\prime})\delta(x-x^{\prime\prime})dx=\delta(x^{\prime}-x^{\prime\prime})	\\
+	\int_{-\infty}^{\infty}\varPsi_{x^{\prime}}(x)\varPsi_{x^{\prime}}^{*}(x_{1})dx^{\prime}
+	&=\int_{-\infty}^{\infty}\delta(x-x^{\prime})\delta(x_{1}-x^{\prime})dx^{\prime}=\delta(x-x_{1})
+\end{empheq}\eqnormal
+对于任何归一化的波函数$\varPsi(x)$，显然有
+\eqindent{5}
+\begin{empheq}{equation*}
+	\varPsi(x)=\int_{-\infty}^{\infty}\varPsi(x^{\prime})\delta(x-x^{\prime})dx^{\prime}
+	=\int_{-\infty}^{\infty}\varPsi(x^{\prime})\varPsi_{x^{\prime}}(x)dx^{\prime}
+\end{empheq}\eqnormal
+此式相当于\eqref{eq34.17}式，$\varPsi(x^{\prime})$相当于\eqref{eq34.17}式中$C(a)$.按照$C(a)$的概率诠释，$|\varPsi(x^{\prime})|^{2}dx^{\prime}=$在$\varPsi$态下$x$的取值在（$x^{\prime},x^{\prime}+dx^{\prime}$）范围内的概率，这正是$\S$\ref{sec:02.02}讲过的波函数的统计诠释.
+
+\example 对于任何归一化波函数$\varPsi(\boldsymbol{r})$，证明粒子的动能平均值可以表示成
+\begin{empheq}{equation}\label{eq34.26}
+	\bar{T}=\frac{\hbar^{2}}{2m}\int_{\text{全}}|\nabla\varPsi|^{2}d\tau
+\end{empheq}
+
+\solution $\qquad \bar{T}=\frac{1}{2m}(\bar{p_{x}^{2}}+\bar{p_{y}^{2}}+\bar{p_{z}^{2}})$
+按照\eqref{eq34.15'}式，
+\begin{empheq}{equation}\label{eq34.27}
+	\bar{p_{x}^{2}}=\int_{\text{全}}|\bar{p_{x}}\varPsi|^{2}d\tau=\hbar^{2}\int_{\text{全}}\bigg|\frac{\partial\varPsi}{\partial x}\bigg|^{2}d\tau
+\end{empheq}
+$\bar{p_{y}^{2}},\bar{p_{z}^{2}}$类似.代入$T$中，即得
+\eqindent{4}
+\begin{empheq}{align*}
+	\bar{T}&=\frac{\hbar^{2}}{2m}\int_{\text{全}}\big(\bigg|\frac{\partial\varPsi}{\partial x}\bigg|^{2}+\bigg|\frac{\partial\varPsi}{\partial y}\bigg|^{2}+\bigg|\frac{\partial\varPsi}{\partial z}\bigg|^{2}\big)d\tau
+	&=\frac{\hbar^{2}}{2m}\int_{\text{全}}|\nabla\varPsi|^{2}d\tau
+\end{empheq}\eqnormal
+此即\eqref{eq34.26}式.
+
+如$\varPsi=\varPsi(r)$，为径向函数，与$\theta,\varphi$角无关，则
+\begin{empheq}{equation*}
+	\nabla\varPsi=\boldsymbol{e}_{r}\frac{d\varPsi}{dr},\quad |\nabla\varPsi|^{2}=\bigg|\frac{d\varPsi}{dr}\bigg|^{2}
+\end{empheq}
+动能平均值为
+\begin{empheq}{equation}\label{eq34.28}
+	\bar{T}=\frac{\hbar^{2}}{2m}\cdot 4\pi\int_{0}^{\infty}|\frac{d\varPsi}{dr}|^{2}r^{2}dr
+\end{empheq}
+\newpage

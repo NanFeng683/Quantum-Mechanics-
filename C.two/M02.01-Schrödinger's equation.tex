@@ -1,0 +1,170 @@
+\section[薛定谔方程]{薛定谔方程} \label{sec:02.01} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+众所周知，在真空中自由传播的电磁波满足波动方程
+\begin{equation}\label{eq21.1}
+	\nabla^{2}\varPsi-\frac{1}{c^{2}}\frac{\partial^{2}}{\partial t^{2}}\varPsi=0
+\end{equation}
+其中$\nabla$和$\nabla^{2}$为梯度算符和拉普拉斯算符：
+\begin{equation}\label{eq21.2}
+	\nabla=e_{1}\frac{\partial}{\partial x}+e_{2}\frac{\partial}{\partial y}+e_{3}\frac{\partial}{\partial z}
+\end{equation}
+\begin{equation}\label{eq21.3}
+	\nabla^{2}=\nabla\cdot\nabla=\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}
+\end{equation}\eqshort
+（$x,y,z$）为空间直角坐标，$t$为时间，$\varPsi$是波函数.考虑\eqref{eq21.1}式的单色平面波特解
+\begin{equation}\label{eq21.4}
+	\varPsi_{k}=Ae^{i(k,r-\omega t)}
+\end{equation}
+$A$是振幅，$\omega$为角频率（$\omega=2\pi\nu$，$\nu$为角频率），$\boldsymbol{k}$为波矢量，$\boldsymbol{k}$的方向即平面波的传播方向，$k=|\boldsymbol{k}|=\frac{2\pi}{\lambda}$，$\lambda$为波长.对于电磁波，$\nu$和$\lambda$间或$\omega$和$k$间有如下关系：
+\begin{equation}\label{eq21.5}
+	v\lambda=c,\quad \omega=ck
+\end{equation}
+电磁波就是光波，也就是光子.在没有光子概念之前，人们对波函数和波动方程的理解是，波函数$\varPsi_{h}$描写了单色平面光波的性质（振幅，频率，波长，传播方向，等等），波动方程全面描述了光波的运动（传播）规律.有了光子概念后，根据爱因斯坦－德布罗意关系式：
+\begin{equation}\label{eq21.6}
+	E=\hbar\omega,\quad \boldsymbol{p}=\hbar \boldsymbol{k}
+\end{equation}
+易见波函数$\varPsi_{h}$同时也描述了光子的力学性质（能量E，动量$\boldsymbol{p}$）.光子的相对论力学基本公式是
+\begin{equation}\label{eq21.7}
+	E^{2}=c^{2}\boldsymbol{p}^{2}
+\end{equation}\eqindent{5}
+这个关系也已经体现在波动方程\eqref{eq21.1}中，具体来说对于波函数$\varPsi_{h}$，显然有下列关系：
+\begin{equation}\label{eq21.8}
+	\begin{aligned}
+		&i\hbar\frac{\partial}{\partial t}\varPsi_{k}=\hbar\omega\varPsi_{h}=E\varPsi_{k} \\
+		&\bigg(i\hbar\frac{\partial}{\partial t} \bigg)^{2}\varPsi_{k}=\hbar^{2}\omega^{2}\varPsi_{k}=E^{2}\varPsi_{k} \\
+		&-i\hbar\nabla\varPsi_{k}=\hbar k\varPsi_{k}=\boldsymbol{p}\varPsi_{k} \\
+		&\bigg(-i\hbar\nabla \bigg)\cdot\bigg(-i\hbar\nabla \bigg)\varPsi_{k}=
+		-i\hbar^{2}\nabla^{2}\varPsi_{k}=\hbar^{2}k^{2}\varPsi_{k}=\boldsymbol{p}^{2}\varPsi_{k}
+	\end{aligned}
+\end{equation}\eqnormal
+因此，将\eqref{eq21.4}式代入\eqref{eq21.1}式，即得
+\begin{equation*}
+	\bigg(\frac{\omega^{2}}{c^{2}}-k^{2} \bigg)\varPsi_{k}=
+	\frac{1}{\hbar^{2}c^{2}}\bigg(E^{2}-c^{2}\boldsymbol{p}^{2}\bigg)\varPsi_{k}=0
+\end{equation*}\eqindent{5}
+这正是\eqref{eq21.7}式的具体体现.可见，就作用于波函数的效果来说，算符$i\hbar\frac{\partial}{\partial t}$代表光子的能量，$-\hbar\nabla$代表光子的动量.用符号“$\quad\hat{}\quad$”表示算符，我们可以写
+\begin{equation}\label{eq21.9}
+	\boxed{
+	\begin{aligned}
+	&\hat{E}=i\hbar \frac{\partial}{\partial t},\quad &&\hat{\boldsymbol{p}}=-i\hbar\nabla,\quad &&\hat{\boldsymbol{p}}^{2}=-\hbar^{2}\nabla^{2}		\\
+	&\hat{\boldsymbol{p}}_{x}=-i\hbar\frac{\partial}{\partial x},\quad &&\hat{\boldsymbol{p}}_{y}=-i\hbar\frac{\partial}{\partial y},\quad 
+	&&\hat{\boldsymbol{p}}_{z}=-i\hbar\frac{\partial}{\partial z}
+	\end{aligned}
+	}
+\end{equation}\eqshort
+在上述理解的基础上，如以光子的相对论力学公式\eqref{eq21.7}作为出发点，只要将各力学量换成相应的算符，并作用于波函数$\varPsi$，就得到光子的波动方程\eqref{eq21.1}.当然，对于光（电磁波）来说，用这种方法来建立波动方程实无必要，因为早在发现光子的力学关系\eqref{eq21.7}以前，已经先由经典电磁理论得到了波动方程［注意\eqref{eq21.1}式不含$\hbar$］.但如将这种方法推广到电子，情况就不同了.
+
+低速运动的自由电子，能量－动量关系为
+\begin{equation}\label{eq21.10}
+	E=\frac{\boldsymbol{p}^{2}}{2m}\quad(m\text{即}m_{e})
+\end{equation}
+因此，描述电子波动性的波函数应该满足波动方程：
+\begin{equation*}
+	\hat{E}\varPsi=\frac{1}{2m}\boldsymbol{p}^{2}\varPsi
+\end{equation*}\eqnormal
+亦即
+\begin{equation}\label{eq21.11}
+	i\hbar\frac{\partial}{\partial t}\varPsi=-\frac{\hbar^{2}}{2m}\nabla^{2}\varPsi
+\end{equation}
+电子在保守力场中运动时，基本力学关系为
+\begin{equation}\label{eq21.12}
+	E=T+V=\frac{\boldsymbol{p}^{2}}{2m}+V(x,y,z)
+\end{equation}
+$T=\frac{\boldsymbol{p}^{2}}{2m}$为动能，$V$为势能.相应的波动方程为
+\begin{equation}\label{eq21.13}
+	\hat{E}\varPsi=\frac{1}{2m}\boldsymbol{p}^{2}\varPsi+V\varPsi
+\end{equation}
+亦即
+\begin{equation}\label{eq21.14}
+	i\hbar\frac{\partial}{\partial t}\varPsi=-\frac{\hbar^{2}}{2m}\nabla^{2}\varPsi+V(x,y,z)\varPsi
+\end{equation}\eqshort
+这称为薛定谔方程，它是非相对论量子力学的基本方程.
+
+薛定谔方程是德布罗意物质波思想在理论上的发展.薛定谔认识到，研究波动过程，首先要建立一个波动方程.他考察了波动光学和几何光学的联系，对比分析了几何光学和经典分析力学在数学表现形式上的相似性，终于找到了\eqref{eq21.14}式作为“波动力学”的基础.
+
+薛定谔方程\eqref{eq21.14}是量子力学的一项基本假设，它的正确性已随着80年来量子力学在各方面的应用而得到确认.上述“建立”薛定谔方程的方法当然并不是这个方程的逻辑证明或严格导出.首先，从光子推广到电子，这本身就是一种假设性的做法.其次，在由\eqref{eq21.12}式得出\eqref{eq21.14}式的过程中，$E$和$\boldsymbol{p}$均按\eqref{eq21.9}式换成了相应的算符，而势能$V$却未作任何代换就将它直接乘在波函数上，这样做并无任何先验的理由，带有假设性.
+
+在经典力学中，动能$T$与势能$V$之和称为哈密顿量(Hamiltonian)，记作$H$.当势能$V$与时间无关时，$H$也就是总能$E$.\eqref{eq21.14}式常写成
+\begin{equation}\label{eq21.15}
+	i\hbar\frac{\partial}{\partial t}\varPsi=\hat{H}\varPsi
+\end{equation}\eqnormal
+$\hat{H}$是代表哈密顿量的算符：
+\begin{equation}\label{eq21.16}
+	\hat{H}=\hat{T}+V=-\frac{\hbar^{2}}{2m}\nabla^{2}+V(x,y,z)
+\end{equation}\eqshort
+带电粒子在磁场中运动时，其波动方程仍可写成\eqref{eq21.15}式的形式，但哈密顿算符$\hat{H}$不再由\eqref{eq21.14}式表示.这个问题将在$\S$\ref{sec:07.04}中讨论
+
+量子力学的一项基本假设（也是一项基本概念）是，微观粒子（如电子）的运动状态可以用一个“波函数”来描述.这就是说，“波动性”一词的含义不应狭义地仅从经典物理的波动意义上去理解，而应广义地理解成泛指粒子运动状态的全部性质，波函数$\varPsi$就是这些性质的全面数学描述.波函数的时空变化规律由薛定谔方程\eqref{eq21.15}表示，它在量子力学中的地位相当于经典力学中的牛顿运动方程.波函数也称态函数.
+
+由于薛定谔方程是时间$t$的一阶微分方程，如果知道了初始时刻$t_{0}$时的波函数$\varPsi(\boldsymbol{p},t)$，原则上可以求出各个$t>t_{0}$时刻的波函数$\varPsi(\boldsymbol{p},t)$.亦即，知道了$t_{0}$时刻粒子的运动状态，利用薛定谔方程就可以求出$t>t_{0}$时刻粒子的运动状态.这是微观粒子因果性的表现方式.
+
+现在来研究\eqref{eq21.15}式的一种分离变量函数形式的特解：
+\begin{equation}\label{eq21.17}
+	\boldsymbol{\varPsi}(\boldsymbol{r},t)=\varPsi(\boldsymbol{r}f(t))
+\end{equation}\eqnormal
+代入\eqref{eq21.15}式，得到
+\begin{equation*}
+	i\hbar\frac{\partial f(t)}{\partial t}\varPsi(r)=f(t)\hat{H}\varPsi(r)
+\end{equation*}
+以$\varPsi(r)f(t)$除上式，得到
+\begin{equation*}
+	i\hbar\frac{df}{dt}\big/ f(t)=[\hat{H}\varPsi(r)]/ \varPsi(r)
+\end{equation*}
+左端是$t$的函数，右端是$\boldsymbol{r}$的函数，只有它们等于同一个常数（记为$\hbar\omega$），上式才能成立，因此
+\begin{subnumcases}{}
+	i\hbar\frac{df}{dt}=\hbar\omega f(t) \label{eq21.18a}\\
+	\hat{H}\varPsi(r)=\hbar\omega\varPsi(r) 	\label{eq21.18b}
+\end{subnumcases}\label{eq21.18}
+
+由\eqref{eq21.18a}式容易解出
+\begin{equation*}
+	f(t)=e^{-i\omega t}=e^{-iEt/h},\quad E=\hbar\omega
+\end{equation*}
+参数$E=\hbar\omega$的意义显然就是能量.\eqref{eq21.18b}式亦即
+\begin{equation}\label{eq21.19}
+	\hat{H}\varPsi(r)=E\varPsi(r)
+\end{equation}
+与某个$E$值相应的$\varPsi(r)$可以记作$\varPsi_{E}(r)$，而特解\eqref{eq21.17}则记作
+\begin{equation}\label{eq21.20}
+	\varPsi_{E}(\boldsymbol{r},t)=\varPsi_{E}(\boldsymbol{r})e^{-iEt/\hbar}
+\end{equation}\eqlong
+这是能量具有确定值的状态的波函数，它随时间变化的函数形式已经完全确定，即$e^{-iEt/h}$，它的空间部分$\varPsi_{E}(\boldsymbol{r})$需由\eqref{eq21.19}式解出.$\varPsi_{E}(\boldsymbol{r},t)$称为定态波函数，\eqref{eq21.19}式称为定态薛定谔方程.而\eqref{eq21.14}或\eqref{eq21.15}式则称为含时间的薛定谔方程.
+
+在量子力学中，能量$E$的可能取值由求解定态薛定谔方程来决定.在有些问题中，仅当$E$取某些特定的值时\eqref{eq21.19}式才存在合乎物理要求的解，这些特定的$E$值就是量子化能级.在有些问题中，$E$的取值可在一定范围（例如$E>0$） 内取任意值，\eqref{eq21.19}式均有合乎物理要求的解，这种能量值就是连续能谱．
+
+含时间薛定谔方程\eqref{eq21.15}是线性微分方程，它的通解可以表示为全体特解的线性叠加，即
+\begin{equation}\label{eq21.21}
+	\varPsi(\boldsymbol{r},t)=\sum_{n}C_{n}\varPsi_{E_{n}}(\boldsymbol{r},t)
+	=\sum_{n}C_{n}\varPsi_{E_{n}}(\boldsymbol{r})e^{-iE_{n}t/\hbar}
+\end{equation}\eqshort
+$C_{n}$为待定系数.因此，求解定态薛定谔方程\eqref{eq21.19}是解含时间薛定谔方程\eqref{eq21.15}的基础.
+
+\example 克莱因-戈登(Klein-Gordon)方程
+
+按照相对论力学，质量为$m_{0}$的粒子自由运动时，能量-动量关系为
+\begin{equation}\label{eq21.22}
+	E^{2}=c^{2}\boldsymbol{p}^{2}+m_{0}^{2}c^{4}
+\end{equation}\eqnormal
+因此，相对论波动方程为
+\begin{equation}\label{eq21.23}
+	(c^{2}\hat{\boldsymbol{p}}^{2}+m_{0}^{2}c^{4}-\hat{E}^{2} )\varPsi=0
+\end{equation}
+其中算符$\hat{E},\hat{\boldsymbol{p}}$由\eqref{eq21.9}式表示.将\eqref{eq21.23}式写成明显的微分方程，就是
+\begin{equation}\label{eq21.24}
+	\nabla^{2}\varPsi-\frac{1}{c^{2}}\frac{\partial^{2}}{\partial t^{2}}\varPsi-\frac{m_{0}^{2}c^{2}}{\hbar^{2}}\varPsi=0
+\end{equation}
+称为克莱因-戈登方程，它比电磁波的波动方程\eqref{eq21.1}多了一个质量项.这个方程不能保证粒子数守恒，它可以描述自旋为0的粒子（玻色子，例如$\pi^{0}$介子）的运动.
+
+克莱因-戈登方程方程也存在单色平面波特解，波函数仍可表示成\eqref{eq21.4}式，它描述粒子的自由运动，相应于下列力学量取值：
+\begin{equation}\label{eq21.25}
+	\boldsymbol{p}=\hbar\boldsymbol{k},\quad E=\hbar\omega=(\hbar^{2}c^{2}k^{2})^{\frac{1}{2}}
+\end{equation}
+如低速运动，$\hbar k \ll m_{0}c$，则$E$的近似值为
+\begin{equation}\label{eq21.26}
+	\begin{aligned}
+		E &=m_{0}c^{2} \bigg(1+\frac{\hbar^{2}k^{2}}{m_{0}c^{2}} \bigg)^{\frac{1}{2}}	\\
+		  &\approx m_{0}c^{2} \bigg(1+\frac{\hbar^{2}k^{2}}{2m_{0}c^{2}} \bigg) \\
+		  &=m_{0}c^{2}+\frac{p^{2}}{2m_{0}}
+	\end{aligned}
+\end{equation}

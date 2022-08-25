@@ -1,0 +1,206 @@
+\starthis\section[粒子在电磁场中的运动]{粒子在电磁场中的运动} \label{sec:07.04} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+{\heiti 1. 自旋为零的粒子}
+
+以$m$和$q$表示粒子的质量和电荷，而自旋为零.当粒子在电磁场中运动时，按照经典电动力学，哈密顿量为
+\begin{empheq}{equation}\label{eq74.1}
+	H=\frac{1}{2m}\bigg(\boldsymbol{p}-\frac{q}{c}\boldsymbol{A}\bigg)^{2}+q\phi
+\end{empheq}
+其中$\boldsymbol{p}$是粒子的正则动量，$\phi$和$\boldsymbol{A}$是电磁场的标势和矢势，它们与电场$\mathscr{E}$和磁场$B$的关系是
+\begin{empheq}{equation}\label{eq74.2}
+	\mathscr{E}=-\nabla\phi-\frac{1}{c}\frac{\partial\boldsymbol{A}}{\partial t},\quad \boldsymbol{B}=\nabla\times\boldsymbol{A}
+\end{empheq}
+由\eqref{eq74.1}式并利用正则方程
+\begin{empheq}{equation}\label{eq74.3}
+	\dot{x}_{i}=\frac{\partial H}{\partial p_{i}}\quad \dot{p}_{i}=-\frac{\partial H}{\partial x_{i}}
+\end{empheq}
+可以证明粒子的机械动量是
+\begin{empheq}{equation}\label{eq74.4}
+	m\boldsymbol{v}=m\frac{d}{dt}\boldsymbol{r}=\boldsymbol{p}-\frac{q}{c}\boldsymbol{A}
+\end{empheq}
+并可导出粒子的经典运动方程
+\begin{empheq}{equation}\label{eq74.5}
+	m\frac{d\boldsymbol{v}}{dt}=q\mathscr{E}+\frac{q}{c}\boldsymbol{v}\times\boldsymbol{B}
+\end{empheq}
+第一项为电场的作用力，第二项为磁场的作用力，即洛伦兹力.
+
+推广到量子力学，只需将$\boldsymbol{p}$换成算符，即令
+\eqshort
+\begin{empheq}{equation}\label{eq74.6}
+	\hat{\boldsymbol{p}}=-i\hbar\nabla
+\end{empheq}\eqnormal
+就得到哈密顿算符
+\begin{empheq}{equation}\label{eq74.7}
+	\hat{H}=\frac{1}{2m}\bigg(\hat{\boldsymbol{p}}-\frac{q}{c}\boldsymbol{A}\bigg)^{2}+q\phi
+\end{empheq}
+如定义速度算符
+\begin{empheq}{equation}\label{eq74.8}
+	\hat{\boldsymbol{v}}=\frac{d\hat{\boldsymbol{r}}}{dt}=\frac{1}{i\hbar}[\boldsymbol{r},\hat{H}]
+\end{empheq}
+容易求出
+\begin{empheq}{equation}\label{eq74.9}
+	\hat{\boldsymbol{v}}=\frac{1}{m}\bigg(\hat{\boldsymbol{p}}-\frac{q}{c}\boldsymbol{A}\bigg)
+\end{empheq}
+上式正是经典关系\eqref{eq74.4}式的量子力学推广.\eqref{eq74.7}式也可以写成
+\begin{empheq}{equation}\label{eq74.10}
+	\hat{H}=\frac{1}{2}m\hat{\boldsymbol{v}}^{2}+q\phi
+\end{empheq}
+\eqref{eq74.7}式中
+\begin{empheq}{equation*}
+	\bigg(\hat{\boldsymbol{p}}-\frac{q}{c}\boldsymbol{A}\bigg)^{2}=\hat{\boldsymbol{p}}^{2}+\frac{q^{2}}{c^{2}}\boldsymbol{A}^{2}-\frac{q}{c}(\hat{\boldsymbol{p}}\cdot\boldsymbol{A}+\boldsymbol{A}\cdot\hat{\boldsymbol{p}})
+\end{empheq}
+其中
+\begin{empheq}{equation*}
+	\hat{\boldsymbol{p}}\cdot\boldsymbol{A}+\boldsymbol{A}\cdot\hat{\boldsymbol{p}}=-i\hbar(\nabla\cdot\boldsymbol{A})+2\boldsymbol{A}\cdot\hat{\boldsymbol{p}}
+\end{empheq}
+即一般$\hat{\boldsymbol{p}}\cdot\boldsymbol{A}\neq\boldsymbol{A}\cdot\hat{\boldsymbol{p}}$.但如规定矢势$\boldsymbol{A}$满足横波条件$\nabla\cdot\boldsymbol{A}=0$，则$\boldsymbol{p}\cdot\boldsymbol{A}=\boldsymbol{A}\cdot\hat{\boldsymbol{p}}=-i\hbar\boldsymbol{A}\cdot\nabla$，这时$\hat{H}$可以化成
+\eqlong
+\begin{empheq}{align*}\label{eq74.7'}
+	\hat{H}&=\frac{\hat{\boldsymbol{p}}^{2}}{2m}-\frac{q}{mc}\boldsymbol{A}\cdot\hat{\boldsymbol{p}}+\frac{q^{2}}{2mc^{2}}\boldsymbol{A}^{2}+q\phi	\\
+	&=-\frac{\hbar^{2}}{2m}\nabla^{2}+i\frac{\hbar q}{mc}\boldsymbol{A}\cdot\nabla+\frac{q^{2}}{2mc^{2}}\boldsymbol{A}^{2}+q\phi	\tag{$7.4.7^{\prime}$}\eqnormal
+\end{empheq}
+
+薛定谔方程仍为
+\eqshort
+\begin{empheq}{equation}\label{eq74.11}
+	i\hbar\frac{\partial}{\partial t}\varPsi=\hat{H}\varPsi 
+\end{empheq}\eqnormal
+写开来，就是
+\eqllong
+\begin{empheq}{equation*}\label{eq74.11'}
+	i\hbar\frac{\partial\varPsi}{\partial t}=-\frac{\hbar^{2}}{2m}\nabla^{2}\varPsi+i\frac{\hbar q}{mc}\boldsymbol{A}\cdot\nabla\varPsi+\frac{q^{2}}{2mc^{2}}\boldsymbol{A}^{2}\varPsi+q\phi\varPsi	\tag{$7.4.11^{\prime}$}
+\end{empheq}\eqnormal
+下面导出连续性方程.上式的共轭方程为
+\eqindent{2}
+\begin{empheq}{equation*}\label{eq74.11''}
+	i\hbar\frac{\partial\varPsi^{*}}{\partial t}=-\frac{\hbar^{2}}{2m}\nabla^{2}\varPsi^{*}+i\frac{\hbar q}{mc}\boldsymbol{A}\cdot\nabla\varPsi^{*}+\frac{q^{2}}{2mc^{2}}\boldsymbol{A}^{2}\varPsi^{*}+q\phi\varPsi^{*}	\tag{$7.4.11^{\prime\prime}$}
+\end{empheq}\eqnormal
+用$\varPsi^{*}$左乘\eqref{eq74.11'}式，$\varPsi$左乘\eqref{eq74.11''}式，相减，即得
+\eqllong
+\begin{empheq}{align*}
+	i\hbar\frac{\partial}{\partial}(\varPsi^{*}\varPsi) =&-\frac{\hbar^{2}}{2m}(\varPsi^{*}\nabla^{2}\varPsi-\varPsi\nabla^{2}\varPsi^{*})	\\
+	&+i\frac{\hbar q}{mc}\boldsymbol{A}\cdot(\varPsi^{*}\nabla+\varPsi\nabla\varPsi^{*})	\\
+	=&-\frac{\hbar^{2}}{2m}\nabla\cdot(\varPsi^{*}\nabla\varPsi-\varPsi\nabla\varPsi^{*})+i\frac{\hbar q}{mc}\nabla\cdot(\boldsymbol{A}\varPsi^{*}\varPsi)
+\end{empheq}\eqnormal
+上式实质上就是连续性方程
+\begin{empheq}{equation}\label{eq74.12}
+	\frac{\partial\rho}{\partial t}+\nabla\cdot\boldsymbol{j}=0
+\end{empheq}
+其$\rho=\varPsi^{*}\varPsi$为概率密度，$\boldsymbol{j}$为概率流密度，
+\begin{empheq}{equation}\label{eq74.13}
+	\boldsymbol{j}=\frac{i\hbar}{2m}(\varPsi^{*}\nabla\varPsi-\varPsi\nabla\varPsi^{*})-\frac{q}{mc}\boldsymbol{A}\varPsi^{*}\varPsi
+\end{empheq}
+亦即
+\begin{empheq}{align*}\label{eq74.13'}
+	\boldsymbol{j}&=\frac{1}{2m}\varPsi^{*}\bigg(\hat{\boldsymbol{p}}-\frac{q}{c}\boldsymbol{A}\bigg)\varPsi+c.c.	\\
+	&=\frac{1}{2}\varPsi^{*}\hat{\boldsymbol{v}}\varPsi+c.c.=\Re(\varPsi^{*}\hat{\boldsymbol{v}}\varPsi)
+	\tag{$7.4.13^{\prime}$}
+\end{empheq}
+电荷密度及电流密度为
+\begin{empheq}{align}
+	&\rho_{n}=q\rho=q\varPsi^{*}\varPsi		\label{eq74.14}\\
+	\boldsymbol{j}_{e}=q\boldsymbol{j}=\frac{q}{2}&\varPsi^{*}\hat{\boldsymbol{v}}\varPsi+c.c.=\Re(q\varPsi^{*}\hat{\boldsymbol{v}}\varPsi)		\label{eq74.15}
+\end{empheq}
+而在经典物理中$\boldsymbol{j}_{e}=\boldsymbol{v}\rho_{e}$.
+
+{\heiti 2. 电子}
+
+电子（电荷$q=-e$）具有自旋磁矩
+\begin{empheq}{equation}\label{eq74.16}
+	\boldsymbol{\mu}_{s}=-\frac{e}{m_{e}c}\boldsymbol{S}=-\frac{e\hbar}{2m_{n}c}\boldsymbol{\sigma}
+\end{empheq}
+当电子在电磁场中运动时，磁场$\boldsymbol{B}$对磁矩$\boldsymbol{\mu}_{s}$的作用势是
+\begin{empheq}{equation}\label{eq74.17}
+	-\boldsymbol{B}\cdot\boldsymbol{\mu}_{s}=\frac{e\hbar}{2m_{n}c}\boldsymbol{B}\cdot\boldsymbol{\sigma}
+\end{empheq}
+将\eqref{eq74.17}式和\eqref{eq74.7}式合起来，就是在电磁场中的电子哈密顿算符：
+\begin{empheq}{equation}\label{eq74.18}
+	\hat{H}=\frac{1}{2m_{e}}\bigg(\hat{\boldsymbol{p}}+\frac{e}{c}\boldsymbol{A}\bigg)^{2}-e\phi+\frac{e\hbar}{2m_{n}c}\boldsymbol{B}\cdot\boldsymbol{\sigma}
+\end{empheq}
+薛定谔方程形式上仍取\eqref{eq74.11}式的形式，但是波函数$\varPsi$（$xyzS_{z}$表象）应表示成二分量的列矢量：
+\begin{empheq}{equation}\label{eq74.19}
+	\varPsi=\begin{bmatrix}
+		\varPsi_{1}(xyz,t)	\\	\varPsi_{2}(xyz,t)
+	\end{bmatrix}
+\end{empheq}
+薛定谔方程表现为
+\begin{empheq}{equation}\label{eq74.20}
+	i\hbar\frac{\partial}{\partial t}\begin{bmatrix}
+		\varPsi_{1}	\\	\varPsi_{2}
+	\end{bmatrix}=\hat{H}\begin{bmatrix}
+		\varPsi_{1}	\\	\varPsi_{2}
+\end{bmatrix}
+\end{empheq}
+习惯上称为泡利方程.仿照\eqref{eq74.11}式以下的步骤，不难导出连续性方程，从而得到概率密度$\rho$，概率流密度$\boldsymbol{j}$，电荷密度$\rho_{e}$，电流密度$\boldsymbol{j}_{e}$的公式.结果如下：
+\begin{empheq}{equation}\label{eq74.21}
+	\rho=\varPsi^{*}\varPsi=\varPsi_{1}^{*}\varPsi_{1}+\varPsi_{2}^{*}\varPsi_{2}	
+\end{empheq}
+\begin{empheq}{align}\label{eq74.22}
+	\boldsymbol{j}&=\frac{1}{2m_{e}}\varPsi^{+}\bigg(\hat{\boldsymbol{p}}+\frac{e}{c}\boldsymbol{A}\bigg)\varPsi+c.c.=\Re(\varPsi^{*}\hat{\boldsymbol{v}}\varPsi)	\nonumber\\
+	&=\Re(\varPsi_{1}^{*}\hat{\boldsymbol{v}}\varPsi_{1}+\varPsi_{2}^{*}\hat{\boldsymbol{v}}\varPsi_{2})
+\end{empheq}
+\begin{empheq}{equation}\label{eq74.23}
+	\rho_{e}=-e\rho,\quad \boldsymbol{j}_{e}=-e\boldsymbol{j}
+\end{empheq}
+注意这些最均与自旋算符无关，因为它们反映电子的空间分布与流动情况，而自旋自由度与此无关.
+
+{\heiti 3. 均匀磁场中的原子}
+
+以单价原子为例，说明一下物质的磁性起源.原子的最外层电子（价电子）容易受外场的影响，原子的电磁性质在很大程度上取决于价电子.将原子置于均匀磁场中，以$\boldsymbol{B}$方向为$z$轴方向，则磁场为
+\begin{empheq}{equation*}
+	B_{x}=B_{y}=0,\quad B_{z}=B
+\end{empheq}
+矢势$\boldsymbol{A}$可以取为
+\begin{empheq}{equation}\label{eq74.24}
+	A_{x}=-\frac{B}{2}y,\quad A_{y}=\frac{B}{2}x,\quad A_{z}=0
+\end{empheq}
+并已满足横波条件$\nabla\cdot\boldsymbol{A}=0$，因此
+\begin{empheq}{equation*}
+	\hat{\boldsymbol{p}}\cdot\boldsymbol{A}=\boldsymbol{A}\cdot\hat{\boldsymbol{p}}=\frac{B}{2}(x\hat{p}_{y}-y\hat{p}_{x})=\frac{B}{2}\hat{L}_{z}
+\end{empheq}
+代入\eqref{eq74.18}式，［利用\eqref{eq74.7}式的展开\eqref{eq74.7'}式］得到
+\eqllong
+\begin{empheq}{equation}\label{eq74.25}
+	\hat{H}=\frac{1}{2m_{e}}\hat{\boldsymbol{p}}^{2}+V(r)+\frac{eB}{2m_{e}c}(\hat{L}_{z}+2\hat{S}_{z})+\frac{e^{2}B^{2}}{8m_{e}c^{2}}(x^{2}+y^{2})
+\end{empheq}
+其中$V(r)$表示原子核与内层电子对于价电子的库仑作用势的总和，即\eqref{eq74.18}式中$(-e\phi)$项的等效表示.\eqref{eq74.25}式中前两项是原子中价电子本来的能量算符，后两项是磁作用能.由此可以求得原子的磁矩
+\begin{empheq}{equation}\label{eq74.26}
+	\hat{\mu_{z}}=-\frac{\partial\hat{H}}{\partial B}=-\frac{e}{2m_{e}c}(\hat{L}_{z}+2\hat{S}_{z})-\frac{e^{2}B}{4m_{e}c^{2}}(x^{2}+y^{2})
+\end{empheq}\eqnormal
+其中第一项是原子的固有磁矩（轨道磁矩及自旋磁矩）.第二项与磁场$B$成正比，为诱导磁矩，它总是负的，属于逆磁性效应.按量级而言，第二项远小于第一项，因此只有固有磁矩为零的原子（如惰气原子及许多二价原子）逆磁性才能表现出来.
+
+\eqref{eq74.26}式中，第一项量级与玻尔磁子相同，
+\begin{empheq}{equation*}
+	\mu_{B}=\frac{e\hbar}{2m_{e}c}=\num{5.8}\times 10^{-9}\si{eV/Gs}
+\end{empheq}
+第二项的量级约为
+\eqlong
+\begin{empheq}{align*}
+	\frac{e^{2}B}{4m_{e}c^{2}}(x^{2}+y^{2})&\sim B\frac{e^{2}a_{0}^{2}}{4m_{e}c^{2}}\bigg(\frac{\hbar^{2}}{m_{e}e^{2}}\bigg)^{2}	\\
+	&\sim\frac{B\mu_{B}^{2}}{m_{e}c^{2}}\bigg(\frac{\hbar c}{e^{2}}\bigg)^{2}\sim B\times10^{-18}\si{eV/Gs^{2}}
+\end{empheq}
+当$\boldsymbol{B}\sim10^{5}\si{Gs}$，第二项量级约为$10^{-13}\si{eV/Gs}$，仅为$\mu_{B}$的$10^{-4}$倍.
+
+\example 求速度算符$\hat{\boldsymbol{v}}$各分量间的对易式.
+
+\solution 以$[\hat{v}_{x},\hat{v}_{y}]$为例，按照\eqref{eq74.9}式，
+\begin{empheq}{align}\label{eq74.27}
+	[\hat{v}_{x},\hat{v}_{y}]&=\frac{1}{m^{2}}\bigg[\hat{p}_{x}-\frac{q}{c}A_{x},\quad \hat{p}_{y}-\frac{q}{c}A_{y}\bigg]	\nonumber\\
+	&=-\frac{q}{m^{2}c}([\hat{p}_{x},A_{y}]+[A_{x},\hat{p}_{y}])	\nonumber\\	% $\hat{p}_{y}$?
+	&=-\frac{q}{m^{2}c}(-i\hbar)\bigg(\frac{\partial A_{y}}{\partial x}-\frac{\partial A_{x}}{\partial y}\bigg)=i\frac{\hbar q}{m^{2}c}B_{z}
+\end{empheq}\eqnormal
+类似地有
+\begin{empheq}{equation*}
+	[\hat{v}_{y},\hat{v}_{z}]=i\frac{\hbar q}{m^{2}c}B_{x},\quad [\hat{v}_{z},\hat{v}_{x}]=i\frac{\hbar q}{m^{2}c}B_{y}
+\end{empheq}
+$\boldsymbol{B}=\nabla\times\boldsymbol{A}$写成矢量形式，就是
+\begin{empheq}{equation*}\label{eq74.27'}
+	\hat{\boldsymbol{v}}\times\hat{\boldsymbol{v}}=i\frac{\hbar q}{m^{2}c}\boldsymbol{B}
+	\tag{$7.4.27^{\prime}$}
+\end{empheq}
+$\boldsymbol{B}=\nabla\times\boldsymbol{A}$
+是磁场，进一步还可算出
+\begin{empheq}{equation}\label{eq74.28}
+	[\hat{\boldsymbol{v}},\hat{\boldsymbol{v}}^{2}]=i\frac{\hbar q}{m^{2}c}(\hat{\boldsymbol{v}}\times\boldsymbol{B}-\boldsymbol{B}\times\hat{\boldsymbol{v}})
+\end{empheq}

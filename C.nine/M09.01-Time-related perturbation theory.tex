@@ -1,0 +1,100 @@
+\section[与时间有关的微扰论]{与时间有关的微扰论} \label{sec:09.01} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+考虑一个物理体系（例如一个原子），其能量算符为$H_{0}$（不显含$t$），$H_{0}$的正交归一化的本征函数记为$\varPsi_{n}(x)$，相应的能级记为$E_{n}$.［$x$代表波函数所涉及的全体独立变量，也可以理解为某种守恒量完全集（$H_{0}$在内）的共同本征函数，$n$代表全体量子数.］设开始时体系处于定态$\varPsi_{k}$.如果没有外界作用，体系将继续处于$\varPsi_{k}$态，波函数的时间变化表现为一个位相因子，
+\begin{empheq}{equation}\label{eq91.1}
+	\varPsi_{k}(x,t)=\varPsi_{k}(x)e^{-iE_{k}t/\hbar}
+\end{empheq}
+这就是定态.
+
+设$t>0$时体系受到外界作用，作用势$H^{\prime}(x,t)$，即体系的总能量算符变成
+\eqshort
+\begin{empheq}{equation}\label{eq91.2}
+	H=H_{0}+H^{\prime}
+\end{empheq}\eqnormal
+设$[H_{0},H^{\prime}]\neq0$，因此$t>0$时$H_{0}$不再是守恒量.与此相应，波函数满足薛定谔方程：
+\begin{empheq}{equation}\label{eq91.3}
+	i\hbar\frac{\partial}{\partial t}\varPsi(x,t)=H\varPsi=(H_{0}+H^{\prime})\varPsi(x,t)
+\end{empheq}
+按照态叠加原理，$\varPsi(x,t)$可以表示成$H_{0}$的本征函数的线性叠加，即
+\begin{empheq}{equation}\label{eq91.4}
+	\varPsi(x,t)=\sum_{n}C_{n}(t)\varPsi_{n}(x)e^{-iE_{n}t/\hbar}
+\end{empheq}
+初始条件为
+\begin{empheq}{equation}\label{eq91.5}
+	\varPsi(x,0)=\varPsi_{k}(x)\quad\text{即}\quad C_{n}(0)=\delta_{nk}
+\end{empheq}
+如求出了各$C_{n}(t)$，也就是求出了$\varPsi(x,t)$.设在$t=T$时去除外界作用$H^{\prime}$，并随即测量体系的能量，即测量$H_{0}$，按照波函数的普遍概率解释，测得$H_{0}=E_{f}$的概率为$C_{f}^{*}(T)C_{f}(T)$，这也就是$t=T$时体系处于$\varPsi_{f}$态的概率.或者说，$C_{f}^{*}(T)C_{f}(T)$就是到时刻$T$为止体系已由原先的$\varPsi_{k}$态跃迁到$\varPsi_{f}$态的概率.$C_{f}^{*}C_{f}$的时间变化率称为由$\varPsi_{k}$态变到$\varPsi_{f}$态的跃迁速率，记为
+\begin{empheq}{equation}\label{eq91.6}
+	w_{k\rightarrow f}(t)=\frac{d}{dt}[C_{f}^{*}(t)C_{f}(t)]
+\end{empheq}
+$\varPsi_{k}$称为初态，$\varPsi_{f}$称为终态.
+
+为了求出$C_{f}(t)$，将\eqref{eq91.4}式代入\eqref{eq91.3}式，得到
+\begin{empheq}{equation*}
+	i\hbar\sum_{n}\frac{dC_{n}}{dt}\varPsi_{n}e^{-iE_{n}t/\hbar}=\sum_{n}H^{\prime}\varPsi_{n}C_{n}e^{-iE_{n}t/\hbar}
+\end{empheq}
+以$\varPsi_{f}^{\prime}$左乘上式，对全空间积分，并注意利用正交归一化条件
+\begin{empheq}{equation}\label{eq91.7}
+	\int\varPsi_{f}^{*}(x)\varPsi_{n}(x)dx=\delta_{fn}
+\end{empheq}
+可得
+\begin{empheq}{equation}\label{eq91.8}
+	i\hbar\frac{dC_{f}}{dt}e^{-E_{f}t/\hbar}=\sum_{n}H_{fn}^{\prime}C_{n}e^{-iE_{n}t/\hbar}
+\end{empheq}
+其中
+\begin{empheq}{equation}\label{eq91.9}
+	H_{fn}^{\prime}=\int\varPsi_{f}^{*}H^{\prime}\varPsi_{n}dx=\langle \varPsi_{f}|H^{\prime}|\varPsi_{n} \rangle 
+\end{empheq}
+是$H_{0}$表象中$H^{\prime}$的矩阵元，它与时间$t$有关.
+
+\eqref{eq91.8}式是严格的，它代表一组联立方程$(f=1,2,\cdots)$，如能严格解出，当然很好.但一般\eqref{eq91.8}式不易严格解出，需用近似解法.本节只介绍微扰论解法，条件是$H^{\prime}$较弱而且作用时间也不长，时刻$t$时体系已由初态$\varPsi_{k}$跃迁到各个可能终态的总概率远小于1，即
+\begin{empheq}{equation}\label{eq91.10}
+	\sum_{n}^{\prime}C_{n}^{*}(t)C_{n}(t)\ll 1
+\end{empheq}
+在这条件下可以略去\eqref{eq91.8}式右端所有$n\neq k$的$C_{n}$，并取$C_{k}(t)\approx1$，从而将\eqref{eq91.8}式近似为
+\begin{empheq}{equation}\label{eq91.11}
+	i\hbar\frac{d}{dt}C_{f}=H_{fk}^{\prime}(t)e^{i\omega_{fk}t}
+\end{empheq}
+积分，即得满足初始条件\eqref{eq91.5}式的解为
+\begin{empheq}{equation}\label{eq91.12}
+	\boxed{C_{f}(t)=\frac{1}{i\hbar}\int_{0}^{t}H_{fk}^{\prime}e^{i\omega_{fk}t}dt}
+\end{empheq}
+其中$\omega_{fk}=\frac{E_{f}-E_{k}}{\hbar}$.这个结果相当于视$H^{\prime}$为微扰而求出的一级近似.如将\eqref{eq91.12}式再代入\eqref{eq91.8}式右端（令$f\rightarrow n$），就可求出$C_{f}(t)$的二级近似.不过通常只取一级近似，即\eqref{eq91.12}式，这是本章的基本公式.
+
+从\eqref{eq91.12}式可知，如果$H_{fk}^{\prime}(t)=0(0<t<T)$则$C_{f}(t)=0$，即由$\varPsi_{k}$态到$\varPsi_{f}$态的跃迁是禁戒的.为了使跃迁$\varPsi_{k}\rightarrow\varPsi_{f}$成为可能，须$H_{fk}^{\prime}\neq0$，为此而出现的量子数$f$与$n$间的制约关系即所谓选择定则.
+
+如果考虑反方向的跃迁过程，即初态为$\varPsi_{f}$，终态为$\varPsi_{k}$，重复上述计算，$C_{k}$的公式显然只需在\eqref{eq91.12}式中将$f$、$k$互换.由于$H^{\prime}$应该是厄密的$(H^{\prime}=H^{\prime+})$，必有$H_{kf}^{\prime}=(H_{fk}^{\prime})^{*}$，因此现在问题中的$-C_{k}(t)$等于\eqref{eq91.12}式决定的$C_{f}^{*}(t)$.这就是说，在同一种外界作用下（$H^{\prime}$相同），$\varPsi_{k}\rightarrow\varPsi_{f}$及$\varPsi_{f}\rightarrow\varPsi_{k}$这两种正、反跃迁过程的跃迁速率相等.
+\pskip
+
+\example 有一个量子力学体系，总能量算符$H_{0}$的本征函数（已正交归一化）为$\varPsi_{n}(x)$，能级$E_{n},n=1,2,\cdots$.已知$t<0$时体系处于基态$\varPsi_{k}$，$t>0$时受到外来微扰$H^{\prime}(x,t)=F(x)e^{-t/\tau}$的作用.试用微扰论（一级近似）求$t\gg\tau$时$(t\rightarrow\infty)$体系处于各激发态$(\varPsi_{n},E_{n}>E_{1})$的概率.
+
+\solution 微扰$H^{\prime}$的矩阵元（$H_{0}$表象）为
+\begin{empheq}{align*}
+	H_{n1}^{\prime}(t) &=e^{-t/\tau}\int\varPsi_{n}^{*}(x)F(x)\varPsi_{1}(x)dx	\\
+	&=F_{n1}e^{-t/\tau}
+\end{empheq}
+如$F_{n1}\neq0$，$H^{\prime}$将引起由$\varPsi_{k}$向$\varPsi_{n}$的跃迁，所求概率等于$C_{n}^{*}(\infty)C_{n}(\infty)$.按照\eqref{eq91.12}式，
+\begin{empheq}{align*}
+	C_{n}(t) &=\frac{F_{n1}}{i\hbar}\int_{0}^{t}\exp\left(i\omega_{n1}t-\frac{t}{\tau}\right)dt	\\
+	&=\frac{\frac{F_{n1}}{i\hbar}\left[\exp\left(i\omega_{n1}t-\frac{t}{\tau}\right)-1\right]}{i\omega_{n1}-\frac{1}{\tau}}
+\end{empheq}
+当$t\rightarrow\infty(t\gg\tau)$，即得
+\begin{empheq}{equation*}
+	C_{n}(\infty)=\frac{F_{n1}}{E_{n}-E_{1}+\frac{i\hbar}{\tau}}
+\end{empheq}
+体系处于$\varPsi_{n}$态的概率为
+\begin{empheq}{equation*}
+	|C_{n}(\infty)|^{2}=\frac{|F_{n1}|^{2}}{(E_{n}-E_{1})^{2}+\frac{\hbar^{2}}{\tau^{2}}}
+\end{empheq}
+微扰论适用条件为$\sum^{\prime}|C_{n}|^{2}\gg1(n\neq1)$，为此必须$|C_{n}|^{2}\gg1$，即
+\begin{empheq}{equation*}
+	|F_{n1}|\gg E_{n}-E_{1}\quad\text{或}\quad |F_{n1}|\gg\frac{\hbar}{\tau}
+\end{empheq}
+
+
+
+
+
+
+

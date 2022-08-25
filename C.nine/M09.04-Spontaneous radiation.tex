@@ -1,0 +1,140 @@
+\section[自发辐射]{自发辐射} \label{sec:09.04} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+实验发现，当原子处于激发态时，即使没有外来的光波照射，原子也能自发地跃迁到较低能级，同时辐射出一个光子.这种过程称为自发跃迁或自发辐射.事实上，在几千度的温度下，原子发光主要来自自发辐射．原子核的自发跃迁则产生$\gamma$射线.
+
+按照量子力学原理，如果没有外界作用，孤立体系将永远处于原来的定态能级，不应发生能级跃迁.那么，造成原子自发跃迁的原因是什么呢？原因是电磁场“真空” （光子数为0）的“零点振动”对于原子的作用.自发跃迁的严格理论属于量子电动力学范围.本节向读者介绍爱因斯坦在1917年建立的半唯象理论，当时量子力学尚未产生，爱因斯坦在玻尔量子论的基础上，将原子对光的吸收与辐射问题与统计物理原理巧妙地结合起来考虑，建立了自发跃迁与受激跃迁的关系.
+
+考虑许多构造相同的原子和电磁辐射场达到热平衡.考虑原子的任何两个能级$E_{f}>E_{k}$，设处于能量本征态$\varPsi_{k}$与$\varPsi_{f}$的原子数分别为$N_{k}$与$N_{f}$.辐射场能量密度的频率分布表示成
+\begin{empheq}{equation}\label{eq94.1}
+	u=\int_{0}^{\infty}\rho(\omega)d\omega
+\end{empheq}
+爱因斯坦认为，单位时间内发生受激跃迁$\varPsi_{k}\rightarrow\varPsi_{f}$的原子数应该与$\rho(\omega_{fk})$成正比，自发跃迁则与光能密度无关而由原子自身的性质决定.当然，跃迁过程必须服从能量守恒定律，因此自发跃迁只能由高能量状态变到低能量状态，同时放出一个光子.设$\Delta t$时间内由$\varPsi_{k}$态跃迁到$\varPsi_{f}$态的原子数为
+\begin{empheq}{equation}\label{eq94.2}
+	\Delta N_{k\rightarrow f}=N_{k}B_{kf}\rho(\omega_{fk})\Delta t
+\end{empheq}
+$B_{kf}$称为原子的吸收系数.$\Delta t$时间内由$\varPsi_{f}$态跃迁到$\varPsi_{k}$态的原子数设为
+\begin{empheq}{equation}\label{eq94.3}
+	\Delta N_{f\rightarrow k}=N_{f}[A_{fk}+B_{fk}\rho(\omega_{fk})]\Delta t
+\end{empheq}
+$B_{fk}$是原子的受激辐射系数，$A_{fk}$是自发辐射系数（即自发跃迁速率）.在热平衡时，正反两种跃迁的原子数变化应该相等，以维持各能态的原子数不变（细致平衡原理），即$\Delta N_{k\rightarrow f}=\Delta N_{f\rightarrow k}$.由此得到关系
+\begin{empheq}{equation}\label{eq94.4}
+	N_{f}[A_{fk}+B_{fk}\rho(\omega_{fk})]=N_{k}B_{kf}\rho(\omega_{fk})
+\end{empheq}
+上式中，$N_{f}$，$N_{k}$及$\rho(\omega_{fk})$都是温度$T$的函数.而$A$系数及$B$系数则是单个原子的性质，与温度无关.按照统计物理中的玻尔兹曼分布律，热平衡时各能态的原子数分布规律是
+\begin{empheq}{equation}\label{eq94.5}
+	\frac{N_{k}}{N_{f}}=\exp\left(\frac{E_{f}-E_{k}}{kT}\right)=\exp\left(\frac{\hbar\omega_{fk}}{kT}\right)
+\end{empheq}
+当$T\rightarrow\infty$，$N_{f}$与$N_{k}$趋于相等，而辐射场能量密度$u\propto T_{4}\rightarrow\infty$，同时$\rho(\omega)\propto kT\rightarrow\infty$.这时由\eqref{eq94.4}式可见$B_{kf}=B_{fk}$.于是\eqref{eq94.4}式可以化成
+\begin{empheq}{equation*}\label{eq94.4'}
+	\rho(\omega)=\frac{A_{fk}/B_{fk}}{N_{k}/N_{f}-1}=\frac{A_{fk}/B_{fk}}{e^{\hbar\omega/kT}-1}\quad (\omega=\omega_{fk})
+	\tag{$9.4.4^{\prime}$}
+\end{empheq}
+就$\rho(\omega)$与温度$T$的函数关系而言，上式正是黑体辐射普朗克公式的基本形式，所以爱因斯坦关于辐射的唯象理论也是推导普朗克公式的一种方法.
+
+再考虑\eqref{eq94.4'}式的高温极限.当$kT\gg\hbar\omega$，每一种电磁场振动模式具有的能量趋于$kT$，$\rho(\omega)$表现成瑞利-金斯公式
+\begin{empheq}{equation}\label{eq94.6}
+	\rho(\omega)=\frac{\omega^{2}kT}{\pi^{2}c^{3}}\quad (kT\gg\hbar\omega)
+\end{empheq}
+代入\eqref{eq94.4'}式，并取$e^{\hbar\omega/kT}-1\approx\frac{\hbar\omega}{kT}$，即可得到
+\begin{empheq}{equation}\label{eq94.7}
+	\frac{A_{fk}}{B_{fk}}=\frac{\hbar\omega_{fk}^{3}}{\pi^{2}c^{3}}
+\end{empheq}
+将这关系代入\eqref{eq94.4'}式，可得
+\begin{empheq}{equation}\label{eq94.8}
+	\rho(\omega)=\frac{\hbar\omega^{3}}{\pi^{2}c^{3}}bigg\ (e^{\hbar\omega/kT}-1)
+\end{empheq}
+这正是普朗克公式.以上是爱因斯坦半唯象辐射理论的基本内容.
+
+将\eqref{eq94.7}式与\eqref{eq93.15}式联系起来，就可得到原子自发辐射系数（自发跃迁速率）的公式
+\begin{empheq}{equation}\label{eq94.9}
+	\boxed{ A_{fk}=\frac{4\omega_{fk}^{3}}{3\hbar c^{3}}e^{2}|\boldsymbol{r}_{fk}|^{2}	}
+\end{empheq}
+量子电动力学也给出同样的结果.如以光子能量$\hbar\omega_{fk}$乘上式，就得到原子的自发辐射功率：
+\begin{empheq}{equation}\label{eq94.10}
+	P_{fk}=\hbar\omega_{fk}A_{fk}=\frac{4\omega_{fk}^{3}}{3c^{3}}|\boldsymbol{D}_{fk}|^{2}
+\end{empheq}
+上式形式上不含$\hbar$，并和经典电动力学中电偶极矩振子的辐射功率公式相似，$2\boldsymbol{D}_{fk}$相当于经典电偶极矩振幅.一般地，由量子力学导出的不含$\hbar$的公式，都可给予经典物理的解释.
+
+原子的受激跃迁速率（$\S$\ref{sec:09.03}）为
+\begin{empheq}{equation}\label{eq94.11}
+	w_{f\rightarrow k}=B_{fk}\rho(\omega_{fk})
+\end{empheq}
+联系\eqref{eq94.7}、\eqref{eq94.8}式，得到受激跃迁速率与自发跃迁速率的关系：
+\begin{empheq}{equation}\label{eq94.12}
+	w_{f\rightarrow k}=\frac{A_{fk}}{e^{\hbar\omega/kT}-1},\quad \omega=\omega_{fk}
+\end{empheq}
+热平衡时，频率为$\omega$的每种光子态的光子数密度为
+\begin{empheq}{equation}\label{eq94.13}
+	n(\omega)=\frac{1}{e^{\hbar\omega/kT}-1}
+\end{empheq}
+所以\eqref{eq94.12}式亦即
+\begin{empheq}{equation*}\label{eq94.12'}
+	w_{f\rightarrow k}=A_{fk}n(\omega_{fk})
+	\tag{$9.4.12^{\prime}$}
+\end{empheq}
+此式反映出受激跃迁与自发跃迁的实质性联系.数值计算表明，当$\frac{\hbar\omega_{fk}}{kT}>\num{0.6931},n(\omega_{fk})<1,w_{f\rightarrow k}<A_{fk}$；当$\frac{\hbar\omega_{fk}}{kT}<\num{0.6931},n(\omega_{fk})>1,w_{f\rightarrow k}>A_{fk}$.例如$\omega_{fk}$属于可见光，如波长$\lambda\sim\num{600}\si{nm}$，必须$T>\num{3.46}\times10^{4}\si{K}$，受激跃迁速率才能超过自发跃迁速率.对于温度是几千度的原子气体，辐射的可见光主要来自自发辐射.
+
+自发跃迁的选择定则由$\boldsymbol{r}_{fk}\neq0$决定，具体结果见\eqref{eq93.17}式，对于原子的电偶极跃迁，选择定则为$\Delta l=\pm1,\Delta m=0,\pm1$.
+
+应该指出，\eqref{eq94.9}式并不是自发跃迁速率的严格结果，因为导出\eqref{eq94.9}式时利用了\eqref{eq94.7}式和\eqref{eq93.15}式，\eqref{eq94.7}式是严格的，而\eqref{eq93.15}式是对光波与原子的相互作用取电偶极近似后得到的结果，其特点是跃迁速率比例于原子电偶极矩$(\boldsymbol{D}=-e\boldsymbol{r})$矩阵元$(\boldsymbol{D}_{fk})$的绝对值平方.所以当自发跃迁$\varPsi_{n^{\prime}l^{\prime}m^{\prime}}\rightarrow\varPsi_{nlm}$不符合电偶极跃迁选择定则时，跃迁仍有可能通过光波与原子间的磁偶极矩作用或电四极矩作用而实现，但跃迁速率约为正常的电偶极跃迁速率的$\left(\frac{e^{2}}{\hbar c}\right)\sim10^{-4}$倍.如果$\varPsi_{n^{\prime}l^{\prime}m^{\prime}}$态和$\varPsi_{nlm}$态间一切电磁多极矩作用引起的跃迁均被选择定则禁止，则这两个状态间直接电磁跃迁就是严格禁止的.从s态$(l=0)$到s态的跃迁就属于这种严格禁止的情形.
+
+\pskip
+\example 计算氢原子2p$\rightarrow$1s自发跃迁速率和2p态平均寿命（不考虑自旋）.
+
+\solution 1s态即基态$\varPsi_{100}$，2p态有三种，即$\varPsi_{210},\varPsi_{211},\varPsi_{21-1}$.我们先以$\varPsi_{210}\rightarrow\varPsi_{100}$为例进行计算，最后再证明从三种2p态向1s态的跃迁速率是相等的.$\varPsi_{200}$和$\varPsi_{210}$的具体表达式是
+\eqshort
+\begin{empheq}{equation}\label{eq94.14}
+	\varPsi_{100}=(\pi a_{0}^{3})^{-\frac{1}{2}}e^{-r/a_{0}}
+\end{empheq}\eqlong
+\begin{empheq}{align}\label{eq94.15}
+	\varPsi_{210} &=R_{21}(r)Y_{10}(\theta)=(32\pi a_{0}^{3})^{-\frac{1}{2}}\frac{r}{a_{0}}e^{-r/2a_{0}}\cos\theta	\nonumber\\
+	&=(32\pi a_{0}^{3})^{-\frac{1}{2}}\frac{z}{a_{0}}e^{-r/2a_{0}}
+\end{empheq}\eqshort
+由对称性，显然
+\begin{empheq}{equation*}
+	x_{210,100}=0,\quad y_{210,100}=0
+\end{empheq}\eqlong
+而
+\begin{empheq}{align}\label{eq94.16}
+	z_{210,100} &=\int\varPsi_{210}^{*}z\varPsi_{100}d^{3}\boldsymbol{r}	\nonumber\\
+	&=\frac{1}{4\sqrt{2}\pi a_{0}^{4}}\int z^{2}e^{-3r/2a_{0}}d^{3}\boldsymbol{r}	\nonumber\\
+	&=\frac{1}{4\sqrt{2}\pi a_{0}^{4}}4\pi\int_{0}^{\infty}\frac{r^{2}}{3}e^{-3r/2a_{0}}r^{2}dr	\nonumber\\
+	&=\frac{2^{7}\sqrt{2}}{3^{5}}a_{0}=\num{0.7449}a_{0}\quad \left(a_{0}=\frac{\hbar^{2}}{\e^{2}m_{e}}\right)
+\end{empheq}\eqnormal
+代入\eqref{eq94.9}式中，其中
+\begin{empheq}{equation*}
+	\omega_{210,100}=\frac{E_{2}-E_{1}}{\hbar}=\frac{3\e^{2}}{8\hbar a_{0}}=\omega
+\end{empheq}\eqlong
+最终算出
+\begin{empheq}{align}\label{eq94.17}
+	A_{210\rightarrow100} &=\frac{3\e^{2}\omega^{3}}{4\hbar c^{2}}(z_{210,100})^{2}	\nonumber\\
+	&=\left(\frac{2}{3}\right)^{8}\left(\frac{\e^{2}}{\hbar c}\right)^{4}\frac{c}{a_{0}}=\num{6.27}\times 10^{8}\si{s^{-1}}
+\end{empheq}\eqnormal
+$\varPsi_{210}$态的平均寿命$\tau$等于跃迁速率的倒数，即
+\begin{empheq}{equation}\label{eq94.18}
+	\tau=\frac{1}{A_{210\rightarrow100}}=\num{1.59}\times10^{-9}\si{s}
+\end{empheq}
+
+三种2p态波函数可以表示成
+\begin{empheq}{equation}\label{eq94.19}
+	\varPsi_{21m}=R_{21}(r)Y_{1m}(\theta.\varphi),\quad m=1,0,-1
+\end{empheq}\eqindent{5}
+其中
+\begin{empheq}{align}\label{eq94.20}
+	&Y_{10}=\sqrt{\frac{3}{4\pi}}\cos\theta=\sqrt{\frac{3}{4\pi}}\frac{z}{r}	\\
+	Y_{1\pm1}=&\mp\sqrt{\frac{3}{8\pi}}\sin\theta e^{\pm i\varphi}=\mp\sqrt{\frac{3}{8\pi}}\frac{x\pm iy}{r}	\nonumber
+\end{empheq}\eqlllong
+因此，由\eqref{eq94.15}式表示的$\varPsi_{210}$中$z$换成$\frac{\mp x-iy}{\sqrt{2}}$，就成为$\varPsi_{21\pm1}$.由对称性，显然可见
+\begin{empheq}{equation*}
+	z_{21\pm1,100}=0,\quad x_{21\pm1,100}=\mp\frac{1}{\sqrt{2}}z_{210,100},\quad y_{21\pm1,100}=\frac{i}{\sqrt{2}}z_{210,100}
+\end{empheq}\eqlong
+因此
+\begin{empheq}{equation*}
+	|\boldsymbol{r}_{210,100}|^{2}=|\boldsymbol{r}_{21-1,100}|^{2}=|\boldsymbol{r}_{210,100}|^{2}=(z_{210,100})^{2}
+\end{empheq}\eqnormal
+从而
+\begin{empheq}{equation*}
+	A_{211\rightarrow100}=A_{21-1\rightarrow100}=A_{210\rightarrow100}
+\end{empheq}
+即从三种2p态向1s态的跃迁速率相等.因此\eqref{eq94.17}式也就是由$E_{2}$能级向$E_{1}$能级的自发跃迁速率，而\eqref{eq94.18}式也就是$E_{2}$能级的自发辐射平均寿命.

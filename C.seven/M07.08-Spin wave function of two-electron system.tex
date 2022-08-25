@@ -1,0 +1,97 @@
+\section[二电子体系的自旋波函数]{二电子体系的自旋波函数} \label{sec:07.08} % 
+
+
+以$\boldsymbol{S}_{1}$和$\boldsymbol{S}_{2}$表示电子1和2的自旋角动量，体系的总自旋为
+\eqshort
+\begin{empheq}{equation}\label{eq78.1}
+	\boldsymbol{S}=\boldsymbol{S}_{1}+\boldsymbol{S}_{2}
+\end{empheq}
+其分量为
+\begin{empheq}{equation}\label{eq78.2}
+	S_{z}=S_{1z}+S_{2z}
+\end{empheq}\eqnormal
+等等总自旋平方为
+\begin{empheq}{equation}\label{eq78.3}
+	\boldsymbol{S}^{2}=\boldsymbol{S}_{1}^{2}+\boldsymbol{S}_{2}^{2}+2\boldsymbol{S}_{1}\cdot\boldsymbol{S}_{2}
+\end{empheq}
+根据实验事实，
+\eqshort
+\begin{empheq}{equation}\label{eq78.4}
+	\boldsymbol{S}_{1}^{2}=\boldsymbol{S}_{2}^{2}=\frac{3}{4}\hbar^{2}
+\end{empheq}\eqnormal
+这相当于$j_{1}=j_{2}=\frac{1}{2}$的情形.$\boldsymbol{S}^{2}$及$S_{z}$的本征值记为
+\begin{empheq}{equation*}
+	\boldsymbol{S}^{2}——S(S+1)\hbar^{2},\quad S_{z}--M_{s}\hbar
+\end{empheq}
+按照角动量耦合理论，总自旋量子数$S$的可能取值为1和0，$M_{s}$的取值为
+\begin{empheq}{equation}\label{eq78.5}
+	\boxed{\begin{aligned}
+		S=1, &&M_{s}=1,0,-1	\\
+		S=0, &&M_{s}=0
+	\end{aligned}}
+\end{empheq}
+现在还需要确定$\boldsymbol{S}^{2},S_{z}$的共同本征态.
+
+电子$1,2$各有两种独立自旋态$\chi_{1/2}$，$\chi_{-1/2}$，在这里记为$\alpha,\beta$.非耦合表象中的基矢$|j_{1}m_{1},j_{2}m_{2}\rangle$共有4个，它们是
+\begin{empheq}{equation}\label{eq78.6}
+	\alpha(1)\alpha(2),\alpha(1)\beta(2),\beta(1)\alpha(2),\beta(1)\beta(2)
+\end{empheq}
+它们都是总$S_{z}$的本征态，$M_{s}$依次为$1,0,0,-1$.按照\eqref{eq78.5}式，$M_{s}$等于1和-1时，$S$必然为1.因此可以判断$\alpha(1)\alpha(2)$和$\beta(1)\beta(2)$都已经是$\boldsymbol{S}^{2},S_{z}$的共同本征态$|S,M_{S}\rangle$，在这里记成$\chi_{SM_{S}}$，即
+\begin{empheq}{equation}\label{eq78.7}
+	\chi_{11}=\alpha(1)\alpha(2),\quad \chi_{1-1}=\beta(1)\beta(2)
+\end{empheq}
+$S=1$时，$\boldsymbol{S}^{2},S_{z}$还有一个共同本征态$(M_{S}=0)$，它应该由\eqref{eq78.6}式中第二、三项叠加而成.按照角动量一般理论[\eqref{eq47.26}式]
+\begin{empheq}{equation}\label{eq78.8}
+	(S_{x}-iS_{y})\chi_{11}=\sqrt{2}\hbar\chi_{10}
+\end{empheq}
+其中$(S_{x}-iS_{y})=(S_{1x}-iS_{1y})+(S_{2x}-iS_{2y})$.利用\eqref{eq71.19}式容易算出
+\begin{empheq}{equation*}
+	(S_{x}-iS_{y})\chi_{11}=\hbar\alpha(1)\beta(2)+\hbar\beta(1)\alpha(2)
+\end{empheq}
+代入\eqref{eq78.8}式，即得
+\begin{empheq}{equation}\label{eq78.9}
+	\chi_{10}=\frac{1}{\sqrt{2}}[\alpha(1)\beta(2)+\beta(1)\alpha(2)]
+\end{empheq}
+按照角动量一般理论，$\chi_{10}$与$\chi_{1-1}$有关系
+\begin{empheq}{equation}\label{eq78.10}
+	(S_{x}-iS_{y})\chi_{10}=\sqrt{2}\hbar\chi_{1-1}
+\end{empheq}
+请读者自行验证.
+
+$\boldsymbol{S}^{2},S_{z}$还有一个共同本征态$\chi_{00}(S=0,M_{S}=0)$，它应该由\eqref{eq78.6}式中第二、三项叠加而成，并与$\chi_{10}$正交（因为量子数$S$之值不同），设
+\begin{empheq}{equation*}
+	\chi_{00}=C_{1}\alpha(1)\beta(2)+C_{2}\beta(1)\alpha(2)
+\end{empheq}
+由正交条件
+\eqshort
+\begin{empheq}{equation*}
+	\chi_{10}^{+}\chi_{00}=0
+\end{empheq}\eqnormal
+容易得出$C_{2}=-C_{1}$.取$C_{1}>0$.并将$\chi_{00}$归一化，最后得到
+\begin{empheq}{equation}\label{eq78.11}
+	\chi_{00}=\frac{1}{\sqrt{2}}[\alpha(1)\beta(2)-\beta(1)\alpha(2)]
+\end{empheq}
+利用\eqref{eq71.17}式容易验证$S_{\chi_{00}},S_{\chi_{00}}^{2}=0$.
+
+总结以上计算，我们已经求出二电子体系总自旋平方$\boldsymbol{S}^{2}$和$S_{z}$的全部共同本征函数$\chi_{SM_{S}}$，它们是
+\begin{empheq}{equation}\label{eq78.12}
+	\begin{aligned}
+		\chi_{11} &=\alpha(1)\alpha(2)	\\
+		\chi_{10} &=\frac{1}{\sqrt{2}}[\alpha(1)\beta(2)+\beta(1)\alpha(2)]	\\
+		\chi_{1-1}&=\beta(1)\beta(2)	\\
+		\chi_{00} &=\frac{1}{\sqrt{2}}[\alpha(1)\beta(2)-\beta(1)\alpha(2)]
+	\end{aligned}
+\end{empheq}
+容易验证，它们和表\ref{lab.7-1}列出的C.G.系数是一致的.\eqref{eq78.12}式适用于任何由两个自旋$\frac{1}{2}$粒子组成的体系，应用极广，读者应该牢记.
+
+作为二粒子体系自旋自由度的波函数，\eqref{eq78.6}式4个波函数都能够表示成单粒子波函数的乘积，称为“分离态”.反之，\eqref{eq78.9}式和\eqref{eq78.11}式则为“纠缠态”.近年来由于量子信息论的迅速发展，纠缠态日益引人注目.对于本节讨论的自旋波函数，典型的纠缠态除$\chi_{10}$、$\chi_{00}$外，还有
+\begin{empheq}{equation}\label{eq78.13}
+	\frac{1}{\sqrt{2}}[\alpha(1)\alpha(2)\pm\beta(1)\beta(2)]
+\end{empheq}
+它们都是$\sigma_{1x},\sigma_{2x},\sigma_{1z},\sigma_{2z}$的共同本征函数.
+
+
+
+
+
+

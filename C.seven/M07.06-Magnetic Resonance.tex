@@ -1,0 +1,163 @@
+\starthis\section[磁共振]{磁共振} \label{sec:07.06} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+磁共振的基本原理是利用粒子的磁矩在交变磁场中作周期性变化的规律，对磁矩或磁场作精密测量．
+
+以自旋为$\frac{\hbar}{2}$的粒子为例，自旋磁矩算符可以表示成
+\eqshort
+\begin{empheq}{equation}\label{eq76.1}
+	\boldsymbol{\mu}=\mu_{0}\boldsymbol{\sigma}
+\end{empheq}\eqnormal
+$\boldsymbol{\sigma}$为泡利算符，$\mu_{0}$由粒子性质决定，对于电子，$\mu_{0}=-\frac{e\hbar}{2m_{e}c}$.将粒子置于恒定磁场$B_{0}$中，（以磁场方向为$z$轴方向）则磁作用势（略去与自旋无关的项）为
+\begin{empheq}{equation}\label{eq76.2}
+	\hat{H}_{0}=-B_{0}\cdot\boldsymbol{\mu}=-B_{0}\mu_{0}\sigma_{z}
+\end{empheq}
+这时$\sigma_{z}$是守恒量（和$H_{0}$对易），它的本征态$\chi_{1/2}$及$\chi_{-1/2}$也是$H_{0}$的本征态，相应的能级为
+\begin{empheq}{equation}\label{eq76.3}
+	E_{\pm}=\mp B_{0}\mu_{0}=\mp\hbar\omega,\quad \omega=\frac{B_{0}\mu_{0}}{\hbar}
+\end{empheq}
+现在再加上一个和$B_{0}$垂直的交变磁场$B_{1}(t)$，
+\begin{empheq}{equation}\label{eq76.4}
+	B_{1x}=B_{1}\cos\nu t,\quad B_{1y}=-B_{1}\sin\nu t,\quad B_{1z}=0
+\end{empheq}
+磁作用势变成
+\begin{empheq}{align}\label{eq76.5}
+	\hat{H} &=-(B_{0}+B_{1})\cdot\boldsymbol{\mu}	\nonumber\\
+	&=-B_{0}\mu_{0}\sigma_{z}+B_{1}\mu_{0}(\sigma_{y}\sin\nu t-\sigma_{x}\cos\nu t)
+\end{empheq}
+如将$H$在$\sigma_{z}$表象中写成矩阵形式，就是
+\begin{empheq}{equation*}\label{eq76.5'}
+	\hat{H}=-\mu_{0}\begin{bmatrix}
+		B_{0} & B_{1}e^{i\nu t}	\\
+		B_{1}e^{-i\nu t} & -B_{0} \\
+	\end{bmatrix}
+\end{empheq}
+
+设在$t=0$时粒子自旋指向$z$方向，即初始自旋波函数为
+\eqshort
+\begin{empheq}{equation}\label{eq76.6}
+	\chi(t=0)=\chi_{1/2}=\begin{bmatrix}
+		1 \\  0
+	\end{bmatrix}
+\end{empheq}
+在$t>0$时，由于$B_{1}$场的存在，$\sigma_{z}$不再是守恒量，自旋波函数将按照薛定谔方程
+\begin{empheq}{equation}\label{eq76.7}
+	i\hbar\frac{d}{dt}\chi(t)=\hat{H}\chi(t)
+\end{empheq}\eqnormal
+随$t$变化，$\chi(t)$可以表示成
+\begin{empheq}{equation}\label{eq76.8}
+	\chi(t)=C_{1}(t)\chi_{1/2}+C_{2}(t)\chi_{-1/2}=\begin{bmatrix}
+		C_{1}(t)	\\	C_{2}(t)
+	\end{bmatrix}
+\end{empheq}
+将\eqref{eq76.5'}及\eqref{eq76.8}式代入\eqref{eq76.7}式，得到$C_{1},C_{2}$的联立方程
+\begin{empheq}{equation}\label{eq76.9}
+	{}\begin{dcases}
+		i\hbar\dot{C_{1}}=-\mu_{0}B_{0}C_{1}-\mu_{0}B_{1}e^{i\nu t}C_{2}	\\
+		i\hbar\dot{C_{2}}=\mu_{0}B_{0}C_{2}-\mu_{0}B_{1}e^{-i\nu t}C_{1}
+	\end{dcases}
+\end{empheq}
+令
+\begin{empheq}{equation}\label{eq76.10}
+	C_{1}=a(t)e^{i\nu t/2},\quad C_{2}=b(t)e^{-i\nu t/2}
+\end{empheq}
+可将\eqref{eq76.9}式简化成
+\eqlong
+\begin{empheq}{equation}\label{eq76.11}
+	{}\begin{dcases}
+		\dot{a}=i\bigg(\omega-\frac{\nu}{2}\bigg)a+i\gamma\omega b
+		\dot{b}=-i\bigg(\omega-\frac{\nu}{2}\bigg)b+i\gamma\omega a
+	\end{dcases}\eqnormal
+\end{empheq}
+其中
+\eqshort
+\begin{empheq}{equation}\label{eq76.12}
+	\omega=\frac{\mu_{0}B_{0}}{\hbar},\quad \gamma=\frac{B_{1}}{B_{0}}
+\end{empheq}\eqnormal
+实验测量是在“共振条件”$\nu=2\omega$情况下进行，这时\eqref{eq76.11}式成为
+\begin{empheq}{equation}\label{eq76.13}
+	{}\begin{dcases}
+		\dot{a}=i\gamma\omega b
+		\dot{b}=i\gamma\omega a
+	\end{dcases}\quad (\nu=2\omega)
+\end{empheq}
+解为
+\begin{empheq}{equation*}
+	a(t)\pm b(t)=[a(0)\pm b(0)]e^{\pm i\gamma\omega t}
+\end{empheq}
+根据初始条件\eqref{eq76.6}式，$a(0)=1,b(0)=0$，因此
+\eqshort
+\begin{empheq}{equation*}
+	a(t)\pm b(t)=e^{\pm i\gamma\omega t}
+\end{empheq}\eqnormal
+解出
+\begin{empheq}{equation}\label{eq76.14}
+	a(t)=\cos\gamma\omega t,\quad b(t)=i\sin\gamma\omega t
+\end{empheq}
+代入\eqref{eq76.8}式、\eqref{eq76.10}式，就得到自旋波函数
+\begin{empheq}{align}\label{eq76.15}
+	\chi(t) &=\cos\gamma\omega e^{i\omega t}\chi_{1/2}+i\sin\gamma\omega t e^{-i\omega t}\chi_{-1/2}	\nonumber\\
+	&=\begin{bmatrix}
+		\cos\gamma\omega te^{i\omega t}	\\
+		i\sin\gamma\omega te^{-i\omega t}
+	\end{bmatrix}
+\end{empheq}
+以$t=0$时粒子的初始自旋方向（正$z$轴方向，$\sigma_{z}=1$）为标准，在时刻$t$自旋方向反转$(\sigma_{z}=-1)$的概率为
+\eqshort
+\begin{empheq}{equation}\label{eq76.16}
+	|C_{2}|^{2}=\sin^{2}\gamma\omega t
+\end{empheq}\eqnormal
+当$t=\frac{\pi}{2\gamma\omega}=\frac{\pi\hbar}{2\mu_{0}B_{1}}$，粒子自旋方向刚好完全反转.（$C_{1}=0$，\eqref{eq76.15}式中只有$\chi_{-1/2}$几项）
+
+在非共振条件下，即$\nu\neq\omega$时，\eqref{eq76.11}式仍存在振动解，令
+\begin{empheq}{equation}\label{eq76.17}
+	{}\begin{dcases}
+		a(t)=a_{1}e^{i\Omega t}+a_{2}e^{-i\Omega t}	\\
+		b(t)=b_{1}e^{i\Omega t}+b_{2}e^{-i\Omega t}
+	\end{dcases}
+\end{empheq}
+代入\eqref{eq76.11}式，容易得到存在非平庸解（$a_{1},a_{2},b_{1},b_{2}$不全为0）的条件为
+\begin{empheq}{equation*}
+	\begin{vmatrix}
+		\omega+\bigg(\omega-\frac{\nu}{2}\bigg)	& \gamma\omega \\
+		\gamma\omega & \Omega-\bigg(\omega-\frac{\nu}{2}\bigg)	
+	\end{vmatrix}=0
+\end{empheq}
+解出
+\begin{empheq}{equation}\label{eq76.18}
+	\Omega=\bigg[\bigg(\omega-\frac{\nu}{2}\bigg)^{2}+\gamma^{2}\omega^{2}\bigg]^{1/2}
+\end{empheq}
+考虑到初始条件\eqref{eq76.6}式，即$a(0)=1,b(0)=0$，\eqref{eq76.17}式可以写成
+\begin{empheq}{equation*}\label{eq76.17'}
+	{}\begin{dcases}
+		a(t)=\cos\Omega t+a_{3}\sin\Omega t	\\
+		b(t)=b_{3}\sin\Omega t
+	\end{dcases}
+\end{empheq}
+代入\eqref{eq76.11}式，并利用\eqref{eq76.18}式，求出
+\begin{empheq}{equation*}
+	a_{3}=i\frac{\omega-\frac{\nu}{2}}{\Omega},\quad b_{3}=i\frac{\gamma\omega}{\Omega}
+\end{empheq}
+\begin{empheq}{equation}\label{eq76.19}
+	{}\begin{dcases}
+		a(t)=\cos\Omega t+i\frac{\omega-\frac{\nu}{2}}{\Omega}\sin\Omega t	\\
+		b(t)=i\frac{\gamma\omega}{\Omega}\sin\Omega t
+	\end{dcases}
+\end{empheq}
+注意，在共振条件$(\nu=2\omega)$下，$\Omega=\gamma\omega$，\eqref{eq76.19}式变成\eqref{eq76.14}式.由\eqref{eq76.8}式、\eqref{eq76.10}式、\eqref{eq76.19}式可知，非共振条件下，时刻$t$自旋方向反转概率
+\begin{empheq}{equation}\label{eq76.20}
+	|b(t)|^{2}=\bigg(\frac{\gamma\omega}{\Omega}\bigg)^{2}\sin^{2}\Omega t
+\end{empheq}
+显然
+\begin{empheq}{equation}\label{eq76.21}
+	|b(t)|_{\text{极大}}^{2}=\bigg(\frac{\gamma\omega}{\Omega}\bigg)^{2}<1
+\end{empheq}
+而在共振条件下$(\nu=2\omega)$自旋方向反转概率最大可以达到1.
+
+粒子自旋方向的反转，相当于在磁能级$E_{+},E_{-}$间的跃迁，与此相应，粒子从电磁波（交变磁场）中吸收能量
+\begin{empheq}{equation}\label{eq76.22}
+	\hbar\nu=2\hbar\omega=E_{-}-E_{+}=2B_{0}\mu_{0}
+\end{empheq}
+在磁共振实验中，交变磁场的频率$\nu$可以调整，当达到共振条件$(\nu=2\omega)$时，出现交变场功率的吸收峰.如$B_{0}$已经精确给定，利用\eqref{eq76.22}式就可测出粒子磁矩$\mu_{0}$.反之，如$\mu_{0}$已知，则可测定$B_{0}$.由于$2\omega$是在射频至微波频段，测量可以达到很高的精度.
+
+对于化合物或凝聚态物质，由于存在自旋轨道耦合作用以及原子间互作用，磁矩结构及磁能级较为复杂，利用磁共振技术可以获得物质结构单元的磁矩信息，有助于了解材料的结构.

@@ -1,0 +1,200 @@
+\section[原子物理中的特征量]{原子物理中的特征量}\label{sec:01.04}
+% \makebox[5em][s]{} % 短题目拉间距
+% \setlength{\mathindent}{9em} 本文标准公式缩进 
+% \eqnormal % 恢复标准缩进
+
+
+微观现象得普遍特点之一就是“量子化”，表征问题的各主要物理量常有一定的量级，它们和各个基本常数（常量）常有一定的构造关系.这种构造关系常可根据某些判据，利用量纲方法予以导出.
+
+\textsf{1. 基本常数}
+
+基本普适常数通常总是与某种基本物理规律相联系，例如玻耳兹曼常数K代表热平衡下的统计规律，光速c 表示相对论效应和电磁定律， 普朗克常数$\hbar$代表量子理论，元电荷e是电荷的量子化单位，等等.基本普适常数没有结构可言，它们表征着当今人类对客观物质世界的认识水平，它们的数值直接由实验决定.当问题涉及到某种基本粒子（例如电子）时，粒子的质量和自旋也是基本常数.
+$\bigg($自旋总是$\hbar$的$\frac{n}{2}$倍，$n=0,1,2,\cdots$，通常可以不必另行作为基本常数提出. $\bigg)$
+
+由于库仑定律的表现形式为$F=-\frac{e_{1}e_{2}}{r^{2}}$，所以$e^{2}$具有（能量）$\times$（长度）的量纲，和$\hbar c$的量纲相同，因此$\frac{e^{2}}{\hbar c}$是无量纲普适常数，它表征着基本电荷间的电磁作用.历史上它是在研究原子光谱的精细结构时被发现的，故称精细结构常数，其数值为
+\begin{equation*}
+	\frac{\e}{\hbar c}\bigg(\text{即}\frac{1}{4\pi\varepsilon_{0}}\frac{e}{\hbar c} \bigg)=\num{7.29335}\times10^{-3} \approx \frac{1}{137}
+\end{equation*}
+这是一个十分重要的普适常数，有些量纲相同的特征量之间的相互关系常可通过精细结构常数表示出来.
+
+\textsf{2. 原子能级}
+
+电子的相对论静能为$m_{e}c^{2}=0.51 \si{MeV}$.研究电子运动时，如果能量变化远小于$m_{e}c^{2}$，为低速运动，这时原则上可以不用相对论理论.如能量的变化接近或超过$m_{e}c^{2}$，为高速运动，即高能范围，必须用相对论理论.
+
+根据实验测定，原子的（外层）电子能级，量级约10 \si{eV}， 远小于$m_{e}c^{2}$，属于非相对论范围.由于电荷间的库仑力也与c无关，所以可以断定原子的电子能级公式中不会出现光速c.利用这个判据， 易知电子能级的特征值（不包括静能$m_{e}c^{2}$）必为
+\begin{equation}\label{eq14.1}
+	\begin{aligned}
+		E &\sim m_{e}c^{2}\bigg(\frac{\e}{\hbar c} \bigg)^{2}= \frac{m_{e}e^{4}}{\hbar^{2}} \\
+		&\sim \num{0.511}\times10^{6}\si{eV}\times\bigg(\frac{1}{137} \bigg)^{2}\sim \num{27.2}\si{eV}
+	\end{aligned}
+\end{equation}\eqshort
+
+\textsf{3. 特征长度}
+
+上述电子能级特征值可以写成
+\begin{equation}\label{eq14.2}
+	E\sim \frac{\e^{2}}{a_{0}}
+\end{equation}\eqnormal
+其中
+\begin{equation}\label{eq14.3}
+	a_{0}=\frac{\hbar^{2}}{m_{e}\e^{2}}-\num{0.53}\times 10^{-10}\si{m}
+\end{equation}\eqshort
+是原子结构的特征长度，即玻尔半径.它是量子论的（含有$\hbar$），又是非相对论的（与c无关）.
+
+原子光谱的波长$\lambda=\frac{c}{\nu}$，$\nu$为频率．根据玻尔量子论[见\eqref{eqn:01.03.09}式]，$\nu=\frac{E_{n}-E_{n^{\prime}}}{h}$所以
+\begin{equation}\label{eq14.4}
+	\lambda=\frac{hc}{E_{n}-E_{n^{\prime}}}
+\end{equation}
+能级差（$E_{n}-E_{n^{\prime}}$）一般为几个\si{eV}，而hc的值为
+\begin{equation*}
+	hc=1.24\times10^{-6} \si{eV\cdot m}
+\end{equation*}\eqlong
+所以$\lambda$一般为$10^{2}\sim10^{3} \si{nm}$量级.例如当（$E_{n}-E_{n^{\prime}}$）= =2 \si{eV}，$\lambda$＝620 \si{nm} ，属于可见光范围.
+
+玻尔半径$a_{0}$和精细结构常数相乘，即得电子的约化康普顿波长：
+\begin{equation}\label{eq14.5}
+	\lambdabar_{c}=a_{0}\bigg(\frac{\e}{\hbar c} \bigg)=\frac{\hbar}{m_{e}c}\sim\frac{a_{0}}{137}\sim3.86\times10^{-13}\si{m}
+\end{equation}\eqnormal
+原始的康普顿波长（见\ref{sec:01.02}）是指
+\begin{equation}\label{eq14.6}
+	\lambda_{c}=\frac{h}{m_{e}c}\sim2.43\times10^{-12} \si{m}
+\end{equation}
+康普顿波长与$h,c$及粒子质量有关（但与电荷无关），故凡相对论和量子论同时起决定性作用的现象中，特征长度通常就是康普顿波长．例如（电子、正电子）对的产生或湮没，就在康普顿波长的范围内发生． 又如核力（强作用）的传递是与$\pi$介子的产生和湮没相联系的，但与电磁作用无关，因此核力的力程必为$\pi$介子的康普顿波长的量级，即
+\begin{equation}\label{eq14.7}
+	\text{核力力程} \sim\frac{\hbar}{m_{\pi}c} \sim\frac{\lambdabar_{c}}{270}\sim 1.4\si{fm}
+\end{equation}
+（$m_{\pi}\sim 270 m_{e}$），这与核力力程的公认实验值（约2 \si{fm}左右）是一致的．
+
+有关电子运动的另一个更小的特征长度是电子经典半径：
+\begin{equation}\label{eq14.8}
+	r_{e}=\lambdabar_{e}\bigg(\frac{\e}{\hbar c} \bigg)=\frac{\e^{2}}{m_{e}c^2}\sim 2.8 \si{fm}
+\end{equation}
+它与量子论无关（与h 无关），故称“经典半径”．其实电子的真实“半径”远小于$10^{3} \si{fm}$． 现今在前沿理论中，电子通常当作点电荷对待.
+
+\textsf{4. 速度和角速度}
+
+原子中电子的运动属于低能范围，电子速度v的公式应该与c无关，因此可以断定
+\begin{equation}\label{eq14.9}
+	v\sim c \cdot\frac{\e}{\hbar c}=\frac{\e^{2}}{\hbar}\sim\frac{c}{137}
+\end{equation}
+也可以利用能级特征值公式\eqref{eq14.1}，并利用$E\sim m_{e}v^{2}$得出\eqref{eq14.9}式．上式大致表征了外层电子（价电子）的速度.在原子的最内层，电子所受作用力大体上就是直接来自原子核（电荷$Ze$，$Z$为原子序数）的未经其他电子屏蔽的库仑力，$F\sim\frac{Z\e^{2}}{r^{2}}$，这时\eqref{eq14.1}式和\eqref{eq14.9}式中$\e^{2}$应换成$Z\e^{2}$，因此$v\sim\frac{cZ}{137}$，当Z较大时，v可达光速c的一半以上.这种情况下应该用相对论量子力学来描写电子的运动．
+
+电子沿基态玻尔轨道（n = 1）运动时，角速度为
+\begin{equation}\label{eq14.10}
+	\omega_{1}=\frac{v}{a}\sim\frac{1}{137}\frac{c}{a_{0}}4.1\times10^{16} \si{s^{-1}}
+\end{equation}\eqshort
+沿量子数为n的圆轨道运动时，由$\S$\ref{sec:01.03}\eqref{eqn:01.03.13}，\eqref{eqn:01.03.20}式，可得角速度为
+\begin{equation}\label{eq14.11}
+	\omega_{n}=\frac{\omega_{1}}{n^{3}}
+\end{equation}\eqnormal
+电子的轨道周期为$\frac{2\pi}{\omega}$，对于第n个玻尔圆轨道，周期为
+\begin{equation}\label{eq14.12}
+	\frac{2\pi}{\omega_{n}}=n^{3}\frac{2\pi}{\omega_{1}}=\frac{2\pi n^{3}\hbar^{3}}{m_{e}\e^{4}}
+\end{equation}\eqlong
+其中
+\begin{equation}\label{eq14.13}
+	\frac{2\pi}{\omega_{1}}=2\pi\frac{\hbar}{m_{e}\e^{4}}=2\pi\times137\frac{a_{0}}{c}\sim1.5\times10^{-16} \si{s}
+\end{equation}\eqnormal
+
+\textsf{5. 电矩和磁矩}
+
+原子的内层电子大致呈球对称分布，对电矩和磁矩无贡献，原子的电矩和磁矩主要来自外层电子.以氢原子为例，电偶极矩约为
+\begin{equation}\label{eq14.14}
+	D\sim er\sim ea_{0}=\frac{\hbar^{2}}{m_{e}\e}\quad(n=1)
+\end{equation}
+
+电子沿圆形轨道匀速运动时，相当于一个环形电流，环的面积为$A=\pi r^{3}$，电流为$I=-\frac{\e\omega}{2\pi}$.按照电磁理论，这种环形电流的等效磁矩为
+\begin{equation}\label{eq14.15}
+	\begin{aligned}
+		\mu=IA=-\frac{\e r^{2}\omega}{2} \text{（国际单位制）} \\
+		\mu=\frac{IA}{c}=-\frac{\e r^{2}\omega}{2c} \text{（高斯单位制）}
+	\end{aligned}
+\end{equation}
+电子的轨道角动量为$L=m_{e}vr=m_{e}r^{2}\omega$，所以磁矩和角动量的关系为
+\begin{equation}\label{eq14.16}
+	\begin{aligned}
+		\boldsymbol{\mu}&=-\frac{\e}{2m_{e}}\boldsymbol{L} \text{（国际单位制）} \\
+		\boldsymbol{\mu}&=-\frac{\e}{2m_{e}c}\boldsymbol{L} \text{（高斯单位制）}
+	\end{aligned}
+\end{equation}
+由于电子电荷为负，轨道角动量$\boldsymbol{L}$的方向和磁矩$\mu$的方向相反．容易证明，\eqref{eq14.16}式也适用于椭圆轨道.按照玻尔的量子化条件，角动量L 是量子化的，其单元为$\hbar$，因此磁矩$\mu$也是量子化的，其单元为“玻尔磁子”：
+\begin{equation}\label{eq14.17}
+	\begin{aligned}
+		\mu_{B}&=-\frac{\e\hbar}{2m_{e}} \text{（国际单位制）} \\
+		\mu_{B}&=-\frac{\e\hbar}{2m_{e}c} \text{（高斯单位制）}
+	\end{aligned}
+\end{equation}\eqshort
+国际单位制中，电矩与磁矩量纲不同在高斯单位制中，电矩与磁矩量纲相同，比值约为
+\begin{equation}\label{eq14.18}
+	\frac{\mu}{D}\sim\frac{\e^{2}}{\hbar c}\sim\frac{1}{137}
+\end{equation}
+
+\textsf{6. 经典电偶极矩振子的辐射功率}
+
+具有确定频率$\nu=\frac{\omega}{2\pi}$的电偶极矩振子，其电偶极矩为
+\begin{equation}\label{eq14.19}
+	D(t)=D\cos\omega t
+\end{equation}
+按照经典电动力学理论，这个偶极矩振子将向外辐射同样频率的电磁波，总辐射功率为
+\begin{equation}\label{eq14.20}
+	-\frac{dE}{dt}=\frac{D^{2}\omega^{4}}{3c^{3}}
+\end{equation}
+电子以角速度$\omega$沿半径为r的圆周运动时，相当于两个振动方向互相垂直的电偶极矩振子（$D = er$），按照电动力学，其总辐射功率为
+\begin{equation}\label{eq14.21}
+	-\frac{dE}{dt}=\frac{2}{3}\frac{\e^{2}r^{2}\omega^{4}}{c^{3}}
+\end{equation}\eqnormal
+在这里我们用虽纲方法对这两个公式作一些说明．如果偶极振子确实存在电磁辐射，其总辐射功率显然取决于电偶极矩振幅D，角频率$\omega$以及光速c（来自麦克斯韦方程）.它们的量纲为
+\begin{gather} 
+	c—— \si{LT^{-1}},\quad \omega—— \si{T^{-1}},\quad \frac{c}{\omega}—— \si{L} \notag\\
+	\frac{dE}{dt}—— \si{ET^{-1}}.\quad D^{2}—— \e^{2}r^{2}—— \si{EL^{3}} \notag
+\end{gather}\eqshort
+因此，辐射功率唯一可能的量纲构造方式为
+\begin{equation}\label{eq14.22}
+	-\frac{dE}{dt}\sim\frac{D^{2}\omega^{4}}{c^{3}}
+\end{equation}\eqnormal
+它和电动力学的严格计算结果\eqref{eq14.20}、\eqref{eq14.21}式只相差一个量级为1的纯数值系数.
+
+\textsf{7. 原子激发态的平均寿命}
+
+按照玻尔量子论，原子中的电子停留在某个能级（稳定轨道）上时，并不辐射电磁波；当电子由某个较高能级跃迁到较低能级时，将辐射电磁波（光子）.实验发现，对于一个原子，这种能级跃迁是突变式的， 但带有概率性，大最处于相同能级的原子，它们的能级跃迁并非同时发生，而是大体上在某段时间$\tau$内完成，$\tau$称为初始能级的平均寿命.利用对应原理分析能级跃迁过程得到的结论是，原子能级跃迁过程的电磁辐射性质，相当于经典电偶极矩振子.以氢原子中电子由能级$E_{2}$跃迁到$E_{1}$为例，跃迁过程释放出的总能量为（$E_{2}-E_{1}$），辐射角频率为$\omega=\frac{E_{2}-E_{1}}{\hbar}$，相应的电偶极矩振幅可以估计为$\sim ea_{0}$，因此辐射功率约为
+\begin{equation*}
+	-\frac{dE}{dt}\sim\frac{D^{2}\omega^{4}}{c^{3}}\sim
+	\frac{\e^{2}a_{0}^{2}(E_{2}-E_{1})^{4}}{c^{3}\hbar^{4}}
+\end{equation*}
+因此电子停留在激发态能级（$E_{2}$）的平均寿命约为
+\begin{equation}\label{eq14.23}
+	\tau\sim\frac{E_{2}-E_{1}}{|\frac{dE}{dt}|}\sim
+	\frac{c^{3}\hbar^{4}}{\e^{2}a_{0}^{2}(E_{2}-E_{1})^{3}}
+\end{equation}
+由$\S$\ref{sec:01.03}\eqref{eqn:01.03.19}式
+\begin{equation*}
+	E_{2}-E_{1}=\frac{3}{8}\frac{\e^{2}}{a_{0}}=\frac{3}{8}\frac{m_{e}\e^{4}}{\hbar^{2}}\sim10.2\si{eV}
+\end{equation*}
+代入\eqref{eq14.23}式，得到
+\eqlong
+\begin{equation}\label{eq14.24}
+	\begin{aligned}
+		\tau &\sim \bigg(\frac{8}{3} \bigg)^{3} \bigg(\frac{\hbar c}{\e^{2}} \bigg)^{4} \frac{a_{0}}{c}  \\
+		&\sim \bigg(\frac{8}{3} \bigg)^{3} (137)^{4} \frac{0.53\times10^{-10}}{3\times10^{8}}\si{s} \approx1.2\times10^{-9}\si{s}
+	\end{aligned}
+\end{equation}
+扯子力学的精确计算结果为（见$\S 9.4$）%（见$\S$\ref{sec:09.04}）
+\begin{equation}\label{eq14.25}
+	\tau_{2p\rightarrow 1s}=
+	\bigg(\frac{3}{2} \bigg)^{8} \bigg(\frac{\hbar c}{\e^{2}} \bigg)^{4} \frac{a_{0}}{c}=1.6\times10^{-9} \si{s}
+\end{equation}\eqnormal
+注意，电子在$E_{2}$能级上的轨道运动周期为[见\eqref{eq14.12}、\eqref{eq14.13}式]
+\begin{equation*}
+	\frac{2\pi}{\omega_{2}}\sim1.2\times10^{-15} \si{s}
+\end{equation*}
+处于$E_{2}$轨道上的电子，在跃迁到$E_{1}$轨道之前，在$E_{2}$轨道上的平均运行圈数约为
+\begin{equation*}
+	\frac{\tau\omega_{2}}{2\pi}\sim \frac{32}{27\pi} \bigg(\frac{\hbar c}{\e^{2}} \bigg)
+	\sim 10^{6}
+\end{equation*}
+“稳定轨道”的意义于此可见一斑.
+
+\eqref{eq14.23}式大致可以适用于其他单价原子的价电子光学跃迁，只是其中$a_{0}$应改为原子半径的实际数值.例如取原子半径$a_{0}\sim0.1 \si{nm}$，当$(E_{2}-E_{1})\sim 2\si{eV}$（发射光波波长$\lambda \sim620 \si{nm}$) ，激发态平均寿命$\tau\sim4.5\times10^{-8}\si{s}$.
+
+
+

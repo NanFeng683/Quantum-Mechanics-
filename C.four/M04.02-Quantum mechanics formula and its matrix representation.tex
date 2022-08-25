@@ -1,0 +1,406 @@
+\section[量子力学公式及其矩阵表示]{量子力学公式及其矩阵表示} \label{sec:04.02} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+代表力学量（可观测量）的算符，如$\S$\ref{sec:03.04}所述，必须是厄密算符，其本征矢有正交归一性和完备性，因此可以选作态矢空间的基矢组.
+
+选定一个力学量完全集$Q$，代表它的厄密算符记为$\hat{Q}$，其本征值记为$q_{n}$，本征矢记为$|\varPsi_{n} \rangle $，简记为$|n \rangle $，满足本征方程
+\begin{empheq}{equation}\label{eq42.1}
+	\hat{Q}|n \rangle=q_{n}|n \rangle ,\quad \langle n|\hat{Q}=q_{n}\langle n|
+\end{empheq}
+正交归一条件
+\begin{empheq}{equation}\label{eq42.2}
+	\langle \varPsi_{n}|\varPsi_{k} \rangle=\langle n|k \rangle =\delta_{nk}
+\end{empheq}
+以及综合了本征矢的正交归一性与完备性的恒等变换公式
+\begin{empheq}{equation}\label{eq42.3}
+	\sum_{n}|\varPsi_{n} \rangle\langle \varPsi_{n}|=\sum_{n}|n \rangle\langle n|=1  
+\end{empheq}
+以$\{|n \rangle,n=1,2,\cdots\}$作为基矢组，任何态矢$|\varPsi \rangle $可以表示成
+\eqindent{4}
+\begin{empheq}{equation}\label{eq42.4}
+	|\varPsi \rangle =\sum_{n}|n \rangle\langle n|\varPsi \rangle =\sum_{n}C_{n}|n \rangle,\quad
+	C_{n}\langle n|\varPsi \rangle 
+\end{empheq}\eqnormal
+如$|\varPsi \rangle $已经归一化，$\langle \varPsi|\varPsi \rangle=1$，就有
+\begin{empheq}{equation}\label{eq42.5}
+	\langle \varPsi|\varPsi \rangle =\sum_{n}C_{n}^{*}C_{n}=1
+\end{empheq}
+其中
+\eqindent{6}
+\begin{empheq}{equation}\label{eq42.6}
+	C_{n}^{*}C_{n}=\text{在$|\varPsi\rangle$态中力学量$Q$取值为$q_{n}$的概率}
+\end{empheq}\eqnormal
+这正是态矢$|\varPsi \rangle $的概率解释.力学量$Q$的平均值公式可以表示成
+\begin{empheq}{align}\label{eq42.7}
+	\bar{Q}&=\sum_{n}q_{n}C_{n}C_{n}^{*}=\sum_{n}q_{n}C_{n}\langle \varPsi|n \rangle	\nonumber\\
+	&=\langle \varPsi|\sum_{n}C_{n}\hat{Q}|n \rangle =\langle \varPsi|\hat{Q}\sum_{n}C_{n}|n \rangle 	\nonumber\\
+	&= \langle \varPsi|\hat{Q}|n \rangle 
+\end{empheq}
+如利用基矢$|n \rangle $的投影算符
+\begin{empheq}{equation}\label{eq42.8}
+	\hat{P}_{n}=|n \rangle\langle n|
+\end{empheq}
+\eqref{eq42.6}式中概率$C_{n}^{*}C_{n}$可以表示成
+\eqindent{6}
+\begin{empheq}{equation}\label{eq42.9}
+	C_{n}^{*}C_{n}=\langle \varPsi|n \rangle \langle n|\varPsi \rangle =\langle \varPsi|\hat{P}_{n}|\varPsi \rangle =\bar{P}_{n}
+\end{empheq}
+这是投影算符的又一层含义.
+
+在$|\varPsi \rangle $的展开式\eqref{eq42.4}中，如将各$C_{n}$排成一个列矢量（单列矩阵），记为$\varPsi(Q)$，即定义
+\begin{empheq}{equation}\label{eq42.10}
+	\varPsi(Q)=\begin{bmatrix}
+		C_{1}\\ \vdots\\ C_{n}\\ \vdots
+	\end{bmatrix}
+	,\quad
+	\varPsi^{*}(Q)=\begin{bmatrix}
+		C_{1}^{*} & \cdots & C_{n}^{*} & \cdots
+	\end{bmatrix}
+\end{empheq}
+$\varPsi^{*}(Q)$是$\varPsi(Q)$的共轭矩阵，是一个行矢量.按照矩阵运算法则，
+\begin{empheq}{equation}\label{eq42.11}
+	\varPsi^{+}(Q)\varPsi(Q)=\begin{bmatrix}
+		\cdots & C_{n}^{*} & \cdots
+	\end{bmatrix}	\begin{bmatrix}
+		\vdots \\ C_{n} \\ \vdots
+	\end{bmatrix}
+\end{empheq}
+$\varPsi(Q)$作为列矢量，称为态矢$|\varPsi\rangle$在$Q$表象中的矩阵表示.$\varPsi^{*}(Q)$作为行矢量，则为$\langle \varPsi|$在$Q$表象中的矩阵表示.
+
+$\varPsi(Q)$也可以称为$|\varPsi\rangle$在$Q$表象中的“波函数”（$\hat{Q}$的本征值的函数），其中$C_{n}=\varPsi(q_{n})$.
+
+各基矢$|n \rangle $是$\hat{Q}$的本征矢，它们在$Q$表象中的矩阵表示（波函数）显然应该是
+\begin{empheq}{equation}\label{eq42.12}
+	\varPsi_{1}(Q)=\begin{bmatrix}
+		1 \\ 0 \\ 0 \\ \vdots
+	\end{bmatrix},\cdots,\quad
+	\varPsi_{n}(Q)=\begin{bmatrix}
+		\vdots \\ 0 \\ 1 \\ 0 \\ \vdots
+	\end{bmatrix}\cdots
+	\text{第$n$行}	
+\end{empheq}
+展开式\eqref{eq42.4}的矩阵表示为
+\begin{empheq}{equation*}
+	\varPsi(Q)=\begin{bmatrix}
+		C_{1}\\ \vdots\\ C_{n}\\ \vdots
+	\end{bmatrix}=C_{1}\varPsi_{1}(Q)+\cdots+C_{n}\varPsi_{n}(Q)+\cdots
+\end{empheq}\eqnormal
+相当于第三章讲过的波函数按本征函数的展开式.
+
+{\heiti 线性算符的矩阵表示}
+
+设有任意线性算符$\hat{A}$作用于任意态矢$|\varPsi \rangle $，将其转变成$|\phi \rangle $，即设
+\begin{empheq}{equation}\label{eq42.13}
+	\hat{A}|\varPsi \rangle =|\phi \rangle 
+\end{empheq}
+$|\varPsi\rangle$及其$Q$表象中的波函数$\varPsi(Q)$由\eqref{eq42.4}、\eqref{eq42.10}式表示.类似地，$|\phi \rangle $及其波函数$\phi(Q)$表示成
+\eqindent{6}
+\begin{empheq}{equation}\label{eq42.14}
+	|\phi \rangle =\sum_{n}b_{n}|n \rangle ,\quad \phi(Q)=\begin{bmatrix}
+		b_{1} \\ \vdots \\ b_{n} \\ \vdots
+	\end{bmatrix},\quad
+	b_{n=\langle n|\phi \rangle }
+\end{empheq}
+$Q$表象中算符$\hat{A}$的矩阵表示记为$[A]$，它应该可以与列矢量和行矢量相乘，而有
+\begin{empheq}{equation*}
+	[A]\begin{bmatrix}
+		\cdot \\ \cdot \\ \cdot \\ \cdot
+	\end{bmatrix}\rightarrow\begin{bmatrix}
+		\cdot \\ \cdot \\ \cdot \\ \cdot
+	\end{bmatrix},\quad
+	\begin{bmatrix}
+		\cdot & \cdot & \cdot & \cdot & \cdot
+	\end{bmatrix}[A]\rightarrow\begin{bmatrix}
+		\cdot & \cdot & \cdot & \cdot & \cdot
+	\end{bmatrix}
+\end{empheq}
+具体说，与\eqref{eq42.13}式相应，$[A]$，$\varPsi(Q)$，$\phi(Q)$间应该有关系
+\begin{empheq}{equation}\label{eq42.15}
+	[A]\varPsi(Q)=[A]\begin{bmatrix}
+		C_{1}\\ \vdots\\ C_{n}\\ \vdots
+	\end{bmatrix}=\begin{bmatrix}
+		b_{1}\\ \vdots\\ b_{n}\\ \vdots
+	\end{bmatrix}=\phi(Q)
+\end{empheq}\eqnormal
+易见，符合上述要求的$[A]$应该是行、列数相同的矩阵，即方阵.$[A]$的$k$行$n$列矩阵元记为$A_{kn}$，可以证明
+\begin{empheq}{equation}\label{eq42.16}
+	A_{kn}=\langle k|\hat{A}|n \rangle 
+\end{empheq}
+证明如下.\eqref{eq42.15}式中列矢量$\phi(Q)$的第$k$个矩阵元是
+\begin{empheq}{equation}\label{eq42.17}
+	b_{k}=\sum_{n}A_{kn}C_{n}
+\end{empheq}
+另一方面，以基左矢$\langle k|$乘\eqref{eq42.13}式，得到
+\begin{empheq}{align*}
+	\langle k|\phi \rangle &=b_{k}=\langle k|\hat{A}|\varPsi \rangle =\sum_{n}\langle k|\hat{A}|n \rangle \langle n|\varPsi \rangle 	\\
+	&=\sum_{n}\langle k|\hat{A}|n \rangle C_{n}
+\end{empheq}
+比较二式，即得\eqref{eq42.16}式.
+
+\eqref{eq42.13}式的共轭方程是
+\begin{empheq}{equation*}\label{eq42.13'}
+	\langle \varPsi|\hat{A}^{+}=\langle \phi|	\tag{$4.2.13^{\prime}$}
+\end{empheq}
+其矩阵表示应该就是\eqref{eq42.15}式的共轭方程，即
+\eqindent{3}
+\begin{empheq}{equation*}\label{eq42.15'}
+	\varPsi^{+}(Q)[A^{+}]=[C_{1}^{*}\cdots C_{n}^{*}\cdots][A^{+}]=
+	[b_{1}^{*}\cdots b_{n}^{*}\cdots]=\phi^{*}(Q)
+	\tag{$4.2.15^{\prime}$}
+\end{empheq}\eqnormal
+则
+\begin{empheq}{equation*}
+	b_{k}^{*}=\sum_{n}C_{n}^{+}A_{nk}^{+}
+\end{empheq}
+与\eqref{eq42.17}式的复共轭$(^{*})$比较，即得
+\begin{empheq}{equation}\label{eq42.18}
+	A_{nk}^{+}=(A_{kn})^{*}
+\end{empheq}
+这正是共轭矩阵的定义.
+
+如$\hat{F}$是厄密算符，$\hat{F}=\hat{F}^{+}$，则在$Q$表象中其矩阵表示应该是厄密矩阵，即$[F]=[F]^{+},F_{nk}=(F_{kn})^{*}$.
+
+$Q$表象中$\hat{Q}$本身的矩阵元是
+\begin{empheq}{equation}\label{eq42.19}
+	Q_{kn}=\langle k|\hat{Q}|n \rangle =q_{n}\langle k|n \rangle =q_{n}\delta_{kn}
+\end{empheq}
+矩阵$[Q]$是对角化方阵，对角矩阵元等于$\hat{Q}$的各本征值，非对角矩阵元全部为零，即
+\eqindent{6}
+\begin{empheq}{equation*}\label{eq42.19'}
+	[Q]=\begin{bmatrix}
+		q_{1} & 0 & 0 & \cdots & 0 & \cdots	\\
+		0 & q_{2} & 0 & \cdots & 0 & \cdots	\\
+		0 & 0 & q_{3} & \cdots & 0 & \cdots	\\
+		\vdots & \vdots & \vdots & \quad & \vdots & 	\\
+		0 & 0 & 0 & \cdots & q_{n} & \cdots	\\
+		\vdots & \vdots & \vdots & \quad & \vdots & 	\\
+	\end{bmatrix}	\tag{$4.2.19^{\prime}$}
+\end{empheq}\eqnormal
+
+{\heiti 平均值公式及其矩阵表示}
+
+平均值公式\eqref{eq42.7}显然适用于任何可观测量$F$.即，对于任何归一化的状态$\varPsi$，$F$的平均值为
+\begin{empheq}{equation}\label{eq42.20}
+	\bar{F}=\langle \varPsi|\hat{F}|\varPsi \rangle 
+\end{empheq}
+利用\eqref{eq42.3}、\eqref{eq42.4}式及\eqref{eq42.10}、\eqref{eq42.16}式，可将上式化成矩阵形式，如下：
+\eqindent{6}
+\begin{empheq}{align}\label{eq42.21}
+	\bar{F}&=\langle \varPsi|\hat{F}|\varPsi \rangle =\sum_{n}\sum_{k}C_{n}^{*}\langle n|\hat{F}|k \rangle C_{k}	\nonumber\\
+	&=\sum_{n}\sum_{k}C_{n}^{*}F_{nk}C_{k}=[C_{1}^{*}\cdots C_{n}^{*}\cdots][F]\begin{bmatrix}
+		C_{1} \\ \vdots \\ C_{n} \vdots
+	\end{bmatrix}	\nonumber\\ &=\varPsi^{+}(Q)[F]\varPsi(Q)
+\end{empheq}\eqnormal
+这就是$\bar{F}$在$Q$表象中的矩阵表示式.从\eqref{eq42.20}式$\rightarrow$\eqref{eq42.7}式，相当于
+\begin{empheq}{equation*}
+	\langle \varPsi|\rightarrow \varPsi^{+}(Q),\quad |\varPsi \rangle \rightarrow \varPsi(Q),\quad \hat{F}\rightarrow [F]
+\end{empheq}
+\newpage
+{\heiti 本征方程的矩阵表示}
+
+求解力学量算符本征方程
+\begin{empheq}{equation}\label{eq42.22}
+	\hat{F}|\varPsi_{\lambda} \rangle =\lambda|\varPsi_{\lambda} \rangle 
+\end{empheq}
+的问题，也可以在$Q$表象中用矩阵方法来解决.$|\varPsi_{\lambda} \rangle $仍表示成\eqref{eq42.4}式，波函数$\varPsi_{\lambda}(Q)$仍由\eqref{eq42.10}式表示，各$C_{n}$待定.\eqref{eq42.22}式的矩阵表示为
+\begin{empheq}{equation}\label{eq42.23}
+	[F]\varPsi_{\lambda}(Q)=\lambda\varPsi_{\lambda}(Q)
+\end{empheq}
+亦即
+\eqindent{6}
+\begin{empheq}{equation*}\label{eq42.23'}
+	\begin{bmatrix}
+		F_{11}-\lambda & F_{12} & \cdots & F_{1n} & \cdots	\\
+		F_{21} & F_{22}-\lambda & \cdots & F_{2n} & \cdots	\\
+		\vdots & \vdots &  & \vdots & 	\\
+		F_{n1}-\lambda & F_{n2} & \cdots & F_{nn}-\lambda & \cdots	\\
+		\vdots & \vdots &  & \vdots & 	\\
+	\end{bmatrix}\begin{bmatrix}
+		C_{1} \\ C_{2} \\ \vdots \\ C_{n} \\ \vdots
+	\end{bmatrix}=0	\tag{$4.2.23^{\prime}$}
+\end{empheq}\eqnormal
+这就是本征方程\eqref{eq42.22}式的矩阵表示.其中$[F]$的矩阵元均在$Q$表象中定义，$F_{kn}=\langle k|\hat{F}|n \rangle$.只要先求出$Q$表象中$\hat{F}$的矩阵表示，即求出各$F_{kn}$，由\eqref{eq42.23'}式即可解出本征值$\lambda$及各$C_{n}$，亦即解出$\lambda$及$\varPsi_{\lambda}(Q)$.具体说，\eqref{eq42.23'}式存在非平庸解（各$C_{n}$不全为零）的充要条件为
+\eqindent{0}
+\begin{empheq}{equation}\label{eq42.24}
+	\det(F-\lambda I)=0,\text{即}\begin{bmatrix}
+		F_{11}-\lambda & F_{12} & \cdots & F_{1n} & \cdots	\\
+		F_{21} & F_{22}-\lambda & \cdots & F_{2n} & \cdots	\\
+		\vdots & \vdots &  & \vdots & 	\\
+		F_{n1}-\lambda & F_{n2} & \cdots & F_{nn}-\lambda & \cdots	\\
+		\vdots & \vdots &  & \vdots & 	\\
+	\end{bmatrix}=0
+\end{empheq}\eqnormal
+由此解出$\lambda=\lambda_{1},\lambda_{2},\cdots$将每个$\lambda$值代回\eqref{eq42.23'}式，求出相应的$C_{n}(n=1,2,\cdots)$，再代回\eqref{eq42.10}式，就得本征函数$\varPsi_{\lambda}(Q)$.
+
+{\heiti 表象变换}
+
+态矢空间的基矢组可以有多种选择.如另选一个力学量完全集$\boldsymbol{R}$，代表它的厄密算符记为$\hat{R}$，其正交归一的本征矢记为
+\begin{empheq}{equation*}
+	|\phi_{\nu} \rangle,\text{简记为}|\nu \rangle,\quad \nu=1,2,\cdots,\mu,\cdots
+\end{empheq}
+满足
+\begin{empheq}{equation}\label{eq42.25}
+	\langle \phi_{\nu}|\phi_{\mu} \rangle=\langle \nu|\mu \rangle =\delta_{\nu\mu}
+\end{empheq}
+\begin{empheq}{equation}\label{eq42.26}
+	\sum_{\nu}|\phi_{\nu} \rangle\langle \phi_{\nu}|=\sum_{\nu}|\nu \rangle\langle \nu|=1 
+\end{empheq}
+以$\{|\phi_{\nu} \rangle \}$作为基矢组，任意态矢$|\varPsi \rangle $可以表示成
+\begin{empheq}{equation}\label{eq42.27}
+	|\varPsi \rangle=\sum_{\nu}a_{\nu}|\phi_{\nu} \rangle,\quad a_{\nu}=\langle \phi_{\nu}|\varPsi \rangle 
+\end{empheq}
+由各$a_{\nu}$组成的列矢量就是$|\varPsi \rangle $在$R$表象中的波函数：
+\begin{empheq}{equation}\label{eq42.28}
+	\varPsi(R)=\begin{bmatrix}
+		a_{1} \\ \vdots \\ a_{\nu} \\ \vdots
+	\end{bmatrix},\quad \varPsi^{+}(R)=[a_{1}^{*}\cdots a_{\nu}^{*}\cdots]
+\end{empheq}
+任意线性算符$\hat{A}$在$R$表象中的矩阵表示记为$A(R)$，其矩阵元为
+\begin{empheq}{equation}\label{eq42.29}
+	A_{\mu\nu}=\langle \phi_{\mu}|\hat{A}|\phi_{\nu} \rangle=\langle \mu|\hat{A}|\nu \rangle 
+\end{empheq}
+前述$Q$表象中$|\varPsi \rangle $的波函数符号仍用$\varPsi(Q)$，见\eqref{eq42.10}式.$Q$表象中$\hat{A}$的矩阵表示现在改记为$A(Q)$，其矩阵元由\eqref{eq42.16}式表示：
+\begin{empheq}{equation*}
+	A_{kn}=\langle \varPsi_{k}|\hat{A}|\varPsi_{n} \rangle =\langle k|\hat{A}|\nu \rangle 
+	\tag{$4.2.16$}
+\end{empheq}
+试问，同一个态矢$|\varPsi \rangle $在两种表象中的矩阵表示即波函数$\varPsi(Q)$、$\varPsi(R)$之间有什么关系？同一个算符$\hat{A}$在两种表象中的矩阵表示$A(Q)$、$A(R)$之间又有什么关系？不妨设想$\varPsi(Q)$、$\varPsi(R)$可以用一个变换矩阵$S$联系起来：
+\begin{empheq}{equation}\label{eq42.30}
+	\varPsi(R)=S\varPsi(Q)
+\end{empheq}
+亦即
+\eqindent{6}
+\begin{empheq}{equation*}\label{eq42.30'}
+	\begin{bmatrix}
+		a_{1} \\ \vdots \\ a_{\nu} \\ \vdots
+	\end{bmatrix}=[S]\begin{bmatrix}
+		C_{1} \\ \vdots \\ C_{n} \\ \vdots
+	\end{bmatrix}=\begin{bmatrix}
+		S_{11} & \cdots & S_{1n} & \cdots	\\
+		\vdots &  & \vdots & 	\\
+		S_{\nu 1} & \cdots & S_{\nu n} & \cdots	\\
+		\vdots &  & \vdots & 	\\
+	\end{bmatrix}\begin{bmatrix}
+		C_{1} \\ \vdots \\ C_{n} \\ \vdots
+	\end{bmatrix}	\tag{$4.2.30^{\prime}$}
+\end{empheq}\eqnormal
+则
+\begin{empheq}{equation*}
+	a_{\nu}=\sum_{n}S_{\nu n}C_{n},\quad \text{即}\langle \phi_{\nu}|\varPsi \rangle =
+	\sum_{n}S_{\nu n}\langle \varPsi_{n}|\varPsi \rangle 
+\end{empheq}
+利用恒等变换\eqref{eq42.3}式，有
+\begin{empheq}{equation*}
+	\langle \phi_{\nu}|=\sum_{n}\langle \phi_{\nu}|\varPsi_{n} \rangle \langle \varPsi_{n}|
+\end{empheq}
+代入上式， 即得
+\begin{empheq}{equation}\label{eq42.31}
+	S_{\nu n}=\langle \phi_{\nu}|\varPsi_{n} \rangle 
+\end{empheq}
+注意变换矩阵$S$完全由基矢组$\{|\varPsi_{n} \rangle\}$，$\{|\phi_{\nu} \rangle \}$的相互关系（具体说，就是内积）决定，而与$|\varPsi \rangle $无关.$S$的共轭矩阵记为$S^{+}$，其矩阵元为
+\begin{empheq}{equation*}\label{eq42.31'}
+	S_{n\nu}^{+}=(S_{\nu n})^{*}=\langle \varPsi_{n}|\phi_{\nu} \rangle 
+	\tag{$4.2.31^{\prime}$}
+\end{empheq}
+$S^{+}S$和$SS^{+}$仍为矩阵，其矩阵元为
+\eqindent{6}
+\begin{empheq}{align}\label{eq42.32}
+	\begin{aligned}
+		[S^{+}S]_{nk} &=\sum_{\nu}S_{n\nu}^{+}S_{\nu k}=\sum_{\nu}\langle \varPsi_{n}|\phi_{\nu} \rangle\langle \phi_{\nu}|\varPsi_{k} \rangle  \\
+		&=\langle \varPsi_{n}|\varPsi_{k} \rangle =\delta_{nk}
+	\end{aligned}
+	\\
+	\begin{aligned} \notag
+		[SS^{+}]_{\nu\mu} &=\sum_{n}S_{\nu n}S_{n\mu}^{+}=\sum_{n}\langle \phi_{\nu}|\varPsi_{n} \rangle\langle \varPsi_{n}|\phi_{\mu} \rangle  \\
+		&=\langle \phi_{\nu}|\phi_{\mu} \rangle =\delta_{\nu\mu}
+	\end{aligned}
+\end{empheq}
+可见$S^{+}S$和$SS^{+}$都是单位矩阵：
+\begin{empheq}{equation}\label{eq42.33}
+	S^{+}S=SS^{+}=\begin{bmatrix}
+		1 & 0 & \cdots & 0	\\
+		0 & 1 & \cdots & 0	\\
+		\vdots & \vdots &  & \vdots	\\
+		0 & 0 & \cdots & 1	\\
+	\end{bmatrix}\Rightarrow 1
+\end{empheq}\eqnormal
+$S$与$S^{+}$因此称为么正矩阵.利用\eqref{eq42.33}式，容易得到\eqref{eq42.30}式的逆变换为
+\begin{empheq}{equation}\label{eq42.34}
+	\varPsi(Q)=S^{+}\varPsi(R)
+\end{empheq}
+$\varPsi^{*}(Q)$、$\varPsi^{*}(R)$的变换关系则是
+\begin{empheq}{equation}\label{eq42.35}
+	\varPsi^{+}(R)=\varPsi^{+}(Q)S^{+},\quad \varPsi^{+}(Q)=\varPsi^{+}(R)S
+\end{empheq}
+再看$A(Q)$、$A(R)$之间的关系.利用恒等变换\eqref{eq42.3}式，可得
+\eqindent{4}
+\begin{empheq}{align}\label{eq42.36}
+	A_{\mu\nu}&=\langle \phi_{\mu}|\hat{A}|\phi_{\nu} \rangle=\sum_{n}\sum_{k}\langle \phi_{\mu}|\varPsi_{n} \rangle \langle \varPsi_{n}|\hat{A}|\varPsi_{k} \rangle \langle \varPsi_{k}|\phi_{\nu} \rangle 	\nonumber\\
+	&=\sum_{n}\sum_{k}S_{\nu n}A_{nk}S_{k\nu}^{+}
+\end{empheq}\eqnormal
+按照矩阵乘法，上式相当于
+\begin{empheq}{equation}\label{eq42.37}
+	A(R)=SA(Q)S^{+}
+\end{empheq}
+逆变换为
+\begin{empheq}{equation}\label{eq42.38}
+	A(Q)=S^{+}A(R)S
+\end{empheq}
+表象变换时，态矢和算符的具体矩阵表示与所选表象有关，但它们所描述的物理内容则不受表象选择的影响.例举如下.
+
+(1) 态矢的模方不变.态矢间内积不变.以模方为例，\eqref{eq42.11}式已证
+\begin{empheq}{equation*}
+	\langle \varPsi|\varPsi \rangle =\varPsi^{+}(Q)\varPsi(Q)
+\end{empheq}
+利用\eqref{eq42.33}、\eqref{eq42.34}、\eqref{eq42.35}式，即得
+\begin{empheq}{align}\label{eq42.39}
+	\langle \varPsi|\varPsi \rangle &=\varPsi^{+}(Q)\varPsi(Q)=\varPsi^{+}(R)SS^{+}\varPsi(R)	\nonumber\\
+	&=\varPsi^{+}(R)\varPsi(R)
+\end{empheq}
+同样可证
+\begin{empheq}{equation}\label{eq42.40}
+	\langle \varPsi|\phi \rangle =\varPsi^{+}(Q)\phi(Q)=\varPsi^{+}(R)\phi(R)
+\end{empheq}
+
+(2) 力学量算符的本征值与表象选择无关.在$Q$表象中，$\hat{F}$的本征方程由\eqref{eq42.23}式表示，即
+\begin{empheq}{equation*}
+	F(Q)\varPsi_{\lambda}(Q)=\lambda\varPsi_{\lambda}(Q)
+	\tag{$4.2.23$}
+\end{empheq}
+利用\eqref{eq42.33}、\eqref{eq42.34}、\eqref{eq42.38}式，上式成为
+\begin{empheq}{equation*}
+	S^{+}F(R)SS^{+}\varPsi_{\lambda}(R)=\lambda S^{+}\varPsi_{\lambda}(R)
+\end{empheq}
+用$S$乘上式，并利用\eqref{eq42.33}式，就有
+\begin{empheq}{equation}\label{eq42.41}
+	F(R)\varPsi_{\lambda}(R)=\lambda\varPsi_{\lambda}(R)
+\end{empheq}
+这正是$R$表象中$\hat{F}$的本征方程.注意由\eqref{eq42.23}式导出\eqref{eq42.41}式的过程中，本征值$\lambda$保持不变.
+
+(3) 平均值公式不变前面\eqref{eq42.21}式已经证明
+\begin{empheq}{equation}\label{eq42.42}
+	\bar{F}=\langle \varPsi|\hat{F}|\varPsi \rangle =\varPsi^{+}(Q)F(Q)\varPsi(Q)
+\end{empheq}
+再用\eqref{eq42.33}、\eqref{eq42.34}、\eqref{eq42.35}、\eqref{eq42.38}式，就有
+\eqindent{5}
+\begin{empheq}{equation}\label{eq42.43}
+	\bar{F}=\varPsi^{+}(R)SS^{+}F(R)SS^{+}\varPsi(R)=\varPsi^{+}(R)F(R)\varPsi(R)
+\end{empheq}\eqnormal
+
+(4) 算符间相互关系不变.举例说明如下.
+设有算符关系$\hat{F}=\hat{A}\hat{B}$，在$Q$表象中显然有
+\begin{empheq}{align*}
+	F_{kl}&=\langle k|\hat{F}|l \rangle =\langle k|\hat{A}\hat{B}|l \rangle \\
+	&=\sum_{n}\langle k|\hat{A}|n \rangle \langle n|\hat{B}|l \rangle =\sum_{n}A_{kn}B_{nl}
+\end{empheq}
+亦即
+\begin{empheq}{equation*}
+	F(Q)=A(Q)B(Q)
+\end{empheq}
+再利用\eqref{eq42.33}、\eqref{eq42.37}、\eqref{eq42.38}式，就有
+\eqindent{6}
+\begin{empheq}{equation*}
+	F(R)=SF(Q)S^{+}=SA(Q)S^{+}SB(Q)S^{+}=A(R)B(R)
+\end{empheq}\eqnormal
+
+

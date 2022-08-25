@@ -1,0 +1,144 @@
+\begin{exercises}
+	
+\exercise $n\times n$矩阵$M$的“迹”定义为$\tr M=\sum_{k=1}^{n}M_{kk}$，即对角矩阵元之和证明：任意2阶矩阵$M$可以表示成泡利矩阵$\sigma_{x},\sigma_{y},\sigma_{z}$与单位矩阵$I$的线性叠加，如下式：
+\eqlong
+\begin{empheq}{align*}
+	M &=\frac{1}{2}(\tr M)I+\frac{1}{2}(\tr\boldsymbol{\sigma}M)\cdot\boldsymbol{\sigma}	\\
+	&= \frac{1}{2} \{(\tr M)I+(\tr\sigma_{x}M)\sigma_{x}+(\tr\sigma_{y}M)\sigma_{y}+(\tr\sigma_{z}M)\sigma_{z}\}
+\end{empheq}\eqnormal
+ 
+\exercise 在$S_{z}$表象中，求$\sigma_{x}$的本征函数及$\sigma_{y}$的本征函数.
+ 	
+\exercise 在$S_{z}$表象中，求$\sigma_{n}$的矩阵表示及其本征函数.$\sigma_{n}=\boldsymbol{n}\cdot\boldsymbol{\sigma}$，$\boldsymbol{n}$为任意$(\theta,\varphi)$方向单位矢量.
+ 	
+\exercise 对于上题求得两个$\sigma_{n}$本征函数，计算$\langle\boldsymbol{\sigma}\rangle$，并求$\Delta S_{x},\Delta S_{y},\Delta S_{z}$，验证不确定关系.
+ 	
+\exercise 证明$(\sigma_{x}+i\sigma_{y})^{2}=0,(\sigma_{x}-i\sigma_{y})^{2}=0$.用$(\sigma_{x}\pm i\sigma_{y})$的矩阵表示（$S_{z}$表象）验证这两个公式.
+ 	
+\exercise 讨论下列算符是否存在.如存在，将其表示成$I,\sigma_{x},\sigma_{y},\sigma_{z}$的线性叠加.
+
+(a)$(1+\sigma_{x})^{\frac{1}{2}}$\quad(b)$(1+\sigma_{x}+i\sigma_{y})^{\frac{1}{2}}$\quad (c)$(1+\sigma_{z})^{-1}$
+ 
+\exercise 证明公式$e^{i\lambda\sigma_{z}}=\cos\lambda+i\sigma_{z}\sin\lambda$.（$\lambda$为实参数，$\sigma_{z}$为算符）并在$S_{z}$表象中证明
+\begin{empheq}{equation*}
+	e^{i\lambda\sigma_{z}}=\begin{bmatrix}
+		e^{i\lambda} & 0 	\\
+		0 & e^{-i\lambda}	\\
+	\end{bmatrix}
+\end{empheq}
+ 
+\exercise 设$\boldsymbol{A}$为常数矢量，令$\boldsymbol{A}\cdot\boldsymbol{\sigma}=A\sigma_{A}$.证明
+\begin{empheq}{equation*}
+	e^{i\boldsymbol{A}\cdot\boldsymbol{\sigma}}=\cos A+i\sigma_{A}\sin A
+\end{empheq}
+ 	
+\exercise 设$\boldsymbol{A},\boldsymbol{B},\boldsymbol{C}$为常数矢量，求$\tr(\boldsymbol{A}\cdot\boldsymbol{\sigma}),\tr[(\boldsymbol{A}\cdot\boldsymbol{\sigma})(\boldsymbol{B}\cdot\boldsymbol{\sigma})]$及$\tr[(\boldsymbol{A}\cdot\boldsymbol{\sigma})(\boldsymbol{B}\cdot\boldsymbol{\sigma})(\boldsymbol{C}\cdot\boldsymbol{\sigma})]$.
+ 	
+\exercise 证明$\tr(e^{i\boldsymbol{A}\cdot\boldsymbol{\sigma}})=2\cos A$，$\tr(e^{i\lambda\sigma_{x}} e^{i\lambda\sigma_{y}}=2\cos^{2}A)$.
+ 	
+\exercise 证明(a) $\sigma_{z}(\sigma_{x}\pm i\sigma_{y})=(\sigma_{x}\pm i\sigma_{y})(\sigma_{z}\pm 2)$
+
+(b) $f(\sigma_{z})(\sigma_{x}\pm i\sigma_{y})=(\sigma_{x}\pm i\sigma_{y})f(\sigma_{z}\pm 2)$
+
+(c) $e^{i\lambda\sigma_{z}}(\sigma_{x}\pm i\sigma_{y})=e^{\pm2i\lambda}(\sigma_{x}\pm i\sigma_{y})e^{i\lambda\sigma_{z}}$
+ 	
+\exercise 证明$e^{i\lambda\sigma_{z}}\sigma_{x}e^{-i\lambda\sigma_{z}}=\sigma_{x}\cos2\lambda-\sigma_{y}\sin2\lambda$
+
+$e^{i\lambda\sigma_{z}}\sigma_{y}e^{-i\lambda\sigma_{z}}=\sigma_{x}\sin2\lambda+\sigma_{y}\cos2\lambda$
+ 	
+\exercise 令$\hbar=1$，对于电子，证明
+\eqlong
+\begin{empheq}{equation*}
+	(2\boldsymbol{S}\cdot\boldsymbol{L}+1)^{2}=\boldsymbol{J}^{2}+\frac{1}{4},\quad (\boldsymbol{\sigma}\cdot\boldsymbol{J})(\boldsymbol{\sigma}\cdot\boldsymbol{J}-1)=\boldsymbol{J}^{2}
+\end{empheq}\eqnormal
+ 	
+\exercise 对于电子的$(\boldsymbol{L}^{2},\boldsymbol{J}^{2},J_{z})$共同本征态$\varPsi_{ljm_{j}}$，对于属于同一个$l$值的那些状态，定义算符
+\begin{empheq}{equation*}
+	\Lambda_{l}^{+}=\frac{1}{2l+1}(l+1+\boldsymbol{\sigma}\cdot\boldsymbol{L}),\quad \Lambda_{l}^{-}=\frac{1}{2l+1}(l-\boldsymbol{\sigma}\cdot\boldsymbol{L})
+\end{empheq}
+试确定它们对$\varPsi_{ljm_{j}}$的作用规则，并找出它们满足的基本代数关系.
+ 	
+\exercise  (a) 证明$\sigma_{r}=\dfrac{\boldsymbol{\sigma}\cdot\boldsymbol{r}}{r}$与$\boldsymbol{J}$的各分量对易，即$[\sigma_{r},\boldsymbol{J}]=0$
+
+(b) 对于$\varPsi_{ljm_{j}}$，将$l=j-\dfrac{1}{2}$者记为$\phi_{jm_{j}}^{A}$，$l=j+\dfrac{1}{2}$者记为$\phi_{jm_{j}}^{B}$，证明
+\begin{empheq}{equation*}
+	\sigma_{r}\phi_{jm_{j}}^{A}=-\phi_{jm_{j}}^{B},\quad \sigma_{r}\phi_{jm_{j}}^{B}=-\phi_{jm_{j}}^{A}
+\end{empheq}
+并加以解释.
+
+［提示：利用附录\ref{A04}\eqref{eqA4.45}式、\eqref{eqA4.46}式，并注意问题的宇称性］
+
+ 	
+\exercise 电子的总磁矩算符是
+\begin{empheq}{equation*}
+	\boldsymbol{\mu}=\boldsymbol{\mu}_{L}+\boldsymbol{\mu}_{s}=-\dfrac{e}{2m_{e}c}(\boldsymbol{L}+2\boldsymbol{S})
+\end{empheq}
+试对于$\varPsi_{ljj}$态$(m_{j}=j)$计算$\mu_{z}$平均值（结果用量子数$j$表示）.
+ 
+\exercise 某电子态波函数为$\Psi(r,\theta,\varphi,S_{z})=R(r)Y_{l0}(\theta,\varphi)\chi_{1/2}(S_{z})$.这是否$\boldsymbol{J}^{2}$或$J_{z}$本征函数？试计算$\langle\boldsymbol{J}^{2}\rangle$，从而求出$\boldsymbol{J}^{2}$的可能测值及相应概率.
+ 	
+\exercise 自旋为0的带电粒子在均匀磁场中运动，哈密顿算符为
+\begin{empheq}{equation*}
+	\hat{H}=\frac{m}{2}\hat{\boldsymbol{v}}^{2}=\frac{1}{2m}\bigg(\hat{\boldsymbol{p}}-\frac{q}{c}\boldsymbol{A}\bigg)^{2}
+\end{empheq}
+
+设磁场沿$z$轴方向，矢势取为$\boldsymbol{A}=\dfrac{1}{2}\boldsymbol{B}\times\boldsymbol{r}$，即
+\begin{empheq}{equation*}
+	A_{x}=-\frac{By}{2},\quad A_{y}=\frac{Bx}{2},\quad A_{z}=0
+\end{empheq}
+
+(a) 计算$v_{x},v_{y},v_{z}$之间的对易式
+
+(b) 设粒子电荷$q>0$.证明$\hat{H}$可以表示成
+\begin{empheq}{equation*}
+	\hat{H}=\frac{\hbar qB}{2mc}(\hat{Q}^{2}+\hat{P}^{2})+\frac{1}{2m}\hat{p}_{z}^{2}
+\end{empheq}
+确定$\hat{Q},\hat{P}$，证明$\hat{Q}\hat{P}-\hat{P}\hat{Q}$.
+
+(c) 利用谐振子的结果，确定本题的能谱．
+ 	
+\exercise 将上题的$\hat{H}$表示成\eqref{eq74.7'}式的形式，找出主要的守恒力学量，再找出能级公式.（质量$m$改为$\mu$，以免与量子数混淆.）
+ 	
+\exercise 有一个定域电子（不考虑“轨道”运动），受到沿正$x$方向的均匀磁场作用，磁作用势为
+\begin{empheq}{equation*}
+	H=\frac{eB}{m_{e}c}S_{x}=\frac{e\hbar B}{2m_{e}c}\sigma_{x}
+\end{empheq}
+设$t=0$时电子的自旋状态为$\sigma_{z}=1$的本征态，即$\chi_{1/2}=\left[\begin{smallmatrix}
+	1 \\ 0 
+\end{smallmatrix}\right]$.求任意$t>0$时自旋波函数$\chi(t)=\left[\begin{matrix}
+	a(t)	\\	b(t)
+\end{matrix}\right]$，并求$\overline{S_{x}}(t),\overline{S_{y}}(t),\overline{S_{z}}(t)$.
+ 
+\exercise 用海森伯运动方程处理上题，求$\overline{S_{x}}(t),\overline{S_{y}}(t),\overline{S_{z}}(t)$.注意先确定$t=0$时它们的初始值.
+ 	
+\exercise 对于氢原子，求自旋轨道耦合作用引起的能级分裂$\Delta E_{nl}$[\eqref{eq73.15}式、\eqref{eq73.12}式]
+
+［提示：$\langle r^{-3}\rangle$利用5-15题结果.］
+ 
+\exercise 设氢原子中电子处于s态$(l=0)$，考虑电子与质子的自旋角动量，$S_{1}$与$S_{2}$．设电子自旋态为$\alpha$，质子自旋态为$\beta$，即总自旋态为$\alpha(1)\beta(2)$.求总自旋平方$\boldsymbol{S}^{2}=(\boldsymbol{S}_{1}+\boldsymbol{S}_{2})^{2}$的可能取值及相应概率.
+ 	
+\exercise 同上题，如电子处于$S_{1z}=\dfrac{\hbar}{2}$的状态（即$\chi_{1/2}$），质子处于$S_{2x}=\dfrac{\hbar}{2}$的状态，求总自旋平方$\boldsymbol{S}^{2}$及总$S_{z}=S_{1z}+S_{2z}$的可能取值及相应概率.
+ 	
+\exercise 考虑由3个自旋$\dfrac{1}{2}$的可分辨粒子组成的体系.
+
+(a) 求总自旋平方$\boldsymbol{S}^{2}=(\boldsymbol{S}_{1}+\boldsymbol{S}_{2}+\boldsymbol{S}_{3})^{2}$的本征值.
+
+(b) 设体系能量算符（略去“轨道”运动）为
+\begin{empheq}{equation*}
+	H=(\boldsymbol{S}_{1}\cdot\boldsymbol{S}_{2}+\boldsymbol{S}_{2}\cdot\boldsymbol{S}_{3}+\boldsymbol{S}_{3}\cdot\boldsymbol{S}_{1})\omega_{0}
+\end{empheq}
+求能谱，并说明各能级的简并度.
+ 	
+\exercise 两个角动量耦合问题，设$j_{1}=j_{2}=1$，则$m_{1}$及$m_{2}$均有1，0，-1三种取值，相应的本征态记为$\alpha,\beta,\gamma$，$|j_{1}=1,m_{1}=1\rangle$记为$\alpha(1)$，$|j_{2}=1,m_{2}=0\rangle$记为$\beta(2)$，依此类推.$\boldsymbol{J}_{1}^{2},\boldsymbol{J}_{2}^{2},\boldsymbol{J}^{2},J_{z}$共同本征态记为$\varPsi_{jM}$.对于本题$(j_{1}=j_{2}=1)$，共有多少种$\varPsi_{jM}$？将它们在无耦合表象中求出来.（计算时，取$\hbar=1$.）
+
+［ 提示：利用$J_{1+}\gamma(1)=\sqrt{2}\beta(1),J_{1+}\beta(1)=\sqrt{2}\alpha(1),J_{1+}\alpha(1)=0$，等等.$\boldsymbol{J}^{2}=\boldsymbol{J}_{1}^{2}+\boldsymbol{J}_{2}^{2}+2\boldsymbol{J}_{1z}\boldsymbol{J}_{2z}+J_{1+}J_{2-}+J_{1-}J_{2+},\boldsymbol{J}_{1}^{2}=\boldsymbol{J}_{2}^{2}=2$.］
+ 	
+\exercise 对于二电子体系的自旋三重态和单态$(\chi_{00})$，证明它们都是$\boldsymbol{\sigma_{1}}\cdot\boldsymbol{\sigma_{2}}$的本征态，本征值分别为1和-3.
+ 
+\exercise 同上题，验证$\chi_{00}$是$\sigma_{1x}\sigma_{2x},\sigma_{1y}\sigma_{2y},\sigma_{1z}\sigma_{2z}$的共同本征态，本征值均为-1.
+ 	
+\exercise 对于自旋单态$\chi_{00}$，求$(\boldsymbol{a}\cdot\boldsymbol{\sigma_{1}})(\boldsymbol{b}\cdot\boldsymbol{\sigma_{2}})$的平均值．其中$\boldsymbol{a},\boldsymbol{b}$为常矢量．
+
+\exercise 对于自旋单态和三重态$\chi_{00},\chi_{11},\chi_{10},\chi_{1-1}$，找出使它们互相转化的算符（共12种）建议不要用角动量升降算符，而用尽量简单的、存在逆算符的单体或二体算符.
+	
+\end{exercises}

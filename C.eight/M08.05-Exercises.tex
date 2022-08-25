@@ -1,0 +1,57 @@
+\begin{exercises}
+	
+\exercise 粒子束被中心势场$V(r)=\dfrac{\alpha}{r^{2}}(\alpha>0)$散射，求各分波相移$\delta_{l}$.再在条件$\dfrac{\mu\alpha}{\hbar^{2}}\ll\dfrac{1}{8}$下，求$\delta_{l},f(\theta)$及$\sigma(\theta)$的近似公式.
+
+［提示：将$V(r)$与离心势能合成一项，$l$分波径向函数可以表示成$R_{l}(r)=\sqrt{\dfrac{\pi}{2kr}}J_{\nu+\frac{1}{2}}(kr)$的形式，找出$\nu$与$l$的关系.
+
+近似处理时利用公式$\dfrac{1}{\sin\bigg(\dfrac{\theta}{2}\bigg)}=2\sum_{l=0}^{\infty}P_{l}(\cos\theta)$.］
+	
+\exercise 势场同上题，用玻恩近似公式计算散射振幅及微分散射截面.
+	
+\exercise 粒子束被球形势阱散射，
+\begin{equation*}
+	V(r)=\begin{cases}
+		-V_{0}, \quad&r<a	\\
+		0,\quad &r>a
+	\end{cases}
+\end{equation*}
+设$\dfrac{2\mu V_{0}a^{2}}{\hbar^{2}}\ll1$，并考虑低能散射$(ka\ll1)$.
+
+(a) 用\eqref{eq82.26}式计算s波$(l=0)$相移$\delta_{0}$及散射振幅，总散射截面.
+
+(b) 用玻恩近似公式计算散射振幅和总散射截面.玻恩近似公式适用的条件是什么？
+
+\exercise 在分波法计算中，如只需考虑$l=0,1$两个分波的散射，试写出$f(\theta)$及$\sigma(\theta)$的公式，并就$\delta_{0}=\dfrac{\pi}{9},\delta_{1}=\dfrac{\pi}{36}$，具体计算$\theta=0,\dfrac{\pi}{2},\pi$三种方向$\sigma(\theta)$的相对比率.
+	
+\exercise 对于下列中心势场，用玻恩近似计算出$f(\theta)$，$\sigma(\theta)$.
+
+(a)	$V(r)=A\delta(\boldsymbol{r})$ (b) $V(r)=V_{0}e^{-\alpha r}$ (c) $V(r)=V_{0}e^{-\alpha^{2}r^{2}}$
+	
+\exercise 高速粒子被球壳$\delta$势场$V(r)=B\delta(r-a)$散射，用玻恩近似求$f(\theta)$，$\sigma(\theta)$.
+	
+\exercise 低速粒子束被势场$V(r)=\dfrac{\alpha}{r^{4}}(\alpha>0)$散射，求$E\rightarrow0$时s波$(l=0)$的散射长度，相移，散射振幅，散射截面.
+
+［提示：本题为长程力，相当于作用球半径为$\infty$，故需在$r\rightarrow\infty$处将$u_{0}(r)$表示成$c\bigg(1-\dfrac{r}{a_{0}}\bigg)$的形式.在这样做之前，先证明$E\rightarrow0$时s波径向方程之解为$u_{0}=xe^{-1/x},x=\dfrac{r\hbar}{\sqrt{2\mu\alpha}}$.］
+	
+\exercise 粒子被势场$V(r)=-\dfrac{\hbar^{2}}{\mu}\left[\dfrac{\lambda}{\si{ch}(\lambda r)}\right]^{2}$（$\lambda>0$，ch$(x)$为双曲余弦函数）散射，求低能$(E\rightarrow0)$s波散射截面.
+
+［提示：证明$u_{0}(r)=\dfrac{\si{sh}(\lambda r)}{\si{ch}(\lambda r)}$.本题为共振散射.］
+	
+\exercise 某原子的电荷分布各向同性，电荷密度$\rho(r)$在$r\rightarrow+\infty$处迅速趋于0，而且$\int\rho(r)d^{3}\boldsymbol{r}$（总电量为0），$\int\rho(r)r^{2}d^{3}\boldsymbol{r}$（代表分布不均匀性）设有动量$\boldsymbol{p}=\hbar k$的电子束受到这电荷分布所生静电场作用而发生散射.试用玻恩近似公式计算$\theta\sim0$方向的微分散射截面$\sigma(0)$.如原子为基态氢原子，结果如何？
+
+［提示：$\int\cdots d^{3}\boldsymbol{r}$本为全空间积分，为便于处理，积分可在半径$R$（$R$充分大）的球内进行.］
+	
+\exercise 高速电子被原子散射，原子对入射电子的库仑作用势可以近似表示成
+\begin{empheq}{equation*}
+	V(\boldsymbol{r})=-\frac{Z\e^{2}}{r}+\e^{2}\int\frac{\rho(r^{\prime})}{|\boldsymbol{r}-\boldsymbol{r}^{\prime}|}d^{3}\boldsymbol{r}^{\prime}
+\end{empheq}
+其中第二项表示原子中的电子分布对入射电子的库仑作用，$(-\e)\rho(\boldsymbol{r}^{\prime})$为电子分布的电荷密度.
+
+(a) 试用玻恩近似公式求散射振幅和微分截面，证明
+\begin{empheq}{equation*}
+	f(\theta)=\frac{2\mu \e^{2}}{\hbar^{2}q^{2}}[Z-F(q)],\quad F(q)=\int\rho(\boldsymbol{r}^{\prime})e^{-\boldsymbol{q}\cdot\boldsymbol{r}^{\prime}}d^{3}\boldsymbol{r}^{\prime}
+\end{empheq}
+
+(b) 电子被氢原子（基态）散射，利用上述公式求$f(\theta)$，并讨论$\theta\ll\dfrac{1}{ka_{0}}$（$a_{0}$为玻尔半径）的情形，求$f(\theta),\sigma(\theta)$.
+
+\end{exercises}

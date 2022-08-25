@@ -1,0 +1,284 @@
+\section[定态]{\makebox[5em][s]{定态}} \label{sec:02.03} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+本节讨论定态波函数的一般数学性质，而以一维束缚定态作为讨论的重点.
+
+在$\S$\ref{sec:02.01}中已经讲过，具有确定能量值的状态称为定态，定态波函数的时空变量可以分离，一般形式为
+\begin{equation}\label{eq23.1}
+	\varPsi_{E}(\boldsymbol{r},t)=\varPsi_{E}(\boldsymbol{r})e^{-iEt/\hbar}
+\end{equation}
+其中$\varPsi_{E}(\boldsymbol{r})$满足定态薛定谔方程：
+\begin{equation}\label{eq23.2}
+	\hat{H}\varPsi(\boldsymbol{r})=E\varPsi(r)
+\end{equation}
+本节只讨论哈密顿量$H$等于动能加势能的情形，即
+\begin{equation}\label{eq23.3}
+	\hat{H}=\hat{T}+V=-\frac{\hbar^{2}}{2m}\nabla^{2}+V(r)
+\end{equation}
+这时定态薛定谔方程为
+\begin{equation}\label{eq23.4}
+	-\frac{\hbar^{2}}{2m}\nabla^{2}\varPsi+V(r)\varPsi=E\varPsi
+\end{equation}
+对于一维问题，
+\begin{equation}\label{eq23.5}
+	\hat{H}=\hat{T}+V=-\frac{\hbar^{2}}{2m}\frac{d^{2}}{dx^{2}}+V(x)
+\end{equation}
+定态薛定谔方程为
+\begin{equation}\label{eq23.6}
+	-\frac{\hbar^{2}}{2m}\frac{d^{2}}{dx^{2}}\varPsi+V(x)\varPsi=E\varPsi
+\end{equation}\eqshort
+
+当粒子处于定态时，将\eqref{eq23.1}式代入\eqref{eq22.8}、\eqref{eq22.9}式，易见概率密度$\rho$和概率流密度$\boldsymbol{j}$均与$t$无关.所以定态是稳定状态，其物理性质不随时间变化.
+
+如果定态波函数能够满足归一化条件：
+\begin{equation}\label{eq23.7}
+	\int_{\text{全}}\varPsi^{*}\varPsi d\tau=1
+\end{equation}\eqnormal
+则在无限远处$\varPsi$必然迅速趋于0，粒子实际上是在有限范围内运动，这种状态称为束缚态.以后凡谈到束缚态，一律理解成其波函数已经满足归一化条件.
+
+对于束缚定态，以$\varPsi^{*}$左乘\eqref{eq23.4}式各项，并对全空间积分，得到
+\begin{equation}\label{eq23.8}
+	E=\int_{\text{全}}V\varPsi^{*}\varPsi d\tau-\frac{\hbar^{2}}{2m}\int_{\text{全}}\varPsi^{*}\nabla^{2}\varPsi d\tau
+\end{equation}
+由于粒子可以在空间各不同地点出现，势能$V(r)$的值随粒子的位置$r$而变，上式右端第1项显然就是势能的平均值，记为$\bar{V}$，
+\begin{equation}\label{eq23.9}
+	\bar{V}=\int_{\text{全}}V(r)\varPsi^{*}(r)\varPsi(r)d\tau
+\end{equation}
+\eqref{eq23.8}式右端第二项当然就是动能的平均值，记为$\bar{T}$，即
+\setlength{\mathindent}{4em}
+\begin{equation}\label{eq23.10}
+	\begin{aligned} 
+		\bar{T} 
+		&=\int_{\text{全}}\varPsi^{*}\frac{\hat{\boldsymbol{p}}^{2}}{2m}\varPsi d\tau
+		 =-\frac{\hbar^{2}}{2m}\int_{\text{全}}\varPsi^{*}\nabla^{2}\varPsi d\tau	\\
+		&=\frac{\hbar^{2}}{2m}\int_{\text{全}}(\nabla\varPsi^{*})\cdot(\nabla\varPsi)d\tau
+		 =\frac{\hbar^{2}}{2m}\int_{\text{全}}|\nabla\varPsi|^{2} d\tau >0
+	\end{aligned}
+\end{equation}\eqshort
+计算中利用了无限远处$\varPsi\rightarrow 0$的条件以及高斯定理.\eqref{eq23.8}式即
+\begin{equation*}\label{eq23.8'}
+	E=\bar{T}+\bar{V} \tag{$2.3.8^{\prime}$}
+\end{equation*}\eqllong
+由于动能平均值总是大于0，所以$E$总是大于势能平均值.
+
+在$\S$\ref{sec:03.04}中将给出其他物理狱的平均值计算公式.
+
+由于必须满足归一化条件，$\varPsi(r)$一般只能取有限值.但如存在$V(r)\rightarrow-\infty$的孤立奇点，在该点$\varPsi$可能趋于$\infty$.在$V(r)\rightarrow \infty$处，$\varPsi$必须趋于0，以保证$V$为有限值($V<E$).
+
+对于一维方程\eqref{eq23.6}，任取一点$x_{0}$及其无限小邻区[$x_{0}-\varepsilon,x_{0}+\varepsilon$]，在此邻区内将方程积分，得
+\begin{empheq}{equation*}
+	\begin{aligned}
+		\frac{2m}{\hbar^{2}}\int_{x_{0}-\varepsilon}^{x_{0}+\varepsilon}[V(x)-E]\varPsi(x)dx
+		&=\int_{x_{0}-\varepsilon}^{x_{0}+\varepsilon} \varPsi^{\prime\prime}(x)dx \\
+		&=\varPsi^{\prime}(x_{0}+\varepsilon)-\varPsi^{\prime}(x_{0}-\varepsilon)
+	\end{aligned}
+\end{empheq}\eqnormal
+$\varPsi^{\prime\prime}$和$\varPsi^{\prime}$即$\frac{d^{2}\varPsi}{dx^{2}}$和$\frac{d\varPsi}{dx}$.如在$x_{0}$及其邻区内$V(x)$取有限值，则当$\varepsilon\rightarrow 0$时上式左端显然趋于0，因此$\varPsi^{\prime}(x_{0}+\varepsilon)=\varPsi^{\prime}(x_{0}-\varepsilon)$，亦即在$x_{0}$附近$\varPsi^{\prime}$连续.但如果$x\rightarrow x_{0}$时$V\rightarrow \pm\infty$，则当$\varepsilon\rightarrow 0$时上式左端就不可能趋于0，因此$\varPsi^{\prime}(x_{0}-\varepsilon)$和$\varPsi^{\prime}(x_{0}+\varepsilon)$可能不相等，亦即在$x_{0}$处$\varPsi^{\prime}$可能不连续，应作具体考虑.由于
+\begin{equation*}
+	\int_{x_{0}-\varepsilon}^{x_{0}+\varepsilon}\varPsi^{\prime}(x)dx
+	=\varPsi(x_{0}+\varepsilon)-\varPsi(x_{0}-\varepsilon)
+\end{equation*}
+如在$x_{0}$及其邻区内$\varPsi^{\prime}(x)$取有限值[包括$\varPsi^{\prime}(x_{0}+\varepsilon)\neq\varPsi^{\prime}(x_{0}-\varepsilon)$的情况]，当时上式左端显然趋于0，因此在$x_{0}$处$\varPsi$连续.
+
+总起来说，关于$\varPsi(x)$及$\varPsi^{\prime}(x)$的连续性，有如下结论：
+
+在$V(x)$取有限值的区域内，$\varPsi$及$\varPsi^{\prime}$均为连续函数，并取有限值；$V(x)\rightarrow\infty$处，$\varPsi(x)\rightarrow 0$，$\varPsi^{\prime}$有可能不连续；$V(x)\rightarrow-\infty$处，$\varPsi$有可能趋于$\infty$，$\varPsi^{\prime}$有可能不连续.
+
+下面证明几个关于定态薛定谔方程的定理，它们对于具体问题的求解有指导意义.
+
+(1) 如果$\varPsi=u+iv$($u,v$为实函数是\eqref{eq23.4}式或\eqref{eq23.6}式对应于某个能量特征值$E$（实数）的解，则$\varPsi$的实部$u$和虚部$v$都是方程的解（对应同样的能量值）.
+
+\prove 以三维方程为例，将$\varPsi=u+iv$($u,v$代入\eqref{eq23.6}式，得到
+\begin{equation*}
+	-\frac{\hbar^{2}}{2m}\nabla^{2}(u+iv)+V\cdot(u+iv)=E(u+iv)
+\end{equation*}
+两端分别取实部和虚部，即得
+\begin{empheq}{equation*}
+	\begin{aligned} 
+		&& -\frac{\hbar^{2}}{2m}\nabla^{2}u+Vu=Eu \\
+		&& -\frac{\hbar^{2}}{2m}\nabla^{2}v+Vv=Ev
+	\end{aligned}
+\end{empheq}
+这正是所要证明的结果.根据这个定理，必要时我们可以全部选取实函数作为定态薛定谔方程的特征解.
+
+(2) 对于一维方程\eqref{eq23.6}，如$\varPsi_{1}$和$\varPsi_{2}$也是某个能量特征值$E$的两个线性独立解，则
+\begin{equation}\label{eq23.11}
+	\varPsi_{2}(x)\varPsi_{2}^{\prime}-\varPsi_{2}\varPsi_{1}^{\prime}(x)=C\text{(常数)}
+\end{equation}
+\prove $varPsi_{2}$和$\varPsi_{1}$分别满足\eqref{eq23.6}式，即
+\begin{empheq}{equation*}
+	\begin{aligned} 
+		&& \varPsi_{1}^{\prime\prime}=\frac{2m}{\hbar^{2}}(V-E)\varPsi_{1} \\
+		&& \varPsi_{2}^{\prime\prime}=\frac{2m}{\hbar^{2}}(V-E)\varPsi_{2}
+	\end{aligned}
+\end{empheq}
+用$\varPsi_{2}$分别乘第一式、第二式，相减，即得
+\begin{equation*}
+	\varPsi_{2}\varPsi_{2}^{\prime\prime}-\varPsi_{2}\varPsi_{1}^{\prime\prime}
+	=\frac{d}{dx}(\varPsi_{1}\varPsi_{2}^{\prime}-\varPsi_{2}\varPsi_{1}^{\prime})=0
+\end{equation*}
+再积分，即得\eqref{eq23.11}式，$C$为积分常数.
+
+(3) 对于一维方程\eqref{eq23.6}，与任何一个能盘特征值相应的线性独立解最多有两个，即每个能级最多有两个简并态.
+
+\prove 用反证法，设相应于能量特征值$E$存在3个线性独立解$\varPsi_{1},\varPsi_{2},\varPsi_{3}$.根据定理\eqref{eq23.2}，有
+\begin{equation}
+	\begin{aligned} \notag
+		&& \varPsi_{1}\varPsi_{2}^{\prime}-=\varPsi_{2}\varPsi_{1}^{\prime}=C_{1} \\
+		&& \varPsi_{1}\varPsi_{3}^{\prime}-=\varPsi_{3}\varPsi_{1}^{\prime}=C_{2}
+	\end{aligned}
+\end{equation}
+用$C_{1}$乘第一式，$C_{2}$乘第二式，相减，得到
+\begin{equation*}
+	\varPsi_{1}(C_{2}\varPsi_{2}^{\prime}-C_{1}\varPsi_{3}^{\prime})
+	-(C_{2}\varPsi_{2}-C_{1}\varPsi_{3})\varPsi_{1}^{\prime}=0
+\end{equation*}\eqshort
+令$\varphi=C_{3}\varPsi_{2}-C_{1}\varPsi_{3}$，上式即
+\begin{equation*}
+	\varPsi_{1}\varphi^{\prime}-\varphi\varPsi_{1}^{\prime}=0
+\end{equation*}\eqnormal
+等价于
+\begin{equation*}
+	\varPsi_{1}^{2}\bigg(\frac{\varphi}{\varPsi_{1}}\bigg)^{\prime}=0,\quad\text{或}\quad
+	\varphi^{2}\bigg(\frac{\varPsi_{1}}{\varphi}\bigg)^{\prime}=0
+\end{equation*}
+因此，
+\begin{equation*}
+	\bigg(\frac{\varphi}{\varPsi_{1}}\bigg)^{\prime}=0,\quad \varphi=C\varPsi_{1}\quad \text{C为积分常数}
+\end{equation*}\eqshort
+亦即
+\begin{equation*}
+	C\varPsi_{1}=C_{2}\varPsi_{2}-C_{3}\varPsi_{2}
+\end{equation*}
+如在有限区域内$V(x)$取有限值，则$\varPsi_{1},\varPsi_{2},\varPsi_{3}$均为连续函数，因此上式在全空间成立，亦即$\varPsi_{1},\varPsi_{2},\varPsi_{3}$是线性相关的.这个结论和开始时三者线性独立的假设矛盾.故知每个能级的线性独立解最多只有两个.证明完毕.
+
+(4) 对于一维束缚态，所有能级都是非简并的，波函数为实函数.
+
+\prove 仍用反证法，设$\varPsi_{1},\varPsi_{2}$为能级$E$的两个线性独立解，按照定理\eqref{eq23.2}，\eqref{eq23.11}式成立. 令$x\rightarrow\infty$，由于束缚态波函数满足归一化条件，$x\rightarrow\infty$处$\varPsi\rightarrow 0$，所以\eqref{eq23.10}式中$C=0$，于是
+\begin{equation*}
+	\varPsi_{1}\varPsi_{2}^{\prime}-\varPsi_{2}\varPsi_{1}^{\prime}=0
+\end{equation*}\eqnormal
+亦即
+\begin{equation*}
+	\varPsi_{1}^{2}\bigg(\frac{\varPsi_{2}}{\varPsi_{1}}\bigg)^{\prime}=0,\quad\text{或}\quad
+	\varPsi_{2}^{2}\bigg(\frac{\varPsi_{1}}{\varPsi_{2}}\bigg)^{\prime}
+\end{equation*}
+以下仿照定理\eqref{eq23.3}的证明过程，可得$\varPsi_{2}=C^{\prime}\varPsi_{2}$，与二者线性独立的假设矛盾. 故知每个束缚能级只有一个线性独立的波函数.再利用定理\eqref{eq23.1}，可知这个波函数必为实函数（当然，归一化系数中仍可包含一个任意的相因子$e^{i\alpha}$，$\alpha$为实数.）
+
+物理现象常有各种对称性，当$\boldsymbol{r}$换成$-\boldsymbol{r}$，($x\rightarrow-x,y\rightarrow-y,z\rightarrow-z$)如果
+\begin{equation}
+	\begin{aligned} \notag
+	&\varPsi(-\boldsymbol{r})=\varPsi(\boldsymbol{r}),&\text{则称}\varPsi\text{为偶宇称};
+		\\
+	&\varPsi(-\boldsymbol{r})=-\varPsi(\boldsymbol{r}),&\text{则称}\varPsi\text{为奇宇称}.
+	\end{aligned}
+\end{equation}
+对于算符，也同样称谓.例如$\hat{\boldsymbol{p}}_{x}=-i\hbar\frac{\partial}{\partial x}$，为奇宇称；$\hat{T}=-\frac{\hbar^{2}}{2m}\nabla^{2}$，为偶宇称. 如势能$V$为偶宇称，即
+\begin{equation*}
+	V(\boldsymbol{r})=V(-\boldsymbol{r}),\quad\text{或}\quad V(x)=V(-x)
+\end{equation*}
+则哈密顿算符$\hat{H}$为偶宇称.否则，$\hat{H}$就没有确定的宇称性.
+
+(5) 对于一维束缚定态，如果$V(x)$为偶宇称，则每一个$\varPsi_{E}(x)$都有明确的宇称性.
+
+\prove 作为能量本征态，$\varPsi_{E}(x)$满足\eqref{eq23.6}式，
+\begin{equation*}
+	-\frac{\hbar^{2}}{2m}\frac{d^{2}}{dx^{2}}\varPsi_{E}(x)+V(x)\varPsi_{E}(x)=E\varPsi_{E}(x)
+\end{equation*}
+上式中$x$换成$-x$，成为[注意$V(x)=V(-x)$]
+\begin{equation*}
+	-\frac{\hbar^{2}}{2m}\frac{d^{2}}{dx^{2}}\varPsi_{E}(-x)+V(x)\varPsi_{E}(-x)=E\varPsi_{E}(-x)
+\end{equation*}\eqshort
+因此$\varPsi_{E}(-x)$也是\eqref{eq23.6}式的解，对应于同一个能量值$E$.但按照定理\eqref{eq23.4}，束缚态能级不简并，因此$\varPsi_{E}(x)$和$\varPsi_{E}(-x)$代表同一个束缚态，二者只能相差一个常系数，即
+\begin{equation*}
+	\varPsi_{E}(-x)=C\varPsi_{E}(x)
+\end{equation*}\eqnormal
+令$x\rightarrow-x$，由上式可得
+\begin{equation*}
+	\varPsi_{E}(x)=C\varPsi_{E}(-x)=C^{2}\varPsi_{E}(x)
+\end{equation*}\eqshort
+因此
+\begin{equation*}
+	C^{2}=1,\quad C= \pm 1
+\end{equation*}\eqnormal
+
+如$C=1$，$\varPsi_{E}(-x)=\varPsi_{E}(x)$，为偶宇称.
+
+如$C=-1$，$\varPsi_{E}(-x)=-\varPsi_{E}(x)$，为奇宇称
+
+由此易知，当$V(x)$为偶宇称，如两个束缚态波函数具有不同的宇称，则它们必定分别属于不同的能级.
+
+对于非束缚态的一维定态（游离态），在$V(x)$为偶宇称的条件下，由于能级可能是2重简并的[定理\eqref{eq23.3}]，所以虽然$\varPsi_{E}(x)$和$\varPsi_{E}(-x)$都满足\eqref{eq23.6}式，它们仍然可能是线性独立的，这时可以将它们组合成两个具有相反宇称的波函数：
+\eqlong
+\begin{equation} \label{eq23.12}
+	\begin{aligned} 
+		&& \varPsi_{E+}(x)=\varPsi_{E}(x)+\varPsi_{E}(-x), \text{偶宇称}	\\
+		&& \varPsi_{E-}(x)=\varPsi_{E}(x)-\varPsi_{E}(-x), \text{奇宇称}
+	\end{aligned}
+\end{equation}\eqshort
+类似的结论也适用于3维定态（包括束缚态和游离态），读者试自证明之.
+
+有明确宇称性的波函数便于运算（例如可以简化积分计算），因此当$V(r)$为偶宇称时，总是尽量选择具有宇称性的函数作为薛定谔方程的独立解.
+
+\example 粒子的一维自由运动.
+
+\solution 薛定谔方程为
+\begin{equation*}
+	i\hbar\frac{\partial}{\partial t}\varPsi
+	=-\frac{\hbar^{2}}{2m}\frac{\partial^{2}}{\partial x^{2}}\varPsi
+\end{equation*}
+定态特解可以表示成
+\begin{equation*}
+	\varPsi_{E}(x,t)\approx \varPsi(x)e^{-iEt/h}
+\end{equation*}
+$\varPsi(x)$满足定态薛定谔
+\begin{equation*}
+	-\frac{\hbar^{2}}{2m}\frac{\partial^{2}}{\partial x^{2}}\varPsi=E\varPsi,\quad E\geqslant0
+\end{equation*}
+令
+\begin{equation}\label{eq23.13}
+	E=\frac{\hbar^{2}k^{2}}{2m}
+\end{equation}
+方程可以简化成
+\begin{equation*}
+	\varPsi^{\prime\prime}+k^{2}\varPsi=0
+\end{equation*}\eqnormal
+其特解为
+\begin{equation}\label{eq23.14}
+	\varPsi_{k}(x)=-\frac{1}{\sqrt{2\pi\hbar}}e^{ikx},\quad -\infty<k<\infty
+\end{equation}\eqlong
+$\bigg($系数$-\frac{1}{\sqrt{2\pi\hbar}}$的选取理由将在$\S$\ref{sec:03.05}中说明$\bigg)$$k$可取一切实数值，$\varPsi_{k}(x)$均为全空间的连续有限函数，所以能量$E$的取值可以连续变化，能谱是连续的，定态波函数可以表示成
+\begin{equation}\label{eq23.15}
+	\varPsi_{k}(x,t)=\varPsi_{k}(x)e^{-iEt/h}=-\frac{1}{\sqrt{2\pi\hbar}}e^{i(kx-Et/h)}
+\end{equation}
+除$E=0(k=0)$外，全部能级都是2重简并的，相应于$k=\pm\frac{\sqrt{2mE}}{\hbar}$，给定$E$后，$k$有正、负两种取值，相应于两种动量值$(p=\hbar k)$.
+
+为了突出能级的2重简并，也可将2个简并态波函数记成
+\begin{equation*}\label{eq23.14'}
+	\varPsi_{k}(x)=\frac{1}{\sqrt{2\pi\hbar}}e^{ikx},\varPsi_{-k}(x)=\frac{1}{\sqrt{2\pi\hbar}}e^{-ikx} \tag{$2.3.14^{\prime}$}
+\end{equation*}\eqnormal
+其中$k$取正值，即
+\begin{equation*}\label{eq23.13'}
+	k=\frac{\sqrt{2mE}}{\hbar},\quad 0\leqslant k <\infty \tag{$2.3.13^{\prime}$}
+\end{equation*}\eqlong
+对于$\varPsi_{k}$，粒子动量为$(p=\hbar k)$；对于$\varPsi_{-k}$，动量为$(p=-\hbar k)$.
+
+波函数\eqref{eq23.14'}式没有宇称性，但可以将它们组合成具有宇称性的函数：[注意$\varPsi_{-k}(x)=\varPsi_{k}(-x)$]
+\begin{equation} \label{eq23.16}
+	\begin{aligned} 
+	&& \varPsi_{E+}(x)=\varPsi_{k}(x)+\varPsi_{-k}(-x)=\frac{2}{\sqrt{2\pi\hbar}}\cos kx	\\
+	&& \varPsi_{E-}(x)=\varPsi_{k}(x)-\varPsi_{-k}(-x)=\frac{2i}{\sqrt{2\pi\hbar}}\sin kx
+	\end{aligned}
+\end{equation}\eqnormal
+本例可以作为上述普遍定理的具体例证.读者可以利用\eqref{eq23.14'}或\eqref{eq23.16}式验证定理\eqref{eq23.2}的正确性.
+
+
+
+
+
+
+
+
+
+
+

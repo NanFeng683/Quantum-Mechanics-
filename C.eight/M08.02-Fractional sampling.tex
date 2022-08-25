@@ -1,0 +1,263 @@
+\section[分波法]{分波法} \label{sec:08.02} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+分波法是研究中心力场散射的普遍方法，其中心思想是将波函数展开成$(\boldsymbol{L}^{2},L_{z})$共同本征函数的线性叠加，然后逐项进行计算.
+
+设散射作用势$V=V(r)$，与方向无关.这时粒子的轨道角动量$\boldsymbol{L}$是守恒量.取守恒量完全集为$(H,\boldsymbol{L}^{2},L_{z})$.入射波波函数的球坐标表示式为
+\begin{empheq}{equation*}
+	\varPsi_{i}=e^{ikz}=e^{ikr\cos\theta}
+\end{empheq}
+显然这是$L_{z}$的本征函数（本征值$m\hbar=0$），但不是$\boldsymbol{L}^{2}$的本征函数.如将$\varPsi_{k}$表示成$(\boldsymbol{L}^{2},L_{z})$共同本征函数$Y_{lm}$的线性叠加，可得［见\eqref{eq52.26}式］
+\begin{empheq}{equation}\label{eq82.1}
+	\varPsi_{i}=e^{ikr\cos\theta}=\sum_{l=0}^{\infty}(2l+1)e^{il\pi/2}j_{l}(kr)P_{l}(\cos\theta)
+\end{empheq}
+其中$P_{l}$是勒让德多项式，它与$Y_{l0}$只相差一个常系数，
+\begin{empheq}{equation}\label{eq82.2}
+	Y_{l0}=\sqrt{\frac{2l+1}{4\pi}}P_{l}(\cos\theta)
+\end{empheq}
+$j_{l}$是球贝塞耳函数，它是自由粒子球面波的径向波函数.我们将\eqref{eq82.1}式写成
+\begin{empheq}{equation*}\label{eq82.1'}
+	\varPsi=\frac{1}{kr}\sum_{l=0}^{\infty}u_{l}^{(0)}(r)Y_{l0}(\theta)
+	\tag{$8.2.1^{\prime}$}
+\end{empheq}
+其中
+\begin{empheq}{align}
+	u_{l}^{(0)}&(r) =A_{l}^{(0)}krj_{l}(kr)			\label{eq82.3}\\
+	A_{l}^{(0)}&=\sqrt{4\pi(2l+1)}e^{il\pi/2}		\label{eq82.4}
+\end{empheq}
+$u_{l}^{(0)}$满足自由粒子径向方程［见\eqref{eq52.4}式］
+\begin{empheq}{equation}\label{eq82.5}
+	\frac{d^{2}}{dr^{2}}u_{l}^{(0)}+\bigg[k^{2}-\frac{l(l+1)}{r^{2}}\bigg]u_{l}^{(0)}=0
+\end{empheq}
+根据$\S$\ref{sec:05.02}的讨论，$r\rightarrow\infty$处有下列渐近行为：
+\begin{empheq}{align}
+	j_{l}(kr)&\approx\frac{1}{kr}\sin\bigg(kr-\frac{l\pi}{2}\bigg)		\label{eq82.6}	\\
+	u_{l}^{(0)}(r)&\approx A_{l}^{(0)}\sin\bigg(kr-\frac{l\pi}{2}\bigg)		\nonumber	\tag{$8.2.6^{\prime}$}	\label{eq82.6'}
+\end{empheq}
+在入射波也中，第$l$项分波（$Y_{l0}$项）的相对比重显然与$|A_{l}^{(0)}|^{2}$成比例，亦即与$(2l+1)$成比例.在经典散射理论中，入射粒子束（参看图\ref{fig.8-2}）的$L_{z}$仍为0，而$|\boldsymbol{L}|\propto\rho$，角动量值在$(L,L+\Delta L)$间的入射粒子数与$2\pi\rho\Delta\rho$成比例，亦即与$L\Delta L$成比例，如取$\Delta L=\hbar$，以及
+\begin{empheq}{equation*}
+	L\sim \sqrt{l(l+1)}\hbar\sim \bigg(l+\frac{1}{2}\bigg)\quad (l\gg 1)
+\end{empheq}
+则角动量取某个$L$值的入射粒子数与$L$成比例，并大致与$\bigg(l+\frac{1}{2}\bigg)$成比例，这个结论和量子力学结论一致.
+
+经过散射后的总波函数$\varPsi$满足定态薛定谔方程
+\begin{empheq}{equation}\label{eq82.7}
+	-\frac{\hbar^{2}}{2\mu}\nabla^{2}\varPsi+V(r)\varPsi=\frac{\hbar^{2}k^{2}}{2\mu}\varPsi
+\end{empheq}
+由于是中心力场，$\boldsymbol{L}^{2},L_{z}$守恒，$l,m$是好量子数，其取值及概率分布不受$V(r)$的影响，如将$\varPsi$表示成$(H,\boldsymbol{L}^{2},L_{z})$共同本征函数的线性叠加，将是
+\begin{empheq}{equation}\label{eq82.8}
+	\varPsi(r,\theta)=\frac{1}{kr}\sum_{l=0}^{\infty}u_{l}(r)Y_{l0}(\theta)
+\end{empheq}
+$\varPsi$与$\varPsi_{i}$的差别在于$u_{l}^{(0)}$变成了$u_{l}$，后者满足径向方程
+\begin{empheq}{equation}\label{eq82.9}
+	\frac{d^{2}}{dr^{2}}u_{l}+\left[k^{2}-\frac{l(l+1)}{r^{2}}-\frac{2\mu}{\hbar^{2}}V(r)\right]u_{l}=0
+\end{empheq}
+给定$V(r)$后，由上式即可解出$u_{l}$.下面讨论$r\rightarrow\infty$处$u_{l}$的渐近行为.$r\rightarrow\infty$处$V(r)$一般均迅速趋于0，这时\eqref{eq82.9}式中$V(r)$及离心势（$r^{-2}$项）均可略去，成为
+\begin{empheq}{equation}\label{eq82.10}
+	\frac{d^{2}}{dr^{2}}u_{l}+k^{2}u_{l}\approx 0
+\end{empheq}
+其渐近解为
+\begin{empheq}{equation}\label{eq82.11}
+	u_{l}(r)\approx A\sin\left(kr-\frac{l\pi}{2}+\delta_{l}\right)
+\end{empheq}
+$A_{l}$和$\delta_{l}$是待定常数.将\eqref{eq82.11}式和\eqref{eq82.6'}式比较，可知$u_{l}^{(0)}$与$u_{l}$的渐近性质存在两方面的差别：
+
+(i) 振幅由$A_{l}^{(0)}$变成$A_{l}$；
+
+(ii) $u_{l}$的渐近形式中增添了“相移”$\delta_{l}$.
+当然，这都是散射造成的后果.
+
+将\eqref{eq82.6'}式代入\eqref{eq82.1'}式，并利用公式
+\begin{empheq}{equation*}
+	\sin x=\frac{e^{ix}-e^{-ix}}{2i}
+\end{empheq}
+可得$r\rightarrow\infty$处$\varPsi_{i}$的渐近形式
+\eqlong
+\begin{empheq}{equation}\label{eq82.12}
+	\varPsi_{i}\approx\frac{1}{2ikr}\sum_{l}A_{l}^{(0)}(e^{ikr}e^{-il\pi/2}-e^{-ikr}e^{il\pi/2})Y_{l0}(\theta)
+\end{empheq}
+而将\eqref{eq82.11}式代入\eqref{eq82.8}式可得$\varPsi$的渐近形式
+\begin{empheq}{equation}\label{eq82.13}
+	\varPsi_{i}\approx\frac{1}{2ikr}\sum_{l}A_{l}[e^{ikr}e^{i(\delta_{l}-l\pi/2)}-e^{-ikr}e^{i(l\pi/2-\delta_{l})}]Y_{l0}(\theta)
+\end{empheq}\eqnormal
+由于
+\begin{empheq}{equation}\label{eq82.14}
+	\varPsi-\varPsi_{i}=\varPsi_{s}\approx f(\theta)\frac{e^{ikr}}{r}
+\end{empheq}
+\eqref{eq82.12}式和\eqref{eq82.13}式中$e^{-ikr}$项应该相同，由此可知
+\begin{empheq}{equation}\label{eq82.15}
+	A_{l}=A_{l}^{(0)}e^{i\delta_{l}}
+\end{empheq}
+以及
+\begin{empheq}{equation*}
+	f(\theta)=\frac{1}{2ik}\sum_{l}(A_{l}e^{i\delta_{l}}-A_{l}^{(0)})e^{-il\pi/2}Y_{l0}(\theta)
+\end{empheq}
+将\eqref{eq82.4}式及\eqref{eq82.15}式代入上式，经过化简，即得散射振幅$f(\theta)$与各分波相移$\delta_{l}$的关系式
+\begin{empheq}{align}\label{eq82.16}
+	f(\theta) &=\frac{\sqrt{4\pi}}{k}\sum_{l=0}^{\infty}\sqrt{2l+1}\sin\delta_{l}e^{i\delta_{l}}Y_{l0}(\theta)		\nonumber\\
+	&=\frac{1}{k}\sum_{l=0}^{\infty}(2l+1)\sin\delta_{l}e^{i\delta_{l}}P_{l}(\cos\theta)	\nonumber\\
+	&=\sum_{l=0}^{\infty}f_{l}(\theta)
+\end{empheq}
+其中$f_{l}(\theta)$为第$l$个分波造成的散射振幅，即
+\begin{empheq}{equation}\label{eq82.17}
+	\frac{1}{kr}[u_{l}-u_{l}^{(0)}]Y_{l0}(\theta)\approx f_{l}(\theta)\frac{e^{ikr}}{r}
+\end{empheq}
+在散射过程中，各个分波各自独立地产生相移$\delta_{l}$，并对散射振幅作出独立的贡献.根据\eqref{eq81.12}式，微分散射截面为
+\begin{empheq}{equation}\label{eq82.18}
+	\sigma(\theta)=f^{*}(\theta)f(\theta)
+\end{empheq}
+散射振幅及微分散射截面均与$\varphi$角无关，散射结果呈轴对称分布（以$z$轴为对称轴），这是中心力散射的特点.
+
+如用各分波散射振幅来表示，$\sigma(\theta)$可以写成
+\begin{empheq}{equation*}\label{eq82.18'}
+	\sigma(\theta)=\sum_{l}\sum_{l^{\prime}}f_{l}^{*}(\theta)f_{l}(\theta)
+	\tag{$8.2.18^{\prime}$}
+\end{empheq}
+各个分波散射振幅并不是对$\sigma(\theta)$作出独立的贡献，而是相互间存在干涉效应.总散射截面的构成情况则有所不同，由\eqref{eq81.3}式，
+\begin{empheq}{align}\label{eq82.19}
+	\sigma_{\text{总}} &=\int\sigma(\theta)d\Omega	\nonumber\\
+	&= \sum_{l}\sum_{l^{\prime}}\int f_{l}^{*}(\theta)f_{l^{\prime}}(\theta)d\Omega
+\end{empheq}
+由于$f_{l}$中含有$Y_{l0}(\theta)$，而球谐函数具有正交性
+\begin{empheq}{equation*}
+	\int Y_{l0}^{*}(\theta)Y_{l^{\prime}0}(\theta)d\Omega=\delta_{ll^{\prime}}
+\end{empheq}
+因此\eqref{eq82.19}式中仅$l=l^{\prime}$的项对积分有贡献.容易算出
+\begin{empheq}{align}
+	\sigma_{\text{总}}=\sum_{l}&\int f_{l}^{*}(\theta)f_{l}(\theta)d\Omega=\sum_{l}\sigma_{l}	\label{eq82.20}\\
+	\sigma_{l}=&\int f_{l}^{*}(\theta)f_{l}(\theta)d\Omega	\nonumber\\
+	=&\frac{4\pi}{k^{2}}(2l+1)\sin^{2}\delta_{l}		\label{eq82.21}
+\end{empheq}
+在$\sigma_{\text{总}}$的构成中，干涉效应消失，各个分波各自独立地对$\sigma_{\text{总}}$作出贡献，$\sigma_{l}$称为第$l$分波的散射截面.
+
+当散射角$\theta\rightarrow0$，散射振幅$f$的值有特殊意义.当$\theta\rightarrow0$，\eqref{eq82.16}式中$P_{l}(1)=1$，因此
+\begin{empheq}{equation}\label{eq82.22}
+	f(0)=\frac{1}{k}\sum_{l}(2l+1)\sin\delta_{l}e^{i\delta_{l}}=\sum_{l}f_{l}(0)
+\end{empheq}
+容易看出
+\begin{empheq}{align}
+	\sigma_{l} &=\frac{4\pi}{k}\lm f_{l}(0)		\label{eq82.23}	\\
+	\sigma_{\text{总}} &=\frac{4\pi}{k}\lm f(0)		\label{eq82.24}
+\end{empheq}
+（$\lm$表示取虚部）这个结果称为光学定理.
+
+用分波法处理中心力散射，关键是先要求出各级分波相移$\delta_{l}$，然后由\eqref{eq82.16}式和\eqref{eq82.18}式就可得出散射振幅$f(\theta)$和微分散射截面$\sigma(\theta)$.求$\delta_{l}$的基本方法是解径向方程\eqref{eq82.9}式，并辅以各种近似方法.下面介绍一种计算$\delta_{l}$的近似公式.
+
+以$u_{l}^{(0)}$左乘\eqref{eq82.9}式，$u_{l}$左乘\eqref{eq82.5}式，相减即得
+\begin{empheq}{equation*}
+	\frac{d}{dr}\left[u_{l}^{(0)}\frac{du_{l}}{dr}-u_{l}\frac{du_{l}^{(0)}}{dr}\right]=\frac{2\mu}{\hbar^{2}}V(r)u_{l}u_{l}^{(0)}
+\end{empheq}
+对$r$积分，得到
+\eqlong
+\begin{empheq}{equation*}
+	\frac{2\mu}{\hbar^{2}}\int_{0}^{\infty}V(r)u_{l}u_{l}U(0)dr=\left[u_{l}^{(0)}\frac{du_{l}}{dr}-u_{l}\frac{du_{l}^{(0)}}{dr}\right]\big|_{r=0}^{r\rightarrow\infty}
+\end{empheq}\eqnormal
+当$r=0$，上式右端为0；当$r\rightarrow\infty$，由\eqref{eq82.6'}及\eqref{eq82.11}式，上式右端为$(-kA_{l}A_{l}^{(0)}\sin\delta_{l})$，因此
+\begin{empheq}{equation}\label{eq82.25}
+	\sin\delta_{l}=-\frac{2\mu}{\hbar^{2}kA_{l}A_{l}U(0)}\int_{0}^{\infty}V(r)u_{l}u_{l}U(0)dr
+\end{empheq}
+至此是严格的.如某个分波散射较弱，$|\delta_{l}|\ll 1$，（条件见下面的叙述）则上式中可以用$u_{l}^{(0)}$代替$u_{l}$，$A_{l}^{(0)}$代替$A_{l}$，从而得到
+\begin{empheq}{equation}\label{eq82.26}
+	\sin\delta_{l}\approx\delta_{l}\approx-\frac{2\mu k}{\hbar^{2}}\int_{0}^{\infty}V(r)[j_{l}(kr)]^{2}r^{2}dr
+\end{empheq}
+由上式容易看出，如果$V>O$（排斥力），则$\delta_{l}<0$；如果$V<O$（吸引力），则$\delta_{l}>0$.在许多场合，散射作用势$V$仅在一定距离内（$r\leqslant a$，$a$称为作用球半径.）才有显著值，这时\eqref{eq82.26}式的积分上限可以换成$a$.这种情况下，按照经典散射模型，能够产生显著散射的最大碰撞参数为$\rho_{max}\approx a$，最大角动量为$L_{max}\approx\hbar ka$.常称$ka\gg 1$的情况为高能散射，这时需要考虑的分波数目较多$(l_{max}\gg 1)$，用分波法处理较为麻烦,$ka\ll 1$的情况称为低能散射，这时经典$L_{max}\ll\hbar$，用分波法处理只需考
+虑$l=0$这一分波（所谓s波），即可获得散射的主要信息.对于低能s波散射，
+\begin{empheq}{align}
+	f(\theta) &\approx f_{0}=\frac{1}{k}\sin\delta_{0}e^{i\delta_{0}}		\label{eq82.27}	\\
+	\sigma(\theta) &\approx |f_{0}|^{2}=\frac{1}{k^{2}}\sin^{2}\delta_{0}		\label{eq82.28}
+\end{empheq}
+散射的角分布是各向同性的.
+\pskip
+
+\example 刚体球散射的分波法处理.
+
+刚体球（半径$a$）的量子力学含义是
+\begin{empheq}{equation*}
+	{V(r)=}
+	\begin{dcases}
+		0,\qquad  r>a	\\
+		\infty, \quad r\leqslant a
+	\end{dcases}
+\end{empheq}
+在球内区域$(r\leqslant a)$波函数$\varPsi=0$.入射波仍由\eqref{eq82.1}式表示，散射后总波函数仍由\eqref{eq82.8}式表示在球外区域$(r>0)V=0$，因此径向方程\eqref{eq82.9}式形式上和\eqref{eq82.5}式相同，亦即和\eqref{eq52.4}式相同.\eqref{eq82.9}式有两个独立解，一个就是$kr_{l}(kr)$；另一个解在$\S$\ref{sec:05.02}中曾经提到，但随即以$r\rightarrow0$处边界条件为由予以舍弃，这个解通常记为$krn_{l}(kr)$，$n_{l}$称为球诺依曼函数，其定义为
+\begin{empheq}{align}\label{eq82.29}
+	n_{l}(\rho) &=(-1)^{(l+1)}\sqrt{\frac{\pi}{2\rho}}J_{-l-\frac{1}{2}}(\rho)	\nonumber\\
+	&= (-1)^{l+1}\rho^{l}\left(\frac{1}{\rho}\frac{d}{d\rho}\right)^{l}\frac{\cos\rho}{\rho}
+\end{empheq}
+亦即在$j_{l}(\rho)$的定义［\eqref{eq52.16}式］中将$\sin\rho$换成$(-\cos\rho)$，就成为$n_{l}(\rho)$.$\rho\rightarrow\infty$处$n_{l}$的渐近形式为
+\begin{empheq}{equation}\label{eq82.30}
+	n_{l}(\rho)\approx-\frac{1}{\rho}\cos\left(\rho-\frac{l\pi}{2}\right)
+\end{empheq}
+对于本题，在球外区域，第$l$分波的径向波函数应该取
+\begin{empheq}{equation}\label{eq82.31}
+	R_{l}(r)=\frac{u_{l}(r)}{kr}=c_{l}j_{l}(kr)+b_{l}n_{l}(kr)
+\end{empheq}
+$R_{l}$还必须满足边界条件$R_{l}(r=a)=0$，由此易得
+\eqshort
+\begin{empheq}{equation}\label{eq82.32}
+	b_{l}/c_{l}=-\frac{j_{l}(ka)}{n_{l}(ka)}
+\end{empheq}\eqnormal
+当$r\rightarrow\infty$，$u_{l}$的渐近形式为
+\begin{empheq}{equation*}
+	u_{l}(r) \approx c_{l}\sin\bigg(kr-\frac{l\pi}{2}\bigg)-b_{l}\cos\bigg(kr-\frac{l\pi}{2}\bigg)
+\end{empheq}
+而由\eqref{eq82.11}式，
+\eqlong
+\begin{empheq}{align*}
+	u_{l}(r) &\approx A_{l}\sin\bigg(kr-\frac{l\pi}{2}+\delta_{l}\bigg)	\\
+	&=A_{l}\cos\delta_{l}\sin\bigg(kr-\frac{l\pi}{2}\bigg)+A_{l}\sin\delta_{l}\cos\bigg(kr-\frac{l\pi}{2}\bigg)
+\end{empheq}\eqnormal
+比较即得
+\begin{empheq}{align}
+	c_{l}&= A_{l}\cos\delta_{l},\quad b_{l}=-A_{l}\sin\delta_{l}		\label{eq82.33}	\\
+	&\frac{b_{l}}{c_{l}}=-\frac{\sin\delta_{l}}{\cos\delta_{l}}=-\tan\delta_{l} 	\nonumber	\tag{$8.2.33^{\prime}$}\label{eq82.33'}
+\end{empheq}
+比较\eqref{eq82.32}式及\eqref{eq82.33'}式，得出
+\begin{empheq}{equation}\label{eq82.34}
+	\tan\delta_{l}=\frac{j_{l}(ka)}{n_{l}(ka)}=(-1)^{l+1}\frac{J_{l+\frac{1}{2}}(ka)}{J_{-l-\frac{1}{2}}(ka)}
+\end{empheq}
+给定$ka$后，$j_{l}(ka)$及$n_{l(ka)}$的值可由贝塞耳函数表查出，代入上式就可算出$\delta_{l}$，再代入\eqref{eq82.16}式和\eqref{eq82.18}式就得到$f(\theta$和$\sigma(\theta)$.
+
+以上是严格的.下面讨论低能散射和高能散射两种极端情况.对于低能散射，$ka\ll 1$，这时
+\begin{empheq}{align}
+	j_{l}(ka) &\approx \frac{(ka)^{l}}{(2l+1)!!}			\label{eq82.35}\\
+	n_{l}(ka) &\approx -\frac{(2l-1)!!}{(ka)^{l+1}}			\nonumber\\
+	\tan\delta_{l} &\approx-\frac{(ka)^{2l+1}}{(2l+1)!!(2l-1)!!}			\label{eq82.36}
+\end{empheq}
+注意$|\tan\delta_{l}|\ll 1$，所以
+\begin{empheq}{equation*}
+	\delta_{l}\approx\sin\delta_{l}\approx\tan\delta_{l}\propto(ka)^{2l+1}
+\end{empheq}
+例如
+\eqlong
+\begin{empheq}{equation*}
+	\delta_{0}=-ka,\quad \delta_{l}\approx -\frac{(ka)^{3}}{3},\quad \delta_{2}\approx-\frac{(ka)^{5}}{45} -\frac{(ka)^{5}}{45}
+\end{empheq}\eqnormal
+（$\delta_{0}$是严格的）随着$l$的增加， $\delta_{l}$减小得很快，所以可以略去一切$l\neq0$的分波散射[$\sigma_{l}\propto\delta_{l}^{2}\propto(ka)^{4l+2}$]，只计算s波$(l=0)$散射，结果是
+\begin{empheq}{align}\label{eq82.37}
+	&\delta_{0}=-ka,\quad f(\theta)\approx f_{0} \approx -ae^{ika}	\nonumber\\
+	&\sigma(\theta) \approx a^{2},\quad \sigma_{\text{总}} \approx \sigma_{0} 4\pi a^{2}
+\end{empheq}
+和经典散射类似，散射角分布是各向同性的.但总散射截面等于球的表面积，为经典散射截面的4倍.
+
+高能散射，$ka\ll 1$.按照经典力学，能够造成散射的最大角动量为$L_{max}=\hbar ka$，即$l_{max}\approx ka$.量子力学结论虽不完全相同，但有显著散射效果的分波其$l$值的量级仍不超过$ka$.［证明较复杂，从略.当$l\gg ka$，\eqref{eq82.35}式即可成立，则$\delta_{l}$仍由\eqref{eq82.36}式表示，这时容易证明$|\delta_{l}|\ll 1$，相应的分波散射截面可以忽略不计.］而当$ka>l$，渐近表示式\eqref{eq82.6}及\eqref{eq82.30}式即可成立，则由\eqref{eq82.34}式可得
+\begin{empheq}{equation*}
+	\tan\delta_{l} \approx -\frac{\sin\bigg(ka-\frac{l\pi}{2}\bigg)}{\cos\bigg(ka-\frac{l\pi}{2}\bigg)}=-\tan\bigg(ka-\frac{l\pi}{2}\bigg)
+\end{empheq}
+所以
+\eqshort
+\begin{empheq}{equation}\label{eq82.38}
+	\delta_{l}\approx -\bigg(ka-\frac{l\pi}{2}\bigg)
+\end{empheq}
+由于$\delta_{l+1}\approx \delta_{l}+\frac{\pi}{2}$，所以
+\begin{empheq}{equation*}
+	\sin^{2}\delta_{l}+\sin^{2}\delta_{l+1}\approx 1
+\end{empheq}\eqnormal
+计算$\sigma_{\text{总}}$时，不妨取每一项$\sin^{2}\delta_{l}$的有效值为$\frac{1}{2}$，从而得到
+\begin{empheq}{align}\label{eq82.39}
+	\sigma_{\text{总}}&\approx \frac{4\pi}{k^{2}}\sum_{l=0}^{ka}\bigg(l+\frac{1}{2}\bigg)	\nonumber\\
+	&\approx \frac{4\pi}{k^{2}}\cdot\frac{1}{2}(ka+1)^{2}\approx 2\pi a^{2}
+\end{empheq}
+其中一半来自经典散射，一半来自衍射.至于$\sigma(\theta)$，由于主要贡献来自于$l\gg 1$的分波，角分布近似于各方向均匀分布.［原因是$P_{l}(\cos\theta)$在$\pm1$间振荡$l$次.］
+
+

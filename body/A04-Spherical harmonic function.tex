@@ -1,0 +1,298 @@
+\clearpage
+\chapter{球谐函数}\label{A04}
+
+{\heiti 1. 勒让德(Legendre)多项式$P_{l}(\xi)$}
+
+令$\xi,\eta$为独立的实变数.将二元函数$(1-2\xi\eta+\eta^{2})$展开成$\eta$的幕级数，表示成
+\begin{empheq}{equation}\label{eqA4.1}
+	(1-2\xi\eta+\eta^{2})^{-\frac{1}{2}}=\sum_{l=0}^{\infty}P_{l}(\xi)\eta^{l}
+\end{empheq}
+展开式中任何一项$\xi$的幕次显然不会超过$\eta$的幕次，因此$P_{l}(\xi)$是$\xi$的$l$次多项式，称为勒让德多项式，上式左端称为$P_{l}(\xi)$的生成函数或母函数.当$|\xi|\leqslant1,|\eta|<1$，展开式\eqref{eqA4.1}显然是收敛的.当$\xi=\pm1$，\eqref{eqA4.1}式成为
+
+\begin{empheq}{equation*}
+	\sum_{l}P_{l}(\pm1)\eta^{l}=(1\mp\eta)^{-1}=\sum_{l}(\pm\eta)^{l}
+\end{empheq}
+因此可知
+\begin{empheq}{equation}\label{eqA4.2}
+	P_{l}=1,\qquad P_{l}(-1)=(-1)^{l}
+\end{empheq}\eqllong
+当$\xi=0$，\eqref{eqA4.1}式成为
+
+\begin{empheq}{equation*}
+	\sum_{l}P_{l}(0)\eta^{l}=(1+\eta^{2})^{-\frac{1}{2}}=1-\frac{1}{2}\eta^{2}+\frac{3}{8}\eta^{4}-\cdots+\cdots
+\end{empheq}\eqnormal
+比较两端$\eta^{\prime}$系数，可得
+\begin{empheq}{equation}\label{eqA4.3}
+	P_{2n}(0)=(-1)^{n}\frac{(2n-1)!!}{(2n)!!},\quad P_{2n+1}(0)=0
+\end{empheq}
+$P_{l}$的递推关系很多，扼要介绍如下.\eqref{eqA4.1}式对$\eta$求导，可得
+\begin{empheq}{equation}\label{eqA4.4}
+	(l+1)P_{l+1}+lP_{l-1}=(2l+1)\xi P_{l}
+\end{empheq}\eqindent{10}
+\eqref{eqA4.1}式对$\xi$求导，则得
+\begin{empheq}{equation}\label{eqA4.5}
+	P_{l+1}^{\prime}-2\xi P_{l}^{\prime}+P_{l-1}^{\prime}=P_{l}
+\end{empheq}
+\eqref{eqA4.4}式求导，再与\eqref{eqA4.5}式合并化简，得到
+\begin{empheq}{align}
+	P_{l+1}^{\prime}&-\xi P_{l}^{\prime}=(l+1)P_{l}		\label{eqA4.6}\\
+	\xi &P_{l}^{\prime}-P_{l-1}^{\prime}=lP_{l}		\label{eqA4.7}
+\end{empheq}\eqnormal
+\eqref{eqA4.6}、\eqref{eqA4.7}式相加，可得到较为对称的公式
+\begin{empheq}{equation}\label{eqA4.8}
+	P_{l+1}^{\prime}-P_{l-1}^{\prime}=(2l+1)P_{l}
+\end{empheq}
+\eqref{eqA4.6}式中$l$换成$(l-1)$，再与\eqref{eqA4.7}式合并消去$P_{l-1}^{\prime}$，得到
+\begin{empheq}{equation}\label{eqA4.9}
+	(1-\xi^{2})P_{l}^{\prime}=lP_{l-1}-l\xi P_{l}
+\end{empheq}\eqlong
+\eqref{eqA4.9}式与\eqref{eqA4.4}式合并，可得
+\begin{empheq}{align}
+	&(1-\xi^{2})P_{l}^{\prime}=(l+1)(\xi P_{l}-P_{l+1})		\label{eqA4.10}\\
+	(2l+&1)(1-\xi^{2})P_{l}^{\prime}=l(l+1)(P_{l-1}-P_{l+1})	\label{eqA4.11}
+\end{empheq}
+\eqref{eqA4.9}式求导，再与\eqref{eqA4.7}式合并消去$P_{l-1}^{\prime}$，得到$P_{l}$满足的微分方程
+\begin{empheq}{equation}\label{eqA4.12}
+	\boxed{ (1-\xi^{2})P_{l}^{n}(\xi)-2\xi P_{l}^{\prime}(\xi)+l(l+1)P_{l}(\xi)=0 }
+\end{empheq}\eqnormal
+在以上各式中，凡指标为负值时，该项应该删去.［例如\eqref{eqA4.8}式，当$l=0$，成为$P_{1}^{\prime}=P_{0}$］
+
+当$l$较小时，$P_{l}(\xi)$的表达式可以利用\eqref{eqA4.4}式定出，例如
+\begin{empheq}{equation*}
+	P_{0}=1,\quad P_{1}=\xi,\quad P_{2}=\frac{1}{2}(3\xi^{2}-1)
+\end{empheq}
+等等.普遍地，$P_{l}$可以表示成
+\begin{empheq}{equation}\label{eqA4.13}
+	\boxed{ P_{l}(\xi)=\frac{1}{2^{l}l!}\left(\frac{d}{d\xi}\right)^{l}(\xi^{2}-1)^{l} }
+\end{empheq}\eqindent{10}
+称为罗巨格(Rodrigues)公式.证明如下令$u(\xi)=(\xi^{2}-1)^{l}$，它显然满足方程
+\begin{empheq}{equation*}
+	(1-\xi^{2})u^{\prime}+2l\xi u=0
+\end{empheq}\eqnormal
+上式求导$(l+1)$次，利用牛顿－莱布尼茨公式
+\begin{empheq}{equation*}
+	(uv)^{(n)}=u^{(n)}v+c_{n}^{1}u^{(n-1)}v^{\prime}+c_{n}^{2}u^{(n-2)}v^{\prime\prime}+\cdots
+\end{empheq}
+（$u^{(n)}$表示$u$的$n$阶导数）容易得到
+\begin{empheq}{equation*}
+	(1-\xi^{2})u^{(l+2)}-2\xi u^{(l+1)}+l(l+1)u^{(l)}=0
+\end{empheq}
+与\eqref{eqA4.12}式比较，可知
+\begin{empheq}{align*}
+	P_{l}&=cu^{(l)}=c\left(\frac{d}{d\xi}\right)^{l}(\xi^{2}-1)^{l} \\
+	&=c\left(\frac{d}{d\xi}\right)^{l}[(\xi+1)^{l}(\xi-1)^{l}]
+\end{empheq}
+$C$为待定系数.根据\eqref{eqA4.2}式，$P_{l}(1)=1$.但$\xi=1$时上式中凡含有因子$(\xi-1)$的项都变成0，由此可知
+\begin{empheq}{align*}
+	P_{l}(1)&=C(\xi+1)^{l}\left(\frac{d}{d\xi}\right)^{l}(\xi-1)^{l}\bigg|_{\xi=1}	\\
+	&=C2^{l}l!=1	\\
+	C&=\frac{1}{2^{l}l!}
+\end{empheq}
+此即\eqref{eqA4.13}式中数字系数的来由.由\eqref{eqA4.13}式易见，$P_{l}(\xi)$的宇称为$(-1)^{l}$.
+
+将\eqref{eqA4.13}式中$(\xi^{2}-1)^{l}$展开成多项式，再逐项微分，即得$P_{l}$的表达式
+\begin{empheq}{equation}\label{eqA4.14}
+	P_{l}(\xi)=\sum_{k=0}^{[\frac{l}{2}]}(-1)^{k}\frac{(2l-2k)!}{2^{l}k!(l-k)!(l-2k)!}\xi^{l-2k}
+\end{empheq}
+其中$[\dfrac{l}{2}]$表示不超过$\dfrac{l}{2}$的最大整数.
+
+下面讨论勒让德多项式的正交归一性.勒让德方程\eqref{eqA4.12}可以写成
+\begin{empheq}{equation*}
+	\frac{d}{d\xi}[(1-\xi^{2})P_{l}^{\prime}]+l(l+1)P_{l}=0
+\end{empheq}
+设$n\neq l$，类似地有
+\begin{empheq}{equation*}
+	\frac{d}{d\xi}[(1-\xi^{2})P_{n}^{\prime}]+n(n+1)P_{n}=0
+\end{empheq}
+以$P_{n}$乘第一式，$P_{l}$乘第二式，并相减，得到
+\begin{empheq}{align*}
+	&[l(l+1)-n(n+1)]P_{l}P_{n}	\\
+	=&\frac{d}{d\xi}[(1-\xi^{2})(P_{l}P_{n}^{\prime}-P_{n}P_{l}^{\prime})]
+\end{empheq}
+在区间$[-1,1]$上积分，
+\begin{empheq}{align*}
+	&[l(l+1)-n(n+1)]\int_{-1}^{1}P_{l}(\xi)P_{n}(\xi)d\xi \\
+	=&(1-\xi^{2})(P_{l}P_{n}^{\prime}-P_{n}P_{l}^{\prime})\bigg|_{\xi=-1}^{\xi=1}=0
+\end{empheq}
+因此
+\begin{empheq}{equation}\label{eqA4.15}
+	\int_{-1}^{1}P_{l}(\xi)P_{n}(\xi)d\xi=0,\quad l\neq n
+\end{empheq}\eqlong
+这表明$P_{l}(\xi)$是区间$-1\leqslant\xi\leqslant1$上的正交函数系.
+
+$(P_{l}^{\prime})$的积分当然应取正值，计算如下.\eqref{eqA4.4}式中$l$换成$(l-1)$，再乘$(2l+1)P_{l}$，\eqref{eqA4.4}式直接乘$(2l-1)P_{l-1}$，二式相减，积分，并顾及正交性\eqref{eqA4.15}式，就得到
+\begin{empheq}{equation*}
+	\int_{-1}^{1}[P_{l}(\xi)]^{2}d\xi=\frac{2l-1}{2l+1}\int_{-1}^{1}[P_{l-1}(\xi)]^{2}d\xi
+\end{empheq}
+反复使用这个递推关系，可得
+\begin{empheq}{equation*}
+	\int_{-1}^{1}(P_{l})^{2}d\xi=\frac{(2l-1)(2l-3)\cdots1}{(2l+1)(2l-1)\cdots3}\int_{-1}^{1}(P_{0})^{2}d\xi
+\end{empheq}\eqnormal
+因$P_{0}=1$，最后的积分等于2，故得
+\begin{empheq}{equation}\label{eqA4.16}
+	\int_{-1}^{1}[P_{l}(\xi)]^{2}d\xi=\frac{2}{2l+1}
+\end{empheq}\eqshort
+
+事实上，$\{P_{l}(\xi),l=0,1,2,\cdots\}$是区间$-1\leqslant\xi\leqslant1$上的正交完备函数系（完备性证明从略），任何在这区间上定义的连续函数$f(\xi)$都可以展开成$P_{l}$的级数，
+\begin{empheq}{equation}\label{eqA4.17}
+	f(\xi)=\sum_{l=0}^{\infty}C_{l}P_{L}(\xi)
+\end{empheq}\eqnormal
+利用正交性\eqref{eqA4.15}及归一化公式\eqref{eqA4.16}容易求出
+\begin{empheq}{equation}\label{eqA4.18}
+	C_{l}=\left(l+\frac{1}{2}\right)\int_{-1}^{1}f(\xi)P_{l}(\xi)d\xi
+\end{empheq}
+
+在许多物理问题中，变量$\xi$就是球坐标系中的$\cos\theta$，区间$-1\leqslant\xi\leqslant1$相应于$0\leqslant\theta\leqslant\pi$，$P_{l}$的正交归一性表现为
+\begin{empheq}{equation}\label{eqA4.19}
+	\int_{0}^{\pi}P_{l}(\cos\theta)P_{n}(\cos\theta)\sin\theta d\theta=\frac{2}{2l+1}\delta_{ln}
+\end{empheq}\eqlong
+
+
+{\heiti 2. 连带勒让德函数$P_{l}^{m}(\xi)$}
+
+在物理问题中经常遇到连带勒让德方程
+\begin{empheq}{equation}\label{eqA4.20}
+	(1-\xi^{2})F^{\prime\prime}-2\xi F^{\prime}+\left[l(l+1)-\frac{m^{2}}{1-\xi^{2}}\right]F=0
+\end{empheq}\eqshort
+其中$l,m$是正整数或零，$m\leqslant l$.现在来研究这个方程的解.作变换
+\begin{empheq}{equation}\label{eqA4.21}
+	F(\xi)=(1-\xi^{2})^{\frac{m}{2}}v(\xi)
+\end{empheq}\eqllong
+代入\eqref{eqA4.20}式，得到$v(\xi)$满足的方程为
+\begin{empheq}{equation}\label{eqA4.22}
+	(1-\xi^{2})v^{\prime\prime}-2(m+1)\xi v^{\prime}+\left[l(l+1)-m(m+1)\right]v=0
+\end{empheq}\eqlong
+另一方面，如将勒让德方程\eqref{eqA4.12}微分$m$次，得到
+\begin{empheq}{align*}\label{eqA4.22'}
+	(1&-\xi^{2})\left(\frac{d}{d\xi}\right)^{m+2}P_{l}\sim 2(m+1)\xi\left(\frac{d}{d\xi}\right)^{m+1}P_{l}	\\
+	&\left[l(l+1)-m(m+1)\right]\left(\frac{d}{d\xi}\right)^{m}P_{l}=0
+	\tag{$22^{\prime}$}
+\end{empheq}\eqshort
+可见$\left(\dfrac{d}{d\xi}\right)^{m}P_{l}$与$v$满足同样的方程.因此\eqref{eqA4.22}式的一个解为
+\begin{empheq}{equation}\label{eqA4.23}
+	v(\xi)=\left(\frac{d}{d\xi}\right)^{m}P_{l}(\xi)
+\end{empheq}\eqnormal
+这样，我们已经得到\eqref{eqA4.20}式的一个解
+\begin{empheq}{equation}\label{eqA4.24}
+	F=(1-\xi^{2})^{\frac{m}{2}}\left(\frac{d}{d\xi}\right)^{m}P_{l}(\xi)\equiv P_{l}^{m}(\xi)
+\end{empheq}
+这个解在区域$-1\leqslant\xi\leqslant1$上是有界的.\eqref{eqA4.20}式的另一个解则以$\xi=\pm1$为奇点，不予讨论.由\eqref{eqA4.13}、\eqref{eqA4.24}式易见$P_{l}^{m}$的宇称为$(-1)^{l+m}$.
+
+利用罗巨格公式\eqref{eqA4.13}，$P_{l}^{m}$可以写成
+\begin{empheq}{equation}\label{eqA4.25}
+	P_{l}^{m}(\xi)=\frac{1}{2^{l}l!}(1-\xi^{2})^{\frac{m}{2}}\left(\frac{d}{d\xi}\right)^{1+m}(\xi^{2}-1)^{l}
+\end{empheq}
+对于方程\eqref{eqA4.20}式，$m<0$与$m>0$效果相同（$m^{2}$不受影响），因此可以设想，\eqref{eqA4.25}式作为方程\eqref{eqA4.20}的解，也适用于$m<0$的情形.事实上，如将\eqref{eqA4.25}式推广到$m<0$，利用牛顿－莱布尼茨公式不难验证$P_{l}^{-m}$和$P_{l}^{m}(m>0)$只相差一个常数因子，
+\begin{empheq}{equation}\label{eqA4.26}
+	P_{l}^{-m}=(-1)^{m}\frac{(l-m)!}{(l+m)!}P_{l}^{m},\quad 0\leqslant m\leqslant l
+\end{empheq}
+由\eqref{eqA4.25}式容易定出指标较小的几个$P_{l}^{m}$如下：$(\xi=\cos\theta)$
+\begin{empheq}{equation}\label{eqA4.27}
+\begin{aligned}
+ P_{1}^{1}(\xi)	&=\sqrt{1-\xi^{2}}=\sin\theta	\\
+ P_{1}^{-1}(\xi)&=-\frac{1}{2}\sqrt{1-\xi^{2}}=-\frac{1}{2}\sin\theta \\
+ P_{2}^{1}(\xi)	&=3\xi\sqrt{1-\xi^{2}}=3\cos\theta\sin\theta \\
+ P_{2}^{-1}(\xi)&=-\frac{1}{2}\xi\sqrt{1-\xi^{2}}=-\frac{1}{2}\cos\theta\sin\theta	\\
+ P_{2}^{2}(\xi)	&=3(1-\xi^{2})=3\sin^{2}\theta	\\
+ P_{2}^{-2}(\xi)&=\frac{1}{8}(1-\xi^{2})=\frac{1}{8}\sin^{2}\theta
+\end{aligned}
+\end{empheq}
+根据定义，当$m=0,P_{l}^{0}=P_{l}$.
+
+连带勒让德函数的递推关系很多，常用的有下述各式.将\eqref{eqA4.8}式微分$m$次，再乘$(1-\xi^{2})^{\frac{m+1}{2}}$，得到
+\begin{empheq}{equation}\label{eqA4.28}
+	(2l+1)(1-\xi^{2})^{\frac{1}{2}}P_{l}^{m}=P_{l+1}^{m+1}-P_{l-1}^{m+1}
+\end{empheq}\eqllong
+\eqref{eqA4.4}式微分$m$次，再乘$(1-\xi^{2})^{\frac{m}{2}}$，得到
+\begin{empheq}{equation*}
+	(l+1)P_{l+1}^{m}+lP_{l-1}^{m}=m(2l+1)(1-\xi^{2})^{\frac{1}{2}}P_{l}^{m-1}+(2l+1)\xi P_{l}^{m}
+\end{empheq}\eqlong
+\eqref{eqA4.28}式$m$换成$(m-1)$，用来消去上式右端第一项，就得到
+\begin{empheq}{equation}\label{eqA4.29}
+	(2l+1)\xi P_{l}^{m}=(l-m+1)P_{l+1}^{m}-(l+m)P_{l-1}^{m}
+\end{empheq}
+以$(1-\xi^{2})^{\frac{m}{2}}$乘\eqref{eqA4.22'}式，然后将$m$换成$(m-1)$，得到
+\begin{empheq}{equation}\label{eqA4.30}
+	2m(1-\xi^{2})^{-\frac{1}{2}}P_{l}^{m}=P_{l}^{m+1}+(l+m)(l-m+1)P_{l}^{m-1}
+\end{empheq}\eqllong
+上式中$l$分别换成$(l+1)$和$(l-1)$，用来消去\eqref{eqA4.28}式右端各项，并利用\eqref{eqA4.28}、\eqref{eqA4.29}式，可得
+\begin{empheq}{align}\label{eqA4.31}
+	(2l+1)(1-\xi^{2})^{\frac{1}{2}}P_{l}^{m} &=(l+m)(l-m+1)P_{l-1}^{m-1} \nonumber\\
+	&=(l-m+2)(l-m+1)P_{l-1}^{m-1}
+\end{empheq}\eqlllong
+\eqref{eqA4.25}式微分一次，再乘$(2l+1)(1-\xi^{2})$，得到
+\begin{empheq}{equation}\label{eqA4.32}
+	(2l+1)(1-\xi^{2})\frac{d}{d\xi}P_{l}^{m}=(2l+1)(1-\xi^{2})^{\frac{1}{2}}P_{l}^{m+1}-m(2l+1)\xi P_{l}^{m}
+\end{empheq}
+再利用\eqref{eqA4.29}、\eqref{eqA4.31}式变化上式右端各项，经过化简，得到
+\begin{empheq}{equation}\label{eqA4.33}
+	(2l+1)(1-\xi^{2})\frac{d}{d\xi}P_{l}^{m}=(l+1)(l+m)P_{l-1}^{m}-l(l-m+1)P_{l+1}^{m}
+\end{empheq}\eqlong
+以上这些公式也适用于$m<0$的情形.
+
+利用方程\eqref{eqA4.20}，仿照曾对$P_{l}$用过的方法，容易证明$P_{l}^{m}$具有如下二种正交性：
+\begin{empheq}{align}
+	&\int_{-1}^{1}P_{l}^{m}(\xi)P_{l^{\prime}}^{m}(\xi)d\xi=0,\quad l\neq l^{\prime}	\label{eqA4.34}\\
+	\int_{-1}^{1}(1&-\xi^{2})^{1}P_{l}^{m}(\xi)P_{l^{\prime}}^{m}(\xi)d\xi=0,\quad m\neq m^{\prime}	\label{eqA4.35}
+\end{empheq}
+利用\eqref{eqA4.28}及\eqref{eqA4.33}式，容易得到
+\begin{empheq}{equation*}
+	\int_{-1}^{1}(P_{l}^{m})^{2}d\xi=(2l-1)\int_{-1}^{1}(1-\xi^{2})^{\frac{1}{2}}P_{l}^{m}P_{l-1}^{m-1}d\xi
+\end{empheq}
+再利用\eqref{eqA4.31}式消去右端的$P_{l}^{m}$，就得到
+\begin{empheq}{equation*}
+	\int_{-1}^{1}(P_{l}^{m})^{2}d\xi=\frac{2l-1}{2l+1}(l+m)(l+m-1)\int_{-1}^{1}(P_{l-1}^{m-1})^{2}d\xi
+\end{empheq}\eqnormal
+反复利用此式及\eqref{eqA4.16}式，就得到$P_{l}^{m}$的归一化公式
+\begin{empheq}{equation}\label{eqA4.36}
+ \int_{-1}^{1}[P_{l}^{m}(\xi)]^{2}d\xi=\frac{2}{2l+1}\frac{(l+m)!}{(l-m)!}
+\end{empheq}
+
+
+{\heiti 3. 球谐函数$Y_{lm}(\theta,\varphi)$}
+
+球谐函数这个名词来自经典物理，在量子力学中这名词专指轨道角动量算符$\boldsymbol{L}^{2},L_{z}$的共同本征函数，符号为$Y_{lm}(\theta,\varphi)$.它应该满足本征方程
+\begin{empheq}{align}
+	\hat{L_{z}}Y_{lm}=-&i\hbar\frac{\partial}{\partial\varphi}Y_{lm}=m\hbar Y_{lm}		\label{eqA4.37}\\
+	\hat{\boldsymbol{L}^{2}}Y_{lm}&=l(l+1)\hbar^{2}Y_{lm}		\label{eqA4.38}
+\end{empheq}
+量子数$l,m$的取值是
+\begin{empheq}{equation}\label{eqA4.39}
+	l=0,1,2,\cdots;\quad m=0,\pm1,\cdots,\pm l
+\end{empheq}\eqlong
+为了满足\eqref{eqA4.37}式，$Y_{lm}$中与变量$\varphi$有关的部分应该是［见\eqref{eq31.24}式］$e^{im\varphi}$，所以$Y_{lm}$可以表示成
+\begin{empheq}{equation}\label{eqA4.40}
+	Y_{lm}=F(\xi)e^{im\varphi},\quad \xi=\cos\theta
+\end{empheq}
+代入\eqref{eqA4.38}式，并利用$\boldsymbol{L}^{2}$算符的表示式附录\ref{A03}\eqref{eqA3.14}式，可得$F(\xi)$满足的方程为连带勒让德方程\eqref{eqA4.20}.因此$F(\xi)\sim P_{l}^{m}(\xi)$.$Y_{lm}$应该满足正交归一条件
+\begin{empheq}{equation}\label{eqA4.41}
+	\int Y_{lm}^{*}Y_{l^{\prime}m^{\prime}}d\Omega=\delta_{ll^{\prime}}\delta_{mm^{\prime}},\quad d\Omega=\sin\theta d\theta d\varphi
+\end{empheq}
+利用$P_{l}^{m}$的归一化公式\eqref{eqA4.36}，即可得到归一化的$Y_{lm}$为
+\begin{empheq}{equation}\label{eqA4.42}
+	Y_{lm}(\theta,\varphi)=(-1)^{m}\left[\frac{2l+1}{4\pi}\frac{(l-m)!}{(l+m)!}\right]^{\frac{1}{2}}P_{l}^{m}(\cos\theta)e^{im\varphi}
+\end{empheq}
+利用$P_{l}^{m}$的正交性公式\eqref{eqA4.34}，易证正交归一条件\eqref{eqA4.41}已经满足.上式中列入相因$(-1)^{m}$，是为了符合角动量普遍理论［\eqref{eq47.26}式］，使$Y_{lm}$满足
+\begin{empheq}{equation}\label{eqA4.43}
+	(L_{x}\pm iL_{y})Y_{lm}=\hbar\sqrt{(l\mp m)(l\pm m+1)}Y_{l,m\pm1}
+\end{empheq}\eqllong
+这个关系请读者自行验证.［利用附录\ref{A03}\eqref{eqA3.13}式，及\eqref{eqA4.30}、\eqref{eqA4.32}式.］
+
+用得较多的$Y_{lm}$是$l\leqslant2$的情形，它们的表达式是
+\begin{empheq}{align}\label{eqA4.44}
+	Y_{00}&=\sqrt{\frac{1}{4\pi}},\quad Y_{10}=\sqrt{\frac{3}{4\pi}}\cos\theta	\nonumber\\
+	Y_{11}&=-\sqrt{\frac{3}{8\pi}}\sin\theta e^{i\varphi},\quad Y_{1-1}=\sqrt{\frac{3}{8\pi}}\sin\theta e^{-i\varphi}	\nonumber\\
+	Y_{20}&=\sqrt{\frac{5}{16\pi}}(3\cos^{2}\theta-1),\quad Y_{2,\pm1}=\mp\sqrt{\frac{15}{8\pi}}\sin\theta\cos\theta e^{\pm i\varphi}	\nonumber\\
+	Y_{2\pm2}&=\sqrt{\frac{15}{32\pi}}\sin^{2}\theta e^{\pm 2i\varphi}
+\end{empheq}\eqlong
+
+利用$P_{l}^{m}$的递推公式可以导出$Y_{lm}$的递推公式，应用较广的是下列二式：
+\begin{empheq}{align}
+	\cos\theta Y_{lm}(\theta,\varphi) &=\left[\frac{(l+m+1)(l-m+1)}{(2l+1)(2l+3)}\right]^{\frac{1}{2}}Y_{l+1,m}	\nonumber\\
+	&+\left[\frac{(l+m)(l-m)}{(2l-1)(2l+1)}\right]^{\frac{1}{2}}Y_{l-1,m}		\label{eqA4.45}\\
+	\sin\theta e^{\pm i\varphi}Y_{lm} &=\pm\left[\frac{(l\mp m)(l\mp m-1)}{(2l-1)(2l+1)}\right]^{\frac{1}{2}}Y_{l-1,m\pm1}	\nonumber\\
+	&\mp\left[\frac{(l\pm m+1)(l\pm m+2)}{(2l+1)(2l+3)}\right]^{\frac{1}{2}}Y_{l+1,m\pm1}	\label{eqA4.46}
+\end{empheq}\eqnormal
+请读者自行验证［利用\eqref{eqA4.28}、\eqref{eqA4.29}、\eqref{eqA4.31}式］
+
+当$\boldsymbol{r}\rightarrow-\boldsymbol{r}$，$\theta\rightarrow\pi\theta$，$\varphi\rightarrow\varphi+\pi$，因此$e^{im\varphi}$的宇称为$e^{im\pi}=(-1)^{m}$.而$P_{l}^{m}(\cos\theta)$的宇称为$(-1)^{l+m}$.因此$Y_{lm}$的宇称$(-1)^{l+2m}=(-1)^{l}$.(45)、(46)式两端量子数$l$的变化为$\pm 1$，正好和宇称法则一致.

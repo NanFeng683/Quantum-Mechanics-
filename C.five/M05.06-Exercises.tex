@@ -1,0 +1,118 @@
+\begin{exercises}
+\exercise 限于$l=1$ $(\boldsymbol{L}^{2}=2\hbar^{2})$的情形，利用$Y_{lm}(m=1,0,-1)$具体函数形式，用坐标轮换$(x\rightarrow y,y\rightarrow z,z\rightarrow x)$法求$\boldsymbol{L}^{2},L_{x}$共同本征函数，表示成$Y_{lm}$的线性叠加.再求$\boldsymbol{L}^{2},L_{y}$共同本征函数.
+
+\exercise 限于$l=1$的情形.利用上题结果验证：$L_{x}=0$的本征函数，$L_{y}=0$的本征函数以及$L_{z}=0$的本征函数$(Y_{10})$三者互相正交.你能否不依赖本征函数的具体函数形式而对此结果给予理论的证明？
+
+[提示：利用升降算符方法，求$Y_{10}$态$L_{x}^{2}$及平均值，从而论证$Y_{10}$态下$L_{z}=0$的概率为0.]
+
+\exercise 求$Y_{11}$态下$L_{x}$的可能测值及相应概率，用下述两种方法.
+
+(a) 将$Y_{11}$按$\boldsymbol{L}^{2},L_{x}$，共同本征函数（5-1题）展开.
+
+(b) 对$Y_{11}$态计算$L_{x}$及$L_{x}^{2}$平均值.
+
+\exercise 设粒子状态为$\varPsi=A(x+y+2z)e^{-\lambda r}$，$(\lambda>0)$求
+
+(a) $\boldsymbol{L}^{2}$的取值\quad(b)$\bar{L}_{z}$\quad(c)$L_{z}$等于$\hbar$的概率\quad(d)$L_{x}$的可能取值及相关概率.
+
+\exercise 用不确定关系估算氢原子基态能量.
+
+$\bigg[$提示：取$\Delta r\Delta p\sim\hbar,<r^{-1}>\sim\dfrac{1}{\Delta r}$$\bigg]$
+
+\exercise 质量为$\mu$的粒子在中心力场$V(r)=-\lambda r^{-\frac{3}{2}}(\lambda>0)$中运动，试用不确定度关系估算基态能量.
+
+\exercise 中心力问题的径向方程
+\begin{empheq}{equation*}
+	\bigg[-\frac{\hbar^{2}}{2\mu}\frac{d^{2}}{dr^{2}}+\frac{l(l+1)\hbar^{2}}{2\mu r^{2}}+V(r)\bigg]u(r)=Eu(r)
+\end{empheq}
+可以等效地当作一维能量本征方程，$u(r)$相当于波函数，等效能量算符为
+\begin{empheq}{equation*}
+	H(l,r)=-\frac{\hbar^{2}}{2\mu}\frac{d^{2}}{dr^{2}}+\frac{l(l+1)\hbar^{2}}{2\mu r^{2}}+V(r)
+\end{empheq}
+能级记为$E_{ln}(E_{l1}<E_{l2}<\cdots)$.试用海尔曼定理证明：$l$越大，$E_{ln}$越高（$n$固定）.
+
+[提示：视$l$为参数，求$\partial H/\partial l$，再用海尔曼定理.]
+
+\exercise 对于氢原子基态$\varPsi_{100}$，计算$\Delta x,\Delta p$，验证不确定度关系.
+
+\exercise 对于氢原子基态$\varPsi_{100}$，计算电子出现在经典禁区的概率.
+
+\exercise 对于氢原子的$(n,l,m)=(n,n-1,m)$态，计算电子出现在经典禁区的概率，并对$n=1,2,3,4,5$算出这个概率的数值，归纳出它对$n$的依赖关系.
+
+\exercise 对于氢原子的$(n,n-1,m)$态，求最概然半径及$\bar{r}$，$\bar{r^{2}}$，$\Delta r$.
+
+\exercise 原子核发生$\beta^{-}$衰变，电荷突然由$Ze$变成$(Z+1)e$.衰变过程中核外的电子波函数不受影响.对于原来处于原子$(Z)$的K层（1s层，$nlm=100$）的电子.衰变后仍旧处于原子$(Z+1)$的K层的概率等于多少？
+
+\exercise 单价原子的外层电子（价电子）所受原子核及内层电子的平均作用势可以近似表示成
+\begin{empheq}{equation*}
+	V(r)=-\frac{\e^{2}}{r}-\lambda a_{0}\frac{\e^{2}}{r^{2}},\quad 0<\lambda \leqslant 1
+\end{empheq}
+试求价电子能级，与氢原子能级比较，列出主量子数$n$的修正数公式.
+
+［提示：将$V(r)$的第二项与离心势能合并.］
+
+\exercise 对于在中心力场$V(r)$中运动的粒子（质量$\mu$）的任何一个$(H,\boldsymbol{L}^{2},L_{z})$共同本征态，证明
+\begin{empheq}{equation*}
+	\bigg\langle\frac{dV}{dr}\bigg\rangle-\frac{l(l+1)\hbar^{2}}{\mu}\bigg\langle\frac{1}{r^{3}}\bigg\rangle=\frac{2\pi\hbar^{2}}{\mu}|\varPsi(0)|^{2}
+\end{empheq}
+
+$\bigg[$提示：将径向方程乘以$du$，再逐项积分.注意$r\rightarrow0,\infty$处的边界条件.也可先求$\bigg[H,\dfrac{\partial}{\partial r}\bigg]$，再对$\varPsi$计算平均值.$\bigg]$
+
+\exercise 对于类氢离子（核电荷$Ze$）的$nlm$态，求$<r^{\nu}>,\nu=-1,-2,-3$.
+
+$\bigg[$ 提示：利用海尔曼定理求出$\bigg\langle\dfrac{1}{r}\bigg\rangle$，$\bigg\langle\dfrac{1}{r^{2}}\bigg\rangle$，再利用上题证明的公式求$\bigg\langle\dfrac{1}{r^{3}}\bigg\rangle$.注意$l=0$时$\bigg\langle\dfrac{1}{r^{3}}\bigg\rangle\rightarrow\infty$ $\bigg]$.
+
+\exercise 对于类氢离子（核电荷$Ze$）的$nlm$态，证明Kramers公式：
+\eqindent{1}
+\begin{empheq}{equation*}
+	\frac{\lambda+1}{n^{2}}<r^{\lambda}>-(2\lambda+1)\frac{a_{0}}{Z}<r^{\lambda-1}>+\frac{\lambda}{4}[(2l+1)^{2}-\lambda^{2}]\frac{a_{0}^{2}}{Z^{2}}<r^{\lambda-2}>=0
+\end{empheq}\eqnormal
+
+求出公式成立的条件
+
+[提示：以$r^{\lambda}u$乘径向方程，逐项积分.再以$2r^{\lambda+1}u^{\prime}$乘径向方程，逐项积分将两种结果合并，即可达到目的.]
+
+\exercise 利用上题证明的公式，计算$nlm$态的$<r>,<r^{2}>$.
+
+\exercise 对于氢原子的各s态$(nlm=nOO)$，计算$\Delta x,\Delta p_{x}$，并讨论经典极限$(n\geqslant1)$情况.
+
+［提示：s态各向同性，$\overline{x^{2}}=\dfrac{1}{3}\overline{r^{2}},\overline{p_{z}^{2}}=\dfrac{1}{3}<\boldsymbol{p}^{2}>$.］
+
+\exercise 类氢离子（核电荷$Ze$）$l\geqslant1$的情形下，按下列步骤对径向方程作近似处理：(a)求等效势能$V_{l}=V(r)+\dfrac{l(l+1)\hbar^{2}}{2\mu r^{2}}$极小值及相应距离$r_{l}$.(b)将$V_{l}$在$r_{l}$附近作泰勒展开，保留$(r-r_{l})^{2}$项.(c)视电子的径向运动为$r\sim r_{l}$附近的小振动，给定$l$，求最低能级与低激发能级，并和精确值比较.
+
+\exercise 二维各向同性谐振子是指在势场
+\begin{empheq}{equation*}
+	V=\frac{1}{2}k(x^{2}+y^{2})=\frac{1}{2}\mu\omega^{2}\rho^{2},\quad \omega=\sqrt{\frac{k}{\mu}}
+\end{empheq}
+中运动的粒子.$\hat{H},\hat{L}_{z}$共同本征函数表示成$\varPsi=W(\rho)e^{im\varphi}$.写出$W(\rho)$满足的径向方程，并按下列步骤求解.
+
+(a) 令$W(\rho)=u(\rho)\rho^{|m|}e^{-\alpha^{2}\rho^{2}/2}$，$\alpha=\sqrt{\dfrac{\mu\omega}{\hbar}}$
+
+(b) 令$\dfrac{E}{\hbar\omega}=\varepsilon$，$\alpha^{2}\rho^{2}=\xi,u(\rho)=F(\xi)$，证明$F(\xi)$满足合流超几何方程.
+
+(c) 仿照$\S$\ref{sec:05.04}，论证$F(\xi)$必须是$n_{p}$次多项式.
+ 
+(d) 确定能级.
+
+\exercise 三维各向同性谐振子
+\begin{empheq}{equation*}
+	V=\frac{1}{2}k(x^{2}+y^{2}+z^{2})=\frac{1}{2}\mu\omega^{2}r^{2},\omega=\sqrt{\frac{k}{\mu}}
+\end{empheq}
+
+$H,\boldsymbol{L}^{2},L_{z}$共同本征函数表示成
+\begin{empheq}{equation*}
+	\varPsi=R(r)Y_{lm}(\theta,\varphi)=\frac{u(r)}{r}Y_{lm}(\theta,\varphi)
+\end{empheq}
+
+写出径向方程，并仿照上题方法求解.
+
+[提示：令$u(r)=F(\xi)\xi^{(l+1)/2}e^{-\xi/2},\xi=\alpha^{2}r^{2}$.]
+
+\exercise 讨论5-20，5-21题中能级的简并度，与2-15，2-16题的结果对照.
+
+\exercise 对于三维各向同性谐振子的基态波函数，计算最概然半径，$\bar{r}$及$\Delta r$.
+
+\exercise 仿照$\S$\ref{sec:05.04}例题所用方法，对于三维各向同性谐振子的$(n,lm)$态，计算离心势能$\dfrac{\boldsymbol{L}^{2}}{2\mu r^{2}}$的平均值.
+
+
+\end{exercises}

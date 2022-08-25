@@ -1,0 +1,252 @@
+\section[线性算符]{线性算符} \label{sec:03.03} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+线性算符（子）是量子力学的基本数学工具，本节对此作初浅介绍，叙述力求简明，不追求论证的严格性， 以利初学者阅读.
+
+量子力学中，可以作用于波函数并且符合下列运算法则的算符$\hat{A}$称为线性算符，
+\begin{empheq}{equation}\label{eq33.1}
+	\hat{A}(C_{1}\varPsi_{1}+C_{2}\varPsi_{2})=C_{1}\hat{A}\varPsi_{1}+C_{2}\hat{A}\varPsi_{2}
+\end{empheq}
+其中$\varPsi_{1},\varPsi_{2}$是任意波函数（表示可以实现的状态），$C_{1},C_{2}$是常数（复数）.
+
+$\S$\ref{sec:03.01}所列举的力学量算符显然都是线性算符.\eqref{eq33.1}式表明，线性算符作用于几个波函数的叠加式时，可以逐项分别作用，而对常系数则不起作用.
+
+诸如开方，取绝对值，取复共轭等运算，则为非线性运算，如果定义出相应的算符，就是非线性算符.例如定义平方根算符$\sqrt{\quad}$，作用规则为
+\begin{empheq}{equation*}
+	\sqrt{\quad}\varPsi=\sqrt{\varPsi}=(\varPsi)^{\frac{1}{2}}
+\end{empheq}
+则
+\begin{empheq}{equation*}
+	\sqrt{\quad}C\varPsi=\sqrt{C\varPsi}=\sqrt{C}\sqrt{\varPsi}
+\end{empheq}
+常系数$C$也受到作用（被开方），所以$\sqrt{\quad}$算符为非线性算符.
+
+以后凡是提到“算符”，均指线性算符.
+
+算符$\hat{A},\hat{B}$之和（差）按下式定义，
+\begin{empheq}{equation}\label{eq33.2}
+	(\hat{A}\pm\hat{B})\varPsi=\hat{A}\varPsi\pm\hat{B}\varPsi
+\end{empheq}
+其中$\varPsi$是任意波函数.上式中$\hat{A}\varPsi$和$\hat{B}\varPsi$的性质都是波函数，次序可以颠倒，因此
+\begin{empheq}{equation*}
+	(\hat{A}+\hat{B})\varPsi=\hat{A}\varPsi+\hat{B}\varPsi=\hat{B}\varPsi+\hat{A}\varPsi=(\hat{B}+\hat{A})\varPsi
+\end{empheq}
+亦即
+\begin{empheq}{equation}\label{eq33.3}
+	\hat{A}+\hat{B}=\hat{B}+\hat{A}\quad\text{（加法交换律）}
+\end{empheq}
+
+算符$\hat{A},\hat{B}$之积仍为算符，按下式定义，
+\begin{empheq}{equation}\label{eq33.4}
+	(\hat{A}\hat{B})\varPsi=\hat{A}(\hat{B}\varPsi)
+\end{empheq}
+其中$\varPsi$为任意波函数（下同）.例如
+\begin{empheq}{align*}
+	(\hat{p}_{x\hat{p}y})\varPsi &=\hat{p}_{x}(\hat{p}_{y}\varPsi)
+	=-i\hbar\frac{\partial}{\partial x}\bigg(-i\hbar\frac{\partial}{\partial y}\varPsi\bigg)	\\
+	&=-\hbar^{2}\frac{\partial^{2}}{\partial x\partial y}\varPsi
+\end{empheq}
+所以
+\begin{empheq}{equation*}
+	\hat{p}_{x}\hat{p}_{y}=-\hbar^{2}\frac{\partial^{2}}{\partial x\partial y}
+\end{empheq}
+显然
+\begin{empheq}{equation}\label{eq33.5}
+	\hat{p}_{x}\hat{p}_{y}=\hat{p}_{y}\hat{p}_{x}
+\end{empheq}
+又如
+\begin{empheq}{align*}
+	(\hat{p}_{x}\hat{x})\varPsi &=\hat{p}_{x}(\hat{x}\varPsi)
+	=-i\hbar\frac{\partial}{\partial x}(x\varPsi)	\\
+	&=-i\hbar\bigg(x\frac{\partial}{\partial x}\varPsi+\varPsi\bigg)
+	=(\hat{x}\hat{p}_{x}-i\hbar)\varPsi
+\end{empheq}
+所以算符$\hat{x}\hat{p_{x}}$与$\hat{p_{x}}\hat{x}$不相等，它们的关系是
+\begin{empheq}{equation}\label{eq33.6}
+	\hat{x}\hat{p_{x}}-\hat{p_{x}}\hat{x}=i\hbar
+\end{empheq}
+这里将$i\hbar$（常数）也作为算符对待.
+
+\eqref{eq33.5}式和\eqref{eq33.6}式代表了两种典型的算符关系，即对易和不对易.一般说，如$\hat{A}\hat{B}=\hat{B}\hat{A}$，则称$\hat{A}$与$\hat{B}$可对易，或简称$\hat{A},\hat{B}$对易；如$\hat{A}\hat{B}\neq\hat{B}\hat{A}$，则称$\hat{A}$与$\hat{B}$不（可）对易.\eqref{eq33.5}式表明，动量算符的各个分量是相互对易的.\eqref{eq33.6}式表明，$\hat{p}$与$x$（作为算符）是不对易的容易发现，动量算符和位置算符的不同分量是对易的，如
+\begin{empheq}{equation}\label{eq33.7}
+	\hat{x}\hat{p}_{y}=\hat{p}_{y}\hat{x},\quad \hat{y}\hat{p}_{x}=\hat{p}_{x}\hat{y}
+\end{empheq}
+等等.力学扯算符之间的不可对易性，是量子力学特有的概念，经典物理中没有类似的概念.
+
+算符$\hat{A}$的$n$（正整数）次幕定义成$n$个$\hat{A}$连乘，如
+\begin{empheq}{equation}\label{eq33.8}
+	\hat{A}^{2}=\hat{A}\hat{A},\quad \hat{A}^{3}=\hat{A}\hat{A}\hat{A}
+\end{empheq}
+如再定义
+\begin{empheq}{equation}\label{eq33.9}
+	\hat{A}^{0}=1
+\end{empheq}
+显然就有
+\begin{empheq}{equation}\label{eq33.10}
+	\hat{A}^{n}\hat{A}^{m}=\hat{A}^{m}\hat{A}^{n}=\hat{A}^{n+m}
+\end{empheq}
+$n,m$为非负整数.
+
+如存在算符$\hat{B}$，使$\hat{B}\hat{A}=\hat{A}\hat{B}=1$，则可以定义$\hat{B}=\hat{A}^{-1}$，称为$\hat{A}$的逆算符.什么样的算符存在逆算符？这问题说来话长，暂不讨论.
+
+波函数$\varPsi$的复共轭记为$\varPsi^{*}$，即
+\begin{empheq}{equation*}
+	\varPsi=u+iv,\quad \varPsi^{*}=u-iv\quad\text{（}u,n\text{为实数）}
+\end{empheq}
+
+对于各种可能的状态（波函数）$\varPsi_{1},\varPsi_{2},\cdots,\varPsi_{i},\cdots$，定义算符$\hat{A}$的“矩阵元”
+\begin{empheq}{equation}\label{eq33.11}
+	A_{ij}=\int_{\text{全}}\varPsi_{i}^{*}\hat{A}\varPsi_{j}d\tau
+\end{empheq}
+显然，定义一个算符$\hat{A}$，相当于规定了全体$A_{ij}$之值.注意$A_{ij}$一般是复数.
+
+以下引入共轭算符的概念.$\hat{A}$的共枙记为$\hat{A}^{+}$，定义如下：对于任意波函数$\varPsi_{1},\varPsi_{2},\cdots,\varPsi_{i},\cdots$，定义$\hat{A}^{+}$的“矩阵元”为
+\setlength{\mathindent}{5em}
+\begin{empheq}{equation}\label{eq33.12}
+	A_{ij}^{+}=\int_{\text{全}}\varPsi_{i}^{*}\hat{A}^{*}\varPsi_{j}d\tau=(A_{ij})^{*}
+	=\int_{\text{全}}\varPsi_{j}(\hat{A}\varPsi_{i})^{*}d\tau
+\end{empheq}
+这种定义形式上很抽象，但是对于一般的常用算符，利用\eqref{eq33.12}式很容易找出其共轭算符.例如：
+
+(1) $\hat{A}=\lambda$（常数），由\eqref{eq33.12}式易见$\hat{A}^{+}=\lambda^{*}$.
+
+(2) $\hat{A}=\frac{\partial}{\partial x}$（以一维问题为例），由\eqref{eq33.12}式可得
+\begin{empheq}{align*}
+	\int_{-\infty}^{\infty}\varPsi_{i}^{*}\bigg(\frac{\partial}{\partial x}\bigg)^{*}\varPsi_{j}dx
+	&=\int_{-\infty}^{\infty}\varPsi_{j}\bigg(\frac{\partial}{\partial x}\varPsi_{i}\bigg)^{*}dx	\\
+	&=\varPsi_{j}\varPsi_{i}^{*}\bigg|_{-\infty}^{\infty}-\int_{-\infty}^{\infty}\varPsi_{i}^{*}\frac{\partial}{\partial x}\varPsi_{j}dx	\\
+	&=\int_{-\infty}^{\infty}\varPsi_{i}^{*}\bigg(-\frac{\partial}{\partial x}\bigg)\varPsi_{j}dx
+\end{empheq}\eqnormal
+（由于$\varPsi_{i},\varPsi_{j}$描述真实状态，$x\rightarrow\pm\infty$处$\varPsi_{i}$，$\varPsi_{j}\rightarrow 0$）比较上式两端，即得
+\begin{empheq}{equation}\label{eq33.13}
+	\bigg(\frac{\partial}{\partial x}\bigg)^{*}=-\frac{\partial}{\partial x}
+\end{empheq}
+同样应有
+\begin{empheq}{equation*}\label{eq33.13'}
+	\bigg(\frac{\partial}{\partial y}\bigg)^{*}=-\frac{\partial}{\partial y},\quad \bigg(\frac{\partial}{\partial z}\bigg)^{*}=-\frac{\partial}{\partial z}
+	\tag{$3.3.13^{\prime}$}
+\end{empheq}
+因此
+\begin{empheq}{equation}\label{eq33.14}
+	\nabla^{*}=-\nabla
+\end{empheq}
+
+利用定义式\eqref{eq33.12}，容易证明：
+\begin{empheq}{equation}\label{eq33.15}
+	(\hat{A}^{+})^{+}=\hat{A}
+\end{empheq}
+
+对于任意两个线性算符$\hat{A},\hat{B}$，容易证明：
+\begin{empheq}{equation}\label{eq33.16}
+	(\hat{A}\pm\hat{B})^{+}=\hat{A}^{+}\pm\hat{B}^{+}
+\end{empheq}
+\begin{empheq}{equation}\label{eq33.17}
+	(\hat{A}\hat{B})^{+}=\hat{B}^{+}\hat{A}^{+}
+\end{empheq}
+\eqref{eq33.17}式证明如下：反复利用\eqref{eq33.12}式，可得
+\setlength{\mathindent}{5em}
+\begin{empheq}{align*}
+	 &\int\varPsi_{i}^{*}(\hat{A}\hat{B})^{*}\varPsi_{j}d\tau
+	=\bigg[\int\varPsi_{j}^{*}\hat{A}(\hat{B}\varPsi_{i})d\tau\bigg]^{*}
+	=\int(\hat{B}\varPsi_{i})^{*}\hat{A}^{+}\varPsi_{j}d\tau	\\
+	=&\int(\hat{A}^{+}\varPsi_{j})(\hat{B}\varPsi_{i})^{*}d\tau
+	=\int\varPsi_{i}^{*}\hat{B}^{+}(\hat{A}^{+}\varPsi_{j})d\tau	\\
+	=&\int\varPsi_{i}^{*}(\hat{B}^{+}\hat{A}^{+})\varPsi_{j}d\tau
+\end{empheq}\eqnormal
+比较两端，即得\eqref{eq33.17}式.上式中所有积分均为全空间积分.
+
+如果$\hat{A}^{+}=\hat{A}$，则称$\hat{A}$为厄密算符或自共轭算符.利用\eqref{eq33.13}至\eqref{eq33.17}式，容易验明$\S$\ref{sec:03.01}中提到的$\boldsymbol{r},\boldsymbol{p},T,V,H,\boldsymbol{L}$等力学量算符都是厄密算符.
+
+注意，如$\hat{A},\hat{B}$均为厄密算符，即$\hat{A}^{+}=\hat{A},\hat{B}^{+}=\hat{B}$，则（$\hat{A}+\hat{B}$）是厄密算符，而$\hat{A}\hat{B}$是否为厄密算符取决于$\hat{A},\hat{B}$是否对易.如$\hat{A}\hat{B}=\hat{B}\hat{A}$，则$\hat{A}\hat{B}$是厄密算符；如$\hat{A}\hat{B}\neq\hat{B}\hat{A}$，则$\hat{A}\hat{B}$就不是厄密算符.
+
+关于厄密算符的本征值和本征函数，可以证明下述定理：
+
+定理（1）$\quad$厄密算符的本征值为实数.
+
+证明：设$\hat{A}^{+}=\hat{A}$，以$a$和$\varPsi_{a}$表示$\hat{A}$的一个本征值和相应的本征函数，满足本征方程：
+\begin{empheq}{equation}\label{eq33.18}
+	\hat{A}\varPsi_{n}=a\varPsi_{a}
+\end{empheq}
+以$\varPsi_{n}^{*}$左乘上式，并对全空间积分，得到
+\setlength{\mathindent}{5em}
+\begin{align*}
+	a\int\varPsi_{n}^{*}\varPsi_{n}d\tau
+	&=\int\varPsi_{a}^{*}\hat{A}\varPsi_{a}d\tau=\in\varPsi_{a}^{*}\hat{A}^{*}\varPsi_{n}d\tau
+	\intertext{利用\eqref{eq33.13}式，}
+	&=\bigg(\int\varPsi_{a}^{*}\hat{A}\varPsi_{a}d\tau\bigg)^{*}=a^{*}\int\varPsi_{a}^{*}\varPsi_{a}d\tau
+\end{align*}\eqnormal
+比较两端，即得$a=a^{*}$，即$a$为实数.
+
+两个波函数$\varPsi_{1},\varPsi_{2}$如果满足关系：
+\begin{empheq}{equation}\label{eq33.19}
+	\int_{\text{全}}=\varPsi_{1}^{*}\varPsi_{2}d\tau=0
+\end{empheq}
+则称$\varPsi_{1},\varPsi_{2}$“正交”.
+
+定理（2）$\quad$厄密算符的任何两个对应于不同本征值的本征函数互相正交.
+
+证明：设$\hat{A}=\hat{A}^{+}$，以$a_{1},a_{2}$表示两个本征值，$\varPsi_{1},\varPsi_{2}$为相应的本征函数，满足本征方程：
+\begin{empheq}{equation*}
+	\hat{A}\varPsi_{1}=a_{1}\varPsi_{1}
+\end{empheq}
+\begin{empheq}{equation*}
+	\hat{A}\varPsi_{2}=a_{2}\varPsi_{2}
+\end{empheq}
+以$\varPsi_{1}^{*}$左乘第一式，对全空间积分，得到
+\begin{empheq}{equation}\label{eq33.20}
+	a_{1}\int\varPsi_{2}^{*}\varPsi_{1}d\tau=\int\varPsi_{2}^{*}\hat{A}\varPsi_{1}d\tau
+\end{empheq}
+以$\varPsi_{1}^{*}$左乘第二式，也对全空间积分，得到
+\begin{empheq}{equation*}
+	a_{2}\int\varPsi_{1}^{*}\varPsi_{2}d\tau=\int\varPsi_{1}^{*}\hat{A}\varPsi_{2}d\tau
+\end{empheq}
+取复共轭，并利用\eqref{eq33.13}式，即得
+\setlength{\mathindent}{6em}
+\begin{empheq}{equation}\label{eq33.20'}
+	a_{2}\int\varPsi_{2}^{*}\varPsi_{1}d\tau
+	=\bigg(\int\varPsi_{1}^{*}\hat{A}\varPsi_{1}d\tau\bigg)^{*}
+	=\int\varPsi_{2}^{*}\hat{A}\varPsi_{1}d\tau
+	\tag{$3.3.20^{\prime}$}
+\end{empheq}\eqnormal
+\eqref{eq33.20}和\eqref{eq33.20'}式右端相等，由于已设$a_{1}\neq a_{2}$，所以
+\begin{empheq}{equation*}
+	\int_{\text{全}}\varPsi_{2}^{*}\varPsi_{1}d\tau=0
+\end{empheq}
+即$\varPsi_{1},\varPsi_{2}$正交.
+
+有时，厄密算符（$\hat{A}$）的某个本征值($a_{n}$)对应的独立本征函数不止一个.设与本征值$a_{n}$对应的本征函数为$\varPsi_{n1},\varPsi_{n2},\cdots,\varPsi_{nf}$,（$f$称为本征值$a_{n}$的简并度）它们互相线性独立，但是可能不正交,可以证明（略），将这$f$个简并态线性叠加，总能重新组成$f$个互相独立而且互相正交的新态，它们仍然是相应于本征值$a_{n}$的本征态.有此了解，以后凡是提到某个厄密算符的全体本征函数，一律理解成是互相正交的.
+
+\example 设波函数中$\varphi_{1},\varphi_{2}$均已归一化，但是不正交，
+\begin{empheq}{equation*}
+	\int_{\text{全}}\varphi_{1}^{*}\varphi_{2}d\tau=b\text{（实数）},\quad 0<b<1
+\end{empheq}
+试将$\varphi_{1},\varphi_{2}$线性叠加，组成两个正交归一化的波函数$\varPsi_{1},\varPsi_{2}$.
+
+\solution 设$\varPsi_{1}=C_{1}\varphi_{1}+C_{2}\varphi_{2}$，$\varPsi_{2}=C_{3}\varphi_{1}+C_{4}\varphi_{2}$.按题目要求，$\varPsi_{1},\varPsi_{2}$正交，即
+\setlength{\mathindent}{4em}
+\begin{empheq}{align*}
+	0&=\int_{\text{全}}\varPsi_{1}^{*}\varPsi_{2}d\tau
+	=\int_{\text{全}}(C_{1}^{*}\varphi_{1}^{*}+C_{2}^{*}\varphi_{2}^{*})(C_{3}\varphi_{1}+C_{4}\varphi_{2})d\tau	\\
+	&=C_{1}^{*}C_{3}+C_{2}^{*}C_{4}+(C_{1}^{*}C_{4}+C_{2}^{*}C_{3})b
+\end{empheq}
+有许多选择可以满足上式.如不管归一化条件，则$C_{1},C_{2},C_{3},C_{4}$中可以任意给定3个（但最多有一个等于0).例如：
+
+(i) $\varPsi_{1}=\varphi_{1}+\varphi_{2}$，$\varPsi_{2}=\varphi_{1}-\varphi_{2}$.相当于$C_{1}=C_{2}=C_{3}=1,C_{4}=-1$.归一化后，成为
+\begin{empheq}{equation}\label{eq33.21}
+	\begin{aligned}
+		\varPsi_{1}&=[2(1+b)]^{-\frac{1}{2}}(\varphi_{1}+\varphi_{2})
+		\varPsi_{2}&=[2(1-b)]^{-\frac{1}{2}}(\varphi_{1}-\varphi_{2})
+	\end{aligned}
+\end{empheq}\eqnormal
+
+(ii) $\varPsi_{1}=\varphi_{1}$，$\varPsi_{2}=b\varphi_{1}-\varphi_{2}$.相当于$C_{1}=1,C_{2}=0,C_{3}=b,C_{4}=-1$.归一化后，成为
+\setlength{\mathindent}{6em}
+\begin{empheq}{equation}\label{eq33.22}
+	\varPsi_{1}=\varphi_{1},\quad \varPsi_{2}=(1-b^{2})^{-\frac{1}{2}}(b\varphi_{1}-\varphi_{2})
+\end{empheq}
+
+(iii) $\varPsi_{1}=\varphi_{1}-b\varphi_{2}$，$\varPsi_{2}=\varphi_{2}$.相当于$C_{1}=1,C_{2}=-b,C_{3}=0,C_{4}=1$.归一化后，成为
+\begin{empheq}{equation}\label{eq33.23}
+	\varPsi_{1}=(1-b^{2})^{-\frac{1}{2}}(\varphi_{1}-b\varphi_{2}),\quad \varPsi_{2}=\varphi_{2}
+\end{empheq}\eqnormal
+

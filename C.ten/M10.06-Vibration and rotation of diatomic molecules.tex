@@ -1,0 +1,94 @@
+\starthis\section[双原子分子的振动和转动]{双原子分子的振动和转动} \label{sec:10.06} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+双原子分子的运动包括分子整体平移，转动，振动以及电子在定态能级上的运动和跃迁.如取分子质心坐标系，平移不必考虑电子能级（这里指价电子能级）的量级为10\si{eV}左右，分子振动能级的量级为$0.1\sim 1$\si{eV}，转动能级约$10^{-3}\sim 10^{-4}$\si{eV}.例如氧分子$(\ce{O_{2}})$，实验数据为
+\eqindent{8}
+
+\begin{empheq}{alignat*=2}
+	\text{键长}\num{0.1207}\si{nm}, &\qquad \text{离解能}\num{5.08}\si{eV} 	\\
+	\hbar\omega=\num{0.196}\si{eV}, & \qquad \frac{\hbar^{2}}{2I}=\num{1.792}\times10^{-4}\si{eV}	\\
+\end{empheq}\eqnormal
+研究分子振动和转动时，电子能级一般不会变化，可以将原子当作一个内部结构不变的粒子，两个原子之间的作用以中心作用势$V(r)$表示（$r$为两个原子的相对距离），$V-r$关系大体如$\S$\ref{sec:10.04}图\ref{fig.10-5}$\quad V^{5}-R$关系.
+
+在分子质心坐标系中，分子的振动和转动即两原子的相对运动，等效于质量为$\mu$（折合质量）的粒子在中心势场$V(r)$中的运动，（参看$\S$\ref{sec:10.01}）这个等效粒子的能量算符为
+\begin{empheq}{equation}\label{eqx6.1}
+	H=-\frac{\hbar^{2}}{2\mu}\nabla^{2}+V(r)
+\end{empheq}
+$V(r)$即两个原子间借以结合成分子的作用势，相当于$\S$\ref{sec:10.04}图\ref{fig.10-5}中的$V^{5}$.\eqref{eqx6.1}式中$(-i\hbar)\nabla$即二原子体系的相对动量$(\boldsymbol{p})$算符.相对角动量$\boldsymbol{L}=\boldsymbol{r}\times\boldsymbol{p}=-i\hbar\boldsymbol{r}\times\nabla$也就是分子的轨道角动量$(\boldsymbol{L}_{c}=0)$.$H,\boldsymbol{L}^{2},L_{z}$的共同本征函数可以表示成（参看$\S$\ref{sec:05.01}）
+\begin{empheq}{equation}\label{eqx6.2}
+	\varPsi=R(r)Y_{lm}(\theta,\varphi)=\frac{1}{r}u(r)Y_{lm}(\theta,\varphi)
+\end{empheq}
+其中球谐函数$Y_{lm}$描写分子转动.$u(r)$满足径向方程
+\begin{empheq}{equation}\label{eqx6.3}
+	-\frac{\hbar^{2}}{2\mu}\frac{d^{2}}{dr^{2}}u+\left[V(r)+\frac{l(l+1)\hbar^{2}}{2\mu r^{2}}\right]u=Eu
+\end{empheq}
+$u(r)$描述相对径向运动，即振动.$E$为总能量，即振动，转动能量的总和再加上分子结合能［下面\eqref{eqx6.4}式中$V_{0}$.］
+
+设分子键长为$R$，则$r=R$处$V(r)$为极小.如振动的振幅很小，即$|r-R\ll R$，可将$V(r)$展开成$(r-R)$的幕级数而略去$(r-R)^{3}$以上各项，取
+\begin{empheq}{align}\label{eqx6.4}
+	V(r)&=V_{0}+\frac{1}{2}V^{\prime\prime}(R)(r-R)^{2}	\nonumber\\
+	&=V_{0}+\frac{1}{2}\mu\omega_{0}^{2}(r-R)^{2}
+\end{empheq}
+$V_{0}$即$V(R)$.将\eqref{eqx6.4}式代入\eqref{eqx6.3}式，得到
+\begin{empheq}{align}
+	-\frac{\hbar^{2}}{2\mu}\frac{d^{2}}{dr^{2}}u+V_{l}(r)u=(E-V_{0})u	\label{eqx6.5}\\
+	V_{l}(r)=\frac{1}{2}\mu\omega_{0}^{2}(r-R)^{2}+\frac{l(l+1)\hbar^{2}}{2\mu r^{2}}	\label{eqx6.6}
+\end{empheq}
+$(E-V_{0})$为振动与转动能量之和，$V_{l}(r)$是等效势能.当$r=R$，$V_{l}$中第二项（离心势能）即通常所说分子转动能级，记为$E_{l}$
+\begin{empheq}{equation}\label{eqx6.7}
+	E_{l}=\frac{l(l+1)\hbar^{2}}{2\mu R^{2}}=\frac{l(l+1)\hbar^{2}}{2I}
+\end{empheq}\eqshort
+$I=\mu R^{2}$为分子转动惯量.设
+\begin{empheq}{equation}\label{eqx6.8}
+	E_{l}\ll \frac{1}{2}\mu\omega_{0}^{2}R^{2}
+\end{empheq}\eqnormal
+（上式右端相当于振动的振幅等于键长$R$时的振动能，这样大的能量足以使分子离解.所以上式总是成立的.）在这条件下$V_{l}$将存在极小，其位置可由极值条件$\frac{dV_{l}}{dr}=0$来确定，如下.
+\begin{empheq}{align}\label{eqx6.9}
+	\frac{d}{dr}V_{l}(r) &=\mu\omega_{0}^{2}(r-R)-\frac{l(l+1)\hbar^{2}}{\mu r^{3}}	\nonumber\\
+	&\approx\mu\omega_{0}^{2}(r-R)-\frac{l(l+1)\hbar^{2}}{\mu R^{3}}=0	\nonumber\\
+	r&=R+\frac{l(l+1)\hbar^{2}}{\mu^{2}\omega_{0}^{2}R^{3}}\xlongequal{\text{令}}r_{0}
+\end{empheq}
+如将$R$看成分子的静态（振动、转动完全消失）键长，则$r_{0}$就是动态键长，其中第二项是由于转动而引起的键的伸长.将$V_{l}(r)$在$r_{0}$附近展开成$(r-r_{0})$的幕级数，略去$(r-r_{0})^{3}$以上各项，得到
+\begin{empheq}{equation}\label{eqx6.10}
+	V_{l}(r)=V_{l}(r_{0})+\frac{1}{2}V_{l}^{\prime\prime}(r_{0})(r-r_{0})^{2}
+\end{empheq}
+如令
+\begin{empheq}{equation}\label{eqx6.11}
+	x=r-r_{0},\quad V_{l}^{\prime\prime}=\mu\omega_{0}^{2}
+\end{empheq}
+即得
+\begin{empheq}{equation*}\label{eqx6.10'}
+	V_{l}(r)=V_{l}(r_{0})+\frac{1}{2}\mu\omega_{0}^{2}x^{2}
+	\tag{$10.6.10^{\prime}$}
+\end{empheq}\eqlong
+代入径向方程\eqref{eqx6.5}式，成为
+\begin{empheq}{equation}\label{eqx6.12}
+	-\frac{\hbar^{2}}{2\mu}\frac{d^{2}}{dx^{2}}+\frac{1}{2}\mu\omega^{2}u=[E-V_{0}-V_{l}(r_{0})]u=E^{\prime}u
+\end{empheq}\eqllong
+上式形式上和一维谐振子的能量本征方程相同，利用谐振子能级公式，即可得出
+\begin{empheq}{equation}\label{eqx6.13}
+	E-V_{0}-V_{l}(r_{0})=E^{\prime}=\left(\nu+\frac{1}{2}\right)\hbar\omega,\quad \nu=0,1,2,\cdots
+\end{empheq}\eqlong
+$\nu$为振动量子数.由\eqref{eqx6.6}、\eqref{eqx6.9}式容易求出
+\begin{empheq}{align}\label{eqx6.14}
+	V_{l}(r_{0}) &=\frac{1}{2}\mu\omega_{0}^{2}\left[\frac{l(l+1)\hbar^{2}}{\mu^{2}\omega_{0}^{2}R^{3}}\right]+\frac{l(l+1)\hbar^{2}}{2\mu r_{0}^{2}}	\nonumber\\
+	&\approx E_{l}-\frac{l^{2}(l+1)^{2}\hbar^{4}}{2\mu^{2}\omega_{0}^{2}R^{6}}
+\end{empheq}\eqindent{11}
+计算中作了近似处理
+\begin{empheq}{equation*}
+	\frac{1}{r_{0}^{2}}\approx\frac{1}{R^{2}}-\frac{2l(l+1)\hbar^{2}}{\mu^{2}\omega_{0}^{2}R^{6}}
+\end{empheq}
+由\eqref{eqx6.6}、\eqref{eqx6.9}、\eqref{eqx6.11}式可以求出
+\begin{empheq}{align}\label{eqx6.15}
+	\omega^{2} &=\omega_{0}^{2}+\frac{3l(l+1)\hbar^{2}}{\mu^{2}r_{0}^{4}} \nonumber\\
+	\omega&\approx\omega_{0}+\frac{3l(l+1)\hbar^{2}}{2\mu^{2}\omega_{0}R^{4}}
+\end{empheq}\eqnormal
+其中第二项是由于转动而引起的振动频率变化.将以上结果代入\eqref{eqx6.13}式，即得分子振－转能级的最后表达式
+\begin{empheq}{equation}\label{eqx6.16}
+	\begin{aligned}
+	E_{\nu l}&=E-V_{0}=V_{l}(r_{0})+\left(\nu+\frac{1}{2}\right)\hbar\omega	\\
+	&\approx\left(\nu+\frac{1}{2}\right)\hbar\omega+E_{l}-\frac{l^{2}(l+1)^{2}\hbar^{4}}{2\mu^{2}\omega_{0}^{2}R^{6}}	\\
+	E_{l}&=\frac{l(l+1)\hbar^{2}}{2\mu R^{2}},\quad l,\nu=0,1,2,\cdots
+	\end{aligned}
+\end{empheq}
+$E_{l}$即上述转动能级，$\left(\nu+\frac{1}{2}\right)\hbar\omega$常称为振动能级，$E_{\nu l}$中最后一项则是由于键长改变而产生的能级修正，称为振－转修正项.

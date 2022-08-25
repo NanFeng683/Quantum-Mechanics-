@@ -1,0 +1,169 @@
+\section[波函数和算符]{波函数和算符} \label{sec:03.01} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+本节扼要叙述第二章已经讲过的一些原理和概念，并作适当扩充.
+
+{\heiti 1.状态和波函数}
+
+量子力学的第一个基本概念（基本假设）是，可以用波函数$\varPsi$全面描述微观粒子的运动状态，由$\varPsi$可以得知状态的全部物理性质.$\varPsi$也称态函数．
+
+不考虑粒子的自旋时，$\varPsi$是粒子的坐标（位置）$\boldsymbol{r}$和时间$t$的函数.对于一个随时间变化的运动态，$\varPsi=\varPsi(\boldsymbol{r},t)$；在某个给定的时刻$t_{0}$，$\varPsi=\varPsi(\boldsymbol{r},t_{0})$，是$\boldsymbol{r}$的函数.
+
+波函数的概念是德布罗意物质波思想的发展，是微观粒子具有波动性的数学描述.而波动性的真正含义是概率性，波函数$\varPsi$所描述的状态性质一般都带有概率性的特征，这是迄今人类已经发现并掌握的微观规律的根本特征.波函数的统计诠释
+\begin{empheq}{equation}\label{eq31.1}
+	\varPsi^{*}\varPsi d\tau\propto \text{粒子在}d\tau\text{中出现概率}
+\end{empheq}
+给出状态$\varPsi$下粒子空间位置（$\boldsymbol{r}$，当作力学量对待）的分布概率.$\S$\ref{sec:03.04}将普遍讨论任何力学量在一定状态下的取值及分布概率.
+
+{\heiti 2.薛定谔方程}
+
+量子力学的另一项基本假设是，运动态的波函数满足薛定谔方程.在简单情况下，如果粒子受到的外界作用可以用势能$V(\boldsymbol{r})$表示，则薛定谔方程为
+\begin{empheq}{equation}\label{eq31.2}
+	i\hbar\frac{\partial}{\partial t}\varPsi=-\frac{\hbar^{2}}{2m}\nabla^{2}\varPsi+V(\boldsymbol{r})\varPsi
+\end{empheq}
+薛定谔方程的普遍形式是
+\setlength{\mathindent}{12em}
+\begin{empheq}{equation}\label{eq31.3}
+	i\hbar\frac{\partial}{\partial t}\varPsi=\hat{H}\varPsi
+\end{empheq}\eqnormal
+其中$\hat{H}$是哈密顿算符.薛定谔方程是微观粒子运动状态随时间变化规律的数学描述，由于它是时间$t$的一阶微分方程，只需给定初始时刻($t_{0}$)的波函数$\varPsi(\boldsymbol{r},t)$.这正是微观领域因果性的表现形式.薛定谔方程保证粒子的空间分布总概率守恒，亦即保证粒子数守恒.
+
+{\heiti 3.定态}
+
+能量具有确定值的运动态称为定态，它的波函数随时间的变化规律具有特别简单的形式：
+\setlength{\mathindent}{10em}
+\begin{empheq}{equation}\label{eq31.4}
+	\varPsi_{E}(\boldsymbol{r},t)=\varPsi_{E}(\boldsymbol{r})e^{-iEt/\hbar}
+\end{empheq}
+$\varPsi_{E}(\boldsymbol{r})$满足定态薛定谔方程：
+\begin{empheq}{equation}\label{eq31.5}
+	\hat{H}\varPsi_{E}(\boldsymbol{r})=E\varPsi_{E}(\boldsymbol{r})
+\end{empheq}
+这是粒子能量的特征方程，它决定粒子运动的能谱.
+
+定态是一种稳定状态，$|\varPsi_{E}(\boldsymbol{r},t)|^{2}$不随时间变化，由它给出的粒子空间分布概率稳定不变.$\S$\ref{sec:03.09}将说明，定态的其他物理性质也都稳定不变.
+
+薛定谔方程\eqref{eq31.2}或\eqref{eq31.3}的通解可以表示成各定态波函数的线性组合，即
+\begin{empheq}{equation}\label{eq31.6}
+	\varPsi(\boldsymbol{r},t)=\sum_{n}C_{n}\varPsi_{E_{n}}(\boldsymbol{r},t)
+\end{empheq}\eqnormal
+系数$C_{n}$不随时间改变.
+
+{\heiti 4.力学量和算符}
+
+量子力学的另一项基本概念（基本假设）是，在理论计算中，力学量（实验上可以观测的量）可以用一个算符（算子）来表示，这是经典物理中所没有的新概念，$\S$\ref{sec:02.01}建立薛定谔方程时我们已经初步接触到这个概念.状态用波函数来描述（表示），力学量用算符来表示，可以说是一对孪生的量子力学基本概念（基本假设）.
+
+凡是有经典对应的力学量，相应的算符根据下列对应关系而得出：
+\begin{empheq}{equation}\label{eq31.7}
+	\boldsymbol{r}\rightarrow\boldsymbol{r},\quad\boldsymbol{p}\rightarrow\hat{\boldsymbol{p}}=-i\hbar\nabla
+\end{empheq}
+因此，纯粹是坐标（位置）的函数的那些经典力学量，其量子力学对应算符仍是坐标的函数，例如势能$V(\boldsymbol{r})$，作用力
+\begin{empheq}{equation}\label{eq31.8}
+	\boldsymbol{f}(\boldsymbol{r})=-\nabla V(\boldsymbol{r})
+\end{empheq}
+等等.经典力学中最重要的力学量有位置$\boldsymbol{r}$，动量$\boldsymbol{p}$，速度$\boldsymbol{v}=\frac{\boldsymbol{p}}{m}$，作用力$\boldsymbol{f}$，势能$V(\boldsymbol{r})$，动能$T=\frac{\boldsymbol{p}^{2}}{2m}$，角动量$\boldsymbol{L}=\boldsymbol{r}\times\boldsymbol{p}$，总能（哈密顿量）$H=T+V$，等等.动能的算符表示是
+\begin{empheq}{equation}\label{eq31.9}
+	\hat{T}=-\frac{\hbar^{2}}{2m}\nabla^{2}=-\frac{\hbar^{2}}{2m}\bigg(\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}\bigg)
+\end{empheq}
+角动量$\boldsymbol{L}$的算符表示是
+\begin{empheq}{equation}\label{eq31.10}
+	\hat{\boldsymbol{L}}=\boldsymbol{r}\times\hat{\boldsymbol{p}}
+	=-i\hbar \boldsymbol{r}\times\nabla
+\end{empheq}
+即
+\begin{empheq}{align*}\label{eq31.10'}
+	\hat{L_{x}} &=y\hat{p_{z}}-z\hat{p_{y}}=-\hbar\bigg(y\frac{\partial}{\partial z}-z\frac{\partial}{\partial y}\bigg)	\\
+	\hat{L_{y}} &=z\hat{p_{x}}-x\hat{p_{z}}=-\hbar\bigg(z\frac{\partial}{\partial x}-x\frac{\partial}{\partial z}\bigg)	\\
+	\hat{L_{z}} &=x\hat{p_{y}}-y\hat{p_{x}}=-\hbar\bigg(x\frac{\partial}{\partial y}-y\frac{\partial}{\partial x}\bigg)
+\end{empheq}
+$\hat{L}$的模方（俗称“平方”）定义成
+\begin{empheq}{equation}\label{eq31.11}
+	\hat{\boldsymbol{L}}^{2}=\hat{L_{x}}^{2}+\hat{L_{y}}^{2}+\hat{L_{z}}^{2}
+\end{empheq}
+角动扯本质上描写粒子运动的旋转性质，因此采用球坐标$(r,\theta,\varphi)$比较方便.$(r,\theta,\varphi)$和$(x,y,z)$的关系是
+\begin{empheq}{equation}\label{eq31.12}
+	\begin{aligned}
+		x &=r\sin\theta\cos\varphi, &y=r\sin\theta\sin\varphi	\\
+		z &=r\cos\theta, &x^{2}+y^{2}+z^{2}=r^{2}
+	\end{aligned}
+\end{empheq}
+其他关系见附录\ref{A03}.$\boldsymbol{r}$和$V$的直角坐标和球坐标表示式是
+\setlength{\mathindent}{6em}
+\begin{empheq}{equation}\label{eq31.13}
+	\boldsymbol{r}=\boldsymbol{e_{1}}x+\boldsymbol{e_{2}}y+\boldsymbol{e_{3}}z=\boldsymbol{e_{r}}r
+\end{empheq}
+\begin{empheq}{equation}\label{eq31.14}
+	\begin{split}
+		\nabla 
+		&=\boldsymbol{e_{1}}\frac{\partial}{\partial x}+\boldsymbol{e_{2}}\frac{\partial}{\partial y}+\boldsymbol{e_{3}}\frac{\partial}{\partial z}	\\
+		&=\boldsymbol{e_{r}}\frac{\partial}{\partial r}+\boldsymbol{e_{\theta}}\frac{1}{r}\frac{\partial}{\partial \theta}+\boldsymbol{e}_{\varphi}\frac{1}{r\sin\theta}\frac{\partial}{\partial \varphi}
+	\end{split}
+\end{empheq}
+经过计算（见附录\ref{A03}），得到
+\begin{empheq}{equation}\label{eq31.15}
+	\begin{aligned}
+		\hat{L_{x}} &=-\hbar\bigg(\sin\varphi\frac{\partial}{\partial \theta}+\cot\theta\cos\varphi\frac{\partial}{\partial \varphi}\bigg)	\\
+		\hat{L_{y}} &=-\hbar\bigg(-\cos\varphi\frac{\partial}{\partial \theta}+\cot\theta\sin\varphi\frac{\partial}{\partial \varphi}\bigg)	\\
+		\hat{L_{z}} &=-\hbar\bigg(\frac{\partial}{\partial \varphi}\bigg)
+	\end{aligned}
+\end{empheq}
+\begin{empheq}{equation}\label{eq31.16}
+	\hat{\boldsymbol{L}}^{2}=-\hbar^{2}\bigg[\frac{1}{\sin\theta}\frac{\partial}{\partial \theta}\sin\theta\frac{\partial}{\partial \theta}+\frac{1}{\sin^{2}\theta}\frac{\partial^{2}}{\partial \varphi^{2}}\bigg]
+\end{empheq}\eqnormal
+
+{\heiti 5.力学量算符的本征方程}
+
+第二章中讨论过几种定态问题，能级（能量本征值）和定态波函数一起由定态薛定谔方程
+\setlength{\mathindent}{12em}
+\begin{empheq}{equation*}
+	\hat{H}\varPsi_{E}=E\varPsi_{E}
+\end{empheq}
+解出.\eqref{eq31.5}式也称为算符$\hat{H}$的本（特）征方程，$E$称为本（特）征值，$\varPsi_{E}$称为本（特）征函数.本征值$E$就是能量的可能取值，$\varPsi_{E}$则是能量取确定值$E$的状态的波函数.这个概念可以推广到任何力学量.设有力学量$A$，其算符表示为$\hat{A}$，设参数（常数）$a$及波函数$\varPsi_{n}(r)$满足方程：
+\begin{empheq}{equation}\label{eq31.17}
+	A\varPsi_{n}=a\varPsi_{n}
+\end{empheq}\eqnormal
+则称$a$为力学量算符$\hat{A}$的本征值，$\varPsi_{n}$为$\hat{A}$的本征函数.上式称为算符$\hat{A}$的本征方程.作为一项基本假定，凡是满足本征方程\eqref{eq31.17}的任何一个$a$值可以认为就是力学量$A$的一个可能取值，而$\varPsi_{n}$则是$A$取确定值$a$时状态的波函数.如果只有某些特殊的$a$值（以及相应的$\varPsi_{n}$）才能满足本征方程\eqref{eq31.17}，力学量$A$的取值就是量子化的.简言之，由力学量算符的本征方程解出的全部本征值，就是相应力学量的可能取值.如用测量仪器测最这个力学量的取值，只能浏得其本征值.这个观点是量子力学的一项基本假设.
+
+\example 求$\hat{L}^{z}$的本征值和本征函数.
+
+\solution 考虑到$L_{z}$和$\hbar$量纲相同，以$m\hbar$表示$\hat{L}^{z}$的本征值，$m$为无量纲纯数，待定.本征方程为
+\begin{empheq}{equation}\label{eq31.18}
+	\hat{L}_{z}\varPsi=-i\hbar\frac{\partial}{\partial \varphi}\varPsi=n\hbar\varPsi
+\end{empheq}
+用分离变量法，令
+\setlength{\mathindent}{11em}
+\begin{empheq}{equation}\label{eq31.19}
+	\varPsi=u(r,\theta)\Phi(\varphi)
+\end{empheq}
+代入\eqref{eq31.7}式，显然$u(r,\theta)$可以是任意函数，$\Phi(\varphi)$则满足方程：
+\begin{empheq}{equation*}
+	\frac{d}{d\varphi}\Phi=im\Phi
+\end{empheq}
+解出
+\begin{empheq}{equation}\label{eq31.20}
+	\Phi=Ce^{im\varphi}
+\end{empheq}
+C为归一化常数.变量$\varphi$是多值的，由空间某一点开始，按右手螺旋方向绕$z$轴一周，回到出发点，$\varphi$值增加$2\pi$.而波函数$\varPsi$作为状态全部物理性质的数学描述，应该是$\boldsymbol{r}$的单值函数，因此$\Phi(\varphi)$应该满足单值条件\footnote[1]{关于单值条件的更严密的论证可以从$\hat{L}_{z}$的厄密性出发，请读者读完$\S$\ref{sec:03.05}后自行证明.}：
+\begin{empheq}{equation}\label{eq31.21}
+	\Phi(\varphi+2\pi)=\Phi(\varphi)
+\end{empheq}
+为了满足单值条件，\eqref{eq31.20}式中必须取
+\begin{empheq}{equation}\label{eq31.22}
+	m=0,\pm1,\pm2,\cdots
+\end{empheq}
+因此
+\begin{empheq}{equation*}
+	L_{z}=m\hbar=0,\pm\hbar,\pm2\hbar,\cdots
+\end{empheq}
+这结果和玻尔量子论一致，并且已经被实验测量所证实.
+
+如略去\eqref{eq31.18}式中任意函数$u(r,\theta)$，并相应地规定归一化条件为
+\begin{empheq}{equation}\label{eq31.23}
+	\int_{0}^{2\pi}\Phi^{*}\Phi d\varphi=1
+\end{empheq}\eqnormal
+容易求出\eqref{eq31.9}式中归一化系数（取为正实数）$C=\frac{1}{\sqrt{2\pi}}$，所以$\hat{L}_{z}$的本征函数为
+\setlength{\mathindent}{6em}
+\begin{empheq}{equation}\label{eq31.24}
+	\boxed{\Phi_{m}(\varphi)=\frac{1}{\sqrt{2\pi}}e^{im\varphi},\quad m=0,\pm1,\pm2,\cdots}
+\end{empheq}\eqnormal
+\pskip

@@ -1,0 +1,181 @@
+\section[自由粒子]{自由粒子} \label{sec:05.02} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+自由运动的粒子，总能等于动能（取势能$V=0$），
+\begin{empheq}{equation}\label{eq52.1}
+	\hat{H}=\frac{\hat{\boldsymbol{p}}^{2}}{2\mu}=-\frac{\hbar^{2}}{2\mu}\nabla^{2}
+\end{empheq}
+主要守恒量有$\boldsymbol{H},\boldsymbol{p},\boldsymbol{L}$等作为守恒量完全集，可取$(p_{x},p_{y},p_{z}$或$(H,\boldsymbol{L}^{2},L_{z})$.前者的共同本征函数就是自由粒子平面波（参看$\S$\ref{sec:03.05}）
+\begin{empheq}{equation}\label{eq52.2}
+	\varPsi_{\boldsymbol{p}}(\boldsymbol{r})=(2\pi\hbar)^{-\frac{3}{2}}e^{i\boldsymbol{p}\cdot\boldsymbol{r}/\hbar}
+\end{empheq}
+本节专门讨论$(\hat{\boldsymbol{H}},\hat{\boldsymbol{L}}^{2},\hat{L}_{z})$的共同本征函数，称为自由粒子球面波.按照\eqref{eq51.10}、\eqref{eq51.13}、\eqref{eq51.14}式，波函数可以表示成
+\begin{empheq}{equation}\label{eq52.3}
+	\varPsi=R_{l}(r)Y_{lm}(\theta,\varphi)=\frac{u_{l}(r)}{kr}Y_{lm}(\theta,\varphi)
+\end{empheq}
+$u_{l}(r)$满足径向方程
+\begin{empheq}{equation}\label{eq52.4}
+	\frac{d^{2}}{dr^{2}}u_{l}+\bigg[\frac{2\mu E}{\hbar^{2}}-\frac{l(l+1)}{r^{2}}\bigg]u_{l}=0
+\end{empheq}
+令
+\begin{empheq}{equation}\label{eq52.5}
+	k=\frac{\sqrt{2\mu E}}{\hbar},\quad kr=\rho
+\end{empheq}
+$E,k$可以连续变化（取正值），\eqref{eq52.4}式简化成
+\begin{empheq}{equation*}\label{eq52.4'}
+	\rho^{2}\frac{d^{2}u_{l}}{d\rho^{2}}+[\rho^{2}-l(l+1)]u_{l}=0
+	\tag{$5.2.4^{\prime}$}
+\end{empheq}
+下面求$u_{l}$及$R_{l}(r)$.根据\eqref{eq51.18}式，令
+\begin{empheq}{equation}\label{eq52.6}
+	u_{l}=(-1)^{l}\rho^{l+1}W_{l}(\rho)
+\end{empheq}
+代入\eqref{eq52.4'}式，得到$W_{l}$满足的方程
+\begin{empheq}{equation}\label{eq52.7}
+	W_{l}^{\prime\prime}+2(l+1)\frac{W_{l}^{\prime}}{\rho}+W_{l}=0
+\end{empheq}
+再令
+\begin{empheq}{equation}\label{eq52.8}
+	v_{l}=\frac{W_{l}^{\prime}}{\rho}=\frac{1}{\rho}\frac{dW_{l}}{d\rho}
+\end{empheq}
+则
+\begin{empheq}{equation*}
+	W_{l}^{\prime}=\rho v_{l},\quad W_{l}^{\prime\prime}=\rho v_{l}^{\prime}+v_{l}
+\end{empheq}
+代入\eqref{eq52.7}式，得到
+\begin{empheq}{equation*}
+	\rho v_{l}^{\prime}+(2l+3)v_{l}+W_{l}=0
+\end{empheq}
+再微分一次，并用$\rho$除，得到
+\begin{empheq}{equation}\label{eq52.9}
+	v_{l}^{\prime\prime}+2(l+2)\frac{v_{l}^{\prime}}{\rho}+v_{l}=0
+\end{empheq}
+比较\eqref{eq52.7}、\eqref{eq52.9}式，可见
+\begin{empheq}{equation}\label{eq52.10}
+	W_{l+1}=v_{l}=\frac{1}{\rho}\frac{dW_{l}}{d\rho}
+\end{empheq}
+这是各$W_{l}$之间的递推公式.$l=0$时，\eqref{eq52.4'}式成为
+\eqshort
+\begin{empheq}{equation}\label{eq52.11}
+	u_{0}^{\prime\prime}+u_{0}=0
+\end{empheq}\eqnormal
+其独立解为
+\begin{empheq}{equation}\label{eq52.12}
+	u_{0}=\sin\rho,\cos\rho\text{或}e^{i\varphi},e^{-i\varphi}
+\end{empheq}
+相应的$R_{0}$及$W_{0}$为
+\eqlong
+\begin{empheq}{equation}\label{eq52.13}
+	R_{0}=W_{0}=\frac{u_{0}}{\rho}=\frac{\sin\rho}{\rho},\frac{\cos\rho}{\rho}\text{或}\frac{e^{i\varphi}}{\rho},\frac{e^{-i\varphi}}{\rho}
+\end{empheq}\eqnormal
+前两种为驻波，后两种为行波这四种解在$r>O$处均满足能量本征方程$\hat{H}\varPsi=E\varPsi$，亦即
+\eqshort
+\begin{empheq}{equation}\label{eq52.14}
+	\nabla^{2}\varPsi+k^{2}\varPsi=0
+\end{empheq}\eqnormal
+$\bigg($注意，$l=0$时$Y_{00}=\frac{1}{\sqrt{4\pi}}$，$\varPsi$与$R_{0}$只相差一个常系数.$\bigg)$但是，在全空间（$r\rightarrow 0$也包括在内）满足\eqref{eq52.14}式的解，当$l=0$时只有\eqref{eq52.13}式的第一种\footnote{$r\rightarrow0$处另外三种解均与$\frac{1}{r}$成比例，不满足\eqref{eq52.14}式.理由参看本章\ref{F.5-1}注.}，即
+\begin{empheq}{equation}\label{eq52.15}
+	R_{0}=W_{0}=\frac{\sin\rho}{\rho}\equiv j_{0}(\rho)
+\end{empheq}
+利用\eqref{eq52.10}式及\eqref{eq52.6}式， 即可求出
+\begin{empheq}{equation*}
+	W_{l}=\bigg(\frac{1}{\rho}\frac{d}{d\rho}\bigg)^{l}\bigg(\frac{\sin\rho}{\rho}\bigg)
+\end{empheq}\eqlong
+\begin{empheq}{align}\label{eq52.16}
+	R_{l}(r)&=\frac{u_{l}}{\rho}=(-1)^{l}\rho^{l}W_{l}	\nonumber\\
+	&=(-1)^{l}\rho^{l}\bigg(\frac{1}{\rho}\frac{d}{d\rho}\bigg)^{l}\bigg(\frac{\sin\rho}{\rho}\bigg)\equiv j_{l}(\rho)
+\end{empheq}
+\eqref{eq52.16}式称为球贝塞耳函数，它和第一类贝塞耳函数$J_{\nu}(\rho)$的关系是
+\begin{empheq}{equation}\label{eq52.17}
+	j_{l}(\rho)=\sqrt{\frac{\pi}{2\rho}}J_{l+\frac{1}{2}}(\rho),\quad l=0,1,2,\cdots
+\end{empheq}
+这是唯一能够表示成初等函数的贝塞耳函数.
+
+许多问题中常用到$j_{l}(\rho)$的渐近表示，这可以利用\eqref{eq52.16}式求出.当$\rho\rightarrow\infty(\rho\geqslant l)$，略去$\rho^{-2}$以下小量，并利用公式
+\begin{empheq}{equation*}
+	\frac{d}{d\rho}\sin\rho=\cos\rho=-\sin\bigg(\rho-\frac{\pi}{2}\bigg)
+\end{empheq}\eqnormal
+容易得出
+\begin{empheq}{equation}\label{eq52.18}
+	j_{l}(\rho)\sim\frac{1}{\rho}\sin\bigg(\rho-\frac{l\pi}{2}\bigg),\quad \rho\rightarrow\infty
+\end{empheq}
+当$\rho\rightarrow 0$，利用公式
+\begin{empheq}{align*}
+	\frac{\sin\rho}{\rho}=&\sum_{n=0}^{\infty}\frac{(-1)^{n}}{(2n+1)!}\rho^{2n}	\\
+	\frac{1}{\rho}\frac{d}{d\rho}&=2\frac{d}{d(\rho^{2})}
+\end{empheq}
+由\eqref{eq52.16}式易得
+\eqlong
+\begin{empheq}{equation}\label{eq52.19}
+	j_{l}(\rho)\rightarrow\frac{\rho^{l}}{(2l+1)!!}=\frac{\rho^{l}}{1\cdot3\cdot5\cdot\cdots\cdot(2l+1)}
+\end{empheq}
+
+作为径向波函数，$j_{l}(kr)$显然是不能归一化的，这是游离态波函数的特点.至于$l$相同，能量为$E=\frac{\hbar^{2}k^{2}}{2\mu}$和$E^{\prime}=\frac{\hbar^{2}k^{\prime2}}{2\mu}$的两个径向波函数$j_{l}(kr)$和$j_{l}(k^{\prime}r)$，则有下列正交归一性
+\begin{empheq}{align}\label{eq52.20}
+	&\int_{0}^{\infty}j_{l}(kr)j_{l}(k^{\prime}r)r^{2}dr	\nonumber\\
+	\approx&\frac{1}{kk^{\prime}}\int_{0}^{\infty}\sin\bigg(kr-\frac{l\pi}{2}\bigg)\sin\bigg(k^{\prime}r-\frac{l\pi}{2}\bigg)dr	\nonumber\\
+	=&\frac{1}{2kk^{\prime}}\int_{0}^{\infty}[\cos(k-k^{\prime})r+(-1)^{l+1}\cos(k+k^{\prime})r]dr	\nonumber\\
+	=&\frac{\pi}{2kk^{\prime}}\delta(k-k^{\prime})
+\end{empheq}
+计算中利用了渐近公式\eqref{eq52.18}以及
+\begin{empheq}{align}\label{eq52.21}
+	\delta(k-k^{\prime})&=\frac{1}{2\pi}\int_{-\infty}^{\infty}e^{i(k-k^{\prime})x}dx	\nonumber\\
+	&=\frac{1}{\pi}\int_{0}^{\infty}\cos(k-k^{\prime})xdx
+\end{empheq}\eqnormal
+
+\example 将沿$z$方向传播的平面波（动量$p_{z}=\hbar k$）$e^{ikz}$展开成球面波的叠加.
+
+\solution 平面波$e^{ikz}$中是\eqref{eq52.14}式的一个特解，它是$(\hat{p}_{x},\hat{p}_{y},\hat{p}_{z})$的共同本征函数.也是$\hat{L}_{z}$的本征函数，
+\begin{empheq}{equation*}
+	\hat{L}_{z}e^{ikz}=-i\hbar\frac{\partial}{\partial\varphi}e^{ikr\cos\theta}=0
+\end{empheq}
+即$L_{z}$的本征值为0.但$e^{ikz}$并非$\hat{\boldsymbol{L}}^{2}$的本征函数.将$e^{ikz}$展开成各$Y_{lm}$的线性叠加，必然具有下列形式
+\begin{empheq}{equation}\label{eq52.22}
+	e^{ikz}=e^{ikr\cos\theta}=\sum_{l=0}^{\infty}C_{l}j_{l}(kr)Y_{l0}(\theta)
+\end{empheq}
+由于
+\begin{empheq}{equation}\label{eq52.23}
+	Y_{l0}(\theta)=\sqrt{\frac{2l+1}{4\pi}}P_{l}(\cos\theta)
+\end{empheq}
+所以\eqref{eq52.22}式也可写成
+\begin{empheq}{equation*}\label{eq52.22'}
+	e^{ikz}=e^{ikr\cos\theta}=\sum_{l=0}^{\infty}C_{l}^{\prime}j_{l}(kr)P_{l}(\cos\theta)
+	\tag{$5.2.22^{\prime}$}
+\end{empheq}
+其中
+\begin{empheq}{equation*}
+	C_{l}^{\prime}=\sqrt{\frac{2l+1}{4\pi}}C_{l}
+\end{empheq}
+为待定系数.将\eqref{eq52.22'}左端展开成幕级数，
+\begin{empheq}{equation}\label{eq52.24}
+	e^{ikr\cos\theta}=\sum_{0}^{\infty}\frac{1}{l!}(ikr\cos\theta)^{l}
+\end{empheq}
+其中$kr$的幕次总是和$\cos\theta$的幕次相同.
+
+根据$P_{l}$的定义
+\eqlong
+\begin{empheq}{equation*}
+	P_{l}(\cos\theta)=\frac{1}{2^{l}l!}\bigg(\frac{d}{d\cos\theta}\bigg)^{l}(\cos^{2}\theta-1)^{l}
+\end{empheq}\eqnormal
+最高次项$(\cos\theta)^{l}$的系数为
+\begin{empheq}{equation*}
+	\frac{(2l)(2l-1)\cdots(l+1)}{2^{l}l!}
+\end{empheq}
+而在$j_{l}(kr)$的级数表示式中，最低幕次为$(kr)^{l}$，系数为[见\eqref{eq52.19}式]$\frac{1}{(2l+1)!!}$.因此\eqref{eq52.22'}式右端$(kr\cos\theta)^{l}$项系数为
+\begin{empheq}{equation*}
+	\frac{C_{l}^{\prime}(2l)(2l-1)\cdots(l+1)}{2^{l}l!(2l+1)!!}
+\end{empheq}
+与\eqref{eq52.24}式比较，即得
+\eqlong
+\begin{empheq}{equation}\label{eq52.25}
+	C_{l}^{\prime}=\frac{i^{l}2^{l}(2l+1)!!}{(2l)(2l-1)\cdots(l+1)}=(2l+1)i^{l}
+\end{empheq}
+代入\eqref{eq52.22'}式，即得
+\begin{empheq}{equation}\label{eq52.26}
+	e^{ikz}=\sum_{l=0}^{\infty}(2l+1)i^{l}j_{l}(kr)P_{l}(\cos\theta)
+\end{empheq}
+这就是所求展开式.当$kr\rightarrow\infty$，利用\eqref{eq52.18}式可得
+\begin{empheq}{equation}\label{eq52.27}
+	e^{ikz}\sim\frac{1}{kr}\sum_{l=0}^{\infty}(2l+1)i^{l}\sin\bigg(kr-\frac{l\pi}{2}\bigg)P_{l}(\cos\theta)
+\end{empheq}\eqnormal
+这个结果对于散射问题很有用．

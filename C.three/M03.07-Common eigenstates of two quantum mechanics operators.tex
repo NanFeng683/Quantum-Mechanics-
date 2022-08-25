@@ -1,0 +1,111 @@
+\section[两个力学量算符的共同本征态]{两个力学量算符的共同本征态} \label{sec:03.07} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+考虑物理体系（最简单的情况就是一个粒子）的两种力学量（可观测量）$A$，$B$.设在某种状态下，$A$和$B$都有确定的取值，$A=a_{n},B=b_{k}$.（为了叙述方便，设本征值谱是分立的）根据本征态和本征值的物理解释，可知这个状态既是算符$\hat{A}$的本征态，又是$\hat{B}$的本征态，亦即是$\hat{A}$和$\hat{B}$的共同本征态.相应的波函数记为$\varPsi_{nk}$，满足本征方程
+\begin{empheq}{equation}\label{eq37.1}
+	\hat{A}\varPsi_{nk}=a_{n}\varPsi_{nk},\quad \hat{B}\varPsi_{nk}=b_{k}\varPsi_{nk}
+\end{empheq}
+因此
+\begin{empheq}{equation}\label{eq37.2}
+	(\hat{A}\hat{B}-\hat{B}\hat{A})\varPsi_{nk}=(a_{n}b_{k}-b_{k}a_{n})\varPsi_{nk}=0
+\end{empheq}
+这结果提示我们，$\hat{A}$和$\hat{B}$可能是对易算符.但是，如$\hat{A},\hat{B}$仅存在个别的共同本征态，并不能由此得出$\hat{A},\hat{B}$是对易算符的结论.
+
+如果$\hat{A},\hat{B}$存在一系列共同本征函数，构成完备函数系，情况就不同了.这时任何波函数$\varPsi$都可以表示成这些共同本征函数的线性叠加：
+\begin{empheq}{equation}\label{eq37.3}
+	\varPsi=\sum_{n,k}C_{nk}\varPsi_{nk}
+\end{empheq}
+从而
+\begin{empheq}{equation*}
+	(\hat{A}\hat{B}-\hat{B}\hat{A})\varPsi=\sum_{n,k}C_{nk}(\hat{A}\hat{B}-\hat{B}\hat{A})\varPsi_{nk}=0
+\end{empheq}
+由此可得
+\begin{empheq}{equation}\label{eq37.4}
+	\hat{A}\hat{B}-\hat{B}\hat{A}=[\hat{A},\hat{B}]=0
+\end{empheq}
+即$\hat{A},\hat{B}$为对易算符.
+
+反过来，如果力学量算符$\hat{A},\hat{B}$对易，即$\hat{A}\hat{B}=\hat{B}\hat{A}$，则$\hat{A}$和$\hat{B}$必定存在一系列共同本征函数，并构成完全函数系证明如下.
+
+由于$\hat{A}$和$\hat{B}$都是力学量算符，它们各自存在一组完备的本征函数系，记为$|\varPsi_{n}|$和$|\Phi_{k}|$，满足本征方程：
+\begin{empheq}{align}%5,6
+	\hat{A}\varPsi_{n}&=a_{n}\varPsi_{n},\quad n=1,2,3,\cdots	\label{eq37.5}\\
+	\hat{B}\Phi_{k}&=b_{k}\Phi_{k},\quad k=1,2,3,\cdots	\label{eq37.5}
+\end{empheq}
+$n$和$k$为本征函数的编号数，对于简并态，本征值重复出现.任取一个$\hat{A}$的本征函数$\varPsi_{n}$，将它表示成$\hat{B}$的本征函数的线性叠加：
+\begin{empheq}{equation}\label{eq37.7}
+	\varPsi_{n}=\sum_{k}C_{nk}\Phi_{k}=\sum_{i}\tilde{\Phi_{i}}
+\end{empheq}
+考虑到可能存在的简并化，上式中$\tilde{\Phi_{i}}$表示$\sum_{k}$中相应于$\hat{B}$的同一个本征值$b_{i}$的各项之和（对于$\sum_{k}$中的非简并项，$\tilde{\Phi_{i}}$就是$C_{ni}\Phi_{i}$），因此
+\begin{empheq}{equation}\label{eq37.8}
+	\hat{B}\tilde{\Phi_{i}}=b_{i}\tilde{\Phi_{i}}
+\end{empheq}
+\eqref{eq37.7}式中各$\tilde{\Phi_{i}}$，相应于$\hat{B}$的不同本征值，因而是互相线性独立的.下面证明每个$\tilde{\Phi_{i}}$都是$\hat{A}$的本征函数.将\eqref{eq37.7}式代入\eqref{eq37.5}式，得到
+\begin{empheq}{equation}\label{eq37.9}
+	(\hat{A}-a_{n})\varPsi_{n}=\sum_{i}(\hat{A}-a_{n})\tilde{\Phi_{i}}=0
+\end{empheq}
+以算符$\hat{B}$作用于上式中每一项，由于$\hat{A},\hat{B}$对易，得到
+\begin{empheq}{equation*}
+	\hat{B}(\hat{A}-a_{n})\tilde{\Phi_{i}}=(\hat{A}-a_{n})\hat{B}\tilde{\Phi_{i}}=b_{i}(\hat{A}-a_{n})\tilde{\Phi_{i}}
+\end{empheq}
+上式表明，$(\hat{A}-a_{n})\tilde{\Phi_{i}}$如果不等于0，它就是$\hat{B}$的本征函数，相应于本征值$b_{i}$；而\eqref{eq37.9}式意味着相应于$\hat{B}$的不同本征值的本征函数是线性相关的！这当然是不可能的.为了避免这个矛盾，必须
+\begin{empheq}{equation}\label{eq37.10}
+	(\hat{A}-a_{n})\tilde{\Phi_{i}}=0
+\end{empheq}
+因此$\tilde{\Phi_{i}}$是$\hat{A}$的本征函数，相应于本征值$a_{n}$.至此已经证明了$\tilde{\Phi_{i}}$是$\hat{A},\hat{B}$的共同本征函数.这就是说，$\hat{A}$的每一个本征函数$\varPsi_{n}$都可以分解成若干个$\hat{A},\hat{B}$的共同本征函数$\tilde{\Phi_{i}}$.由于全体$|\varPsi_{n}|$是完备函数系，显然全体$\tilde{\Phi_{i}}$也是完备函数系.证明完毕.
+
+从上面的论证可以得出一个直接的推论，即， 如$\hat{A},\hat{B}$对易， 而$\hat{A}$或$\hat{B}$具有某些非简并本征函数，则它们必然是$\hat{A},\hat{B}$的共同本征函数.
+
+如果算符$\hat{A}$的全部本征函数都是非简并的，而算符$\hat{B}$和$\hat{A}$对易，则$\hat{A}$的每一个本征函数同时也是$\hat{B}$的本征函数，因此$\hat{B}$的本征值逐个取决于$\hat{A}$的本征值，从而可以认为力学量$B$是力学量$A$的函数.这样，凡是与$\hat{A}$对易的厄密算符，必定是$\hat{A}$的函数.如力学量$B$不是$A$的函数，则称$\hat{B}$独立于$\hat{A}$，显然$\hat{B}$和$\hat{A}$必定是不可对易的.
+
+如果$\hat{A}$的一部分或全部本征函数是简并的，则给定$\hat{A}$的本征值并不足以完全确定波函数.这种情况下必然存在独立于$\hat{A}$而又与$\hat{A}$对易的其他力学量算符$\hat{B}$，它们存在共同本征函数，并构成完备函数系.如果$\hat{A},\hat{B}$的共同本征函数仍有简并，则给定$\hat{A},\hat{B}$的本征值仍不足以完全确定波函数，这时必定还存在独立于$\hat{A},\hat{B}$而又与$\hat{A},\hat{B}$对易的其他力学量算符.依此类推.
+
+一组互相对易而又互相独立的力学量算符，如它们的共同本征函数是非简并的，并且构成完备函数系，则这组力学量称为力学量完全集，它们的一组本征值唯一地确定出一个共同本征态.构成完全集的独立力学量数目，称为物理体系的自由度.例如，一维谐振子，总能量算符$\hat{H}$的本征函数全部是非简并的，因此$H$本身就是力学量完全集，自由度为1.又如三维自由粒子，力学量完全集可以取为$(p_{x},p_{y},p_{z})$，总能量算符$\hat{H}=\hat{\boldsymbol{p}}^{2}/2m$是它们的函数，它们的共同本征函数$\varPsi_{\boldsymbol{p}}$[\eqref{eq35.10}式]就是通常说的平面波波函数；也可以选取别的力学量完全集，如$(\boldsymbol{p}^{2},\boldsymbol{L}^{2},L_{z})$，它们的共同本征态俗称自由粒子球面波，将在$\S$\ref{sec:05.02}讨论.
+
+必须指出，两个或多个互不对易的力学量算符，也可能存在个别的共同本征函数，但是不足以构成完备函数系.设$\hat{A},\hat{B}$为力学量算符（厄密算符），不对易，设
+\begin{empheq}{equation}\label{eq37.11}
+	[\hat{A},\hat{B}]=\hat{A}\hat{B}-\hat{B}\hat{A}=i\hat{C}
+\end{empheq}
+容易证明$\hat{C}$是厄密算符.设$\varPsi_{ab}$是$\hat{A},\hat{B}$的共同本征函数，相应于本征值$A=a$，$B=b$.将\eqref{eq37.11}式作用于$\varPsi_{ab}$，易得
+\begin{empheq}{equation}\label{eq37.12}
+	\hat{C}\varPsi_{ab}=0
+\end{empheq}
+即$\varPsi_{ab}$也是算符$\hat{C}$的本征函数，本征值为0.所以，如果算符$\hat{C}$的本征值谱中不包含0，$\hat{A},\hat{B}$就没有共同本征函数.例如$\hat{A}=\hat{x},\hat{B}=\hat{p_{x}}$，$[\hat{x},\hat{p_{x}}]=i\hbar$，即$\hat{C}=\hbar$，$\hat{C}$的唯一本征值就是$\hbar$，所以$\hat{x}$和$\hat{p_{x}}$没有共同本征函数.注意，\eqref{eq37.12}式仅是$\hat{A},\hat{B}$的共同本征函数所必须满足的必要条件，并非充分条件.
+
+\example 讨论轨道角动量$\boldsymbol{L}=\boldsymbol{r}\times\boldsymbol{p}$的任何两个分量存在共同本征函数的可能性，并求出这种共同本征函数.
+
+\solution 算符$\hat{\boldsymbol{L}}$的三个分量互不对易，满足对易式：
+\eqindent{4}
+\begin{empheq}{equation}\label{eq37.13}
+	[\hat{L_{x}},\hat{L_{y}}]=i\hbar\hat{L_{z}},\quad[\hat{L_{y}},\hat{L_{x}}]=i\hbar\hat{L_{x}},\quad[\hat{L_{z}},\hat{L_{x}}]=i\hbar\hat{L_{y}}
+\end{empheq}\eqnormal
+设$\varPsi$为$\hat{L_{x}}$，$\hat{L_{y}}$的共同本征征函数，以\eqref{eq37.13}第一式作用于$\varPsi$，得到
+\begin{empheq}{equation}\label{eq37.14}
+	\hat{L_{z}}\varPsi=0
+\end{empheq}
+再以\eqref{eq37.13}第二式和第三式作用于$\varPsi$，得到
+\begin{empheq}{equation*}\label{eq37.14'}
+	\hat{L_{x}}\varPsi=0,\quad\hat{L_{y}}\varPsi=0
+\end{empheq}
+所以，$\hat{\boldsymbol{L}}$的任何两个分量的共同本征函数，必为三个分量的共同本征函数，本征值全部等于0，亦即$\varPsi$满足
+\begin{empheq}{equation}\label{eq37.15}
+	\hat{\boldsymbol{L}}\varPsi=-i\hbar\boldsymbol{r}\times\nabla\varPsi=0
+\end{empheq}
+因此$\nabla\varPsi$的方向和$\boldsymbol{r}$平行.满足这条件的$\varPsi$必须是径向函数，即
+\begin{empheq}{equation}\label{eq37.16}
+	\varPsi=\varPsi(r)\quad\text{(与$\theta,\varphi$无关)}
+\end{empheq}
+这就是$\hat{\boldsymbol{L}}$的三个分量的共同本征函数.显然，\eqref{eq37.16}式并不构成完全函数系，它不
+能表示与方向$(\theta,\varphi)$有关的波函数.
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,259 @@
+\section[能量表象]{能量表象} \label{sec:04.05} % 
+% \makebox[5em][s]{} % 短题目拉间距
+
+选取一个包含$\hat{H}$在内的守恒量完全集，其共同本征态矢盘记为$|\varPsi_{n}\rangle$，简写成$|n \rangle $.以$\{|n \rangle \}$作为态矢量空间的基矢组，就得到能量表象.为明确起见，设能级是分立的，以$n=1,2,3,\cdots$作为基矢的编号，并规定$E_{1}\leqslant E_{2}\leqslant E_{3}\leqslant\cdots$.基矢$|n \rangle $满足本征方程
+\begin{empheq}{equation}\label{eq45.1}
+	\hat{H}|n \rangle =E_{n}|n \rangle ,\quad \langle n|\hat{H}=E_{n}\langle n|
+\end{empheq}
+基矢的正交归一化条件为
+\begin{empheq}{equation}\label{eq45.2}
+	\langle m|n \rangle \equiv\langle \varPsi_{m}|\varPsi_{n} \rangle =\delta_{mn}
+\end{empheq}
+完备性条件为
+\begin{empheq}{equation}\label{eq45.3}
+	\sum_{n}|n \rangle\langle n|=1
+\end{empheq}
+在能量表象中，$\hat{H}$的矩阵元为
+\begin{empheq}{equation}\label{eq45.4}
+	\hat{H}\equiv\langle m|\hat{H}|n \rangle =E_{n}\delta_{mn}
+\end{empheq}
+亦即$\hat{H}$表示成对角方阵：
+\eqindent{6}
+\begin{empheq}{equation}\label{eq45.5}
+	H=\begin{bmatrix}
+		E_{1} & 0 & 0 & \cdots & 0 & \cdots	\\
+		0 & E_{2} & 0 & \cdots & 0 & \cdots	\\
+		0 & 0 & E_{3} & \cdots & 0 & \cdots	\\
+		\vdots & \vdots & \vdots &  & \vdots & 	\\
+		0 & 0 & 0 & \cdots & E_{n} & \cdots	\\
+		\vdots & \vdots & \vdots &  & \vdots & 	\\
+	\end{bmatrix}
+\end{empheq}\eqnormal
+完全集中其他守恒量的矩阵表示也是对角方阵，对角矩阵元等于其本征值.
+
+考虑任意力学量$A(\boldsymbol{r,p})$，它的能量表象矩阵元定义为
+\begin{empheq}{equation}\label{eq45.6}
+	A_{mn}\equiv \langle m|\hat{A}|n \rangle 
+\end{empheq}
+按照\eqref{eq39.15}式$\hat{A}$的变化率算符是
+\begin{empheq}{equation}\label{eq45.7}
+	\frac{d\hat{A}}{dt}=\frac{1}{i\hbar}[\hat{A},\hat{H}]=\frac{1}{i\hbar}(\hat{A}\hat{H}-\hat{H}\hat{A})
+\end{empheq}
+其矩阵元为
+\eqindent{6}
+\begin{empheq}{align}\label{eq45.8}
+	\bigg(\frac{d\hat{A}}{dt}\bigg)_{mn}&=\frac{1}{i\hbar}\langle m|(\hat{A}\hat{H}-\hat{H}\hat{A})|n \rangle \nonumber\\
+	&=\frac{1}{i\hbar}(E_{n}-E_{m})\langle m|\hat{A}|n \rangle =i\omega_{mn}A_{mn}
+\end{empheq}\eqnormal
+其中
+\begin{empheq}{equation}\label{eq45.9}
+	\omega_{mn}=\frac{(E_{m}-E_{n})}{\hbar}
+\end{empheq}
+如果$A$是守恒量（包括不属于完全集的其他守恒量），$\hat{A}\hat{H}=\hat{H}\hat{A}$，则$\frac{d\hat{A}}{dt}=0$，由\eqref{eq45.8}式可知
+\begin{empheq}{equation}\label{eq45.10}
+	A_{mn}=0,\quad E_{m}\neq E_{n} 
+\end{empheq}
+（但在能量相同的状态之间，$\hat{A}$的非对角矩阵元仍有可能不等于0.）
+
+{\heiti 海森堡图像}
+
+如果采取力学量算符的海森堡图像[$\S$\ref{sec:03.09}(3.)]
+\begin{empheq}{equation}\label{eq45.11}
+	\hat{A}(t)\equiv e^{i\hat{H}t/i\hbar}\hat{A}e^{\hat{H}t/i\hbar}
+\end{empheq}
+由于$A(t)$显含$t$，则其能量表象矩阵元将是$t$的函数.由\eqref{eq45.1}式，
+\begin{empheq}{equation}\label{eq45.12}
+	\begin{aligned}
+		e^{\hat{H}t/i\hbar}|n \rangle =e^{E_{n}t/i\hbar}|n \rangle \\
+		\langle m|e^{-\hat{H}t/i\hbar}=e^{E_{m}t/i\hbar}\langle m|
+	\end{aligned}
+\end{empheq}
+因此
+\begin{empheq}{align}\label{eq45.13}
+	A(t)_{mn}&=\langle m|\hat{A}(t)|n \rangle 	\nonumber\\
+	&=e^{-E_{m}t/i\hbar}\langle m|\hat{A}|n \rangle ^{E_{n}t/i\hbar}	\nonumber\\
+	&=A_{mn}e^{i\omega_{mn}t}
+\end{empheq}
+显然
+\begin{empheq}{equation}\label{eq45.14}
+	\frac{d}{dt}A(t)_{mn}=i\omega_{mn}A(t)_{mn}
+\end{empheq}
+另一方面，$A(t)$的变化率是[\eqref{eq39.22}]
+\begin{empheq}{equation}\label{eq45.15}
+	\frac{d\hat{A}(t)}{dt}=\frac{1}{i\hbar}\{\hat{A}(t)\hat{H}-\hat{H}\hat{A}(t)\}
+\end{empheq}
+则
+\eqindent{6}
+\begin{empheq}{align}\label{eq45.16}
+	\bigg(\frac{d\hat{A}(t)}{dt}\bigg)_{mn}&=\frac{1}{i\hbar}\langle m|\{\hat{A}(t)\hat{H}-\hat{H}\hat{A}(t)\}|n \rangle \nonumber\\
+	&=\frac{1}{i\hbar}(E_{n}-E_{m})\langle m|\hat{A}(t)|n \rangle =i\omega_{mn}A(t)_{mn}
+\end{empheq}
+综合\eqref{eq45.14}、\eqref{eq45.16}式，有如下结果：
+\begin{empheq}{equation}\label{eq45.17}
+	\boxed{\bigg(\frac{d\hat{A}(t)}{dt}\bigg)_{mn}=\frac{d}{dt}A(t)_{mn}=i\omega_{mn}A(t)_{mn}}
+\end{empheq}
+这公式相当于薛定谔图像的\eqref{eq45.8}式.实际上，两种图像是等价的.
+
+\eqref{eq45.17}式可以继续对$t$微分，从而得到
+\begin{empheq}{equation}\label{eq45.18}
+	\bigg(\frac{d^{2}\hat{A}(t)}{dt^{2}}\bigg)_{mn}=\frac{d^{2}}{dt^{2}}A(t)_{mn}=-(\omega_{mn})^{2}A(t)_{mn}
+\end{empheq}\eqnormal
+等等.$A(t)_{mn}$及其各阶微商之间的关系，很像经典力学中的谐振动.
+
+以下为叙述方便起见，公式均按薛定谔图像给出.
+
+如果粒子（质量$\mu$）在势场$V(r)$中运动，则总能量算符为
+\begin{empheq}{equation}\label{eq45.19}
+	\hat{H}=\frac{1}{2\mu}\hat{\boldsymbol{p}}^{2}+V(\boldsymbol{r})
+\end{empheq}
+这种情形下，
+\begin{empheq}{equation}\label{eq45.20}
+	\frac{d\hat{x}}{dt}=\frac{1}{i\hbar}[\hat{x},\hat{H}]=\frac{\hat{p}_{x}}{\mu}
+\end{empheq}
+按照\eqref{eq45.8}式，有关系
+\begin{empheq}{equation}\label{eq45.21}
+	\boxed{(p_{x})_{mn}=i\mu\omega_{mn}x_{mn}}
+\end{empheq}
+$y$分量和$z$分量也有类似的关系.另外，由基本对易式
+\begin{empheq}{equation*}
+	\hat{x}\hat{p}_{x}-\hat{p}_{x}\hat{x}=i\hbar
+\end{empheq}
+两端对$|m \rangle $态求平均值，得到
+\begin{empheq}{align*}
+	i\hbar&=(xp_{x})_{mm}-(p_{x}x)_{mm}	\\
+	&=\sum_{n}\{x_{mn}(p_{x})_{nm}-(p_{x})_{mn}x_{nm}\}	\\
+	&=i\mu\sum_{n}x_{nm}x_{mn}(\omega_{nm}-\omega_{mn})	\\
+	&=2i\mu\sum_{n}\omega_{nm}|x_{nm}|^{2}
+\end{empheq}
+亦即
+\begin{empheq}{equation}\label{eq45.22}
+	\boxed{\sum_{n}(E_{n}-E_{m})|x_{nm}|^{2}=\frac{\hbar^{2}}{2\mu}}
+\end{empheq}
+这就是著名的Thomas-Reich-Kuhn求和规则.
+
+能量表象中的求和规则(Sum rule)很多.下面介绍几个常用的公式.给定任意算符$\hat{F}(\boldsymbol{r,p})$及具共轭$\hat{F}^{+}$，有矩阵元关系
+\eqindent{6}
+\begin{empheq}{equation}\label{eq45.23}
+	(F_{nm})^{*}=F_{mn}^{+}=\langle m|\hat{F}^{+}|n \rangle =(\langle n|\hat{F}|m \rangle )^{*}
+\end{empheq}\eqnormal
+以及对易式
+\eqindent{4}
+\begin{empheq}{equation}\label{eq45.24}
+	[\hat{F}^{+},[\hat{H},\hat{F}]]=\hat{F}^{+}\hat{H}\hat{F}+\hat{F}\hat{H}\hat{F}^{+}-\hat{H}\hat{F}\hat{F}^{+}-\hat{F}^{+}\hat{F}\hat{H}
+\end{empheq}\eqnormal
+将\eqref{eq45.24}式中各项在$|m \rangle $态下求平均值，并利用恒等变换\eqref{eq45.3}式，得到
+\begin{subequations}\label{eq45.25}
+	\eqindent{6}
+	\begin{align}\label{eq45.25a}
+		\langle m|\hat{F}^{+}H\hat{F}|m \rangle &=\sum_{n}\langle m|\hat{F}^{+}H|n \rangle\langle n|\hat{F}|m \rangle 	\nonumber\\
+		&=\sum_{n}E_{n}\langle m|\hat{F}^{+}|n \rangle\langle n|\hat{F}|m \rangle 	\nonumber\\
+		&=\sum_{n}E_{n}F_{mn}^{+}F_{nm}=\sum_{n}E_{n}|F_{nm}|^{2}
+	\end{align}\eqnormal
+类似地，
+	\begin{equation}\label{eq45.25b}
+		\langle m|\hat{F}\hat{H}\hat{F}^{+}|m \rangle =E_{n}\sum_{n}|F_{mn}|^{2}
+	\end{equation}
+以及
+	\begin{align}
+		\langle m|\hat{H}\hat{F}\hat{F}^{+}|m \rangle =E_{m}\sum_{n}|F_{mn}|^{2}	\label{eq45.25c}\\
+		\langle m|\hat{F}^{+}\hat{F}\hat{H}|m \rangle =E_{m}\sum_{n}|F_{nm}|^{2}	\label{eq45.25d}
+	\end{align}
+
+\end{subequations}
+\noindent 合起来，即得
+\eqindent{4}
+\begin{empheq}{equation}\label{eq45.26}
+	\sum_{n}(E_{n}-E_{m})(|F_{nm}|^{2}+|F_{mn}|^{2})=\langle m|[\hat{F}^{+},[\hat{H},\hat{F}]]|m \rangle 
+\end{empheq}\eqnormal
+如$\hat{F}$为厄密算符，$\hat{F}^{+}=\hat{F}$，则
+\begin{empheq}{equation*}
+	F_{nm}=F_{mn}^{+}\quad |F_{nm}|^{2}=|F_{mn}|^{2}
+\end{empheq}
+这时\eqref{eq45.26}式简化成
+\begin{empheq}{equation}\label{eq45.27}
+	\sum_{n}(E_{n}-E_{m})|F_{nm}|^{2}=\frac{1}{2}\langle m|[\hat{F},[\hat{H},\hat{F}]]|m \rangle 
+\end{empheq}
+当$\hat{H}$取\eqref{eq45.19}式时，如取$\hat{F}=\hat{x}$，则
+\begin{empheq}{equation*}
+	[\hat{x},[\hat{H},\hat{x}]]=\bigg[\hat{x},-\frac{i\hbar}{\mu}p_{x}\bigg]=\frac{\hbar^{2}}{\mu}
+\end{empheq}
+\eqref{eq45.27}式就给出\eqref{eq45.22}式.
+
+\example 一维谐振子的能量算符和能级为
+\begin{empheq}{equation}\label{eq45.28}
+	\hat{H}=\frac{\hat{p}^{2}}{2\mu}+\frac{1}{2}\mu\omega^{2}\hat{x}^{2}
+\end{empheq}
+\begin{empheq}{equation}\label{eq45.29}
+	E_{n}=\bigg(n+\frac{1}{2}\bigg)\hbar\omega,\quad n=0,1,2,\cdots
+\end{empheq}
+求$x$和$p$的能量表象矩阵元.
+
+\solution 首先，\eqref{eq45.21}式成立，
+\begin{empheq}{equation}\label{eq45.30}
+	p_{mn}=i\mu\omega_{mn}x_{mn}=i(m-n)\mu\omega x_{mn}
+\end{empheq}
+其次，
+\begin{empheq}{equation*}
+	\frac{d\hat{p}}{dt}=\frac{1}{i\hbar}[\hat{p},\hat{H}]=-\frac{\partial V}{\partial x}=-\mu\omega^{2}\hat{x}
+\end{empheq}
+因此
+\begin{empheq}{equation}\label{eq45.31}
+	-\mu\omega^{2}x_{mn}=\bigg(\frac{d\hat{p}}{dt}\bigg)_{mn}=i\omega_{mn}p_{mn}
+\end{empheq}
+与\eqref{eq45.30}式合并，消去$p_{mn}$，得到
+\begin{empheq}{equation}\label{eq45.32}
+	(\omega_{mn}^{2}-\omega^{2})x_{mn}=0
+\end{empheq}
+易见仅当$(m-n)=\pm 1$，$x_{mn}$才不为0.亦即$x$的矩阵元中，
+\begin{empheq}{equation}\label{eq45.33}
+	x_{n+1,n}\neq 0,\quad \text{其余为0}
+\end{empheq}
+利用\eqref{eq45.22}式，即得
+\begin{empheq}{equation}\label{eq45.34}
+	|x_{n+1,n}|^{2}-|x_{n-1,n}|^{2}=\frac{\hbar}{2\mu\omega}
+\end{empheq}
+
+另一方面，根据海尔曼定理或位力定理($\S$\ref{sec:03.11})，在$|n \rangle $态下势能平均值为
+\begin{empheq}{equation}\label{eq45.35}
+	V_{nn}=\frac{1}{2}\mu\omega^{2}(x^{2})_{nn}=\frac{1}{2}E_{n}
+\end{empheq}
+由于
+\eqindent{6}
+\begin{empheq}{equation*}
+	(x^{2})_{nn}=\sum_{nn^{\prime}}x_{n^{\prime}n}=|x_{n+1,n}|^{2}+|x_{n-1,n}|^{2}
+\end{empheq}
+代入\eqref{eq45.35}式，即得
+\begin{empheq}{equation}\label{eq45.36}
+	|x_{n+1,n}|^{2}+|x_{n-1,n}|^{2}=\frac{E_{n}}{\mu\omega^{2}}=\bigg(n+\frac{1}{2}\bigg)\frac{\hbar}{\mu\omega}
+\end{empheq}
+由\eqref{eq45.34}、\eqref{eq45.36}式即可解出
+\begin{empheq}{equation}\label{eq45.37}
+	|x_{n+1,n}|^{2}=\frac{n+1}{2}\frac{\hbar}{\mu\omega},\quad n=0,1,2,\cdots
+\end{empheq}
+按惯例，$|n \rangle $的相因子选取原则是保证$x_{n+1,n}$为正实数.这样
+\begin{empheq}{equation}\label{eq45.38}
+	x_{n+1,n}=x_{n,n+1}=\bigg(\frac{n+1}{2}\frac{\hbar}{\mu\omega}\bigg)^{\frac{1}{2}},\quad n=0,1,2,\cdots
+\end{empheq}
+再利用\eqref{eq45.30}式，得到
+\begin{empheq}{equation}\label{eq45.39}
+	p_{n+1,n}=-p_{n,n+1}=i\mu\omega x_{n+1,n}=i\sqrt{\frac{n+1}{2}\mu\omega\hbar}
+\end{empheq}\eqnormal
+注意，矩阵$x_{mn},p_{mn}$均为厄密矩阵，但$x_{mn}$为实矩阵$x_{n+1,n}=x_{n,n+1}$，所以，$p_{mn}$为纯虚矩阵，所以
+\begin{empheq}{equation*}
+	p_{n,n+1}=(p_{n+1,n})^{*}=-p_{n+1,n}
+\end{empheq}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
