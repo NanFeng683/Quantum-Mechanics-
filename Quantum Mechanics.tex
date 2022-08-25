@@ -1,0 +1,122 @@
+\documentclass{QM}
+\usepackage[justification=centering]{caption}
+
+%置于此为易于TeXStudio环境识别，美观
+
+\usepackage{siunitx}
+\usepackage{empheq}
+\usepackage{cases}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{diagbox}
+\usepackage{chngcntr} % 更改公式编号
+\usepackage{physics}
+\usepackage{multirow}
+\usepackage{extarrows}
+\usepackage{makecell}
+
+\begin{document}
+%\widowpenalty0
+%\clubpenalty0
+
+%\renewcommand{\Re}{\operatorname{Re}}
+
+% 封面
+\includepdf{QM file/body/F00-Frontpage.pdf}
+\bookmark[page=1,level=0]{封面}
+%\clearpage\thispagestyle{empty}\cleardoublepage % 留白页
+
+% 标题页
+%\includepdf{QM file/body/F01-Titlepage.pdf}
+\input{QM file/body/F01-Titlepage}
+\bookmark[page=2,level=0]{封页}
+
+% 出版信息页
+%\includepdf{QM file/body/F02-Publish Information.pdf}
+\input{QM file/body/F02-Publish Information}
+
+
+% 前言
+\input{QM file/body/F03-Foreword} 
+
+% 目录
+\clearpage
+\setcounter{page}{1}
+\pdfbookmark{目录}{Contents}
+\tableofcontents
+
+% 正文
+\clearpage
+\pagestyle{heading}
+\setcounter{page}{1}
+\setcounter{chapter}{-1}
+
+% 公式与上下文本距离调整
+\baselineskip=1.5em
+\lineskip=0.25em
+\lineskiplimit=0.25em
+\abovedisplayskip=0.25em plus 0.25em minus 0.25em % 公式同上文间距
+\belowdisplayskip=\abovedisplayskip				  % 公式同下文间距
+\abovedisplayshortskip=0em plus 0.25em minus 0.25em
+\belowdisplayshortskip=\abovedisplayshortskip
+\belowcaptionskip=-0.8em % 原为-0.8em
+\def\int{\mathop{\vcenter{\hbox{\scaleto[1.3ex]{\symbol{"222B}}{2em}}}}\nolimits}
+\def\sum{\mathop{\vcenter{\hbox{\scaleto{\symbol{"2211}}{1.2em}}}}}
+
+
+% 第一章 绪论
+\input{QM file/body/C.one/M01.00-Introduction}
+
+% 第二章 波函数和薛定谔方程
+\input{QM file/body/C.two/M02.00-Wave function and Schrödinger's equation}
+
+% 第三章 基本原理
+\input{QM file/body/C.three/M03.00-Fundamentals}
+
+% 第四章 表象理论
+\input{QM file/body/C.four/M04.00-Representation Theory}
+
+% 第五章 中心力场
+\input{QM file/body/C.five/M05.00-Central Force Field}
+
+
+% 第六章 定态微扰论与变分法
+\input{QM file/body/C.six/M06.00-Fixed-state perturbation theory and variational methods}
+
+% 第七章 自旋
+\input{QM file/body/C.seven/M07.00-Spin}
+
+% 第八章 弹性散射
+\input{QM file/body/C.eight/M08.00-Elastic scattering}
+
+% 第九章 量子跃迁
+\input{QM file/body/C.nine/M09.00-Quantum leap}
+
+% 第十章 多粒子体系
+\input{QM file/body/C.ten/M10.00-Multi-particle system}
+
+% 附录1 δ函数和傅里叶变换
+\input{QM file/body/A01-Delta function and Fourier transform}
+
+% 附录2 厄密多项式
+\input{QM file/body/A02-Hermite Polynomials}
+
+% 附录3 轨道角动量算符
+\input{QM file/body/A03-Orbital angular momentum operator}
+
+% 附录4 球谐函数
+\input{QM file/body/A04-Spherical harmonic function}
+
+% 物理常数表
+\input{QM file/body/Z01-Physical constants table}
+
+% 习题答案
+\input{QM file/body/Z02-Answers}
+
+% 我的教学生涯
+\input{QM file/body/Z03-Teaching career}
+
+% 重排后记
+\input{QM file/body/Z04-Afterword}
+
+\end{document}

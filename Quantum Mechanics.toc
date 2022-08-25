@@ -1,0 +1,88 @@
+\contentsline {chapter}{\numberline {第一章\hspace {.3em}}绪论}{1}{chapter.1}%
+\contentsline {section}{\numberline {$\S $1.1}黑体辐射与普朗克常数}{1}{section.1.1}%
+\contentsline {section}{\numberline {$\S $1.2}光子}{6}{section.1.2}%
+\contentsline {section}{\numberline {$\S $1.3}玻尔的量子论}{9}{section.1.3}%
+\contentsline {section}{\numberline {$\S $1.4}原子物理中的特征量}{16}{section.1.4}%
+\contentsline {section}{\numberline {$\S $1.5}德布罗意的“物质波”假设}{21}{section.1.5}%
+\contentsline {section}{习题}{24}{section.1.6}%
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}波函数和薛定谔方程}{27}{chapter.2}%
+\contentsline {section}{\numberline {$\S $2.1}薛定谔方程}{27}{section.2.1}%
+\contentsline {section}{\numberline {$\S $2.2}波函数的统计诠释}{32}{section.2.2}%
+\contentsline {section}{\numberline {$\S $2.3}定态}{37}{section.2.3}%
+\contentsline {section}{\numberline {$\S $2.4}一维平底势阱中的粒子}{43}{section.2.4}%
+\contentsline {section}{\numberline {$\S $2.5}一维谐振子}{52}{section.2.5}%
+\contentsline {section}{\numberline {$\S $2.6}势垒贯穿}{58}{section.2.6}%
+\contentsline {section}{习题}{63}{section.2.7}%
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}基本原理}{67}{chapter.3}%
+\contentsline {section}{\numberline {$\S $3.1}波函数和算符}{67}{section.3.1}%
+\contentsline {section}{\numberline {$\S $3.2}态叠加原理}{71}{section.3.2}%
+\contentsline {section}{\numberline {$\S $3.3}线性算符}{72}{section.3.3}%
+\contentsline {section}{\numberline {$\S $3.4}波函数的普遍物理诠释}{78}{section.3.4}%
+\contentsline {section}{\numberline {$\S $3.5}动量}{84}{section.3.5}%
+\contentsline {section}{\numberline {$\S $3.6}力学量算符的对易关系式}{90}{section.3.6}%
+\contentsline {section}{\numberline {$\S $3.7}两个力学量算符的共同本征态}{93}{section.3.7}%
+\contentsline {section}{\numberline {$\S $3.8}不确定度关系}{96}{section.3.8}%
+\contentsline {section}{\numberline {$\S $3.9}状态和力学量随时间的变化}{100}{section.3.9}%
+\contentsline {section}{\numberline {$\S $3.10}对称性和守恒定律}{107}{section.3.10}%
+\contentsline {section}{\numberline {$\S $3.11}海尔曼定理和位力定理}{114}{section.3.11}%
+\contentsline {section}{习题}{121}{section.3.12}%
+\contentsline {chapter}{\numberline {第四章\hspace {.3em}}表象理论}{124}{chapter.4}%
+\contentsline {section}{\numberline {$\S $4.1}狄拉克符号}{124}{section.4.1}%
+\contentsline {section}{\numberline {$\S $4.2}量子力学公式及其矩阵表示}{129}{section.4.2}%
+\contentsline {section}{\numberline {$\S $4.3*}坐标表象}{136}{section.4.3}%
+\contentsline {section}{\numberline {$\S $4.4*}动量表象}{139}{section.4.4}%
+\contentsline {section}{\numberline {$\S $4.5}能量表象}{143}{section.4.5}%
+\contentsline {section}{\numberline {$\S $4.6}一维谐振子（升降算符方法）}{148}{section.4.6}%
+\contentsline {section}{\numberline {$\S $4.7}角动量}{154}{section.4.7}%
+\contentsline {section}{习题}{159}{section.4.8}%
+\contentsline {chapter}{\numberline {第五章\hspace {.3em}}中心力场}{162}{chapter.5}%
+\contentsline {section}{\numberline {$\S $5.1}中心力场的一般概念}{162}{section.5.1}%
+\contentsline {section}{\numberline {$\S $5.2}自由粒子}{168}{section.5.2}%
+\contentsline {section}{\numberline {$\S $5.3*}球型势阱}{172}{section.5.3}%
+\contentsline {section}{\numberline {$\S $5.4}粒子在库仑场中的运动（束缚态）}{176}{section.5.4}%
+\contentsline {section}{\numberline {$\S $5.5*}二维中心力场}{186}{section.5.5}%
+\contentsline {section}{习题}{188}{section.5.6}%
+\contentsline {chapter}{\numberline {第六章\hspace {.3em}}定态微扰论与变分法}{191}{chapter.6}%
+\contentsline {section}{\numberline {$\S $6.1}非简并态微扰论}{191}{section.6.1}%
+\contentsline {section}{\numberline {$\S $6.2}简并态微扰论}{195}{section.6.2}%
+\contentsline {section}{\numberline {$\S $6.3}变分法}{201}{section.6.3}%
+\contentsline {section}{习题}{204}{section.6.4}%
+\contentsline {chapter}{\numberline {第七章\hspace {.3em}}自旋}{208}{chapter.7}%
+\contentsline {section}{\numberline {$\S $7.1}电子自旋}{208}{section.7.1}%
+\contentsline {section}{\numberline {$\S $7.2}电子的总角动量}{214}{section.7.2}%
+\contentsline {section}{\numberline {$\S $7.3}碱金属光谱的精细结构}{219}{section.7.3}%
+\contentsline {section}{\numberline {$\S $7.4*}粒子在电磁场中的运动}{222}{section.7.4}%
+\contentsline {section}{\numberline {$\S $7.5}塞曼效应}{226}{section.7.5}%
+\contentsline {section}{\numberline {$\S $7.6*}磁共振}{231}{section.7.6}%
+\contentsline {section}{\numberline {$\S $7.7}两个角动量的耦合}{234}{section.7.7}%
+\contentsline {section}{\numberline {$\S $7.8}二电子体系的自旋波函数}{237}{section.7.8}%
+\contentsline {section}{习题}{239}{section.7.9}%
+\contentsline {chapter}{\numberline {第八章\hspace {.3em}}弹性散射}{243}{chapter.8}%
+\contentsline {section}{\numberline {$\S $8.1}散射过程的一般描述}{243}{section.8.1}%
+\contentsline {section}{\numberline {$\S $8.2}分波法}{247}{section.8.2}%
+\contentsline {section}{\numberline {$\S $8.3*}低能散射}{254}{section.8.3}%
+\contentsline {section}{\numberline {$\S $8.4}玻恩近似}{257}{section.8.4}%
+\contentsline {section}{习题}{267}{section.8.5}%
+\contentsline {chapter}{\numberline {第九章\hspace {.3em}}量子跃迁}{270}{chapter.9}%
+\contentsline {section}{\numberline {$\S $9.1}与时间有关的微扰论}{270}{section.9.1}%
+\contentsline {section}{\numberline {$\S $9.2}几种典型跃迁}{273}{section.9.2}%
+\contentsline {section}{\numberline {$\S $9.3}光的吸收与受激辐射}{277}{section.9.3}%
+\contentsline {section}{\numberline {$\S $9.4}自发辐射}{282}{section.9.4}%
+\contentsline {section}{\numberline {$\S $9.5*}激光原理}{286}{section.9.5}%
+\contentsline {section}{\numberline {$\S $9.6*}能量-时间不确定度关系}{289}{section.9.6}%
+\contentsline {section}{习题}{291}{section.9.7}%
+\contentsline {chapter}{\numberline {第十章\hspace {.3em}}多粒子体系}{294}{chapter.10}%
+\contentsline {section}{\numberline {$\S $10.1}二粒子体系}{294}{section.10.1}%
+\contentsline {section}{\numberline {$\S $10.2}全同粒子体系}{298}{section.10.2}%
+\contentsline {section}{\numberline {$\S $10.3}氦原子}{301}{section.10.3}%
+\contentsline {section}{\numberline {$\S $10.4}氢分子}{307}{section.10.4}%
+\contentsline {section}{\numberline {$\S $10.5}化学键}{314}{section.10.5}%
+\contentsline {section}{\numberline {$\S $10.6*}双原子分子的振动和转动}{316}{section.10.6}%
+\contentsline {section}{习题}{319}{section.10.7}%
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}δ函数和傅里叶变换}{323}{appendix.A}%
+\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}厄密多项式}{327}{appendix.B}%
+\contentsline {chapter}{\numberline {附录 C\hspace {.3em}}轨道角动量算符}{330}{appendix.C}%
+\contentsline {chapter}{\numberline {附录 D\hspace {.3em}}球谐函数}{332}{appendix.D}%
+\contentsline {chapter}{物理常数表}{340}{appendix.E}%
+\contentsline {chapter}{习题答案}{341}{appendix.F}%
+\contentsline {chapter}{我的教学生涯}{355}{appendix.K}%

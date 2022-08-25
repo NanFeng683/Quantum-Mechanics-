@@ -1,0 +1,3503 @@
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.6.22)  25 AUG 2022 11:07
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**"Quantum Mechanics.tex"
+(./Quantum Mechanics.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24> (./QM.cls
+Document Class: QM Quantum Mechanics
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/ctex/ctexbook.cls
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
+File: ctexbackend.cfg 2021/12/12 v2.5.8 Backend configuration file (CTEX)
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-02-24 L3 programming layer (loader) 
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2022-02-07 L3 backend support: XeTeX
+
+(|extractbb --version)
+\c__kernel_sys_dvipdfmx_version_int=\count181
+\l__color_backend_stack_int=\count182
+\g__color_backend_stack_int=\count183
+\g__graphics_track_int=\count184
+\l__pdf_internal_box=\box50
+\g__pdf_backend_object_int=\count185
+\g__pdf_backend_annotation_int=\count186
+\g__pdf_backend_link_int=\count187
+))
+Document Class: ctexbook 2021/12/12 v2.5.8 Chinese adapter for class book (CTEX
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/ctex/ctexhook.sty
+Package: ctexhook 2021/12/12 v2.5.8 Document and package hooks (CTEX)
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/ctex/ctexpatch.sty
+Package: ctexpatch 2021/12/12 v2.5.8 Patching commands (CTEX)
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+\l__ctex_tmp_int=\count188
+\l__ctex_tmp_box=\box51
+\l__ctex_tmp_dim=\dimen138
+\g__ctex_section_depth_int=\count189
+\g__ctex_font_size_int=\count190
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
+File: ctexopts.cfg 2021/12/12 v2.5.8 Option configuration file (CTEX)
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count191
+\c@chapter=\count192
+\c@section=\count193
+\c@subsection=\count194
+\c@subsubsection=\count195
+\c@paragraph=\count196
+\c@subparagraph=\count197
+\c@figure=\count198
+\c@table=\count199
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen139
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def
+File: ctex-engine-xetex.def 2021/12/12 v2.5.8 XeLaTeX adapter (CTEX)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+Package: xeCJK 2021/12/12 v3.8.8 Typesetting CJK scripts with XeLaTeX
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+Package: xtemplate 2022-01-12 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen140
+\l__xtemplate_tmp_int=\count266
+\l__xtemplate_tmp_muskip=\muskip16
+\l__xtemplate_tmp_skip=\skip49
+)
+\l__xeCJK_tmp_int=\count267
+\l__xeCJK_tmp_box=\box52
+\l__xeCJK_tmp_dim=\dimen141
+\l__xeCJK_tmp_skip=\skip50
+\g__xeCJK_space_factor_int=\count268
+\l__xeCJK_begin_int=\count269
+\l__xeCJK_end_int=\count270
+\c__xeCJK_CJK_class_int=\XeTeXcharclass1
+\c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
+\c__xeCJK_FullRight_class_int=\XeTeXcharclass3
+\c__xeCJK_HalfLeft_class_int=\XeTeXcharclass4
+\c__xeCJK_HalfRight_class_int=\XeTeXcharclass5
+\c__xeCJK_NormalSpace_class_int=\XeTeXcharclass6
+\c__xeCJK_CM_class_int=\XeTeXcharclass7
+\c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
+\l__xeCJK_last_skip=\skip51
+\g__xeCJK_node_int=\count271
+\c__xeCJK_CJK_node_dim=\dimen142
+\c__xeCJK_CJK-space_node_dim=\dimen143
+\c__xeCJK_default_node_dim=\dimen144
+\c__xeCJK_default-space_node_dim=\dimen145
+\c__xeCJK_CJK-widow_node_dim=\dimen146
+\c__xeCJK_normalspace_node_dim=\dimen147
+\l__xeCJK_ccglue_skip=\skip52
+\l__xeCJK_ecglue_skip=\skip53
+\l__xeCJK_punct_kern_skip=\skip54
+\l__xeCJK_last_penalty_int=\count272
+\l__xeCJK_last_bound_dim=\dimen148
+\l__xeCJK_last_kern_dim=\dimen149
+\l__xeCJK_widow_penalty_int=\count273
+
+Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
+(xtemplate)             argument(s) on line 2337.
+
+\l__xeCJK_fixed_punct_width_dim=\dimen150
+\l__xeCJK_mixed_punct_width_dim=\dimen151
+\l__xeCJK_middle_punct_width_dim=\dimen152
+\l__xeCJK_fixed_margin_width_dim=\dimen153
+\l__xeCJK_mixed_margin_width_dim=\dimen154
+\l__xeCJK_middle_margin_width_dim=\dimen155
+\l__xeCJK_bound_punct_width_dim=\dimen156
+\l__xeCJK_bound_margin_width_dim=\dimen157
+\l__xeCJK_margin_minimum_dim=\dimen158
+\l__xeCJK_kerning_total_width_dim=\dimen159
+\l__xeCJK_same_align_margin_dim=\dimen160
+\l__xeCJK_different_align_margin_dim=\dimen161
+\l__xeCJK_kerning_margin_width_dim=\dimen162
+\l__xeCJK_kerning_margin_minimum_dim=\dimen163
+\l__xeCJK_bound_dim=\dimen164
+\l__xeCJK_reverse_bound_dim=\dimen165
+\l__xeCJK_margin_dim=\dimen166
+\l__xeCJK_minimum_bound_dim=\dimen167
+\l__xeCJK_kerning_margin_dim=\dimen168
+\g__xeCJK_family_int=\count274
+\l__xeCJK_fam_int=\count275
+\g__xeCJK_fam_allocation_int=\count276
+\l__xeCJK_verb_case_int=\count277
+\l__xeCJK_verb_exspace_skip=\skip55
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count278
+\l__fontspec_language_int=\count279
+\l__fontspec_strnum_int=\count280
+\l__fontspec_tmp_int=\count281
+\l__fontspec_tmpa_int=\count282
+\l__fontspec_tmpb_int=\count283
+\l__fontspec_tmpc_int=\count284
+\l__fontspec_em_int=\count285
+\l__fontspec_emdef_int=\count286
+\l__fontspec_strong_int=\count287
+\l__fontspec_strongdef_int=\count288
+\l__fontspec_tmpa_dim=\dimen169
+\l__fontspec_tmpb_dim=\dimen170
+\l__fontspec_tmpc_dim=\dimen171
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(d:/Latex/texlive/2022/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+File: xeCJK.cfg 2021/12/12 v3.8.8 Configuration file for xeCJK package
+))
+\ccwd=\dimen172
+\l__ctex_ccglue_skip=\skip56
+)
+\l__ctex_ziju_dim=\dimen173
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/zhnumber/zhnumber.sty
+Package: zhnumber 2020/05/01 v2.8 Typesetting numbers with Chinese glyphs
+\l__zhnum_scale_int=\count289
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
+File: zhnumber-utf8.cfg 2020/05/01 v2.8 Chinese numerals with UTF8 encoding
+))
+\l__ctex_heading_skip=\skip57
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-boo
+k.def
+File: ctex-scheme-chinese-book.def 2021/12/12 v2.5.8 Chinese scheme for book (C
+TEX)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg
+File: ctex-name-utf8.cfg 2021/12/12 v2.5.8 Caption with encoding UTF-8 (CTEX)
+))
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/ctex/ctex-c5size.clo
+File: ctex-c5size.clo 2021/12/12 v2.5.8 c5size option (CTEX)
+))
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/ctex/config/ctex.cfg
+File: ctex.cfg 2021/12/12 v2.5.8 Configuration file (CTEX)
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count290
+\Gm@cntv=\count291
+\c@Gm@tempcnt=\count292
+\Gm@bindingoffset=\dimen174
+\Gm@wd@mp=\dimen175
+\Gm@odd@mp=\dimen176
+\Gm@even@mp=\dimen177
+\Gm@layoutwidth=\dimen178
+\Gm@layoutheight=\dimen179
+\Gm@layouthoffset=\dimen180
+\Gm@layoutvoffset=\dimen181
+\Gm@dimlist=\toks17
+)
+
+Package fontspec Info: Font family 'XITS(0)' created for font 'XITS' with
+(fontspec)             options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"XITS/OT:script=latn;language=dflt;mapping=tex-text;"
+
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"XITS/OT:script=latn;language=dflt;+smcp;mapping=tex-
+text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"XITS/B/OT:script=latn;language=dflt;mapping=tex-text
+;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"XITS/I/OT:script=latn;language=dflt;mapping=tex-text
+;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"XITS/BI/OT:script=latn;language=dflt;mapping=tex-tex
+t;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+
+Package fontspec Info: Could not resolve font "FZKai-Z03/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "Source Han Serif SC Bold/I" (it
+(fontspec)             probably doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "FZShuSong-Z01/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Font family 'FZShuSong-Z01(0)' created for font
+(fontspec)             'FZShuSong-Z01' with options
+(fontspec)             [Script={CJK},BoldFont={Source Han Serif SC
+(fontspec)             Bold},ItalicFont={FZKai-Z03}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"FZShuSong-Z01/OT:script=hani;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Source Han Serif SC
+(fontspec)             Bold/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"FZKai-Z03/OT:script=hani;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+
+
+(d:/Latex/texlive/2022/texmf-dist/tex/xelatex/xecjk/xeCJKfntef.sty
+Package: xeCJKfntef 2021/12/12 v3.8.8 xeCJK font effect
+
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box53
+\UL@hyphenbox=\box54
+\UL@skip=\skip58
+\UL@hook=\toks18
+\UL@height=\dimen182
+\UL@pe=\count293
+\UL@pixel=\dimen183
+\ULC@box=\box55
+Package: ulem 2019/11/18
+\ULdepth=\dimen184
+)
+\l__xeCJK_space_skip=\skip59
+\c__xeCJK_ulem-begin_node_dim=\dimen185
+\l__xeCJK_hidden_box=\box56
+\l__xeCJK_fntef_box=\box57
+\l__xeCJK_under_symbol_box=\box58
+\c__xeCJK_filll_skip=\skip60
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2022/01/29 v0.5u Insert pages of external PDF documents (AM)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count294
+\calc@Bcount=\count295
+\calc@Adimen=\dimen186
+\calc@Bdimen=\dimen187
+\calc@Askip=\skip61
+\calc@Bskip=\skip62
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count296
+\calc@Cskip=\skip63
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen188
+\ESO@tempdimb=\dimen189
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 227.
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2021/03/18 v5.0k Graphics/color driver for xetex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+))
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+)
+\Gin@req@height=\dimen190
+\Gin@req@width=\dimen191
+)
+\AM@pagewidth=\dimen192
+\AM@pageheight=\dimen193
+\AM@fboxrule=\dimen194
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/pdfpages/ppxetex.def
+File: ppxetex.def 2022/01/29 v0.5u Pdfpages driver for XeTeX (AM)
+)
+\pdfpages@includegraphics@status=\count297
+\AM@pagebox=\box59
+\AM@global@opts=\toks19
+\AM@pagecnt=\count298
+\AM@toc@title=\toks20
+\c@AM@survey=\count299
+\AM@templatesizebox=\box60
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip64
+\f@nch@O@elh=\skip65
+\f@nch@O@erh=\skip66
+\f@nch@O@olh=\skip67
+\f@nch@O@orh=\skip68
+\f@nch@O@elf=\skip69
+\f@nch@O@erf=\skip70
+\f@nch@O@olf=\skip71
+\f@nch@O@orf=\skip72
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/fontsize/fontsize.sty
+Package: fontsize 2021/08/04 v0.8.5 'fontsize' package. Set main font sizes (Iv
+an Valbusa)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
+)
+\XKV@depth=\count300
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/l3packages/xfp/xfp.sty
+Package: xfp 2022-01-12 L3 Floating point unit
+))
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/zhlipsum/zhlipsum.sty
+Package: zhlipsum 2020/04/10 v1.2.0 Chinese dummy text
+\l__zhlipsum_begin_int=\count301
+\l__zhlipsum_end_int=\count302
+\l__zhlipsum_max_int=\count303
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/zhlipsum/zhlipsum-utf8.def
+File: zhlipsum-utf8.def 2020/04/10 v1.2.0 Chinese dummy text with UTF-8 encodin
+g (for zhlipsum)
+\g__zhlipsum_simp_int=\count304
+
+Package zhlipsum Info: Chinese dummy text "simp" is created. It has 50
+(zhlipsum)             paragraphs.
+
+\g__zhlipsum_trad_int=\count305
+
+Package zhlipsum Info: Chinese dummy text "trad" is created. It has 50
+(zhlipsum)             paragraphs.
+
+\g__zhlipsum_nanshanjing_int=\count306
+
+Package zhlipsum Info: Chinese dummy text "nanshanjing" is created. It has 43
+(zhlipsum)             paragraphs.
+
+\g__zhlipsum_xiangyu_int=\count307
+
+Package zhlipsum Info: Chinese dummy text "xiangyu" is created. It has 45
+(zhlipsum)             paragraphs.
+
+\g__zhlipsum_zhufu_int=\count308
+
+Package zhlipsum Info: Chinese dummy text "zhufu" is created. It has 110
+(zhlipsum)             paragraphs.
+
+\g__zhlipsum_aspirin_int=\count309
+
+Package zhlipsum Info: Chinese dummy text "aspirin" is created. It has 66
+(zhlipsum)             paragraphs.
+
+))
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip73
+\cftbeforetoctitleskip=\skip74
+\cftaftertoctitleskip=\skip75
+\cftbeforepartskip=\skip76
+\cftpartnumwidth=\skip77
+\cftpartindent=\skip78
+\cftbeforechapskip=\skip79
+\cftchapindent=\skip80
+\cftchapnumwidth=\skip81
+\cftbeforesecskip=\skip82
+\cftsecindent=\skip83
+\cftsecnumwidth=\skip84
+\cftbeforesubsecskip=\skip85
+\cftsubsecindent=\skip86
+\cftsubsecnumwidth=\skip87
+\cftbeforesubsubsecskip=\skip88
+\cftsubsubsecindent=\skip89
+\cftsubsubsecnumwidth=\skip90
+\cftbeforeparaskip=\skip91
+\cftparaindent=\skip92
+\cftparanumwidth=\skip93
+\cftbeforesubparaskip=\skip94
+\cftsubparaindent=\skip95
+\cftsubparanumwidth=\skip96
+\cftbeforeloftitleskip=\skip97
+\cftafterloftitleskip=\skip98
+\cftbeforefigskip=\skip99
+\cftfigindent=\skip100
+\cftfignumwidth=\skip101
+\cftbeforelottitleskip=\skip102
+\cftafterlottitleskip=\skip103
+\cftbeforetabskip=\skip104
+\cfttabindent=\skip105
+\cfttabnumwidth=\skip106
+\cftbeforesubfigskip=\skip107
+\cftsubfigindent=\skip108
+\cftsubfignumwidth=\skip109
+\cftbeforesubtabskip=\skip110
+\cftsubtabindent=\skip111
+\cftsubtabnumwidth=\skip112
+)
+\c@question=\count310
+\c@exercise=\count311
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip113
+
+For additional information on amsmath, use the `?' option.
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks23
+\ex@=\dimen195
+))
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen196
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count312
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count313
+\leftroot@=\count314
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count315
+\DOTSCASE@=\count316
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box61
+\strutbox@=\box62
+\big@size=\dimen197
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count317
+\c@MaxMatrixCols=\count318
+\dotsspace@=\muskip17
+\c@parentequation=\count319
+\dspbrk@lvl=\count320
+\tag@help=\toks24
+\row@=\count321
+\column@=\count322
+\maxfields@=\count323
+\andhelp@=\toks25
+\eqnshift@=\dimen198
+\alignsep@=\dimen199
+\tagshift@=\dimen256
+\tagwidth@=\dimen257
+\totwidth@=\dimen258
+\lineht@=\dimen259
+\@envbody=\toks26
+\multlinegap=\skip114
+\multlinetaggap=\skip115
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/zhlineskip/zhlineskip.sty
+Package: zhlineskip 2019/05/15 v1.0e Line spacing for CJK documents
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/xint/xintexpr.sty
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/xint/xintfrac.sty
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/xint/xint.sty
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/xint/xintcore.sty
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/xint/xintkernel.sty
+Package: xintkernel 2021/07/13 v1.4j Paraphernalia for the xint packages (JFB)
+\xint_c_ii^xiv=\count324
+\xint_c_ii^xxi=\count325
+)
+Package: xintcore 2021/07/13 v1.4j Expandable arithmetic on big integers (JFB)
+\xint_c_x^viii=\count326
+\xint_c_x^ix=\count327
+\xint_c_x^viii_mone=\count328
+\xint_c_xii_e_viii=\count329
+\xint_c_xi_e_viii_mone=\count330
+)
+Package: xint 2021/07/13 v1.4j Expandable operations on big integers (JFB)
+\xint_c_nine_x^viii=\count331
+)
+Package: xintfrac 2021/07/13 v1.4j Expandable operations on fractions (JFB)
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/xint/xinttools.sty
+Package: xinttools 2021/07/13 v1.4j Expandable and non-expandable utilities (JF
+B)
+\XINT_toks=\toks28
+)
+Package: xintexpr 2021/07/13 v1.4j Expandable expression parser (JFB)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/xint/xinttrig.sty
+Package: xinttrig 2021/07/13 v1.4j Trigonometrical functions for xintexpr (JFB)
+
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/xint/xintlog.sty
+Package: xintlog 2021/07/13 v1.4j Logarithms and exponentials for xintexpr (JFB
+)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/poormanlog/poormanlog.sty
+Package: poormanlog 2019/04/22 v0.05 base 10 log and pow with 9 digits (JFB)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/poormanlog/poormanlog.tex))))
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count332
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2022/02/07 v1.28a mathematical typesetting tools
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count333
+\l_MT_multwidth_dim=\dimen260
+\origjot=\skip116
+\l_MT_shortvdotswithinadjustabove_dim=\dimen261
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen262
+\l_MT_above_intertext_sep=\dimen263
+\l_MT_below_intertext_sep=\dimen264
+\l_MT_above_shortintertext_sep=\dimen265
+\l_MT_below_shortintertext_sep=\dimen266
+\xmathstrut@box=\box63
+\xmathstrut@dim=\dimen267
+))
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count334
+\mult@box=\box64
+\multicol@leftmargin=\dimen268
+\c@unbalance=\count335
+\c@collectmore=\count336
+\doublecol@number=\count337
+\multicoltolerance=\count338
+\multicolpretolerance=\count339
+\full@width=\dimen269
+\page@free=\dimen270
+\premulticols=\dimen271
+\postmulticols=\dimen272
+\multicolsep=\skip117
+\multicolbaselineskip=\skip118
+\partial@page=\box65
+\last@line=\box66
+\maxbalancingoverflow=\dimen273
+\mult@rightbox=\box67
+\mult@grightbox=\box68
+\mult@firstbox=\box69
+\mult@gfirstbox=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\c@minrows=\count340
+\c@columnbadness=\count341
+\c@finalcolumnbadness=\count342
+\last@try=\dimen274
+\multicolovershoot=\dimen275
+\multicolundershoot=\dimen276
+\mult@nat@firstbox=\box107
+\colbreak@box=\box108
+\mc@col@check@num=\count343
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/yhmath/yhmath.sty
+Package: yhmath 2020/03/17 v1.6
+\symyhlargesymbols=\mathgroup4
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 29.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \braceld on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \bracerd on input line 49.
+LaTeX Font Info:    Redeclaring math symbol \bracelu on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \braceru on input line 51.
+LaTeX Font Info:    Redeclaring math delimiter \lmoustache on input line 53.
+LaTeX Font Info:    Redeclaring math delimiter \rmoustache on input line 55.
+LaTeX Font Info:    Redeclaring math delimiter \arrowvert on input line 57.
+LaTeX Font Info:    Redeclaring math delimiter \Arrowvert on input line 59.
+LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 61.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 63.
+LaTeX Font Info:    Redeclaring math delimiter \uparrow on input line 65.
+LaTeX Font Info:    Redeclaring math delimiter \downarrow on input line 67.
+LaTeX Font Info:    Redeclaring math delimiter \updownarrow on input line 69.
+LaTeX Font Info:    Redeclaring math delimiter \Uparrow on input line 71.
+LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 73.
+LaTeX Font Info:    Redeclaring math delimiter \Updownarrow on input line 75.
+LaTeX Font Info:    Redeclaring math delimiter \backslash on input line 79.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 81.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 83.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 85.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 87.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 89.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 91.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 93.
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 95.
+LaTeX Font Info:    Redeclaring math delimiter \lgroup on input line 97.
+LaTeX Font Info:    Redeclaring math delimiter \rgroup on input line 99.
+LaTeX Font Info:    Redeclaring math delimiter \bracevert on input line 101.
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/unicode-math/unicode-math.sty
+Package: unicode-math 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
+Package: unicode-math-xetex 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLa
+TeX
+\g__um_fam_int=\count344
+\g__um_fonts_used_int=\count345
+\l__um_primecount_int=\count346
+\g__um_primekern_muskip=\muskip18
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex
+))) (d:/Latex/texlive/2022/texmf-dist/tex/latex/scalerel/scalerel.sty
+Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretchi
+ng of objects, relative to a reference object or in absolute terms
+\thesrwidth=\skip119
+\thesrheight=\skip120
+\srblobheight=\skip121
+\srblobdepth=\skip122
+\mnxsrwidth=\skip123
+\LMex=\skip124
+\LMpt=\skip125
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+))
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/tipa/tipa.sty
+Package: tipa 2002/08/08 TIPA version 1.1
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+LaTeX Font Info:    Font shape `TU/XITS(0)/m/sl' in size <9> not available
+(Font)              Font shape `TU/XITS(0)/m/it' tried instead on input line 31
+6.
+
+Package fontspec Info: Could not resolve font "Source Han Sans SC/I" (it
+(fontspec)             probably doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "FZHei-B01/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "FZHei-B01/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Font family 'FZHei-B01(0)' created for font 'FZHei-B01'
+(fontspec)             with options [Script={CJK},BoldFont={Source Han Sans
+(fontspec)             SC}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"FZHei-B01/OT:script=hani;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Source Han Sans
+(fontspec)             SC/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Trying to load font information for T3+lmss on input line 3
+57.
+LaTeX Font Info:    No file T3lmss.fd. on input line 357.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 35
+7.
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+
+LaTeX Font Warning: Font shape `T3/lmss/m/n' undefined
+(Font)              using `T3/cmr/m/n' instead on input line 357.
+
+)))
+
+Package fontspec Info: Font family 'XITSMath(0)' created for font 'XITS Math'
+(fontspec)             with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
+=Math,StylisticSet={8}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"XITS
+(fontspec)             Math/OT:script=math;language=dflt;+ss08;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"XITS
+(fontspec)             Math/B/OT:script=math;language=dflt;+ss08;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+
+Package fontspec Info: Font family 'XITSMath(1)' created for font 'XITS Math'
+(fontspec)             with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
+=Math,SizeFeatures={{Size=7.875-},{Size=6.075-7.875,Font=XITS
+(fontspec)             Math,Style=MathScript},{Size=-6.075,Font=XITS
+(fontspec)             Math,Style=MathScriptScript}},StylisticSet={8}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <7.875->"XITS
+(fontspec)             Math/OT:script=math;language=dflt;+ss08;"<6.075-7.875>"X
+ITS
+(fontspec)             Math/OT:script=math;language=dflt;+ss08;+ssty=0;"<-6.075
+>"XITS
+(fontspec)             Math/OT:script=math;language=dflt;+ss08;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"XITS
+(fontspec)             Math/B/OT:script=math;language=dflt;+ss08;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 278.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/XITSMath(1)/m/n on input line 278.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 278.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/XITSMath(1)/b/n on input line 278.
+
+Package fontspec Info: XITS Math scale = 1.0001.
+
+
+Package fontspec Info: XITS Math scale = 1.0001.
+
+
+Package fontspec Info: XITS Math scale = 1.0001.
+
+
+Package fontspec Info: XITS Math scale = 1.0001.
+
+
+Package fontspec Info: XITS Math/B scale = 1.0001.
+
+
+Package fontspec Info: Font family 'XITSMath(2)' created for font 'XITS Math'
+(fontspec)             with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
+=Math,SizeFeatures={{Size=7.875-},{Size=6.075-7.875,Font=XITS
+(fontspec)             Math,Style=MathScript},{Size=-6.075,Font=XITS
+(fontspec)             Math,Style=MathScriptScript}},StylisticSet={8},ScaleAgai
+n=1.0001,FontAdjustment={\fontdimen
+(fontspec)             8\font =5.22pt\relax \fontdimen 9\font =4.32pt\relax
+(fontspec)             \fontdimen 10\font =4.32pt\relax \fontdimen 11\font
+(fontspec)             =6.3pt\relax \fontdimen 12\font =4.32pt\relax
+(fontspec)             \fontdimen 13\font =3.6pt\relax \fontdimen 14\font
+(fontspec)             =3.6pt\relax \fontdimen 15\font =2.475pt\relax
+(fontspec)             \fontdimen 16\font =2.25pt\relax \fontdimen 17\font
+(fontspec)             =2.25pt\relax \fontdimen 18\font =3.375pt\relax
+(fontspec)             \fontdimen 19\font =0.45pt\relax \fontdimen 22\font
+(fontspec)             =2.25pt\relax \fontdimen 20\font =0pt\relax \fontdimen
+(fontspec)             21\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <7.875->s*[1.0001]"XITS
+(fontspec)             Math/OT:script=math;language=dflt;+ss08;"<6.075-7.875>s*
+[1.0001]"XITS
+(fontspec)             Math/OT:script=math;language=dflt;+ss08;+ssty=0;"<-6.075
+>s*[1.0001]"XITS
+(fontspec)             Math/OT:script=math;language=dflt;+ss08;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =5.22pt\relax \fontdimen 9\font
+(fontspec)             =4.32pt\relax \fontdimen 10\font =4.32pt\relax
+(fontspec)             \fontdimen 11\font =6.3pt\relax \fontdimen 12\font
+(fontspec)             =4.32pt\relax \fontdimen 13\font =3.6pt\relax
+(fontspec)             \fontdimen 14\font =3.6pt\relax \fontdimen 15\font
+(fontspec)             =2.475pt\relax \fontdimen 16\font =2.25pt\relax
+(fontspec)             \fontdimen 17\font =2.25pt\relax \fontdimen 18\font
+(fontspec)             =3.375pt\relax \fontdimen 19\font =0.45pt\relax
+(fontspec)             \fontdimen 22\font =2.25pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[1.0001]"XITS
+(fontspec)             Math/B/OT:script=math;language=dflt;+ss08;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =5.22pt\relax \fontdimen 9\font
+(fontspec)             =4.32pt\relax \fontdimen 10\font =4.32pt\relax
+(fontspec)             \fontdimen 11\font =6.3pt\relax \fontdimen 12\font
+(fontspec)             =4.32pt\relax \fontdimen 13\font =3.6pt\relax
+(fontspec)             \fontdimen 14\font =3.6pt\relax \fontdimen 15\font
+(fontspec)             =2.475pt\relax \fontdimen 16\font =2.25pt\relax
+(fontspec)             \fontdimen 17\font =2.25pt\relax \fontdimen 18\font
+(fontspec)             =3.375pt\relax \fontdimen 19\font =0.45pt\relax
+(fontspec)             \fontdimen 22\font =2.25pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 278.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> TU/XITSMath(2)/m/n on input line 278.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 278.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> TU/XITSMath(2)/b/n on input line 278.
+
+Package fontspec Info: XITS Math scale = 0.9999.
+
+
+Package fontspec Info: XITS Math scale = 0.9999.
+
+
+Package fontspec Info: XITS Math scale = 0.9999.
+
+
+Package fontspec Info: XITS Math scale = 0.9999.
+
+
+Package fontspec Info: XITS Math/B scale = 0.9999.
+
+
+Package fontspec Info: Font family 'XITSMath(3)' created for font 'XITS Math'
+(fontspec)             with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
+=Math,SizeFeatures={{Size=7.875-},{Size=6.075-7.875,Font=XITS
+(fontspec)             Math,Style=MathScript},{Size=-6.075,Font=XITS
+(fontspec)             Math,Style=MathScriptScript}},StylisticSet={8},ScaleAgai
+n=0.9999,FontAdjustment={\fontdimen
+(fontspec)             8\font =0.594pt\relax \fontdimen 9\font =1.35pt\relax
+(fontspec)             \fontdimen 10\font =1.35pt\relax \fontdimen 11\font
+(fontspec)             =2.7pt\relax \fontdimen 12\font =5.4pt\relax \fontdimen
+(fontspec)             13\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <7.875->s*[0.9999]"XITS
+(fontspec)             Math/OT:script=math;language=dflt;+ss08;"<6.075-7.875>s*
+[0.9999]"XITS
+(fontspec)             Math/OT:script=math;language=dflt;+ss08;+ssty=0;"<-6.075
+>s*[0.9999]"XITS
+(fontspec)             Math/OT:script=math;language=dflt;+ss08;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =0.594pt\relax \fontdimen 9\font
+(fontspec)             =1.35pt\relax \fontdimen 10\font =1.35pt\relax
+(fontspec)             \fontdimen 11\font =2.7pt\relax \fontdimen 12\font
+(fontspec)             =5.4pt\relax \fontdimen 13\font =0pt\relax 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[0.9999]"XITS
+(fontspec)             Math/B/OT:script=math;language=dflt;+ss08;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =0.594pt\relax \fontdimen 9\font
+(fontspec)             =1.35pt\relax \fontdimen 10\font =1.35pt\relax
+(fontspec)             \fontdimen 11\font =2.7pt\relax \fontdimen 12\font
+(fontspec)             =5.4pt\relax \fontdimen 13\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 2
+78.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> TU/XITSMath(3)/m/n on input line 278.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 278
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> TU/XITSMath(3)/b/n on input line 278.
+\c@exa=\count347
+\c@example=\count348
+ (d:/Latex/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
+
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen277
+\Hy@linkcounter=\count349
+\Hy@pagecounter=\count350
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count351
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4018.
+Package hyperref Info: Hyper figures OFF on input line 4137.
+Package hyperref Info: Link nesting OFF on input line 4142.
+Package hyperref Info: Hyper index ON on input line 4145.
+Package hyperref Info: Plain pages OFF on input line 4152.
+Package hyperref Info: Backreferencing OFF on input line 4157.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4390.
+\c@Hy@tempcnt=\count352
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip19
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4749.
+\XeTeXLinkMargin=\dimen278
+
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count353
+\Field@Width=\dimen279
+\Fld@charsize=\dimen280
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+LaTeX Info: Redefining \ref on input line 6097.
+LaTeX Info: Redefining \pageref on input line 6101.
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count354
+\c@Item=\count355
+\c@Hfootnote=\count356
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2022-02-21 v7.00n Hyperref driver for XeTeX
+
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box109
+\c@Hy@AnnotLevel=\count357
+\HyField@AnnotCount=\count358
+\Fld@listcount=\count359
+\c@bookmark@seq@number=\count360
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip126
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 387.
+Package hyperref Info: Option `breaklinks' set `true' on input line 387.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 387.
+
+ (d:/Latex/texlive/2022/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
+File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
+\BKM@id=\count361
+))
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/quoting/quoting.sty
+Package: quoting 2014/01/28 v0.1c Consolidated environment for displayed text
+\quo@toppartop=\skip127
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip128
+\subfigcapskip=\skip129
+\subfigcaptopadj=\dimen281
+\subfigbottomskip=\skip130
+\subfigcapmargin=\dimen282
+\subfiglabelskip=\skip131
+\c@subfigure=\count362
+\c@lofdepth=\count363
+\c@subtable=\count364
+\c@lotdepth=\count365
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip132
+\subfig@bottom=\skip133
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen283
+\WF@size=\dimen284
+\c@WF@wrappedlines=\count366
+\WF@box=\box110
+\WF@everypar=\toks29
+Package: wrapfig 2003/01/31  v 3.6
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/tabularray/tabularray.sty
+Package: tabularray 2022-03-01 v2022A Typeset tabulars and arrays with LaTeX3
+\l__tblr_a_int=\count367
+\l__tblr_c_int=\count368
+\l__tblr_r_int=\count369
+\l__tblr_d_dim=\dimen285
+\l__tblr_h_dim=\dimen286
+\l__tblr_o_dim=\dimen287
+\l__tblr_p_dim=\dimen288
+\l__tblr_q_dim=\dimen289
+\l__tblr_r_dim=\dimen290
+\l__tblr_s_dim=\dimen291
+\l__tblr_t_dim=\dimen292
+\l__tblr_v_dim=\dimen293
+\l__tblr_w_dim=\dimen294
+\l__tblr_a_box=\box111
+\l__tblr_b_box=\box112
+\l__tblr_c_box=\box113
+\l__tblr_d_box=\box114
+\g__tblr_table_count_int=\count370
+\c@rownum=\count371
+\c@colnum=\count372
+\c@rowcount=\count373
+\c@colcount=\count374
+\abovesep=\dimen295
+\belowsep=\dimen296
+\leftsep=\dimen297
+\rightsep=\dimen298
+\g_tblr_level_int=\count375
+\g__tblr_data_row_key_count_int=\count376
+\g__tblr_data_column_key_count_int=\count377
+\g__tblr_data_cell_key_count_int=\count378
+\g__tblr_array_int=\count379
+\l__tblr_key_count_int=\count380
+\l__tblr_key_quotient_int=\count381
+\l__tblr_key_quotient_two_int=\count382
+\l__tblr_key_remainder_int=\count383
+\g__tblr_data_str_value_count_int=\count384
+\rulewidth=\dimen299
+\l__tblr_strut_ht_box=\box115
+\l__tblr_strut_dp_box=\box116
+\g__tblr_cell_wd_dim=\dimen300
+\g__tblr_cell_ht_dim=\dimen301
+\g__tblr_cell_head_dim=\dimen302
+\g__tblr_cell_foot_dim=\dimen303
+\l__column_target_dim=\dimen304
+\l__tblr_caption_box=\box117
+\l__tblr_caption_left_box=\box118
+\l__tblr_row_head_box=\box119
+\l__tblr_row_foot_box=\box120
+\l__tblr_row_head_foot_dim=\dimen305
+\tablewidth=\dimen306
+\l__tblr_table_firsthead_box=\box121
+\l__tblr_table_middlehead_box=\box122
+\l__tblr_table_lasthead_box=\box123
+\l__tblr_table_firstfoot_box=\box124
+\l__tblr_table_middlefoot_box=\box125
+\l__tblr_table_lastfoot_box=\box126
+\l__tblr_remain_height_dim=\dimen307
+\l__tblr_long_from_int=\count385
+\l__tblr_long_to_int=\count386
+\l__tblr_curr_i_int=\count387
+\l__tblr_prev_i_int=\count388
+\l__tblr_table_page_int=\count389
+\l__tblr_table_head_box=\box127
+\l__tblr_table_foot_box=\box128
+\l__tblr_table_head_foot_dim=\dimen308
+\l__tblr_table_head_body_foot_dim=\dimen309
+\l__tblr_table_box=\box129
+\l__tblr_table_hlines_box=\box130
+\l__tblr_hline_box=\box131
+\l__tblr_row_box=\box132
+\l__tblr_col_o_wd_dim=\dimen310
+\l__tblr_col_b_wd_dim=\dimen311
+\l__tblr_hline_leftskip_dim=\dimen312
+\l__tblr_hline_rightskip_dim=\dimen313
+\l__tblr_row_ht_dim=\dimen314
+\l__tblr_row_dp_dim=\dimen315
+\l__tblr_row_abovesep_dim=\dimen316
+\l__tblr_row_belowsep_dim=\dimen317
+\l__tblr_row_vlines_box=\box133
+\l__tblr_vline_box=\box134
+\l__tblr_cell_box=\box135
+\l__row_upper_dim=\dimen318
+\l__row_lower_dim=\dimen319
+\l__row_vpace_dim=\dimen320
+\l__tblr_vline_aboveskip_dim=\dimen321
+\l__tblr_vline_belowskip_dim=\dimen322
+\l__tblr_cell_wd_dim=\dimen323
+\l__tblr_cell_ht_dim=\dimen324
+\l__tblr_diag_box=\box136
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen325
+\ar@mcellbox=\box137
+\extrarowheight=\dimen326
+\NC@list=\toks30
+\extratabsurround=\skip134
+\backup@length=\skip135
+\ar@cellbox=\box138
+)
+\TX@col@width=\dimen327
+\TX@old@table=\dimen328
+\TX@old@col=\dimen329
+\TX@target=\dimen330
+\TX@delta=\dimen331
+\TX@cols=\count390
+\TX@ftn=\toks31
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip136
+\multirow@cntb=\count391
+\multirow@dima=\skip137
+\bigstrutjot=\dimen332
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2022-02-15 v3.0.49 A comprehensive (SI) units package
+\l__siunitx_angle_tmp_dim=\dimen333
+\l__siunitx_angle_marker_box=\box139
+\l__siunitx_angle_unit_box=\box140
+\l__siunitx_compound_count_int=\count392
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
+ (CN)
+)
+\l__siunitx_number_exponent_fixed_int=\count393
+\l__siunitx_number_min_decimal_int=\count394
+\l__siunitx_number_min_integer_int=\count395
+\l__siunitx_number_round_precision_int=\count396
+\l__siunitx_number_group_minimum_int=\count397
+\l__siunitx_table_tmp_box=\box141
+\l__siunitx_table_tmp_dim=\dimen334
+\l__siunitx_table_column_width_dim=\dimen335
+\l__siunitx_table_integer_box=\box142
+\l__siunitx_table_decimal_box=\box143
+\l__siunitx_table_before_box=\box144
+\l__siunitx_table_after_box=\box145
+\l__siunitx_table_before_dim=\dimen336
+\l__siunitx_table_carry_dim=\dimen337
+\l__siunitx_unit_tmp_int=\count398
+\l__siunitx_unit_position_int=\count399
+\l__siunitx_unit_total_int=\count400
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen338
+\lightrulewidth=\dimen339
+\cmidrulewidth=\dimen340
+\belowrulesep=\dimen341
+\belowbottomsep=\dimen342
+\aboverulesep=\dimen343
+\abovetopsep=\dimen344
+\cmidrulesep=\dimen345
+\cmidrulekern=\dimen346
+\defaultaddspace=\dimen347
+\@cmidla=\count401
+\@cmidlb=\count402
+\@aboverulesep=\dimen348
+\@belowrulesep=\dimen349
+\@thisruleclass=\count403
+\@lastruleclass=\count404
+\@thisrulewidth=\dimen350
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen351
+\captionmargin=\dimen352
+\caption@leftmargin=\dimen353
+\caption@rightmargin=\dimen354
+\caption@width=\dimen355
+\caption@indent=\dimen356
+\caption@parindent=\dimen357
+\caption@hangindent=\dimen358
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count405
+\c@continuedfloat=\count406
+Package caption Info: hyperref package is loaded.
+Package caption Info: subfigure package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/mhchem/mhchem.sty
+Package: mhchem 2021/12/31 v4.09 for typesetting chemical formulae
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/chemgreek/chemgreek.sty
+Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use
+ in chemistry (CN)
+\l__chemgreek_tmpa_int=\count407
+\g__chemgreek_tmpa_int=\count408
+)
+\l__mhchem_ce_distanceFromLastComma_int=\count409
+\__mhchem_arrow_extPgfLength_skip=\skip138
+\mhchem@minispace@tmp=\skip139
+\mhchem@minibackspace@tmp=\skip140
+\mhchem@bondwidth=\skip141
+\mhchem@bondheight=\skip142
+\mhchem@smallbondwidth@tmpA=\skip143
+\mhchem@smallbondwidth@tmpB=\skip144
+\mhchem@smallbondwidth=\skip145
+\mhchem@bondtmp@minussidebearingleft=\skip146
+\mhchem@bondtmp@minussidebearingright=\skip147
+\l__mhchem_option_version_int=\count410
+\mhchem@option@minusmathsidebearingleft=\dimen359
+\mhchem@option@minusmathsidebearingright=\dimen360
+\mhchem@option@minustextsidebearingleft=\dimen361
+\mhchem@option@minustextsidebearingright=\dimen362
+
+
+Package mhchem Warning: You did not specify a 'version' option for the mhchem
+(mhchem)                package. Please write \usepackage[version=4]{mhchem}
+(mhchem)                in your preamble (or any lower number for
+(mhchem)                compatibility mode), because you might get slightly
+(mhchem)                different output with the same input in future versions
+.
+
+)) (d:/Latex/texlive/2022/texmf-dist/tex/latex/mathtools/empheq.sty
+Package: empheq 2017/03/31 v2.15 Emphasizing equations
+\l_EQ_equationtype_int=\count411
+\l_EQ_alignmentmode_int=\count412
+\l_EQ_totalwidth_dim=\dimen363
+\l_EQ_displaywidth_dim=\dimen364
+\l_EQ_temp_linewidth_dim=\dimen365
+\l_EQ_linewidth_dim=\dimen366
+\EmphEqdelimitershortfall=\dimen367
+\EmphEqdelimiterfactor=\count413
+\g_EQ_toptag_height_dim=\dimen368
+\g_EQ_bottomtag_depth_dim=\dimen369
+\g_EQ_toprow_height_dim=\dimen370
+\g_EQ_bottomrow_depth_dim=\dimen371
+\g_EQ_widesttag_dim=\dimen372
+\EQ_mathdisplay_box=\box146
+\EQ_tag_box=\box147
+\g_EQ_temprow_int=\count414
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/cases/cases.sty
+Package: cases 2020/03/29 ver 3.2
+\numc@numwid=\dimen373
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/diagbox/diagbox.sty
+Package: diagbox 2020/02/09 v2.3 Making table heads with diagonal lines
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/pict2e/pict2e.sty
+Package: pict2e 2020/09/30 v0.4b Improved picture commands (HjG,RN,JT)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: xetex.def on input line 112.
+Package pict2e Info: Driver file for pict2e: p2e-xetex.def on input line 114.
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/pict2e/p2e-xetex.def
+File: p2e-xetex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+\pIIe@GRAPH=\toks32
+\@arclen=\dimen374
+\@arcrad=\dimen375
+\pIIe@tempdima=\dimen376
+\pIIe@tempdimb=\dimen377
+\pIIe@tempdimc=\dimen378
+\pIIe@tempdimd=\dimen379
+\pIIe@tempdime=\dimen380
+\pIIe@tempdimf=\dimen381
+)
+\diagbox@boxa=\box148
+\diagbox@boxb=\box149
+\diagbox@boxm=\box150
+\diagbox@wd=\dimen382
+\diagbox@ht=\dimen383
+\diagbox@insepl=\dimen384
+\diagbox@insepr=\dimen385
+\diagbox@outsepl=\dimen386
+\diagbox@outsepr=\dimen387
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/chngcntr/chngcntr.sty
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/physics/physics.sty
+Package: physics 
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/extarrows/extarrows.sty
+Package: extarrows 2020/03/12 v1.2.0 Some extensible arrows
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen388
+\c@nlinenum=\count415
+\TeXr@lab=\toks33
+)
+Package translations Info: No language package found. I am going to use `englis
+h' as default language. on input line 18.
+
+(./Quantum Mechanics.aux
+
+LaTeX Warning: Label `eq37.5' multiply defined.
+
+)
+\openout1 = `"Quantum Mechanics.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(56.9055pt, 284.52757pt, 56.9055pt)
+* v-part:(T,H,B)=(72.26997pt, 448.98451pt, 56.33646pt)
+* \paperwidth=398.33858pt
+* \paperheight=577.59094pt
+* \textwidth=284.52757pt
+* \textheight=448.98451pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-30.0675pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=34.1433pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=8.09998pt plus 3.5996pt minus 1.80037pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+
+)
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  TU/XITSMath(1)/m/n --> TU/XITS(0)/m/n on input line 18.
+
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/XITS(0)/m/it on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/XITS(0)/b/n on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 18.
+
+
+Package unicode-math Warning: Using \overbracket and \underbracket from
+(unicode-math)                `mathtools' package.
+(unicode-math)                 
+(unicode-math)                 Use \Uoverbracket and \Uunderbracket for
+(unicode-math)                original `unicode-math' definition.
+
+
+Package unicode-math Warning: I'm going to overwrite the following commands
+(unicode-math)                from the `mathtools' package: 
+(unicode-math)                 
+(unicode-math)                     \dblcolon, \coloneqq, \Coloneqq, \eqqcolon.
+(unicode-math)                
+(unicode-math)                 
+(unicode-math)                 Note that since I won't overwrite the other
+(unicode-math)                colon-like commands, using them will lead to
+(unicode-math)                inconsistencies.
+
+Package hyperref Info: Link coloring ON on input line 18.
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count416
+)
+LaTeX Info: Redefining \ref on input line 18.
+LaTeX Info: Redefining \pageref on input line 18.
+LaTeX Info: Redefining \nameref on input line 18.
+ (d:/Latex/texlive/2022/texmf-dist/tex/latex/ninecolors/ninecolors.sty
+Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
+
+)
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/translations/translations-basic-dic
+tionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `tra
+nslations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `english'. on input line 18.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+Package chemgreek Info: Activating mapping `fontspec' on line 18.
+
+File: QM file/body/F00-Frontpage.pdf Graphic file (type pdf)
+<use QM file/body/F00-Frontpage.pdf>
+File: QM file/body/F00-Frontpage.pdf Graphic file (type pdf)
+<use QM file/body/F00-Frontpage.pdf>
+File: QM file/body/F00-Frontpage.pdf Graphic file (type pdf)
+<use QM file/body/F00-Frontpage.pdf, page 1>
+File: QM file/body/F00-Frontpage.pdf Graphic file (type pdf)
+<use QM file/body/F00-Frontpage.pdf, page 1>
+File: QM file/body/F00-Frontpage.pdf Graphic file (type pdf)
+<use QM file/body/F00-Frontpage.pdf, page 1>
+File: QM file/body/F00-Frontpage.pdf Graphic file (type pdf)
+<use QM file/body/F00-Frontpage.pdf, page 1>
+File: QM file/body/F00-Frontpage.pdf Graphic file (type pdf)
+<use QM file/body/F00-Frontpage.pdf, page 1>
+ [1
+
+] (./QM file/body/F01-Titlepage.tex
+
+Package fontspec Info: Could not resolve font "FZHei-B01/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "FZHei-B01/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "FZHei-B01/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Font family 'FZHei-B01(1)' created for font 'FZHei-B01'
+(fontspec)             with options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"FZHei-B01/OT:script=hani;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+
+Package fontspec Info: Could not resolve font "FZKai-Z03/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "FZKai-Z03/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "FZKai-Z03/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Font family 'FZKai-Z03(0)' created for font 'FZKai-Z03'
+(fontspec)             with options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"FZKai-Z03/OT:script=hani;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+ [2])
+(./QM file/body/F02-Publish Information.tex
+
+Package fontspec Info: Could not resolve font "FZShuSong-Z01/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "FZShuSong-Z01/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "FZShuSong-Z01/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Font family 'FZShuSong-Z01(1)' created for font
+(fontspec)             'FZShuSong-Z01' with options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"FZShuSong-Z01/OT:script=hani;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+
+Package fontspec Info: Could not resolve font "FZFangSong-Z02/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "FZFangSong-Z02/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "FZFangSong-Z02/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Font family 'FZFangSong-Z02(0)' created for font
+(fontspec)             'FZFangSong-Z02' with options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"FZFangSong-Z02/OT:script=hani;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+
+Package fontspec Info: Could not resolve font "LXGWWenKai-Bold/BI" (it
+(fontspec)             probably doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "LXGWWenKai-Bold/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "LXGWWenKai-Bold/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Font family 'LXGWWenKai-Bold(0)' created for font
+(fontspec)             'LXGWWenKai-Bold' with options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"LXGWWenKai-Bold/OT:script=hani;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
+(Font)              scaled to size 7.52892pt on input line 59.
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
+(Font)              scaled to size 5.00053pt on input line 59.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
+(Font)              scaled to size 7.52731pt on input line 59.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 59.
+LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 
+59.
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/yhmath/OMXyhex.fd
+File: OMXyhex.fd 
+File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
+
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
+
+
+(d:/Latex/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
+(Font)              scaled to size 9.00096pt on input line 65.
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
+(Font)              scaled to size 6.75072pt on input line 65.
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
+(Font)              scaled to size 5.40056pt on input line 65.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
+(Font)              scaled to size 8.99904pt on input line 65.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
+(Font)              scaled to size 6.74927pt on input line 65.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
+(Font)              scaled to size 5.39941pt on input line 65.
+ [3
+
+])
+(./QM file/body/F03-Foreword.tex [1
+
+] [2])
+Underfull \hbox (badness 10000) detected at line 46
+\TU/FZShuSong-Z01(0)/b/n/15.05624 目 录
+ []
+
+(./Quantum Mechanics.toc)
+\tf@toc=\write3
+\openout3 = `"Quantum Mechanics.toc"'.
+
+ [1
+
+
+] (./QM file/body/C.one/M01.00-Introduction.tex
+第一章
+
+LaTeX Font Warning: Font shape `TU/FZFangSong-Z02(0)/b/n' undefined
+(Font)              using `TU/FZFangSong-Z02(0)/m/n' instead on input line 2.
+
+(./QM file/body/C.one/M01.01-Blackbody radiation and Planck's constant.tex
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
+(Font)              scaled to size 10.54048pt on input line 1.
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
+(Font)              scaled to size 7.00075pt on input line 1.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
+(Font)              scaled to size 10.53824pt on input line 1.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+File: QM file/figure/1-1.pdf Graphic file (type pdf)
+<use QM file/figure/1-1.pdf>
+[1
+
+
+]
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 52.
+
+File: QM file/figure/1-2.pdf Graphic file (type pdf)
+<use QM file/figure/1-2.pdf>
+
+Overfull \hbox (18.58464pt too wide) in paragraph at lines 54--55
+ [][] 
+ []
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 56
+.
+
+[2] [3] [4] [5]) (./QM file/body/C.one/M01.02-Photon.tex
+Underfull \hbox (badness 10000) detected at line 1
+\TU/FZKai-Z03(0)/m/n/10.53937 光 子
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/b/n' will be
+(Font)              scaled to size 9.00096pt on input line 14.
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/b/n' will be
+(Font)              scaled to size 6.75072pt on input line 14.
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/b/n' will be
+(Font)              scaled to size 5.40056pt on input line 14.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/b/n' will be
+(Font)              scaled to size 8.99904pt on input line 14.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/b/n' will be
+(Font)              scaled to size 6.74927pt on input line 14.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/b/n' will be
+(Font)              scaled to size 5.39941pt on input line 14.
+[6]
+File: QM file/figure/1-3.pdf Graphic file (type pdf)
+<use QM file/figure/1-3.pdf>
+
+Overfull \hbox (4.35826pt too wide) in paragraph at lines 43--44
+ [][] 
+ []
+
+[7]
+
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 70.
+
+
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 70.
+
+
+[8]) (./QM file/body/C.one/M01.03-Bohr's quantum theory.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Overfull \hbox (10.72943pt too wide) in paragraph at lines 8--9
+[]\TU/XITS(0)/m/n/9 19 \TU/FZShuSong-Z01(0)/m/n/9 世 纪 后 期，|  广 泛 进 行 了 原 子 光 谱 
+的 实 验 研 究\TU/XITS(0)/m/n/9 .1885 \TU/FZShuSong-Z01(0)/m/n/9 年，|  巴 尔 末  |（\TU/X
+ITS(0)/m/n/9 Balmer\TU/FZShuSong-Z01(0)/m/n/9 ）|
+ []
+
+File: QM file/figure/1-4.pdf Graphic file (type pdf)
+<use QM file/figure/1-4.pdf>
+
+Overfull \hbox (2.9055pt too wide) in paragraph at lines 28--29
+ [][] 
+ []
+
+[9] [10]
+File: QM file/figure/1-5.pdf Graphic file (type pdf)
+<use QM file/figure/1-5.pdf>
+
+Overfull \hbox (17.13188pt too wide) in paragraph at lines 67--68
+ [][] 
+ []
+
+[11]
+Underfull \vbox (badness 1019) has occurred while \output is active []
+
+ [12]
+File: QM file/figure/1-6.pdf Graphic file (type pdf)
+<use QM file/figure/1-6.pdf>
+
+Overfull \hbox (2.9055pt too wide) in paragraph at lines 125--126
+ [][] 
+ []
+
+[13] [14])
+(./QM file/body/C.one/M01.04-Characteristic quantities in atomic physics.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[15] [16]
+LaTeX Font Info:    Trying to load font information for T3+XITS(0) on input lin
+e 56.
+LaTeX Font Info:    No file T3XITS(0).fd. on input line 56.
+
+
+LaTeX Font Warning: Font shape `T3/XITS(0)/m/n' undefined
+(Font)              using `T3/cmr/m/n' instead on input line 56.
+
+[17] [18] [19] [20])
+(./QM file/body/C.one/M01.05-De Broglie's matter wave hypothesis.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+File: QM file/figure/1-7.pdf Graphic file (type pdf)
+<use QM file/figure/1-7.pdf>
+[21]
+
+Package wrapfig Warning: Collision between wrapping environments on input line 
+31.
+
+File: QM file/figure/1-8.pdf Graphic file (type pdf)
+<use QM file/figure/1-8.pdf>
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 36
+.
+
+[22]
+Overfull \hbox (2.71288pt too wide) in paragraph at lines 76--77
+[]\TU/XITS(0)/m/n/9 (3) \TU/FZShuSong-Z01(0)/m/n/9 原 子 核 中 核 子 的 运 动\TU/XITS(0)
+/m/n/9 . \TU/FZShuSong-Z01(0)/m/n/9 核 子  |（质 子 和 中 子）|  的 动 能 约 为 $[] [] [][][]
+$，|
+ []
+
+[23]) (./QM file/body/C.one/M01.06-Exercises.tex
+Underfull \hbox (badness 10000) detected at line 1
+\TU/FZHei-B01(0)/m/n/9 习 题
+ []
+
+File: QM file/figure/1-9.pdf Graphic file (type pdf)
+<use QM file/figure/1-9.pdf>
+
+Overfull \hbox (9.58464pt too wide) in paragraph at lines 11--12
+ [][] 
+ []
+
+File: QM file/figure/1-10.pdf Graphic file (type pdf)
+<use QM file/figure/1-10.pdf>
+[24] [25]))
+(./QM file/body/C.two/M02.00-Wave function and Schrödinger's equation.tex
+[26]
+第二章
+(./QM file/body/C.two/M02.01-Schrödinger's equation.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[27
+
+] [28] [29] [30]
+Overfull \hbox (19.63641pt too wide) in paragraph at lines 159--160
+[]\TU/FZShuSong-Z01(0)/m/n/9 克 莱 因\TU/XITS(0)/m/n/9 -\TU/FZShuSong-Z01(0)/m/n/9
+ 戈 登 方 程 方 程 也 存 在 单 色 平 面 波 特 解，|  波 函 数 仍 可 表 示 成[]式，|
+ []
+
+)
+(./QM file/body/C.two/M02.02-Statistical interpretation of the wave function.te
+x
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[31]
+File: QM file/figure/2-1.pdf Graphic file (type pdf)
+<use QM file/figure/2-1.pdf>
+ [32] [33] [34]
+LaTeX Font Info:    Calculating math sizes for size <7.50009> on input line 98.
+
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
+(Font)              scaled to size 7.50089pt on input line 98.
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
+(Font)              scaled to size 5.25058pt on input line 98.
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
+(Font)              scaled to size 3.75044pt on input line 98.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
+(Font)              scaled to size 7.49928pt on input line 98.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
+(Font)              scaled to size 5.24947pt on input line 98.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
+(Font)              scaled to size 3.74963pt on input line 98.
+ [35] [36])
+(./QM file/body/C.two/M02.03-stationary state.tex
+Underfull \hbox (badness 10000) detected at line 1
+\TU/FZKai-Z03(0)/m/n/10.53937 定 态
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[37] [38] [39]
+Overfull \hbox (6.6109pt too wide) in paragraph at lines 124--125
+[]\TU/FZShuSong-Z01(0)/m/n/9 证：|  用 反 证 法，|  设 相 应 于 能 量 特 征 值 $[]$ 存 在 \TU/XIT
+S(0)/m/n/9 3 \TU/FZShuSong-Z01(0)/m/n/9 个 线 性 独 立 解 $\OML/cmm/m/it/9 ^^I[][] ^^
+I[][] ^^I[]$\TU/XITS(0)/m/n/9 .
+ []
+
+[40]
+Overfull \hbox (3.36295pt too wide) in paragraph at lines 191--193
+\TU/FZShuSong-Z01(0)/m/n/9 因 此 $\OML/cmm/m/it/9 ^^I[][][][][]$ \TU/FZShuSong-Z0
+1(0)/m/n/9 也 是[]式 的 解，|  对 应 于 同 一 个 能 量 值 $[]$\TU/XITS(0)/m/n/9 . \TU/FZShuSon
+g-Z01(0)/m/n/9 但 按 照 定 理[]，|
+ []
+
+[41] [42]
+Overfull \hbox (4.49815pt too wide) in paragraph at lines 272--274
+\TU/FZShuSong-Z01(0)/m/n/9 本 例 可 以 作 为 上 述 普 遍 定 理 的 具 体 例 证\TU/XITS(0)/m/n/9 .
+ \TU/FZShuSong-Z01(0)/m/n/9 读 者 可 以 利 用[]或[]式
+ []
+
+)
+(./QM file/body/C.two/M02.04-Particles in a one-dimensional flat-bottom potenti
+al well.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+File: QM file/figure/2-2.pdf Graphic file (type pdf)
+<use QM file/figure/2-2.pdf>
+
+Overfull \hbox (10.913pt too wide) in paragraph at lines 18--19
+ [][] 
+ []
+
+[43] [44]
+File: QM file/figure/2-3.pdf Graphic file (type pdf)
+<use QM file/figure/2-3.pdf>
+File: QM file/figure/2-4.pdf Graphic file (type pdf)
+<use QM file/figure/2-4.pdf>
+ [45]
+Overfull \hbox (14.66115pt too wide) in paragraph at lines 145--147
+[]\TU/FZShuSong-Z01(0)/m/n/9 由 于 $[][][][]$ 取 有 限 值，| $\OML/cmm/m/it/9 ^^I[][][
+]$ \TU/FZShuSong-Z01(0)/m/n/9 及 $\OML/cmm/m/it/9 ^^I[][][][]$ \TU/FZShuSong-Z01
+(0)/m/n/9 是 全 空 间 的 连 续 函 数，|  因 此 由[]式
+ []
+
+[46] [47]
+File: QM file/figure/2-5.pdf Graphic file (type pdf)
+<use QM file/figure/2-5.pdf>
+ [48] [49]
+File: QM file/figure/2-6.pdf Graphic file (type pdf)
+<use QM file/figure/2-6.pdf>
+ [50])
+(./QM file/body/C.two/M02.05-One-dimensional resonator.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[51] [52] [53] [54]
+File: QM file/figure/2-7(a).pdf Graphic file (type pdf)
+<use QM file/figure/2-7(a).pdf>
+File: QM file/figure/2-7(b).pdf Graphic file (type pdf)
+<use QM file/figure/2-7(b).pdf>
+File: QM file/figure/2-7(c).pdf Graphic file (type pdf)
+<use QM file/figure/2-7(c).pdf>
+File: QM file/figure/2-7(d).pdf Graphic file (type pdf)
+<use QM file/figure/2-7(d).pdf>
+ [55] [56]
+File: QM file/figure/2-8(a).pdf Graphic file (type pdf)
+<use QM file/figure/2-8(a).pdf>
+File: QM file/figure/2-8(b).pdf Graphic file (type pdf)
+<use QM file/figure/2-8(b).pdf>
+ [57])
+(./QM file/body/C.two/M02.06-Momentum Throughout.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+File: QM file/figure/2-9.pdf Graphic file (type pdf)
+<use QM file/figure/2-9.pdf>
+
+Overfull \hbox (13.35826pt too wide) in paragraph at lines 15--16
+[][] 
+ []
+
+[58]
+Overfull \hbox (8.22171pt too wide) detected at line 26
+[]
+ []
+
+
+Overfull \hbox (5.8788pt too wide) detected at line 35
+[]
+ []
+
+
+Overfull \hbox (8.45152pt too wide) detected at line 44
+[]
+ []
+
+[59]
+Overfull \hbox (3.62518pt too wide) detected at line 103
+[]
+ []
+
+[60] [61]
+File: QM file/figure/2-10.pdf Graphic file (type pdf)
+<use QM file/figure/2-10.pdf>
+
+Overfull \hbox (5.81102pt too wide) in paragraph at lines 179--180
+[][] 
+ []
+
+
+Overfull \hbox (54.11626pt too wide) detected at line 192
+[]
+ []
+
+File: QM file/figure/2-11(a).pdf Graphic file (type pdf)
+<use QM file/figure/2-11(a).pdf>
+File: QM file/figure/2-11(b).pdf Graphic file (type pdf)
+<use QM file/figure/2-11(b).pdf>
+[62])
+Overfull \hbox (2.91644pt too wide) in paragraph at lines 239--24
+$[]$ \TU/FZShuSong-Z01(0)/m/n/9 是 $[][]$ 的 某 种 统 计 平 均 值\TU/XITS(0)/m/n/9 .$[][
+]$ \TU/FZShuSong-Z01(0)/m/n/9 和 $[]$ 取 决 于 金 属 的 能 带 结 构 性 质\TU/XITS(0)/m/n/9 .
+[]\TU/FZShuSong-Z01(0)/m/n/9 式
+ []
+
+(./QM file/body/C.two/M02.07-Exercises.tex
+Underfull \hbox (badness 10000) detected at line 1
+\TU/FZHei-B01(1)/m/n/9 习 题
+ []
+
+[63]
+File: QM file/figure/2-12.pdf Graphic file (type pdf)
+<use QM file/figure/2-12.pdf>
+File: QM file/figure/2-13.pdf Graphic file (type pdf)
+<use QM file/figure/2-13.pdf>
+
+Underfull \hbox (badness 5288) in paragraph at lines 46--47
+[][]\TU/XITS(0)/m/n/9 8. \TU/FZFangSong-Z02(0)/m/n/9 对 于 $[]$ 势 阱 造 成 的 束 缚 态，|
+  计 算
+ []
+
+[64] [65]
+File: QM file/figure/2-14.pdf Graphic file (type pdf)
+<use QM file/figure/2-14.pdf>
+)) (./QM file/body/C.three/M03.00-Fundamentals.tex [66]
+第三章
+(./QM file/body/C.three/M03.01-Wave Functions and Operators.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[67
+
+] [68] [69] [70])
+(./QM file/body/C.three/M03.02-Principle of state superposition.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[71]) (./QM file/body/C.three/M03.03-Linear operators.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[72] [73] [74]
+Overfull \hbox (12.53162pt too wide) in paragraph at lines 158--159
+[]\TU/FZShuSong-Z01(0)/m/n/9 如 果 $[] [] []$，|  则 称 $[]$ 为 厄 密 算 符 或 自 共 轭 算 符\T
+U/XITS(0)/m/n/9 . \TU/FZShuSong-Z01(0)/m/n/9 利 用[]至[]式，|
+ []
+
+[75] [76])
+(./QM file/body/C.three/M03.04-Universal physical interpretation of the wave fu
+nction.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[77] [78] [79] [80]
+Overfull \hbox (29.06488pt too wide) detected at line 129
+[]
+ []
+
+
+Overfull \hbox (29.06488pt too wide) detected at line 129
+ $[]$ 
+ []
+
+[81] [82] [83]) (./QM file/body/C.three/M03.05-Momentum.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[84] [85] [86] [87]
+File: QM file/figure/3-1.pdf Graphic file (type pdf)
+<use QM file/figure/3-1.pdf>
+
+Overfull \hbox (36.58464pt too wide) in paragraph at lines 214--215
+[][] 
+ []
+
+
+Overfull \hbox (15.4076pt too wide) detected at line 238
+[]
+ []
+
+[88] [89]
+File: QM file/figure/3-2.pdf Graphic file (type pdf)
+<use QM file/figure/3-2.pdf>
+)
+(./QM file/body/C.three/M03.06-The pairwise equation of the quantum mechanics o
+perator.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[90] [91] [92]
+File: QM file/figure/3-3.pdf Graphic file (type pdf)
+<use QM file/figure/3-3.pdf>
+
+Overfull \hbox (22.35826pt too wide) in paragraph at lines 123--124
+[][] 
+ []
+
+)
+(./QM file/body/C.three/M03.07-Common eigenstates of two quantum mechanics oper
+ators.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[93] [94] [95]) (./QM file/body/C.three/M03.08-Uncertainty relationship.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[96] [97] [98] [99])
+(./QM file/body/C.three/M03.09-Changes in state and mechanical quantities over 
+time.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[100] [101] [102] [103] [104] [105] [106])
+(./QM file/body/C.three/M03.10-Symmetry and conservation law.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[107] [108]
+Overfull \hbox (2.36362pt too wide) in paragraph at lines 73--75
+\TU/FZShuSong-Z01(0)/m/n/9 的 情 形，|  动 能 算 符 $[]$ 总 是 反 射 不 变 的，|  因 此[]式 成 立 的 
+条 件 是 $[][][][][] []
+ []
+
+File: QM file/figure/3-4.pdf Graphic file (type pdf)
+<use QM file/figure/3-4.pdf>
+
+Overfull \hbox (18.58464pt too wide) in paragraph at lines 81--82
+[][] 
+ []
+
+
+Underfull \hbox (badness 2818) in paragraph at lines 78--83
+\TU/FZShuSong-Z01(0)/m/n/9 态 $\OML/cmm/m/it/9 ^^I$ \TU/FZShuSong-Z01(0)/m/n/9 经
+ 过 平 移，|  变 成 $\OML/cmm/m/it/9 ^^I[]$\TU/FZShuSong-Z01(0)/m/n/9 ， （图[][]\TU/XIT
+S(0)/m/n/9 3.4[][]\TU/FZShuSong-Z01(0)/m/n/9 ）|  波 函 数 $\OML/cmm/m/it/9 ^^I$\TU
+/FZShuSong-Z01(0)/m/n/9 ，| $\OML/cmm/m/it/9 ^^I[]$ \TU/FZShuSong-Z01(0)/m/n/9 的
+ 关 系 是 
+ []
+
+
+Overfull \hbox (38.57903pt too wide) detected at line 100
+[]
+ []
+
+[109] [110]
+File: QM file/figure/3-5.pdf Graphic file (type pdf)
+<use QM file/figure/3-5.pdf>
+
+Overfull \hbox (11.9055pt too wide) in paragraph at lines 185--186
+[][] 
+ []
+
+[111] [112] [113])
+(./QM file/body/C.three/M03.11-Heilman's Theorem and the Bit Force Theorem.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[114] [115] [116] [117] [118] [119] [120])
+(./QM file/body/C.three/M03.12-Exercises.tex
+Underfull \hbox (badness 10000) detected at line 1
+\TU/FZHei-B01(1)/m/n/9 习 题
+ []
+
+
+Overfull \hbox (2.24628pt too wide) in paragraph at lines 3--4
+[]\TU/XITS(0)/m/n/9 1. \TU/FZFangSong-Z02(0)/m/n/9 粒 子 在 一 维 无 限 深 势 阱 \TU/XITS
+(0)/m/n/9 [$[]$[][]2.4[][](1.)] \TU/FZFangSong-Z02(0)/m/n/9 中 运 动，|  已 知 初 始 波 
+函 数，| $\OML/cmm/m/it/9 ^^I[][][] [][] []
+ []
+
+[121]
+Overfull \hbox (6.45787pt too wide) in paragraph at lines 44--47
+[]\TU/XITS(0)/m/n/9 (b) \TU/FZFangSong-Z02(0)/m/n/9 如 $[][] []$ 不 对 易，|  令 $[][
+][] [][] [] [][] [] [][] [] [][][] [][][] [][][] [] [][][] [] [] [][][] [][][] 
+[]
+ []
+
+[122])) (./QM file/body/C.four/M04.00-Representation Theory.tex [123]
+第四章
+(./QM file/body/C.four/M04.01-Dirac Symbols.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[124
+
+] [125] [126] [127] [128])
+(./QM file/body/C.four/M04.02-Quantum mechanics formula and its matrix represen
+tation.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[129] [130] [131] [132] [133] [134] [135])
+(./QM file/body/C.four/M04.03-Coordinate Representation.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[136] [137] [138]
+Overfull \hbox (13.4174pt too wide) in paragraph at lines 109--113
+\TU/FZShuSong-Z01(0)/m/n/9 这 就 是 薛 定 谔 方 程[]在 $[]$ 表 象 中 的 表 示 式\TU/XITS(0)/m/n
+/9 . \TU/FZShuSong-Z01(0)/m/n/9 从 形 式 上 看，|  相 当 于[]式
+ []
+
+) (./QM file/body/C.four/M04.04-Momentum Representation.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Overfull \hbox (19.2584pt too wide) in paragraph at lines 33--41
+\TU/FZShuSong-Z01(0)/m/n/9 就 是 动 量 表 象 中 的 波 函 数\TU/XITS(0)/m/n/9 . \TU/FZShuSo
+ng-Z01(0)/m/n/9 将 展 开 式[]代 入[]式，|  并 以 $[][][]$ 左 乘[]式，|
+ []
+
+[139] [140] [141]
+Overfull \hbox (14.73741pt too wide) in paragraph at lines 127--131
+\TU/FZShuSong-Z01(0)/m/n/9 这 就 是 $[]$ 表 象 中 的 能 量 本 征 函 数，| $[]$ 为 归 一 化 常 数\TU
+/XITS(0)/m/n/9 . \TU/FZShuSong-Z01(0)/m/n/9 将[]式 代 入[]式，|
+ []
+
+[142]) (./QM file/body/C.four/M04.05-Energy Representation.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[143] [144] [145] [146] [147])
+(./QM file/body/C.four/M04.06-One-dimensional resonator(Ascending and descendin
+g arithmetic methods).tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[148] [149] [150]
+Missing character: There is no ， (U+FF0C) in font XITS Math/OT:script=math;lang
+uage=dflt;+ss08;!
+[151] [152] [153]) (./QM file/body/C.four/M04.07-Angular momentum.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[154] [155] [156] [157] [158]) (./QM file/body/C.four/M04.08-Exercises.tex
+Underfull \hbox (badness 10000) detected at line 1
+\TU/FZHei-B01(1)/m/n/9 习 题
+ []
+
+[159]
+Overfull \hbox (24.47882pt too wide) in paragraph at lines 40--42
+[]\TU/XITS(0)/m/n/9 7. \TU/FZFangSong-Z02(0)/m/n/9 设 $[][][]$ 是 厄 密 算 符 $[]$ 的 
+本 征 态 矢 量，| $[]$ 是 另 一 个 算 符\TU/XITS(0)/m/n/9 . \TU/FZFangSong-Z02(0)/m/n/9 证：|
+  $[][][][][][] [][][][][] []
+ []
+
+
+Overfull \hbox (10.30434pt too wide) in paragraph at lines 40--42
+[]$\TU/XITS(0)/m/n/9 . \TU/FZFangSong-Z02(0)/m/n/9 又，|  如 $[][][][]$，| $[][][]$
+ 是 简 并 态  |（相 应 于 $[]$ 的 同 一 个 本 征 值） ，|  证 明 $[][][][][][] [][][][][][] []
+ []
+
+[160])) (./QM file/body/C.five/M05.00-Central Force Field.tex [161]
+第五章
+(./QM file/body/C.five/M05.01-General concept of central force field.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[162
+
+] [163]
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/b/n' will be
+(Font)              scaled to size 7.50089pt on input line 111.
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/b/n' will be
+(Font)              scaled to size 5.25058pt on input line 111.
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/b/n' will be
+(Font)              scaled to size 3.75044pt on input line 111.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/b/n' will be
+(Font)              scaled to size 7.49928pt on input line 111.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/b/n' will be
+(Font)              scaled to size 5.24947pt on input line 111.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/b/n' will be
+(Font)              scaled to size 3.74963pt on input line 111.
+ [164]
+File: QM file/figure/5-1.pdf Graphic file (type pdf)
+<use QM file/figure/5-1.pdf>
+
+Overfull \hbox (5.13914pt too wide) in paragraph at lines 137--143
+\TU/FZShuSong-Z01(0)/m/n/9 个 $[]$ 值 $[][] [] [][] [][] [][] [][]$ 可 以 解 出 一 组 能
+ 级，|  由 低 到 高 依 次 记 为 $[][][] [][][] [][][] []$\TU/XITS(0)/m/n/9 .
+ []
+
+[165]
+File: QM file/figure/5-2.pdf Graphic file (type pdf)
+<use QM file/figure/5-2.pdf>
+
+Overfull \hbox (20.9055pt too wide) in paragraph at lines 157--158
+[][] 
+ []
+
+[166] [167]) (./QM file/body/C.five/M05.02-Free particle.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[168] [169] [170]
+Overfull \hbox (0.92265pt too wide) in paragraph at lines 163--167
+\TU/FZShuSong-Z01(0)/m/n/9 而 在 $[][][][][][]$ 的 级 数 表 示 式 中，|  最 低 幕 次 为 $[][][
+][][]$，|  系 数 为 \TU/XITS(0)/m/n/9 [\TU/FZShuSong-Z01(0)/m/n/9 见[]式\TU/XITS(0)/m
+/n/9 ]$[]$.
+ []
+
+[171]) (./QM file/body/C.five/M05.03-Spherical potential well.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[172]
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
+(Font)              scaled to size 9.0347pt on input line 51.
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
+(Font)              scaled to size 6.00064pt on input line 51.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
+(Font)              scaled to size 9.03276pt on input line 51.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 51.
+
+Overfull \hbox (9.50377pt too wide) in paragraph at lines 54--65
+ [] 
+ []
+
+[173]
+File: QM file/figure/5-3.pdf Graphic file (type pdf)
+<use QM file/figure/5-3.pdf>
+
+Overfull \hbox (22.35826pt too wide) in paragraph at lines 108--109
+ [][] 
+ []
+
+[174]
+Overfull \hbox (29.85123pt too wide) detected at line 142
+[]
+ []
+
+
+Overfull \hbox (14.3273pt too wide) detected at line 167
+[]
+ []
+
+[175])
+(./QM file/body/C.five/M05.04-Motion of a particle in a Coulomb field(bound sta
+te).tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[176] [177] [178] [179] [180]
+File: QM file/figure/5-4.pdf Graphic file (type pdf)
+<use QM file/figure/5-4.pdf>
+ [181] [182] [183] [184]) [185]
+(./QM file/body/C.five/M05.05-Two-dimensional central force field.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+File: QM file/figure/5-5.pdf Graphic file (type pdf)
+<use QM file/figure/5-5.pdf>
+
+Overfull \hbox (17.13188pt too wide) in paragraph at lines 17--18
+ [][] 
+ []
+
+
+Overfull \hbox (11.04623pt too wide) detected at line 32
+[]
+ []
+
+
+Overfull \hbox (21.64275pt too wide) detected at line 42
+[]
+ []
+
+
+Overfull \hbox (25.58525pt too wide) detected at line 52
+[]
+ []
+
+[186] [187]) (./QM file/body/C.five/M05.06-Exercises.tex
+Underfull \hbox (badness 10000) detected at line 1
+\TU/FZHei-B01(1)/m/n/9 习 题
+ []
+
+[188]
+Overfull \hbox (12.04991pt too wide) in paragraph at lines 54--57
+[]\TU/XITS(0)/m/n/9 14. \TU/FZFangSong-Z02(0)/m/n/9 对 于 在 中 心 力 场 $[][][][]$ 中 
+运 动 的 粒 子  |（质 量 $[]$）|  的 任 何 一 个 $[][][] [][][] [][][]$
+ []
+
+[189]))
+(./QM file/body/C.six/M06.00-Fixed-state perturbation theory and variational me
+thods.tex [190]
+第六章
+(./QM file/body/C.six/M06.01-Non-simple parallel state perturbation theory.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[191
+
+] [192] [193]
+Overfull \hbox (10.14687pt too wide) in paragraph at lines 123--129
+\TU/FZShuSong-Z01(0)/m/n/9 其 中 $[][] [] [][] [] [][]\U/msb/m/n/9 ~[]$ \TU/FZShu
+Song-Z01(0)/m/n/9 加 是 微 扰 前 的 能 级\TU/XITS(0)/m/n/9 . \TU/FZShuSong-Z01(0)/m/n/9
+ 按 照 微 扰 论 公 式[]，| []能
+ []
+
+[194])
+(./QM file/body/C.six/M06.02-Simple parallel state perturbation theory.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[195] [196] [197]
+Overfull \hbox (3.17926pt too wide) in paragraph at lines 121--124
+[]\TU/FZHei-B01(1)/m/n/9 解：|  \TU/FZShuSong-Z01(0)/m/n/9 以 $[][]$ 和 $\OML/cmm/m
+/it/9 ^^I[]$ \TU/FZShuSong-Z01(0)/m/n/9 表 示 孤 立 氢 原 子 的 能 级 和 能 量 本 征 态  |（$[][
+][] [][][] [][]$
+ []
+
+[198] [199]
+File: QM file/figure/6-1.pdf Graphic file (type pdf)
+<use QM file/figure/6-1.pdf>
+ [200]) (./QM file/body/C.six/M06.03-Variable Score Method.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Underfull \vbox (badness 6412) has occurred while \output is active []
+
+ [201]
+[202] [203]) (./QM file/body/C.six/M06.04-Exercises.tex
+Underfull \hbox (badness 10000) detected at line 1
+\TU/FZHei-B01(1)/m/n/9 习 题
+ []
+
+[204] [205] [206])) (./QM file/body/C.seven/M07.00-Spin.tex [207]
+第七章
+(./QM file/body/C.seven/M07.01-Electron Spin.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[208
+
+] [209]
+Overfull \hbox (7.00041pt too wide) in paragraph at lines 104--106
+\TU/FZShuSong-Z01(0)/m/n/9 算 符 $[]$ 的 全 部 代 数 性 质\TU/XITS(0)/m/n/9 . \TU/FZShuS
+ong-Z01(0)/m/n/9 但 此 式 初 学 者 不 易 掌 握，|  不 如 记 住[]至[]式\TU/XITS(0)/m/n/9 . 
+ []
+
+[210] [211] [212] [213])
+(./QM file/body/C.seven/M07.02-Total angular momentum of electrons.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[214] [215] [216]
+Overfull \hbox (0.24228pt too wide) detected at line 147
+ $[]$ 
+ []
+
+
+Overfull \hbox (12.57227pt too wide) detected at line 152
+[]
+ []
+
+
+Overfull \hbox (12.57227pt too wide) detected at line 152
+ $[]$ 
+ []
+
+[217] [218])
+(./QM file/body/C.seven/M07.03-Fine structure of alkali metal spectra.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[219] [220]
+Overfull \hbox (6.6562pt too wide) in paragraph at lines 53--57
+\TU/FZShuSong-Z01(0)/m/n/9 能 级 的 计 算 可 以 用 微 扰 论\TU/XITS(0)/m/n/9 . \TU/FZShuSo
+ng-Z01(0)/m/n/9 由 于 $[][]$ 与 $[][] []$ 均 可 对 易，|  可 以 取 $[][][][] [][][] [][][]
+ [][][]$
+ []
+
+File: QM file/figure/7-1.pdf Graphic file (type pdf)
+<use QM file/figure/7-1.pdf>
+
+Overfull \hbox (22.35826pt too wide) in paragraph at lines 82--83
+ [][] 
+ []
+
+[221])
+(./QM file/body/C.seven/M07.04-Motion of a particle in an electromagnetic field
+.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[222] [223] [224]
+Overfull \hbox (20.0894pt too wide) in paragraph at lines 166--170
+\TU/FZShuSong-Z01(0)/m/n/9 其 中 $[][][][]$ 表 示 原 子 核 与 内 层 电 子 对 于 价 电 子 的 库 仑 作
+ 用 势 的 总 和，|  即[]式
+ []
+
+[225]) (./QM file/body/C.seven/M07.05-The Seaman Effect.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[226]
+File: QM file/figure/7-2.pdf Graphic file (type pdf)
+<use QM file/figure/7-2.pdf>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[227] [228] [229]
+File: QM file/figure/7-3.pdf Graphic file (type pdf)
+<use QM file/figure/7-3.pdf>
+ [230]) (./QM file/body/C.seven/M07.06-Magnetic Resonance.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[231]
+
+LaTeX Warning: Reference `eq76.5'' on page 232 undefined on input line 53.
+
+[232]
+Overfull \hbox (6.28377pt too wide) in paragraph at lines 146--150
+\TU/FZShuSong-Z01(0)/m/n/9 注 意，|  在 共 振 条 件 $[][] [] [][][]$ 下，| $[] [] [][]$，|
+ []式 变 成[]式\TU/XITS(0)/m/n/9 . \TU/FZShuSong-Z01(0)/m/n/9 由[]式、|
+ []
+
+[233]) (./QM file/body/C.seven/M07.07-Coupling of two angular momentum.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[234]
+Overfull \hbox (2.93561pt too wide) in paragraph at lines 61--64
+\TU/FZShuSong-Z01(0)/m/n/9 类 似 地，|  以 $\OML/cmm/m/it/9 ^^I[]$ \TU/FZShuSong-Z01
+(0)/m/n/9 或 $[][][][][][]$ 表 示 $[][][][] [][][]$ 共 同 本 征 态，|  也 有 类 似 于[]式、|
+ []
+
+
+Overfull \hbox (6.11087pt too wide) detected at line 92
+[]
+ []
+
+
+Overfull \hbox (6.11087pt too wide) detected at line 92
+ $[]$ 
+ []
+
+[235]
+Overfull \hbox (1.23059pt too wide) in paragraph at lines 96--98
+\TU/FZShuSong-Z01(0)/m/n/9 量 子 数 $[][][] [][]$，| $[]$ 之 间 的 这 种 关 系 常 被 形 象 地 称
+ 为 三 角 形 条 件，|  记 为 $[][][][][][][][]$，|
+ []
+
+File: QM file/figure/7-4.pdf Graphic file (type pdf)
+<use QM file/figure/7-4.pdf>
+
+Overfull \hbox (22.35826pt too wide) in paragraph at lines 102--103
+ [][] 
+ []
+
+
+Overfull \hbox (12.74406pt too wide) in paragraph at lines 106--109
+[][][]\TU/FZShuSong-Z01(0)/m/n/9 式 中 的 系 数 $[][][][] [][] [][][] [][][]$ 称 为 \T
+U/XITS(0)/m/n/9 C.G.(Clebsch-
+ []
+
+
+Overfull \hbox (31.85257pt too wide) detected at line 113
+[]
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (9.8368pt too wide) in paragraph at lines 151--166
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[236])
+(./QM file/body/C.seven/M07.08-Spin wave function of two-electron system.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[237] [238]) (./QM file/body/C.seven/M07.09-Exercises.tex
+Underfull \hbox (badness 10000) detected at line 1
+\TU/FZHei-B01(1)/m/n/9 习 题
+ []
+
+[239]
+Overfull \hbox (39.66992pt too wide) in paragraph at lines 35--36
+[]\TU/XITS(0)/m/n/9 9. \TU/FZFangSong-Z02(0)/m/n/9 设 $[][] [][] []$ 为 常 数 矢 量，|
+  求 $[][][][] [][][]$ 及 $[][][]$\TU/XITS(0)/m/n/9 . 
+ []
+
+[240]
+Overfull \hbox (3.96114pt too wide) in paragraph at lines 114--115
+[]\TU/XITS(0)/m/n/9 22. \TU/FZFangSong-Z02(0)/m/n/9 对 于 氢 原 子，|  求 自 旋 轨 道 耦 合 
+作 用 引 起 的 能 级 分 裂 $[][][]$\TU/XITS(0)/m/n/9 [[]\TU/FZFangSong-Z02(0)/m/n/9 式、|
+ []
+
+[241])) (./QM file/body/C.eight/M08.00-Elastic scattering.tex [242]
+第八章
+
+(./QM file/body/C.eight/M08.01-General description of the scattering process.te
+x
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+File: QM file/figure/8-1.pdf Graphic file (type pdf)
+<use QM file/figure/8-1.pdf>
+
+Underfull \vbox (badness 5374) has occurred while \output is active []
+
+ [243
+
+]
+[244]
+File: QM file/figure/8-2.pdf Graphic file (type pdf)
+<use QM file/figure/8-2.pdf>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[245]
+File: QM file/figure/8-3.pdf Graphic file (type pdf)
+<use QM file/figure/8-3.pdf>
+ [246]) (./QM file/body/C.eight/M08.02-Fractional sampling.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[247] [248] [249] [250] [251] [252] [253])
+(./QM file/body/C.eight/M08.03-Low energy scattering.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[254]
+File: QM file/figure/8-4.pdf Graphic file (type pdf)
+<use QM file/figure/8-4.pdf>
+ [255] [256]) (./QM file/body/C.eight/M08.04-Boehne approximation.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[257] [258] [259]
+File: QM file/figure/8-5.pdf Graphic file (type pdf)
+<use QM file/figure/8-5.pdf>
+ [260]
+File: QM file/figure/8-6.pdf Graphic file (type pdf)
+<use QM file/figure/8-6.pdf>
+
+Overfull \hbox (9.5536pt too wide) in paragraph at lines 164--168
+[]$[]$ \TU/FZShuSong-Z01(0)/m/n/9 为 出 射 波 波 矢 量，|  其 方 向 即 $[]$ 的 方 向，| $[] [] 
+[][]$\TU/XITS(0)/m/n/9 . \TU/FZShuSong-Z01(0)/m/n/9 对 于[]式 及[]式
+ []
+
+[261]
+File: QM file/figure/8-7.pdf Graphic file (type pdf)
+<use QM file/figure/8-7.pdf>
+
+Overfull \hbox (13.35826pt too wide) in paragraph at lines 192--193
+ [][] 
+ []
+
+
+Overfull \hbox (30.32094pt too wide) detected at line 206
+[]
+ []
+
+
+Overfull \hbox (14.50612pt too wide) detected at line 210
+[]
+ []
+
+
+Overfull \hbox (23.77647pt too wide) detected at line 213
+[]
+ []
+
+[262] [263] [264] [265] [266]) (./QM file/body/C.eight/M08.05-Exercises.tex
+Underfull \hbox (badness 10000) detected at line 1
+\TU/FZHei-B01(1)/m/n/9 习 题
+ []
+
+[267] [268])) (./QM file/body/C.nine/M09.00-Quantum leap.tex [269]
+第九章
+(./QM file/body/C.nine/M09.01-Time-related perturbation theory.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[270
+
+] [271]) (./QM file/body/C.nine/M09.02-A few typical leaps.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[272] [273]
+File: QM file/figure/9-1.pdf Graphic file (type pdf)
+<use QM file/figure/9-1.pdf>
+
+Overfull \hbox (22.35826pt too wide) in paragraph at lines 66--67
+ [][] 
+ []
+
+
+Overfull \hbox (12.93927pt too wide) detected at line 80
+[]
+ []
+
+[274]
+File: QM file/figure/9-2.pdf Graphic file (type pdf)
+<use QM file/figure/9-2.pdf>
+ [275] [276])
+(./QM file/body/C.nine/M09.03-Light absorption and stimulated radiation.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[277] [278] [279] [280] [281])
+(./QM file/body/C.nine/M09.04-Spontaneous radiation.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[282] [283]
+Overfull \hbox (5.97441pt too wide) in paragraph at lines 80--81
+[]\TU/FZShuSong-Z01(0)/m/n/9 应 该 指 出，| []式 并 不 是 自 发 跃 迁 速 率 的 严 格 结 果，|  因 为 导
+ 出[]式
+ []
+
+[284] [285]) (./QM file/body/C.nine/M09.05-Laser Principle.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[286]
+Underfull \vbox (badness 1259) has occurred while \output is active []
+
+ [287]
+File: QM file/figure/9-3.pdf Graphic file (type pdf)
+<use QM file/figure/9-3.pdf>
+
+Overfull \hbox (23.81102pt too wide) in paragraph at lines 15--16
+ [][] 
+ []
+
+File: QM file/figure/9-4.pdf Graphic file (type pdf)
+<use QM file/figure/9-4.pdf>
+[288]) (./QM file/body/C.nine/M09.06-Energy-time uncertainty relationship.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[289]
+Overfull \hbox (8.8731pt too wide) in paragraph at lines 30--34
+$[][][][][][][][] [] [][]$ \TU/FZShuSong-Z01(0)/m/n/9 关 系 如 图[][]\TU/XITS(0)/m/
+n/9 9.5[][]\TU/FZShuSong-Z01(0)/m/n/9 所 示\TU/XITS(0)/m/n/9 .$[][]$ \TU/FZShuSon
+g-Z01(0)/m/n/9 的 有 效 分 布 宽 度 大 致 可 以 确 定 为 $[][][] []
+ []
+
+File: QM file/figure/9-5.pdf Graphic file (type pdf)
+<use QM file/figure/9-5.pdf>
+[290]) (./QM file/body/C.nine/M09.07-Exercises.tex
+Underfull \hbox (badness 10000) detected at line 1
+\TU/FZHei-B01(1)/m/n/9 习 题
+ []
+
+[291] [292])) (./QM file/body/C.ten/M10.00-Multi-particle system.tex [293]
+第十章
+(./QM file/body/C.ten/M10.01-Two-particle system.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[294
+
+] [295] [296]
+Overfull \hbox (13.76088pt too wide) in paragraph at lines 129--131
+[]\TU/FZShuSong-Z01(0)/m/n/9 、| []式 相 当 于 经 典 力 学 中 质 心 动 量 和 相 对 动 量 的 定 义\TU/
+XITS(0)/m/n/9 .[]\TU/FZShuSong-Z01(0)/m/n/9 、|
+ []
+
+) (./QM file/body/C.ten/M10.02-Fully homogeneous particle system.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[297] [298] [299] [300]) (./QM file/body/C.ten/M10.03-Helium atoms.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+File: QM file/figure/10-1.pdf Graphic file (type pdf)
+<use QM file/figure/10-1.pdf>
+
+Overfull \hbox (18.58464pt too wide) in paragraph at lines 12--13
+ [][] 
+ []
+
+[301] [302] [303] [304]
+Underfull \vbox (badness 3989) has occurred while \output is active []
+
+ [305]
+File: QM file/figure/10-2.pdf Graphic file (type pdf)
+<use QM file/figure/10-2.pdf>
+
+Overfull \hbox (11.9055pt too wide) in paragraph at lines 189--190
+ [][] 
+ []
+
+[306]
+Overfull \hbox (5.59113pt too wide) detected at line 195
+[]
+ []
+
+) (./QM file/body/C.ten/M10.04-Hydrogen molecules.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+File: QM file/figure/10-3.pdf Graphic file (type pdf)
+<use QM file/figure/10-3.pdf>
+
+Overfull \hbox (13.35826pt too wide) in paragraph at lines 15--16
+ [][] 
+ []
+
+[307]
+File: QM file/figure/10-4.pdf Graphic file (type pdf)
+<use QM file/figure/10-4.pdf>
+ [308] [309] [310]
+File: QM file/figure/10-5.pdf Graphic file (type pdf)
+<use QM file/figure/10-5.pdf>
+File: QM file/figure/10-6.pdf Graphic file (type pdf)
+<use QM file/figure/10-6.pdf>
+
+Overfull \hbox (22.35826pt too wide) in paragraph at lines 129--130
+ [][] 
+ []
+
+[311] [312]) (./QM file/body/C.ten/M10.05-Chemical bond.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[313]
+File: QM file/figure/10-7.pdf Graphic file (type pdf)
+<use QM file/figure/10-7.pdf>
+ [314]
+File: QM file/figure/10-8.pdf Graphic file (type pdf)
+<use QM file/figure/10-8.pdf>
+ [315])
+(./QM file/body/C.ten/M10.06-Vibration and rotation of diatomic molecules.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[316] [317] [318]
+Overfull \hbox (7.13242pt too wide) in paragraph at lines 85--93
+\TU/FZShuSong-Z01(0)/m/n/9 其 中 第 二 项 是 由 于 转 动 而 引 起 的 振 动 频 率 变 化\TU/XITS(0)/m
+/n/9 . \TU/FZShuSong-Z01(0)/m/n/9 将 以 上 结 果 代 入[]式，|
+ []
+
+) (./QM file/body/C.ten/M10.07-Exercises.tex
+Underfull \hbox (badness 10000) detected at line 1
+\TU/FZHei-B01(1)/m/n/9 习 题
+ []
+
+[319]
+Overfull \hbox (17.21758pt too wide) in paragraph at lines 50--52
+[] [] []$ \TU/FZFangSong-Z02(0)/m/n/9 时，|  写 出 体 系 的 轨 道 波 函 数，|  求 相 互 作 用 能 $
+[]$，|
+ []
+
+[320]
+Overfull \hbox (4.00027pt too wide) in paragraph at lines 58--60
+[]\TU/XITS(0)/m/n/9 11. \TU/FZFangSong-Z02(0)/m/n/9 两 电 子 体 系，|  定 义  |“自 旋 交 换
+ 算 符”| $[][][] [][][][][][][] [][][] [] [][][][][] [][][]$，|
+ []
+
+[321])) (./QM file/body/A01-Delta function and Fourier transform.tex [322]
+附录 A
+[323
+
+
+]
+File: QM file/figure/A-1,2.pdf Graphic file (type pdf)
+<use QM file/figure/A-1,2.pdf>
+ [324] [325]) (./QM file/body/A02-Hermite Polynomials.tex [326]
+附录 B
+[327
+
+
+] [328]) (./QM file/body/A03-Orbital angular momentum operator.tex [329]
+附录 C
+File: QM file/figure/A-3.pdf Graphic file (type pdf)
+<use QM file/figure/A-3.pdf>
+
+Overfull \hbox (14.22551pt too wide) in paragraph at lines 12--13
+ [][] 
+ []
+
+
+Overfull \hbox (10.50864pt too wide) detected at line 33
+[]
+ []
+
+
+Overfull \hbox (38.63844pt too wide) detected at line 41
+[]
+ []
+
+
+Overfull \hbox (25.9842pt too wide) detected at line 48
+[]
+ []
+
+[330
+
+
+]
+Overfull \hbox (18.26447pt too wide) detected at line 53
+[]
+ []
+
+
+Overfull \hbox (45.26657pt too wide) detected at line 58
+[]
+ []
+
+
+Overfull \hbox (62.39778pt too wide) detected at line 63
+[]
+ []
+
+) (./QM file/body/A04-Spherical harmonic function.tex [331]
+附录 D
+[332
+
+
+] [333] [334] [335] [336] [337] [338])
+(./QM file/body/Z01-Physical constants table.tex [339]
+
+LaTeX Warning: Command \; invalid in math mode on input line 18.
+
+
+LaTeX Warning: Command \; invalid in math mode on input line 18.
+
+
+Overfull \hbox (37.45703pt too wide) in paragraph at lines 13--41
+ [] 
+ []
+
+) (./QM file/body/Z02-Answers.tex [340
+
+]
+\c@answer=\count417
+\itemwidth=\skip148
+\xindent=\skip149
+
+(./QM file/body/Answers/M13.01-Answers-Chp01.tex)
+(./QM file/body/Answers/M13.02-Answers-Chp02.tex [341
+
+])
+(./QM file/body/Answers/M13.03-Answers-Chp03.tex [342]
+Overfull \hbox (1.6794pt too wide) in paragraph at lines 24--25
+ [] $\OML/cmm/m/it/9 ^^I[][][] [][] [] [] []$ 
+ []
+
+[343]) (./QM file/body/Answers/M13.04-Answers-Chp04.tex [344])
+(./QM file/body/Answers/M13.05-Answers-Chp05.tex [345] [346])
+(./QM file/body/Answers/M13.06-Answers-Chp06.tex [347])
+(./QM file/body/Answers/M13.07-Answers-Chp07.tex [348] [349])
+(./QM file/body/Answers/M13.08-Answers-Chp08.tex [350] [351])
+(./QM file/body/Answers/M13.09-Answers-Chp09.tex
+Overfull \hbox (1.26283pt too wide) in paragraph at lines 8--9
+ [] $\OML/cmm/m/it/9 ^^I[][][] [] [][] [] [] [] [] [] [][]^^I[] [] [][][] [] []
+[][][] [] [][][]$ 
+ []
+
+[352]) (./QM file/body/Answers/M13.10-Answers-Chp10.tex [353]))
+(./QM file/body/Z03-Teaching career.tex [354] [355
+
+]
+Underfull \vbox (badness 4254) has occurred while \output is active []
+
+ [356])
+(./QM file/body/Z04-Afterword.tex [357]
+
+Package fontspec Info: Could not resolve font "Source Han Serif SC Bold/I" (it
+(fontspec)             probably doesn't exist).
+
+
+Package fontspec Info: Font family 'SourceHanSerifSCBold(0)' created for font
+(fontspec)             'Source Han Serif SC Bold' with options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Source Han Serif
+(fontspec)             SC Bold/OT:script=hani;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Source Han Serif SC
+(fontspec)             Bold/B/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Source Han
+(fontspec)             Serif SC Bold/BI/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+ [1
+
+] [2]
+File: QM file/body/F04-EngPage.pdf Graphic file (type pdf)
+<use QM file/body/F04-EngPage.pdf>
+File: QM file/body/F04-EngPage.pdf Graphic file (type pdf)
+<use QM file/body/F04-EngPage.pdf>
+File: QM file/body/F04-EngPage.pdf Graphic file (type pdf)
+<use QM file/body/F04-EngPage.pdf, page 1>
+File: QM file/body/F04-EngPage.pdf Graphic file (type pdf)
+<use QM file/body/F04-EngPage.pdf, page 1>
+File: QM file/body/F04-EngPage.pdf Graphic file (type pdf)
+<use QM file/body/F04-EngPage.pdf, page 1>
+File: QM file/body/F04-EngPage.pdf Graphic file (type pdf)
+<use QM file/body/F04-EngPage.pdf, page 1>
+File: QM file/body/F04-EngPage.pdf Graphic file (type pdf)
+<use QM file/body/F04-EngPage.pdf, page 1>
+ [3
+
+]) (./Quantum Mechanics.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 44402 strings out of 476179
+ 975656 string characters out of 5810426
+ 1891589 words of memory out of 5000000
+ 63988 multiletter control sequences out of 15000+600000
+ 498171 words of font info for 283 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 116i,24n,131p,2822b,974s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on Quantum Mechanics.pdf (366 pages).
